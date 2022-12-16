@@ -5,22 +5,22 @@ Num   | Competency Questions                                                    
 |-----|-----------------------------------------------------------------------------------------|---------------
 CQ1   |What applications are there for a given product?                                         | Technical     
 CQ2   |What is the state of the projects related to a given product type?                       | Technical     
-CQ3   |In which vehicles are PEM fuel cells more often used?                                    | Technical     
-CQ4   |Do hydrogen product components change over time?                                                  | Technical     
+CQ3   |In which type of vehicles are fuel cells used?                                           | Technical     
+CQ4   |Do hydrogen product components change over time?                                         | Technical     
 CQ5   |Which components are used in hydrogen products?                                          | Technical     
 CQ6   |Which substitutes does a given product have?                                             | Technical     
 CQ7   |What projects are related to a given product type?                                       | Technical     
-CQ8   |What projects are related to a given application type?                                   | Technical     
-CQ9   |Who is the provider for a given product or technology?                                 | Market        
+CQ8   |What projects are related to a given application type?                                   | Market     
+CQ9   |Who is the provider for a given product or technology?                                   | Market        
 CQ10  |In which geographical market is a certain product available?                             | Market        
 CQ11  |What is the relation between geographic locations and the number of organizations?       | Market        
-CQ12  |What is the relation between geographic locations and the number of products?             | Market        
+CQ12  |What is the relation between geographic locations and the number of products?            | Market        
 CQ13  |In which countries is a given company present?                                           | Market        
 CQ14  |What rivals does a company have per continent?                                           | Market        
-CQ15  |What revenues does a given product generate per geographic market?                        | Market        
-CQ16  |What patents does a given organization hold?                                            | Market        
+CQ15  |What revenues does a given product generate per geographic market?                       | Market        
+CQ16  |What patents does a given organization hold?                                             | Technolical        
 CQ17  |Who are the major investors per continent?                                               | Market        
-CQ18  |In what kind of projects is a given organization engaged?                               | Market        
+CQ18  |In what kind of projects is a given organization engaged?                                | Market        
 
 
 
@@ -52,7 +52,7 @@ Here we provide example queries to answer the reviosuly listed competency questi
     } group by ?product_type ?project_state
 </details>
 
-<details><summary> CQ3 In which vehicles are PEM fuel cells more often used?</summary>
+<details><summary> CQ3 In which type of vehicles are fuel cells used?</summary>
 
     PREFIX holy: <http://purl.org/holy/ns#>
     PREFIX org: <http://www.w3.org/ns/org#>
