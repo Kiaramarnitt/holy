@@ -1,4 +1,5 @@
 ## Hydrogen Ontology
+[![DOI](https://zenodo.org/badge/578908339.svg)](https://zenodo.org/badge/latestdoi/578908339)
 
 The Hydrogen Ontology (HOLY) is a domain ontology for describing the complex structure of hydrogen-based markets. HOLY contributes to the systemic modeling of the hydrogen domain with a focus on its value chain. Hence, it provides a foundation for retrieval, storage, and delivery of market insights. 
 
