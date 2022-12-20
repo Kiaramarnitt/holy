@@ -21,5 +21,5 @@ The repository contains the following resources:
 ## Permanent URLs
 * [HOLY Information](https://purl.org/holy)
 * [HOLY Ontology](https://purl.org/holy/ns)
-* [HOLY Documentation](https://purl.org/doc)
-* [HOLY Repository](https://purl.org/repo)
+* [HOLY Documentation](https://purl.org/holy/doc)
+* [HOLY Repository](https://purl.org/holy/repository)
