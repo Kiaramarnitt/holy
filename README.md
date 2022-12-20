@@ -13,7 +13,6 @@ The repository contains the following resources:
 * The Hydrogen Ontology Ontology in [RDF/Turtle](./holy.html), [RDF/XML](./holy.xml) and [JSON](./holy.jsonld)
 * Ontology [Documentation](./documentation) and corresponding [visualizations](./visualizations)
 * [License](./LICENSE.md) declaration
-<!---* [Results](doc\OOPS!_Evaluation\CQs Evaluation) of validation using the OOPS! tool -->
 * [Results](./doc/CQs_Evaluation) of competency questions evaluation
 
 
