@@ -1,0 +1,4 @@
+qty_vehicles,vehicle_type
+3,http://purl.org/holy/ns#Road
+3,http://purl.org/holy/ns#LongHaulTruck
+3,http://purl.org/holy/ns#Truck

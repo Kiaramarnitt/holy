@@ -53,28 +53,28 @@ Here we provide example queries to answer the reviosuly listed competency questi
 <details><summary> CQ3 Which direct competitors ("rivals") does a company have per continent?</summary>
 
     PREFIX holy: <http://purl.org/holy/ns#>
-    PREFIX dct: <http://purl.org/dc/terms/>
     PREFIX org: <http://www.w3.org/ns/org#>
     PREFIX dbo: <http://dbpedia.org/ontology/>
     select distinct ?continent ?organization ((?organization_type) as ?economic_activity) where {
-        ?organization a org:Organization.
+        ?organization a org:Organization, ?organization_type.
         ?organization holy:participatesIn ?geo.
         ?geo dbo:country ?Country.
         ?Country dbo:continent ?Continent.
-    } group by ?organization_type
+        Filter(?organization_type in (holy:EnergySectorOrganization, holy:ManufacturingOrganization))
+    } 
 </details>
 
 <details><summary> CQ4 What revenues does a given product generate per geographic market? </summary>
 
-PREFIX holy: <http://purl.org/holy/ns#>
-PREFIX dbo: <http://dbpedia.org/ontology/>
-select distinct ?Country ?product ?revenue where {
-    ?product a holy:Product;
-             holy:productSoldIn ?geo;
-             holy:hasIndicator ?revenue.
-    ?revenue a holy:Revenue.
-    ?geo dbo:country ?Country.
-}
+    PREFIX holy: <http://purl.org/holy/ns#>
+    PREFIX dbo: <http://dbpedia.org/ontology/>
+    select distinct ?Country ?product ?revenue where {
+        ?product a holy:Product;
+                holy:productSoldIn ?geo;
+                holy:hasIndicator ?revenue.
+        ?revenue a holy:Revenue.
+        ?geo dbo:country ?Country.
+    }
 </details>
 
 <details><summary> CQ5 Who are the major investors per continent? </summary>
@@ -82,7 +82,7 @@ select distinct ?Country ?product ?revenue where {
     PREFIX org: <http://www.w3.org/ns/org#>
     PREFIX holy: <http://purl.org/holy/ns#>
     PREFIX dbo: <http://dbpedia.org/ontology/>
-    select distinct ?organization ?Continent ((?investment) as ?qty_investments) where {
+    select distinct ?organization ?Continent (count(?investment) as ?qty_investments) where {
         ?organization a org:Organization;
                     holy:hasIndicator ?investment;
                     holy:participatesIn ?geo.
@@ -212,7 +212,7 @@ select distinct ?Country ?product ?revenue where {
                     holy:participatesIn ?geo.
         ?geo a holy:GeographicMarket;
             dbo:country ?Country
-    } group by (?organization)
+    } group by (?Country)
 </details>
 
 <details><summary> CQ16 What is the relation between geographic locations and the number of products?</summary>
@@ -224,7 +224,7 @@ select distinct ?Country ?product ?revenue where {
                 holy:participatesIn ?geo.
         ?geo a holy:GeographicMarket;
             dbo:country ?Country
-    } group by (?product)
+    } group by (?Country)
 </details>
 
 <details><summary> CQ17 In which countries is a given company present?</summary>

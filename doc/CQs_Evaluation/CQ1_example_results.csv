@@ -1,0 +1,14 @@
+product,organization
+http://purl.org/holy/ns#SureSource1500™,http://dbpedia.org/resource/FuelCell_Energy
+http://purl.org/holy/ns#SureSource3000™,http://dbpedia.org/resource/FuelCell_Energy
+http://purl.org/holy/ns#SureSource4000™,http://dbpedia.org/resource/FuelCell_Energy
+http://dbpedia.org/resource/Proton-exchange_membrane_fuel_cell,http://dbpedia.org/resource/Hyzon_Motors
+http://purl.org/holy/ns#Hyzon_hybrid_bi-polar_plate_technology,http://dbpedia.org/resource/Hyzon_Motors
+http://dbpedia.org/resource/Hyzon_Motors,http://dbpedia.org/resource/Proton-exchange_membrane_fuel_cell
+http://dbpedia.org/resource/Hyzon_Motors,http://purl.org/holy/ns#Hyzon_hybrid_bi-polar_plate_technology
+http://dbpedia.org/resource/Ionic_liquid_piston_compressor,http://dbpedia.org/resource/Linde_plc
+http://purl.org/holy/ns#CryogenicPistonPump,http://dbpedia.org/resource/Linde_plc
+http://purl.org/holy/ns#IonicCompressor50,http://dbpedia.org/resource/Linde_plc
+http://purl.org/holy/ns#GenSureFuelCellSystem,http://dbpedia.org/resource/Plug_Power
+http://dbpedia.org/resource/Plug_Power,http://purl.org/holy/ns#GenSureFuelCellSystem
+http://purl.org/holy/ns#SteelCell,http://purl.org/holy/ns#Ceres_Power_Holding

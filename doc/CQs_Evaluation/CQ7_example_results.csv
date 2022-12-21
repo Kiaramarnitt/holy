@@ -1,0 +1,11 @@
+product,application
+http://dbpedia.org/resource/Hydrogen_Tank,http://purl.org/holy/ns#ZEROeBlendedWingBody
+http://dbpedia.org/resource/Hydrogen_engine,http://purl.org/holy/ns#ZEROeBlendedWingBody
+http://dbpedia.org/resource/Proton-exchange_membrane_fuel_cell,http://purl.org/holy/ns#HyzonClass8
+http://dbpedia.org/resource/Proton-exchange_membrane_fuel_cell,http://purl.org/holy/ns#HyzonHymaxSeries
+http://dbpedia.org/resource/Proton-exchange_membrane_fuel_cell,http://purl.org/holy/ns#OWLNamedIndividual_7f4f3263_d74c_4f58_a998_c670b97905fa
+http://purl.org/holy/ns#Hyzon_hybrid_bi-polar_plate_technology,http://purl.org/holy/ns#HyzonClass8
+http://purl.org/holy/ns#Hyzon_hybrid_bi-polar_plate_technology,http://purl.org/holy/ns#HyzonHymaxSeries
+http://purl.org/holy/ns#Hyzon_hybrid_bi-polar_plate_technology,http://purl.org/holy/ns#OWLNamedIndividual_7f4f3263_d74c_4f58_a998_c670b97905fa
+http://purl.org/holy/ns#GenSureFuelCellSystem,http://dbpedia.org/page/Category:Material_Handling
+http://purl.org/holy/ns#SteelCell,http://dbpedia.org/resource/combined_heat_and_power_station
