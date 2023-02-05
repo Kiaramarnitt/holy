@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Artificial Market Intelligence in the Hydrogen Market</title>   
+    <style>
+
+        .cardinality {
+            font-style: italic;
+            color: #aa00aa;
+        }
+
+        dl {
+            /*border: 1px solid navy;*/
+            /*padding:5px;*/
+        }
+
+        dt {
+            font-weight: bold;
+            padding: 0;
+        }
+
+        dd {
+            margin-bottom: 10px;
+            padding-top: 7px;
+        }
+
+        #metadata ul,
+        #classes ul {
+            list-style-type: none;
+        }
+
+        #metadata ul li,
+        #classes ul li {
+            margin-left: -40px;
+        }
+
+        ul.hlist {
+            list-style-type: none;
+            border: 1px solid navy;
+            padding:5px;
+            background-color: #F4FFFF;
+        }
+
+        ul.hierarchy {
+            border: 1px solid navy;
+            padding: 5px 25px 5px 25px;
+            background-color: #F4FFFF;
+        }
+
+
+        ul.hlist li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .entity {
+            border: 1px solid navy;
+            margin:5px 0 5px 0;
+            padding: 5px;
+        }
+
+        .entity th {
+            width: 150px;
+            vertical-align: top;
+        }
+
+        .entity th,
+        .entity td {
+            padding-bottom: 20px;
+        }
+
+        .entity table th {
+            text-align: left;
+        }
+
+        section#overview img {
+            max-width: 1000px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            text-align: left
+        }
+        h1, h2, h3 {
+            color: #005A9C; background: white
+        }
+        h1 {
+            font: 170% sans-serif;
+            line-height: 110%;
+        }
+        h2 {
+            font: 140% sans-serif;
+            margin-top:40px;
+        }
+        h3 {
+            font: 120% sans-serif;
+            margin-top: 20px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid navy;
+        }
+        h4 { font: bold 100% sans-serif }
+        h5 { font: italic 100% sans-serif }
+        h6 { font: small-caps 100% sans-serif }
+
+        body {
+            padding: 2em 70px 2em 70px;
+            margin: 0;
+            font-family: sans-serif;
+            color: black;
+            background: white;
+            background-position: top left;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            text-align: justify;
+        }
+
+        section {
+            max-width: 1500px;
+        }
+
+        .figure {
+            margin-bottom: 20px;
+        }
+
+        :link { color: #00C; background: transparent }
+        :visited { color: #609; background: transparent }
+        a:active { color: #C00; background: transparent }
+
+        .sup-c,
+        .sup-op,
+        .sup-fp,
+        .sup-dp,
+        .sup-ap,
+        .sup-p,
+        .sup-ni,
+        .sup-con,
+        .sup-col {
+            cursor:help;
+        }
+
+        .sup-c {
+            color:orange;
+        }
+
+        .sup-op {
+            color:navy;
+        }
+
+        .sup-fp {
+            color:lightskyblue;
+        }
+
+        .sup-dp {
+            color:green;
+        }
+
+        .sup-ap {
+            color:darkred;
+        }
+
+        .sup-p {
+            color:black;
+        }
+
+        .sup-ni {
+            color:brown;
+        }
+
+        .sup-con {
+            color:orange;
+        }
+
+        .sup-col {
+            color:darkred;
+        }
+
+        sup {
+            margin-left: -3px;
+        }
+        code {
+            font-size: large;
+            color: darkred;
+        }
+
+        /* less prominent links for properties */
+        .proplink {
+            color: #336;
+            text-decoration: none;
+        }
+
+#classes h4 {
+            font: bold 110% sans-serif;
+            border-bottom: 1px solid navy;
+        }
+#toc {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    height: 100%;
+    overflow-y: auto;
+    padding: 10px;
+    border: solid 1px navy;
+    font-size: small;
+    width: 180px;
+}
+#toc h3 {
+    margin-top: 5px;
+}
+
+#toc ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#toc .first > li {
+    margin-top: 5px;
+}
+
+#toc .second,
+#toc .third {
+    padding-left: 10px;
+}
+
+#content {
+    width: calc(100% - 150px);
+}
+
+.hover_property {
+    cursor: help;
+    text-decoration: none;
+    border-bottom: dashed 1px;
+}
+
+.setclass {
+    list-style-type: none;
+}
+
+
+table#namespaces {
+    border-collapse:collapse;
+}
+table#namespaces td {
+	    border:1px solid black;
+	    padding:1em;
+} 
+table#namespaces th {
+	    border:1px solid black;
+	    padding:1em;
+}
+table#namespaces td {
+	    font-family: monospace;
+}
+
+table#index {
+    border-collapse:collapse;
+}
+table#index td {
+	    border:1px solid black;
+	    padding:1em;
+} 
+table#index th {
+	    border:1px solid black;
+	    padding:1em;
+}
+
+ 
+
+	</style>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <script id="schema.org" type="application/ld+json">
+
+	</script>
+  </head>
+  <body>
+    <div id="content">
+<!-- Title -->
+    <div>
+        <p>
+            <b>Disclaimer:</b> This is a preliminary site and is not yet an official website from Fraunhofer IIS 
+        </p>
+    </div>
+      <div>
+        <h1>Artificial Market Intelligence in the Hydrogen Market</h1>
+      </div>
+
+<!--INTRODUCTION SECTION-->
+      <div>
+        <h2>Atlant-H: AI-based analysis of text media about activities in the international hydrogen market</h2>
+        <p>
+            Green hydrogen is an essential building block for the achievement of a CO<sub>2</sub>-free energy supply. From an ecological and a financial viewpoint, such a conversion makes sense. This is especially true when considering CO<sub>2</sub>-emission-intensive industries and transport sectors. Political interest is growing as well as industry demand. Hydrogen-based fuel cells (PEMFC) play a central role in this transformation. Applied research and further development of PEMFC systems in the context of numerous new usage scenarios are a top priority.
+        </p>
+      </div>
+<!--GOALS SECTION-->
+      <div>
+        <h3>
+            Hydrogen: How can you maintain an overview of a highly dynamic market?
+        </h3>
+        <p>
+            The pressure to innovate is also high; the current market environment is highly dynamic, with new developments from research and industry being announced almost daily. New data, which interested parties could use to support their decisions, is becoming available at a rapid pace. Progress in this context is usually published in text form through a large variety of channels at high velocity. How can research institutions and companies filter out the relevant information from a flood of incoming texts quickly enough to support their own innovation process?
+        </p>
+        <h3>
+            Solution: Automated text analysis based on knowledge graphs
+        </h3>
+        <p>
+            Here is where Semantic Web technologies can help. With knowledge graphs, it is possible to map information in its technical and socioeconomic contexts in a holistic and automated manner. The Future Engineering research group, a research collaboration between the Technischen Hochschule Nürnberg Georg-Simon-Ohm and the Center for Applied Research on Supply Chain Services at Fraunhofer IIS, is therefore developing a graph-based tool with an initial focus on fuel cells in the hydrogen market. This tool makes it possible to analyze large amounts of text data about the hydrogen environment automatically – whether from scientific publications or company press releases – with sufficient accuracy. It then processes this information according to the user’s research question. In this way, forecasts can be made on various topics related to fuel cell research, such as which fuel cell systems are currently being researched in transport applications, which specific technologies underlie those systems, or which new materials and concepts are currently being developed and by whom.
+        </p>
+        <h3>
+            Tools for an automated graphic representation of the hydrogen market
+        </h3>
+        <p>
+            The goal of this project is to develop a tool that, through the use of intuitive dashboards, allows for a dynamic, data-based overview of the hydrogen market with a focus on fuel cells. To achieve this, more than 10,000 international publications (e.g., contributions from publishing and scientific platforms, press releases, company news, etc.) need to be processed automatically each month. For this purpose, machine-learning methods for Natural Language Processing (NLP) as well as Semantic Web technologies are implemented and methods for extracting and modeling knowledge from text-based media sources are developed.
+        </p>
+      </div>
+      
+<!--RESULTS SECTION-->
+    <div>
+        <h2>
+            Three significant elements: ontology, pipeline, and dashboard
+        </h2>
+        <p>
+            <img src="https://www.scs.fraunhofer.de/de/referenzen/atlant-H/jcr:content/contentPar/sectioncomponent_1317494783/sectionParsys/wideimage/imageComponent/image.img.jpg/1670938501218/Dashboard-AtlantH-Monitor-3.jpg" height="500" alt="Dashboards of data from the hydrogen market">
+        </p>
+        <p>
+            <a href="https://www.scs.fraunhofer.de/de/referenzen/atlant-H/jcr:content/contentPar/sectioncomponent_1317494783/sectionParsys/wideimage/imageComponent/image.img.jpg/1670938501218/Dashboard-AtlantH-Monitor-3.jpg">Click to view a live version of the dashboard (currently a placeholder)</a> 
+        </p>
+        <p>
+            The tool consists of three elements: the ontologies, the text processing pipeline, and the dashboards.
+        </p>
+        <p>
+            To obtain a holistic view of the market, the structure of the knowledge graph is built using two complementary ontologies. Each of these underlying structures establishes relationships between concepts in their environment.
+        </p>
+        <p>
+            <ul>
+                <li>
+                    The domain ontology focuses on specific information about the product or technology, such as fuel cell type, stage in the value chain (production, storage, consumption) and application area (e.g., vehicle, aircraft, heating). For this purpose, an original ontology named the “Hydrogen Ontology” (HOLY) was developed by the Future Engineering research group. This ontology was created to map these aspects of the hydrogen ecosystem.
+                </li>
+                <li>
+                    The application ontology defines the roles of players in the market (e.g., manufacturer, supplier, research institution) and their maps their interactions with each other (e.g., cooperation, join research, supplier relationship). In addition, applications and technologies are mapped to defined stages of development (research, testing, or production).
+                </li>
+            </ul>
+        </p>
+        <p>
+            An automated process pipeline obtains raw texts from a wide variety of sources, prepares them, and extracts the desired information from them. This information is then structured using the previously-created ontology, verified, and enriched with additional facts from publicly available knowledge graphs. The processed information is then visualized in the form of dashboards, which address specific customer questions, such as:
+            <ul>
+                <li>
+                    Who are the manufacturers/providers of the technology in the hydrogen market?
+                </li>
+                <li>
+                    Who are the users of these technologies further down in the value chain?
+                </li>
+                <li>
+                    In which applications are hydrogen fuel cells being used?
+                </li>
+                <li>
+                    Where or by whom are these fuel cells produced?
+                </li>
+            </ul>
+        </p>
+        <p>
+            In the future, this new tool will be able to provide manufacturers and users with an up-to-date overview of developments in the hydrogen fuel cell market at any time – and according to their own specific questions.
+        </p>
+    </div>
+    
+<!--Contact Us -->
+    <div>
+      <h2>Contact Us</h2>
+      <h4>
+        Prof. Dr. Ralph Blum
+      </h4>
+      <p>
+        Group leader "Future Engineering"
+      </p>
+      <p>
+        Center for Applied Research on Supply Chain Services at Fraunhofer IIS
+        <br>
+        Nordostpark 84
+        <br>
+        90411 Nürnberg
+      </p>
+      <p>
+        <a href="https://www.scs.fraunhofer.de/de/kontakt/kontaktaufnahme-mitarbeiter/kontaktaufnahme-ralph-blum.html">Send an email</a>
+      </p>
+    </div>
+    <div>
+        <h4>
+        Kiara Ascencion
+        </h4>
+        <p>
+        Center for Applied Research on Supply Chain Services at Fraunhofer IIS
+        <br>
+        Nordostpark 84
+         <br>
+         90411 Nürnberg
+        </p>
+        <p>
+            <a href="https://www.scs.fraunhofer.de/de/kontakt/kontaktaufnahme-mitarbeiter/kontaktaufnahme-kiara-ascencion.html">Send an email</a> 
+        </p>
+    </div>
+
+  </div>
+
+  </body>
+</html>

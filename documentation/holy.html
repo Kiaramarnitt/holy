@@ -370,6 +370,9 @@ table#index th {
             </dd>
           </div>
           <div>
+            <dt>Repository:</dt><dd><a href="https://purl.org/holy/repository" target="_blank"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" height="15" alt="GitHub"></a></dd>
+          </div>
+          <div>
             <dt>Download serialization:</dt>
             <dd>
               <span>
@@ -399,47 +402,45 @@ table#index th {
         <p> 
           The ontology is intended to structure market-relevant domain information for the hydrogen market in an accessible format and provide a generic, reusable core for expansion in different areas along the hydrogen value chain or even the use of certain content patterns for other market domain ontologies.
         </p>
-        <!--<p>
-            The ontology gives terms to support the representation of:
+        <p>
+          Following the METHONTOLOGY approach, HOLY was created by integrating technical domain knowledge and established business models. According to this approach, the ontology's requirements are identified in the specification stage. In the conceptualization stage, the problem and its solution are explained through a conceputal model. Existing ontologies are identified in the integration stage and are then integrated into the ontological structure. The final stage, implementation, implements the ontology in RDF or another ontology language and evaluates errors in syntax and lexicon.
         </p>
-        <ul>
-            <li>Product and technology structure
-                <ul>
-                <li>
-                    Decomposition from value chain area to product and component level
-                </li>
-                <li>
-                    Connectors to product origin (in terms of developmental and manufactural origin)
-                </li>
-                <li>
-                    Purpose of Products and Technologies (Use Case)
-                </li>
-            </ul>
-            </li>
-            <li>Application type structure
-                <ul>
-                    <li>Decomposition into mobile and stationary application
-                    </li>
-                    <li>Provider of Applications
-                    </li>
-                </ul>
-            </li>
-            <li>Location structure
-                <ul>
-                    <li>Geographical Data for locating applications, products, organizations, projects or indicators
-                    </li>
-                </ul>
+        <p>
+          Additional information regarding the HOLY project can be found on the <a href="https://purl.org/holy">HOLY website</a>. If you would like to contribute to HOLY, please contact the <a href="https://www.th-nuernberg.de/einrichtungen-gesamt/fraunhofer-forschungsgruppen/future-engineering/">Future Engineering Group</a>.
+        </p>
+        <h3>Entity Naming Convention</h3>  
+        <p>
+          For the labeling of entities belonging to the namespace HOLY, the following naming conventions from Open Biologican and Biomedical Ontology Foundry (OBO) [<a href="https://obofoundry.org/principles/fp-012-naming-conventions.html">1</a>, <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-10-125/tables/1">2</a>] were used:
+          <ul>
+            <li>
+              use rdfs:label for the primary label
             </li>
             <li>
-                Organization structure
+              include exactly one rdfs:label for every declared entity (e.g. class, property)
             </li>
             <li>
-                Project Structure
+              use spaces to separate words. Do not use CamelCase, do_not_use_underscores
             </li>
             <li>
-                Indicator Structure
+              avoid extra spaces between words, or at the beginning or end of the term label
             </li>
-        </ul>-->
+            <li>
+              spell out abbreviations. Abbreviations can be included as a separate property.
+            </li>
+            <li>
+              make the primary labels to be as unambiguous as possible. Remember, your ontology may be used in a different context than that for which it was originally intended. Remember also of course that the label should be unambiguous without looking at parent terms
+            </li>
+            <li>
+              labels should be unique within an ontology
+            </li>
+            <li>
+              Prefer singular nominal form
+            </li>
+          </ul>
+        </p>
+        <p>
+          In addition to the above-mentioned naming conventions, skos:altLabel was used to provide synonyms for entities and all words in primary labels were capitalized.
+        </p>
       </div>
 <!--NAMESPACES SECTION-->
       <div class="section" id="namespaces">
@@ -599,8 +600,8 @@ table#index th {
               <strong>DBpedia:</strong> DBpedia is a large, open-source cross-domain ontology inhabiting over 4.000.000 instances in its structure whose environment can be accessed with SPARQL queries. The Hydrogen Ontology inhabits DBpedia instances to enrich its structure. 
             </p>    
             <p>
-              <strong>dct/dc:</strong> tbd
-            </p>   
+              <strong>Dublin Core:</strong> Dublin Core is a vocabulary of standard classes and properties for describing resources that facilitate the discovery of electronic resources akin to a library card catalogue.
+            </p> 
       </div>
       
 <!--DESCRIPTION SECTION-->
@@ -739,7 +740,7 @@ table#index th {
         Annotation Properties from <a href="https://www.w3.org/TR/rdf-schema/#ch_label">RDFS</a> and <a href="https://www.w3.org/TR/skos-reference/#labels">SKOS</a> have been used to describe semantic information in the Hydrogen Ontology. The annotation properties integrated in HOLY's classes, together with a description and example from the class <code>holy:Truck</code>, are as follows:
       </p>
       <p>
-        <img src="" alt="Annotation properties explained through the example of holy:Truck" style="max-width: 100%">
+        <img src="./visualizations/AnnotationProperties.png" alt="Annotation properties explained through the example of holy:Truck" style="max-width: 100%">
       </p>
       <p>
         The references are identical to information from the documentation of <a href="https://www.w3.org/TR/rdf-schema/#ch_label">RDFS</a> and <a href="https://www.w3.org/TR/skos-reference/#labels">SKOS</a>.
