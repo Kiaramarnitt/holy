@@ -15,7 +15,8 @@ A preliminary dashboard of the Atlant-H project is available on the link below. 
 
 [Dashboard]()
 
-*For more information follow the links below*
+**For more information follow the links below**
+
 [Atlant-H Projekt (de)](https://www.scs.fraunhofer.de/de/referenzen/atlant-H.html)
 
 [Atlant-H Project en)]()
