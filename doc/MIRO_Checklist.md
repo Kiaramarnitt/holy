@@ -2,7 +2,7 @@
 HOLY follows [MIRO](https://github.com/owlcs/miro/blob/master/miro.md) guidelines for ontology Reporting. We have extended the [MIRO checklist](https://docs.google.com/spreadsheets/d/1_oWgZJMDYSaqR84z_MlSCv7xit0tb1hy20ri2ssIsuI/edit#gid=0) to include a reference to the resource where each guideline is addressed. A detailed description of each requirement is available in the [MIRO Repository](https://github.com/owlcs/miro/blob/master/miro.md)
 
 |      | Requirement     | Importance | Addressed      | [Paper](https://doi.org/10.5281/zenodo.7447958)  | [Ontology (RDF file)](https://purl.org/holy/ns) | [Documentation](https://purl.org/holy/doc)| [Repository](https://purl.org/holy/repository) |
-| ---- | ------------------------------------------ |  ------ | ------------------- | ------------- | ---------- |
+| ---- | ------------------------------------------ |  ------ | ------------------- | ------------- | ---------- |----|---|
 | A   | Basics         |                                                                                                                                                  |
 | A.1  | Ontology name   |  Must       |   <ul><li>- [x] </li></ul>   |   <ul><li>- [x] </li></ul>   |   <ul><li>- [x] </li></ul>    |   <ul><li>- [x] </li></ul>          |   <ul><li>- [x] </li></ul>       |
 | A.2  | Ontology owner  |  Must       |   <ul><li>- [x] </li></ul>   |   <ul><li>- [x] </li></ul>   |   <ul><li>- [x] </li></ul>    |   <ul><li>- [x] </li></ul>          |   <ul><li>- [x] </li></ul>       |
