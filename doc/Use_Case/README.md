@@ -13,7 +13,7 @@ The NLP-based pipeline has as goal the extraction of domain-relevant information
 
 A preliminary dashboard of the Atlant-H project is available on the link below. This Dashboard was built from a Knowledge Graph containing 526 924 triples.
 
-[Dashboard]()
+[** Dashboard **]()
 
 **For more information follow the links below**
 

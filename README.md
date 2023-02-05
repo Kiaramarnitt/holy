@@ -4,20 +4,21 @@
 The Hydrogen Ontology (HOLY) is a domain ontology for describing the complex structure of hydrogen-based markets. HOLY contributes to the systemic modeling of the hydrogen domain with a focus on its value chain. Hence, it provides a foundation for retrieval, storage, and delivery of market insights. 
 
 
-The overall structure consists of over 100 classes storing information about organizations, projects, products, applications, markets, and indicators and conceptualizes market relationships of production, cooperation, geographic placement, provision of goods or services, and indicators.
+HOLY was developed using [Protegé](https://protege.stanford.edu/), an open-source ontology editor. The overall structure consists of over 100 classes storing information about organizations, projects, products, applications, markets, and indicators and conceptualizes market relationships of production, cooperation, geographic placement, provision of goods or services, and indicators.
 ![picture alt](./visualizations/MainClassOverview.png "HOLY Ontology")
 
 The ontology is  maintained by the [Future Engineering Research Group](https://www.th-nuernberg.de/einrichtungen-gesamt/fraunhofer-forschungsgruppen/future-engineering/), a cooperation in between the Technische Hochschule Georg-Simon-Ohm and the Fraunhofer IIS. Further information of the HOLY project can be found in the [HOLY Website](https://purl.org/holy), to contribute to HOLY  contact the [Future Engineering Group](https://www.th-nuernberg.de/einrichtungen-gesamt/fraunhofer-forschungsgruppen/future-engineering/).
 
 ## Repository Structure
 The repository contains the following resources:
-* The Hydrogen Ontology Ontology in [RDF/Turtle](./holy.html), [RDF/XML](./holy.xml) and [JSON](./holy.jsonld)
+* The Hydrogen Ontology in [RDF/Turtle](./holy.html), [RDF/XML](./holy.xml) and [JSON](./holy.jsonld)
 * Ontology [Documentation](./documentation) and corresponding [visualizations](./visualizations)
 * [License](./LICENSE.md) declaration
-* [Results](./doc/CQs_Evaluation) of competency questions evaluation
+* [Ontology Reporting Checklist](./doc/MIRO_Checklist.md)
+* [Data from the Knowledge Acquisition Process](./doc/Knowledge_Acquisition/)
+* Results of [competency questions evaluation](./doc/CQs_Evaluation) and of [validation](./doc/OOPS_Validation/) with the OOPS!.
+* [Use Case:](./doc/Use_Case/) Atlant-H project
 
-## Development Environment
-HOLY was developed using [Protege](https://protege.stanford.edu/), an open-source ontology editor.
 
 ## Permanent URLs
 * [HOLY Information](https://purl.org/holy)
