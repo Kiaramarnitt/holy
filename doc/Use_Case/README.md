@@ -7,7 +7,7 @@ The goal of this project is to develop a tool that, through the use of intuitive
 
 Atlant-H offers an up-to-date market overview of developments in the fuel cell environment. To this end, it integrates ontological structures with an NLP-powered pipeline and delivers results through user-friendly Dashboards.
 
-![picture alt](./visualizations/Atlant-H_pipelin.png "NLP-based pipeline")
+![picture alt](../../visualizations/Atlant-H_pipelin.png "NLP-based pipeline")
 
 The NLP-based pipeline has as goal the extraction of domain-relevant information from unstructured data. The pipeline includes ontological components to identify relevant entities and relationships based on the ontological structure and semantic information encoded within the ontology. The lexical-semantic layer in HOLY helps classify the extracted entities. Additionally, the use of ontological axioms allows for the inference of new information. Hence, the semantic information in HOLY is used to automatically adjust the NLP task and organize the collected information. The results are then stored in a Knowledge Graph, which is the used to build user-friendly Dashboards to enable monitoring of the hydrogen market. 
 
@@ -15,7 +15,7 @@ A preliminary dashboard of the Atlant-H project is available on the link below. 
 
 [Dashboard]()
 
-### More Information
+*For more information follow the links below*
 [Atlant-H Projekt (de)](https://www.scs.fraunhofer.de/de/referenzen/atlant-H.html)
 
 [Atlant-H Project en)]()
