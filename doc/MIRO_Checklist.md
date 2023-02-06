@@ -40,7 +40,7 @@ HOLY follows [MIRO](https://github.com/owlcs/miro/blob/master/miro.md) guideline
 | F.3  | Versioning policy     | Must       |   <ul><li>- [x] </li></ul>   |   <ul><li>- [ ] </li></ul> |   <ul><li>- [ ] </li></ul>              |   <ul><li>- [ ] </li></ul>        |   <ul><li>- [x] </li></ul>       |
 | G    | Quality Assurance     |        |            
 | G.1  | Testing  |  Must       |   <ul><li>- [x] </li></ul>   |   <ul><li>- [x] </li></ul>   |   <ul><li>- [ ] </li></ul>              |   <ul><li>- [ ] </li></ul>        |   <ul><li>- [x] </li></ul>       |
-| G.2  | Evaluation      |  Must       |   <ul><li>- [ ] </li></ul> |   <ul><li>- [ ] </li></ul> |   <ul><li>- [ ] </li></ul>              |   <ul><li>- [ ] </li></ul>        |   <ul><li>- [ ] </li></ul>     |
+| G.2  | Evaluation      |  Must       |   <ul><li>- [x] </li></ul> |   <ul><li>- [x] </li></ul> |   <ul><li>- [ ] </li></ul>              |   <ul><li>- [ ] </li></ul>        |   <ul><li>- [x] </li></ul>     |
 | G.3  | Example of use  |  Must       |   <ul><li>- [x] </li></ul>   |   <ul><li>- [x] </li></ul>   |   <ul><li>- [ ] </li></ul>              |   <ul><li>- [x] </li></ul>          |   <ul><li>- [ ] </li></ul>     |
 | G.4  | Institutional endorsement      |  Optional   |   <ul><li>- [ ] </li></ul> |   <ul><li>- [ ] </li></ul> |   <ul><li>- [ ] </li></ul>              |   <ul><li>- [ ] </li></ul>        |   <ul><li>- [ ] </li></ul>     |
 | G.5  | Evidence of use |  Must       |   <ul><li>- [x] </li></ul>   |   <ul><li>- [x] </li></ul>   |   <ul><li>- [ ] </li></ul>              |   <ul><li>- [x] </li></ul>          |   <ul><li>- [ ] </li></ul>     |
