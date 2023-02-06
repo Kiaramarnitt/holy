@@ -212,8 +212,6 @@ dct:hasPart rdf:type owl:ObjectProperty ;
             owl:inverseOf dct:isPartOf ;
             rdf:type owl:AsymmetricProperty ,
                      owl:IrreflexiveProperty ;
-            rdfs:domain holy:HydrogenProduct ;
-            rdfs:range holy:HydrogenProductComponent ;
             rdfs:comment "This property is intended to be used with non-literal values. This property is an inverse property of Is Part Of."@en ;
             dct:references dct:;
             rdfs:label "Has Part"@en ;
@@ -224,8 +222,6 @@ dct:hasPart rdf:type owl:ObjectProperty ;
 dct:isPartOf rdf:type owl:ObjectProperty ,
                       owl:AsymmetricProperty ,
                       owl:IrreflexiveProperty ;
-             rdfs:domain holy:HydrogenProductComponent ;
-             rdfs:range holy:HydrogenProduct ;
              rdfs:comment "This property is intended to be used with non-literal values. This property is an inverse property of Has Part."@en ;
              dct:references dct: ;
              rdfs:label "Is Part Of" ;

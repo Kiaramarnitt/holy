@@ -397,7 +397,7 @@ table#index th {
       <div class="section" id="introduction">
         <h2>Introduction</h2>
         <p>
-          This document describes the Hydrogen Ontology (HOLY), a domain ontology for the hydrogen market, which aims to provide conceptual information of the current status and potential developments in the hydrogen market. In its current version, which focuses on Polymer Electrolyte Membrane Fuel Cells (PEMFCs), it is designed to classify information concerning the composition of PEMFCs, their use, manufacturers, geographic areas, indicators and projects. Conceptualizing market requirements is done by providing extensions to other areas of interests such as the organization domain, geo-location, indicators, project schemas and applications. 
+          This document describes the Hydrogen Ontology (HOLY), a domain ontology for the hydrogen market, which aims to provide conceptual information of the current status and potential developments in the hydrogen market.  Its target audience includes industrial, governmental, and research institutions that require continuous monitoring of market developments to evaluate and adjust their strategies. In its current version, which focuses on Polymer Electrolyte Membrane Fuel Cells (PEMFCs), it is designed to classify information concerning the composition of PEMFCs, their use, manufacturers, geographic areas, indicators and projects. Conceptualizing market requirements is done by providing extensions to other areas of interests such as the organization domain, geo-location, indicators, project schemas and applications. 
         </p>
         <p> 
           The ontology is intended to structure market-relevant domain information for the hydrogen market in an accessible format and provide a generic, reusable core for expansion in different areas along the hydrogen value chain or even the use of certain content patterns for other market domain ontologies.
@@ -639,6 +639,8 @@ table#index th {
     <p>
       <code>org:Organization</code> has object properties connecting it to the main classes <code>holy:Product</code>, <code>holy:Application</code>, <code>schema:Project</code>, <code>holy:GeographicMarket</code> and <code>holy:Indicator</code>. The object properties linking <code>holy:GeographicMarket</code> and <code>org:Organization</code> reveal the location of a company’s economic activity or that of one of its subsidiaries. Properties relating to <code>holy:Product</code> and <code>holy:Application</code> identify manufacturers of products or application providers. Object properties to <code>schema:Project</code> discloses partnerships in previous, current or future projects. The relationship to the class <code>holy:Indicator</code> links performance indicators. 
     </p>
+    <p><img src="./visualizations/Organization_Properties.png" alt="org:Organization axiomatised in HOLY" style="max-width: 100%;"/></p>
+    
     <p>
       Properties going from <code>org:Organization</code> to <code>org:Organization</code> illustrate intercompany relationships such as being a subsidiary or being linked to a company through other business relations.
     </p>
@@ -652,6 +654,7 @@ table#index th {
       </p>
       <p><img src="./visualizations/Project_ClassStructure.png" alt="Taxonomy of schema:Project in HOLY" style="max-width: 100%;" /></p>
       <p>Taxonomy of <code>schema:Project</code> in HOLY</p>
+      
       <p><span style="text-decoration: underline;"><strong>Properties related to Project</strong></span></p>
       <p>
         <code>schema:Project</code> has relationships to the classes <code>org:Organization</code>, <code>holy:Application</code>, <code>holy:Indicator</code>, <code>holy:Product</code> and <code>holy:GeographicMarket</code>.
@@ -659,6 +662,8 @@ table#index th {
       <p>
         Object properties relate to the outcome of a project, allowing classification by either being related to a product (<code>holy:relatesToProduct</code>) or an application (<code>holy:relatesToApplication</code>). Object properties from the Megadata4Ing ontology connect organizations with projects (<code>m4i:inProject</code>/<code>m4i:projectParticipant</code>). The object property <code>holy:hasIndicator</code> to the class <code>holy:Indicator</code> takes criteria such as funding into account. The object property connecting to <code>holy:GeographicMarket</code> defines the location of a certain project.
       </p>
+      <p><img src="./visualizations/Project_Properties.png" alt="schema:Project axiomatised in HOLY" style="max-width: 100%;" /></p>
+      
 
   </div>
   <div id="productLayer">
@@ -677,6 +682,8 @@ table#index th {
       <p>
         <code>holy:Product</code> relates to the classes <code>org:Organization</code>, <code>schema:Project</code>, <code>holy:Indicator</code>, <code>holy:Application</code> and <code>holy:GeographicMarket</code>. The object property <code>holy:isUsedIn</code> to the class Application and its schema identifies use cases. The object property <code>holy:producesProduct</code> shows the producer of a product or technology. The object property <code>holy:relatesToProduct</code> creates a connection to show the participation of a Product or Technology in a certain Project. <code>holy:hasProduct</code> and <code>holy:hasIndicator</code> connect the product class with the main classes <code>holy:Indicator</code> and <code>holy:GeographicMarket</code>.
       </p>
+      <p><img src="./visualizations/Product_Properties.png" alt="holy:Product axiomatised in HOLY"style="max-width: 100%;" /></p>
+      
   </div>
   <div id="appLayer">
     <h3>
@@ -697,6 +704,8 @@ table#index th {
       <p>
         <code>holy:Application</code> aligns with classes of <code>org:Organization</code>, <code>schema:Project</code>, <code>holy:Indicator</code>, <code>holy:Product</code> and <code>holy:GeographicMarket</code>. The object properties <code>holy:usesTechnology</code> and <code>holy:usesProduct</code> identify if an application is using a technology or a product. A connection to <code>schema:Project</code> via <code>holy:relatesToApplication</code> connects applications to ventures. The object property <code>holy:applicationSoldIn</code> to <code>holy:GeographicMarket</code> serves as an addition to <code>holy:hasApplication</code> since some components or technologies might be not available for sale in certain markets.
       </p>
+      <p><img src="./visualizations/Application_Properties.png" alt="holy:Application axiomatised in HOLY" style="max-width: 100%;"" /></p>
+      
   </div>
   <div id="indicatorLayer">
     <h3>
@@ -714,6 +723,8 @@ table#index th {
       <p>
         <code>holy:Indicator</code> has relationships to the classes <code>schema:Project</code>, <code>org:Organization</code>, <code>holy:Product</code>, <code>holy:Application</code> and <code>holy:GeographicMarket</code>. The incoming object property is <code>holy:hasIndicator</code>.
       </p>
+      <p><img src="./visualizations/Indicator_Properties.png" alt="holy:Indicator axiomatised in HOLY" style="max-width: 100%;" /></p>
+      
   </div>
   <div id="geoLayer">
     <h3>
@@ -731,6 +742,8 @@ table#index th {
       <p>
         <code>holy:GeographicMarket</code> relates to the classes <code>schema:Project</code>, <code>holy:Indicator</code>, <code>holy:Application</code>, <code>holy:Product</code> and <code>org:Organization</code> to allow geographic mapping of instances of other classes. <code>holy:GeographicMarket</code> also has an object property linking its two subclasses. The object property <code>dbo:continent</code> allows mapping with DBpedia to query missing geographic information from the DBpedia ontology.
       </p>
+      <p><img src="./visualizations/GeographicMarket_Properties.png" alt="holy:GeographicMarket axiomatised in HOLY" style="max-width: 100%;" /></p>
+      
   </div>
   <div id="annoProp">
     <h3>
@@ -5951,8 +5964,8 @@ table#index th {
         </th>
         <td>
           <span>
-            <a href="http://purl.org/holy/ns#HydrogenProductComponent">Hydrogen Product Component</a> or <a href="http://purl.org/holy/ns#SubstituteProductComponent">Substitute Product Component</a>
-            <!-- <sup class="sup-c" title="OWL/RDFS Class">c</sup> -->
+            <!--<a href="http://purl.org/holy/ns#HydrogenProductComponent">Hydrogen Product Component</a> or <a href="http://purl.org/holy/ns#SubstituteProductComponent">Substitute Product Component</a>
+             <sup class="sup-c" title="OWL/RDFS Class">c</sup> -->
           </span>
         </td>
       </tr>
@@ -5961,7 +5974,7 @@ table#index th {
           Range
         </th>
         <td>
-          <a href="http://purl.org/holy/ns#HydrogenProduct">Hydrogen Product</a> or <a href="http://purl.org/holy/ns#SubstituteProduct">Substitute Product</a>
+          <!--<a href="http://purl.org/holy/ns#HydrogenProduct">Hydrogen Product</a> or <a href="http://purl.org/holy/ns#SubstituteProduct">Substitute Product</a>-->
         </td>
       </tr>
     </table>
@@ -5989,8 +6002,8 @@ table#index th {
         </th>
         <td>
           <span>
-            <a href="http://purl.org/holy/ns#HydrogenProduct">Hydrogen Product</a> or <a href="http://purl.org/holy/ns#SubstituteProduct">Substitute Product</a>
-            <!-- <sup class="sup-c" title="OWL/RDFS Class">c</sup> -->
+            <!--<a href="http://purl.org/holy/ns#HydrogenProduct">Hydrogen Product</a> or <a href="http://purl.org/holy/ns#SubstituteProduct">Substitute Product</a>
+             <sup class="sup-c" title="OWL/RDFS Class">c</sup> -->
           </span>
         </td>
       </tr>
@@ -5999,7 +6012,7 @@ table#index th {
           Range
         </th>
         <td>
-          <a href="http://purl.org/holy/ns#HydrogenProductComponent">Hydrogen Product Component</a> or <a href="http://purl.org/holy/ns#SubstituteProductComponent">Substitute Product Component</a>
+          <!--<a href="http://purl.org/holy/ns#HydrogenProductComponent">Hydrogen Product Component</a> or <a href="http://purl.org/holy/ns#SubstituteProductComponent">Substitute Product Component</a>-->
         </td>
       </tr>
     </table>
@@ -6173,6 +6186,7 @@ table#index th {
             <li><a href="#appLayer">The Application Layer</a></li>
             <li><a href="#indicatorLayer">The Indicator Layer</a></li>
             <li><a href="#geoLayer">The Geographic Market Layer</a></li>
+            <li><a href="#annoProp">Annotation Properties</a></li>
           </ul>
         </li>
         <li>

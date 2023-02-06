@@ -13,11 +13,11 @@ The NLP-based pipeline has as goal the extraction of domain-relevant information
 
 A preliminary dashboard of the Atlant-H project is available on the link below. This Dashboard was built from a Knowledge Graph containing 526 924 triples.
 
-[**Dashboard**]()
+[**Dashboard**](https://tinyurl.com/yr964ycu)
 
 **For more information follow the links below**
 
-[Atlant-H Projekt (de)](https://www.scs.fraunhofer.de/de/referenzen/atlant-H.html)
+[Atlant-H Projekt (German Version)](https://www.scs.fraunhofer.de/de/referenzen/atlant-H.html)
 
-[Atlant-H Project en)]()
+[Atlant-H Project (English Version))](https://storage.inrupt.com/73eab50e-4981-42c9-b320-7b37b2318a36/holy-1%2C0/atlant-h_en.html)
 
