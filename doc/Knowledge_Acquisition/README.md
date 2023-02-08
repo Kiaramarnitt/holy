@@ -21,7 +21,7 @@ Requirements are captured from stakeholders by identifying key areas of interest
 **Information Extraction:** Focused on the acquisition of knowledge (semantic informaiton) necessary for information extraction methods for current and later adaptations for HOLY 
 
 ## Practical Literature review to populate the onotlogy
-Additional research included the identification of definitions, synonymys and examples for enrichment of the ontology. A traceable reference to the source of each definition is available through the property `dct:references`.
+Additional research included the identification of definitions, synonymys and examples for enrichment of the ontology. A traceable reference to the source of each definition is available through the property `dct:references` in th Ontology and in the [Content Selection](./Content_Selection_Priority.xlsx) document.
 
 
 
