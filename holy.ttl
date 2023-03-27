@@ -1625,8 +1625,8 @@ holy:PolymerElectrolyteMembraneFuelCell rdf:type owl:Class ;
                                                       "Polymer Elektrolyt Membrane Fuel Cell"@en ,
                                                       "Polymer Elektrolyte Fuel Cell"@en ;
                                         skos:definition "Polymer Elektrolyt Membrane Fuel Cells use a solid polymer as an electrolyte and porous carbon electrodes containing a platinum or platinum alloy catalyst. They need only hydrogen, oxygen from the air, and water to operate."@en ;
-                                        skos:example "FCmove™"@en ,
-                                                     "FCwave™"@en .
+                                        skos:example "FCmoveTM"@en ,
+                                                     "FCwaveTM"@en .
 
 
 ###  http://purl.org/holy/ns#PowerConditioner
@@ -2364,10 +2364,10 @@ dbr:Alstom_Coradia_iLint rdf:type owl:NamedIndividual ,
                                   holy:PassengerTrain ;
                          holy:isProvidedBy dbr:Alstom ;
                          rdfs:comment "Definition by Alstom at 'https://www.alstom.com/solutions/rolling-stock/coradia-ilinttm-worlds-1st-hydrogen-powered-train'"@en ;
-                         rdfs:label "Coradia iLint™"@en ;
+                         rdfs:label "Coradia iLintTM"@en ;
                          skos:altLabel "Alstom Coradia iLint"@en ,
                                        "Coradia iLint"@en ;
-                         skos:definition "The Coradia iLint™ is the world’s first passenger train powered by a hydrogen fuel cell, which produces electrical power for traction."@en .
+                         skos:definition "The Coradia iLintTM is the world's first passenger train powered by a hydrogen fuel cell, which produces electrical power for traction."@en .
 
 
 ###  http://dbpedia.org/resource/Ambazonia
@@ -2627,7 +2627,7 @@ dbr:Czech_Republic rdf:type owl:NamedIndividual ;
 ###  http://dbpedia.org/resource/Daimler_AG
 dbr:Daimler_AG rdf:type owl:NamedIndividual ,
                         holy:ManufacturingOrganization ;
-               rdfs:comment "Daimler AG (German pronunciation: [ˈdaɪmlɐ ʔaːˌɡeː]; previously named Daimler-Benz and DaimlerChrysler; commonly known and referred to as Mercedes-Benz or simply Daimler) is a German multinational automotive corporation headquartered in Stuttgart, Baden-Württemberg, Germany. It is one of the world's leading car and truck manufacturers. Daimler-Benz was formed with the merger of Benz & Cie. and Daimler Motoren Gesellschaft in 1926."@en ;
+               rdfs:comment "Daimler AG (previously named Daimler-Benz and DaimlerChrysler; commonly known and referred to as Mercedes-Benz or simply Daimler) is a German multinational automotive corporation headquartered in Stuttgart, Baden-Württemberg, Germany. It is one of the world's leading car and truck manufacturers. Daimler-Benz was formed with the merger of Benz & Cie. and Daimler Motoren Gesellschaft in 1926."@en ;
                rdfs:label "Daimler AG"@en .
 
 
@@ -2820,7 +2820,7 @@ dbr:Ford_F-250_Super_Chief rdf:type owl:NamedIndividual ,
 dbr:Ford_Motor_Company rdf:type owl:NamedIndividual ,
                                 holy:ManufacturingOrganization ;
                        holy:providesApplication dbr:Ford_F-250_Super_Chief ;
-                       rdfs:comment "Ford Motor Company (commonly known as Ford) is an American multinational automobile manufacturer headquartered in Dearborn, Michigan, United States. It was founded by Henry Ford and incorporated on June 16, 1903. The company sells automobiles and commercial vehicles under the Ford brand, and luxury cars under its Lincoln luxury brand. Ford also owns Brazilian SUV manufacturer Troller, an 8% stake in Aston Martin of the United Kingdom and a 32% stake in China’s Jiangling Motors. It also has joint-ventures in China (Changan Ford), Taiwan (Ford Lio Ho), Thailand (AutoAlliance Thailand), Turkey (Ford Otosan), and Russia (Ford Sollers). The company is listed on the New York Stock Exchange and is controlled by the Ford family; they have minority ownership but the majority of the voting power."@en ;
+                       rdfs:comment "Ford Motor Company (commonly known as Ford) is an American multinational automobile manufacturer headquartered in Dearborn, Michigan, United States. It was founded by Henry Ford and incorporated on June 16, 1903. The company sells automobiles and commercial vehicles under the Ford brand, and luxury cars under its Lincoln luxury brand. Ford also owns Brazilian SUV manufacturer Troller, an 8% stake in Aston Martin of the United Kingdom and a 32% stake in China's Jiangling Motors. It also has joint-ventures in China (Changan Ford), Taiwan (Ford Lio Ho), Thailand (AutoAlliance Thailand), Turkey (Ford Otosan), and Russia (Ford Sollers). The company is listed on the New York Stock Exchange and is controlled by the Ford family; they have minority ownership but the majority of the voting power."@en ;
                        rdfs:label "Ford Motor Company"@en ;
                        skos:altLabel "FMC1"@en ,
                                      "Ford"@en .
@@ -2847,11 +2847,11 @@ dbr:Fuel-cell_stack rdf:type owl:NamedIndividual ,
 ###  http://dbpedia.org/resource/FuelCell_Energy
 dbr:FuelCell_Energy rdf:type owl:NamedIndividual ,
                              holy:ManufacturingOrganization ;
-                    holy:producesProduct holy:SureSource1500™ ,
-                                         holy:SureSource3000™ ,
-                                         holy:SureSource4000™ ;
+                    holy:producesProduct holy:SureSource1500TM ,
+                                         holy:SureSource3000TM ,
+                                         holy:SureSource4000TM ;
                     ebg:isPubliclyTraded "true"^^xsd:boolean ;
-                    rdfs:comment "FuelCell Energy, Inc. is a publicly traded fuel cell company, headquartered in Danbury, Connecticut. It designs, manufactures, operates and services Direct Fuel Cell power plants (a type of molten carbonate fuel cell). The company's fuel cell technology is an alternative to traditional combustion-based power generation, and is complementary to intermittent sources of energy, such as solar and wind turbines. As one of the biggest publicly traded fuel cell manufacturers in the U.S., the company provides clean energy in over 50 locations all over the world. It operates the world’s largest fuel cell park, Gyeonggi Green Energy Fuel cell park, which is located in South Korea. The park consists of 21 power plants providing 59 Megawatt of electricity plus district heating to a number of customers"@en ;
+                    rdfs:comment "FuelCell Energy, Inc. is a publicly traded fuel cell company, headquartered in Danbury, Connecticut. It designs, manufactures, operates and services Direct Fuel Cell power plants (a type of molten carbonate fuel cell). The company's fuel cell technology is an alternative to traditional combustion-based power generation, and is complementary to intermittent sources of energy, such as solar and wind turbines. As one of the biggest publicly traded fuel cell manufacturers in the U.S., the company provides clean energy in over 50 locations all over the world. It operates the world's largest fuel cell park, Gyeonggi Green Energy Fuel cell park, which is located in South Korea. The park consists of 21 power plants providing 59 Megawatt of electricity plus district heating to a number of customers"@en ;
                     rdfs:label "FuelCell Energy"@en ;
                     skos:altLabel "FCEL"@en ,
                                   "FuelCell Energy, Inc."@en ,
@@ -4207,7 +4207,7 @@ holy:Ceres_Power_Holding rdf:type owl:NamedIndividual ,
                                        "LON:CWR"@en ,
                                        "LSE:CWR.L"@en ,
                                        "OTCMKTS:CPWHF"@en ;
-                         skos:definition "Ceres Power Holdings plc is a United Kingdom-based fuel cell technology and engineering company. The Company is focused on developing power generation and hydrogen technologies. It operates through the solid oxide fuel cell (SOFC) technology segment. Its SteelCell technology can generate power from conventional fuels, such as natural gas and from sustainable fuels, which have biogas, ethanol or hydrogen. The Company’s SteelCell technology is applicable to markets that have combined heat and power (CHP) for commercial and residential buildings. It also focuses to embed its technology in a range of market energy products for the commercial, residential and transportation markets. The Company’s wholly owned subsidiary is Ceres Power Intermediate Holdings Ltd, which is engaged in the provision of overseas license and royalty services."@en .
+                         skos:definition "Ceres Power Holdings plc is a United Kingdom-based fuel cell technology and engineering company. The Company is focused on developing power generation and hydrogen technologies. It operates through the solid oxide fuel cell (SOFC) technology segment. Its SteelCell technology can generate power from conventional fuels, such as natural gas and from sustainable fuels, which have biogas, ethanol or hydrogen. The Company's SteelCell technology is applicable to markets that have combined heat and power (CHP) for commercial and residential buildings. It also focuses to embed its technology in a range of market energy products for the commercial, residential and transportation markets. The Company's wholly owned subsidiary is Ceres Power Intermediate Holdings Ltd, which is engaged in the provision of overseas license and royalty services."@en .
 
 
 ###  http://purl.org/holy/ns#Chad
@@ -4673,7 +4673,7 @@ holy:IonicCompressor50 rdf:type owl:NamedIndividual ,
                        rdfs:label "Ionic Compressor 50"@en ;
                        skos:altLabel "IC family"@en ,
                                      "IC model"@en ;
-                       skos:definition "Linde’s ground-breaking ionic compression technology leads the way to the next generation of safe, fast and efficient hydrogen fuelling. The ionic compressor 50 is a high-performance, easy-to-maintain solution with a listed design. It allows for quick, safe, highly efficient and economical fuelling of hydrogen vehicles at 25MPa and 35 MPa. This is achieved by an innovative compression system, the ionic compressor, where, instead of a mechanical piston, a column of ionic fluid is in direct contact with the gaseous hydrogen. This allows for the continuous high-performance, fast fuelling of hydrogen vehicles. It is designed to fuel 25-MPa and 35-MPa vehicles with the highest filling levels while considerably reducing operating costs. It is used for gaseous hydrogen."@en .
+                       skos:definition "Linde's ground-breaking ionic compression technology leads the way to the next generation of safe, fast and efficient hydrogen fuelling. The ionic compressor 50 is a high-performance, easy-to-maintain solution with a listed design. It allows for quick, safe, highly efficient and economical fuelling of hydrogen vehicles at 25MPa and 35 MPa. This is achieved by an innovative compression system, the ionic compressor, where, instead of a mechanical piston, a column of ionic fluid is in direct contact with the gaseous hydrogen. This allows for the continuous high-performance, fast fuelling of hydrogen vehicles. It is designed to fuel 25-MPa and 35-MPa vehicles with the highest filling levels while considerably reducing operating costs. It is used for gaseous hydrogen."@en .
 
 
 ###  http://purl.org/holy/ns#Iran
@@ -5367,29 +5367,29 @@ holy:Sudan rdf:type owl:NamedIndividual ,
            rdfs:label "Sudan"@en .
 
 
-###  http://purl.org/holy/ns#SureSource1500™
-holy:SureSource1500™ rdf:type owl:NamedIndividual ,
+###  http://purl.org/holy/ns#SureSource1500TM
+holy:SureSource1500TM rdf:type owl:NamedIndividual ,
                               holy:MoltenCarbonateFuelCell ;
                      rdfs:comment "Definition by FuelCell Inc. at 'https://www.fuelcellenergy.com/products/'"@en ;
-                     rdfs:label "SureSource 1500™"@en ;
+                     rdfs:label "SureSource 1500TM"@en ;
                      skos:altLabel "Sure Source 1500"@en ;
                      skos:definition "This solution is ideal for on-site power generation for large installations requiring continuous power and value high-quality heat for facility heating and/or absorption chilling. The system is suitable for a wide range of applications, including wastewater treatment plants, manufacturing facilities, hospitals and universities. Output: 1.4 megawatts."@en .
 
 
-###  http://purl.org/holy/ns#SureSource3000™
-holy:SureSource3000™ rdf:type owl:NamedIndividual ,
+###  http://purl.org/holy/ns#SureSource3000TM
+holy:SureSource3000TM rdf:type owl:NamedIndividual ,
                               holy:MoltenCarbonateFuelCell ;
                      rdfs:comment "Definition by FuelCell Inc. at 'https://www.fuelcellenergy.com/products/'"@en ;
-                     rdfs:label "SureSource 3000™"@en ;
+                     rdfs:label "SureSource 300TM"@en ;
                      skos:altLabel "Sure Source 3000"@en ;
                      skos:definition "Comprised of two 1.4 megawatt (MW) modules, the SureSource 3000 generates 2.8 MW of ultra-clean power. Similar to the SureSource 1500, the system is well-suited for on-site applications and caters to customers with an even greater power load requirement. Ideal applications include large universities, manufacturing facilities, wastewater treatment plants or for multi-plant fuel cell parks to support the electric grid. Output: 2.8 megawatts"@en .
 
 
-###  http://purl.org/holy/ns#SureSource4000™
-holy:SureSource4000™ rdf:type owl:NamedIndividual ,
+###  http://purl.org/holy/ns#SureSource4000TM
+holy:SureSource4000TM rdf:type owl:NamedIndividual ,
                               holy:MoltenCarbonateFuelCell ;
                      rdfs:comment "Definition by FuelCell Inc. at 'https://www.fuelcellenergy.com/products/'"@en ;
-                     rdfs:label "SureSource 4000™"@en ;
+                     rdfs:label "SureSource 4000TM"@en ;
                      skos:altLabel "Sure Source 4000"@en ;
                      skos:definition "The SureSource 4000 is the largest in the SureSource power plant fleet and generates 3.7 megawatts (MW) of ultra-clean power with an industry-leading electrical efficiency of approximately 60%. This enhanced-efficiency fuel cell system is designed for utilities, large industrial users, data centers and other customers focused on clean and affordable power driven by the benefits and economics of high system electrical efficiency. Output: 3.7 megawatts"@en .
 
@@ -5621,7 +5621,7 @@ holy:ZEROe rdf:type owl:NamedIndividual ,
            m4i:startOfProject "2020"@en ;
            rdfs:comment "Source: https://www.airbus.com/en/innovation/zero-emission/hydrogen/zeroe"@en ;
            rdfs:label "ZEROe"@en ;
-           skos:definition """An project from Airbus to develop the world’s first zero-emission commercial aircraft by 2035. It is based on hydrogen propulsion. Airbus is working on three aircraft prototypes.
+           skos:definition """An project from Airbus to develop the world's first zero-emission commercial aircraft by 2035. It is based on hydrogen propulsion. Airbus is working on three aircraft prototypes.
 
 All three ZEROe concepts are hybrid-hydrogen aircraft. They are powered by hydrogen combustion through modified gas turbine engines. Liquid hydrogen is used as fuel for combustion with oxygen.
 
