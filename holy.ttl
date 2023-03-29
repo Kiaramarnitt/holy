@@ -1,84 +1,57 @@
-@prefix cc: <https://creativecommons.org/ns#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
-@prefix dbc: <http://dbpedia.org/page/Category:> .
-@prefix dbo: <http://dbpedia.org/ontology/> .
-@prefix dbr: <http://dbpedia.org/resource/> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix ebg: <http://data.businessgraph.io/ontology#> .
-@prefix m4i: <http://w3id.org/nfdi4ing/metadata4ing#> .
-@prefix org: <http://www.w3.org/ns/org#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rov: <http://www.w3.org/ns/regorg#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix holy: <http://purl.org/holy/ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix vann: <http://purl.org/vocab/vann/> .
-@prefix schema: <http://schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> . # Web Ontology Language
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . # The RDF Concepts Vocabulary (RDF)
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .# Resource Description Framework Schema
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . # XSML Schema
+@prefix cc: <https://creativecommons.org/ns#> . # Creative Commons Rights Expression Language
+@prefix vann: <http://purl.org/vocab/vann/> . # A vocabulary for annotating vocabulary descriptions
+@prefix bibo: <http://purl.org/ontology/bibo/> . # The Bibliographic Ontology
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> . # Simple Knowledge Organization System
+@prefix schema: <http://schema.org/> . # Schema.org
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . # Friend of a Friend
+@prefix dc: <http://purl.org/dc/elements/1.1/> . # DCMI Metadata Terms
+@prefix dct: <http://purl.org/dc/terms/> . # DCMI Metadata Terms
+@prefix dbo: <http://dbpedia.org/ontology/> . # DBpedia Ontology
+@prefix dbc: <http://dbpedia.org/page/Category:> . # DBpedia Ontology
+@prefix dbr: <http://dbpedia.org/resource/> . # DBpedia Ontology
+@prefix org: <http://www.w3.org/ns/org#> . # The Organization Ontology
+@prefix ebg: <http://data.businessgraph.io/ontology#> . # The euBusinessGraph Ontology
+@prefix rov: <http://www.w3.org/ns/regorg#> . # Registered Organization Vocabulary
+@prefix m4i: <http://w3id.org/nfdi4ing/metadata4ing#> . # Metadata4Ing
+@prefix holy: <http://purl.org/holy/ns#> . # Hydrogen Ontology
 @base <http://purl.org/holy/ns#> .
 
 <http://purl.org/holy/ns#> rdf:type owl:Ontology ;
                             dct:creator [ schema:affiliation [ foaf:homepage <https://www.th-nuernberg.de/einrichtungen-gesamt/fraunhofer-forschungsgruppen/future-engineering/> ;
-                            foaf:name "Future Engineering Research Group"
-                            ] ;
-                            rdfs:seeAlso <https://www.th-nuernberg.de/person/ascencion-arevalo-kiara-marnitt/> ;
-                            foaf:homepage <https://orcid.org/0000-0002-4158-9478> ;
-                            foaf:name "Kiara Marnitt Ascencion Arevalo"
-                            ] ,
-                            [ schema:affiliation [ foaf:homepage <https://www.th-nuernberg.de> ;
-                                                  foaf:name "Technische Hochschule Nürnberg Georg Simon Ohm"
-                                                ] ;
-                              foaf:homepage <https://orcid.org/0000-0001-9312-208X> ;
-                              foaf:name "Christoph Neunsinger"
-                            ] ;
-dct:description "This is the Hydrogen Ontology (HOLY). HOLY is a domain ontology for describing the complex structure of hydrogen-based markets. HOLY contributes to the systemic modeling of the hydrogen domain with a focus on its value chain. Hence, it provides a foundation for retrieval, storage, and delivery of market insights.  "@en ;
-dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-dct:publisher [ foaf:homepage <https://www.th-nuernberg.de> ;
-   foaf:name "Technische Hochschule Nürnberg Georg Simon Ohm"
- ] ;
-dct:title "Hydrogen Ontology"@en ;
-vann:preferredNamespacePrefix "holy" ;
-vann:preferredNamespaceURI "http://purl.org/holy/ns#" ;
-rdfs:label "Hydrogen Ontology"@en ;
-owl:versionInfo 1.0 ;
-cc:license <https://creativecommons.org/licenses/by-sa/4.0/> .
+                              foaf:name "Future Engineering Research Group"
+                              ] ;
+                              rdfs:seeAlso <https://www.th-nuernberg.de/person/ascencion-arevalo-kiara-marnitt/> ;
+                              foaf:homepage <https://orcid.org/0000-0002-4158-9478> ;
+                              foaf:name "Kiara Marnitt Ascencion Arevalo"
+                              ] ,
+                              [ schema:affiliation [ foaf:homepage <https://www.th-nuernberg.de> ;
+                                                    foaf:name "Technische Hochschule Nürnberg Georg Simon Ohm"
+                                                  ] ;
+                                foaf:homepage <https://orcid.org/0000-0001-9312-208X> ;
+                                foaf:name "Christoph Neunsinger"
+                              ] ;
+                            dct:description "This is the Hydrogen Ontology (HOLY). HOLY is a domain ontology for describing the complex structure of hydrogen-based markets. HOLY contributes to the systemic modeling of the hydrogen domain with a focus on its value chain. Hence, it provides a foundation for retrieval, storage, and delivery of market insights.  "@en ;
+                            dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+                            dct:publisher [ foaf:homepage <https://www.th-nuernberg.de> ;
+                              foaf:name "Technische Hochschule Nürnberg Georg Simon Ohm"
+                              ] ;
+                            dct:title "Hydrogen Ontology"@en ;
+                            vann:preferredNamespacePrefix "holy" ;
+                            vann:preferredNamespaceURI "http://purl.org/holy/ns#" ;
+                            owl:versionInfo 1.0 ;
+                            owl:versionIRI <http://purl.org/holy/ns#>; #TODO: include new version
+                            foaf:depiction <https://purl.archive.org/purl/holy/schema_diagram>;
+                            bibo:doi <https://doi.org/10.5281/zenodo.7447958>;
+                            dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+                            cc:license <https://creativecommons.org/licenses/by-sa/4.0/> .
 
 #################################################################
 #    Annotation properties
 #################################################################
-
-###  http://purl.org/dc/elements/1.1/creator
-dc:creator rdf:type owl:AnnotationProperty ;
-           skos:definition "Refers to the creator/author of the Ontology."@en ;
-           rdfs:subPropertyOf owl:versionInfo .
-
-
-###  http://purl.org/dc/elements/1.1/description
-dc:description rdf:type owl:AnnotationProperty ;
-               skos:definition "Description of the Ontology."@en ;
-               rdfs:subPropertyOf owl:versionInfo .
-
-
-###  http://purl.org/dc/elements/1.1/publisher
-dc:publisher rdf:type owl:AnnotationProperty ;
-             skos:definition "Refers to the publisher of the Ontology."@en ;
-             rdfs:subPropertyOf owl:versionInfo .
-
-
-###  http://purl.org/dc/elements/1.1/right
-dc:right rdf:type owl:AnnotationProperty ;
-         rdfs:comment "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights."@en ;
-         rdfs:subPropertyOf owl:versionInfo .
-
-
-###  http://purl.org/dc/elements/1.1/title
-dc:title rdf:type owl:AnnotationProperty ;
-         skos:definition "Describes the titel of the Ontology."@en ;
-         rdfs:subPropertyOf owl:versionInfo .
-
 
 ###  http://purl.org/dc/terms/creator
 dct:creator rdf:type owl:AnnotationProperty .
@@ -127,13 +100,11 @@ rdfs:label rdf:type owl:AnnotationProperty ;
 
 
 ###  http://www.w3.org/2000/01/rdf-schema#seeAlso
-rdfs:seeAlso rdf:type owl:AnnotationProperty ;
-             rdfs:comment "not relevant for Ontology."@en .
+rdfs:seeAlso rdf:type owl:AnnotationProperty.
 
 
 ###  http://www.w3.org/2002/07/owl#sameAs
-owl:sameAs rdf:type owl:AnnotationProperty ;
-           rdfs:comment "not actively used in the Ontology. Instances are using \"owl:sameas\" automatically if referred to similar Instances."@en .
+owl:sameAs rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2002/07/owl#versionInfo
@@ -141,8 +112,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#altLabel
-skos:altLabel rdf:type owl:AnnotationProperty ;
-              skos:definition "Keyword of an instance within a class. Used for pipeline extraction."@en .
+skos:altLabel rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#definition
@@ -2323,7 +2293,7 @@ dbr:Africa rdf:type owl:NamedIndividual ;
 dbr:Airbus rdf:type owl:NamedIndividual ,
                     holy:ManufacturingOrganization ;
            m4i:inProject holy:ZEROe ;
-           rdfs:comment "Airbus SE (/ˈɛərbʌs/; French: [ɛʁbys]; German: [ˈɛːɐ̯bʊs]; Spanish: [ˈejɾbus]) is a European multinational aerospace corporation. Airbus designs, manufactures and sells civil and military aerospace products worldwide and manufactures aircraft in Europe and various countries outside Europe. The company has three divisions: Commercial Aircraft (Airbus S.A.S.), Defence and Space, and Helicopters, the third being the largest in its industry in terms of revenues and turbine helicopter deliveries."@en ;
+           rdfs:comment "Airbus SE is a European multinational aerospace corporation. Airbus designs, manufactures and sells civil and military aerospace products worldwide and manufactures aircraft in Europe and various countries outside Europe. The company has three divisions: Commercial Aircraft (Airbus S.A.S.), Defence and Space, and Helicopters, the third being the largest in its industry in terms of revenues and turbine helicopter deliveries."@en ;
            rdfs:label "Airbus"@en .
 
 
@@ -2363,7 +2333,7 @@ dbr:Alstom_Coradia_Lint rdf:type owl:NamedIndividual ,
 dbr:Alstom_Coradia_iLint rdf:type owl:NamedIndividual ,
                                   holy:PassengerTrain ;
                          holy:isProvidedBy dbr:Alstom ;
-                         rdfs:comment "Definition by Alstom at 'https://www.alstom.com/solutions/rolling-stock/coradia-ilinttm-worlds-1st-hydrogen-powered-train'"@en ;
+                         dct:references <https://www.alstom.com/solutions/rolling-stock/coradia-ilinttm-worlds-1st-hydrogen-powered-train> ;
                          rdfs:label "Coradia iLintTM"@en ;
                          skos:altLabel "Alstom Coradia iLint"@en ,
                                        "Coradia iLint"@en ;
@@ -3877,7 +3847,7 @@ dbr:combined_heat_and_power_station rdf:type owl:NamedIndividual ,
 <http://fraunhofer.de/dataKoreaWesternPowerCompanyLimited> rdf:type owl:NamedIndividual ,
                                                                     holy:EnergySectorOrganization ;
                                                            holy:participatesIn <http://fraunhofer.de/dataRepublicofKorea> ;
-                                                           rdfs:comment "Source: https://www.iwest.co.kr/eng/835/subview.do"@en ;
+                                                           dct:references <https://www.iwest.co.kr/eng/835/subview.do>;
                                                            rdfs:label "Korea Western Power Company Limited"@en ;
                                                            skos:altLabel "KOWEPO"@en ;
                                                            skos:definition "Korea Western Power Co., Ltd.(KOWEPO), a leading supplier and innovator in the 21st century Korean power industry, started its power business in April 2001. KOWEPO takes up approximately 8.7% of the national generating capacity mostly comprised of thermal and combined cycle. KOWEPO was initiated in separation from Korea Electric Power Corporation under the Korea Power Industry Restructuring Act. KOWEPO is now in the process of deregulation and privatization process. KOWEPO has about 2,350 employees and its head office is located in Taean-gun, Chungcheongnam-do, Republic of Korea."@en .
@@ -3893,7 +3863,7 @@ dbr:combined_heat_and_power_station rdf:type owl:NamedIndividual ,
 ###  http://fraunhofer.de/dataSmartFarmFuelCellPowerGenerationProject
 <http://fraunhofer.de/dataSmartFarmFuelCellPowerGenerationProject> rdf:type owl:NamedIndividual ,
                                                                             holy:CircularEconomyProject ;
-                                                                   rdfs:comment "Source: https://fuelcellsworks.com/news/korea/korea-western-power-promotes-smart-farm-fuel-cell-power-generation-project/"@en ;
+                                                                   dct:references <https://fuelcellsworks.com/news/korea/korea-western-power-promotes-smart-farm-fuel-cell-power-generation-project/> ;
                                                                    rdfs:label "Smart Farm Fuel Cell Power Generation Project"@en ;
                                                                    skos:altLabel "Sangju Smart Farm Innovation Valley"@en .
 
@@ -4152,7 +4122,7 @@ holy:CUTE rdf:type owl:NamedIndividual ,
                           holy:United_Kingdom ;
           holy:relatesToApplication dbr:Mercedes-Benz_Cito ;
           m4i:projectParticipant dbr:EvoBus ;
-          rdfs:comment "Source: https://www.fuelcellbuses.eu/wiki/history-fuel-cell-electric-buses/cute-clean-urban-transport-europe-2001-2006"@en ;
+          dct:references <https://www.fuelcellbuses.eu/wiki/history-fuel-cell-electric-buses/cute-clean-urban-transport-europe-2001-2006> ;
           rdfs:label "CUTE"@en ;
           skos:altLabel "Clean Urban Transport for Europe"@en ;
           skos:definition """The Clean urban Transport for Europe (CUTE) was a European project which saw the deployment and testing of 27 Citaro fuel cell buses – three buses in each of nine cities in Europe (Hamburg, London, Barcelona, Stockholm, Porto, Stuttgart, Amsterdam, Luxembourg, and Madrid).
@@ -4337,7 +4307,7 @@ holy:ECTOS rdf:type owl:NamedIndividual ,
            holy:hasProject holy:Iceland ;
            holy:relatesToApplication dbr:Fuel_cell_bus ;
            m4i:projectParticipant dbr:Icelandic_New_Energy ;
-           rdfs:comment "Source: https://en.wikipedia.org/wiki/Fuel_Cell_Bus_Club#CUTE"@en ;
+           dct:references <https://en.wikipedia.org/wiki/Fuel_Cell_Bus_Club#CUTE>;
            rdfs:label "ECTOS"@en ;
            skos:altLabel "Ecological City Transport System"@en ;
            skos:definition "ECTOS stands for Ecological City Transport System.[15][16] Icelandic New Energy was responsible for this project, the aim of which was to demonstrate \"state-of-the-art\" hydrogen technology by running part of the public transport system with fuel cell buses in the city Reykjavík, the capital of Iceland. Hydrogen was produced from domestic geothermal and hydro-powered energy sources by electrolysis. The project ran from 2001-2005.[8]"@en .
@@ -4416,7 +4386,7 @@ holy:Europe rdf:type owl:NamedIndividual ,
 ###  http://purl.org/holy/ns#EuropeanCleanHydrogenAlliance
 holy:EuropeanCleanHydrogenAlliance rdf:type owl:NamedIndividual ,
                                             schema:Project ;
-                                   rdfs:comment "https://ec.europa.eu/growth/industry/strategy/industrial-alliances/european-clean-hydrogen-alliance_en"@en ;
+                                   dct:references <https://ec.europa.eu/growth/industry/strategy/industrial-alliances/european-clean-hydrogen-alliance_en> ;
                                    rdfs:label "European Clean Hydrogen Alliance"@en ;
                                    skos:definition """The European Clean Hydrogen Alliance supports the large-scale deployment of clean hydrogen technologies by 2030 by bringing together renewable and low-carbon hydrogen production, demand in industry, mobility and other sectors, and hydrogen transmission and distribution. It aims to promote investments and stimulate the roll-out of clean hydrogen production and use. Set up in July 2020, the European Clean Hydrogen Alliance is part of EU efforts to ensure industrial leadership and accelerate the decarbonisation of industry in line with its climate change objectives.
 
@@ -4638,7 +4608,7 @@ holy:Hyzon_hybrid_bi-polar_plate_technology rdf:type owl:NamedIndividual ,
                                             holy:isUsedIn holy:HyzonClass8 ,
                                                           holy:HyzonHymaxSeries ;
                                             holy:producesProduct dbr:Hyzon_Motors ;
-                                            rdfs:comment "see 'https://www.hyzonmotors.com/innovation'"@en ;
+                                            dct:references <https://www.hyzonmotors.com/innovation> ;
                                             rdfs:label "Hyzon's hybrid bi-polar plate technology"@en ;
                                             skos:altLabel "Hyzon bi-polar plate"@en ;
                                             skos:definition "A proprietary technology of Hyzon Motors for its PEM fuel cells."@en .
@@ -4669,7 +4639,7 @@ holy:Indonesia rdf:type owl:NamedIndividual ,
 ###  http://purl.org/holy/ns#IonicCompressor50
 holy:IonicCompressor50 rdf:type owl:NamedIndividual ,
                                 holy:Storage ;
-                       rdfs:comment "Description from Linde product brochure at 'https://www.linde-engineering.com/en/images/DS_IC%2050_tcm19-523715.pdf'"@en ;
+                       dct:references <https://www.linde-engineering.com/en/images/DS_IC%2050_tcm19-523715.pdf> ; 
                        rdfs:label "Ionic Compressor 50"@en ;
                        skos:altLabel "IC family"@en ,
                                      "IC model"@en ;
@@ -4966,7 +4936,7 @@ holy:Namibia rdf:type owl:NamedIndividual ,
 holy:NationalInnovationProgrammeHydrogenandFuelCellTechnology rdf:type owl:NamedIndividual ,
                                                                        schema:Project ;
                                                               m4i:projectParticipant dbr:Federal_Ministry_of_Transport_and_Digital_Infrastructure ;
-                                                              rdfs:comment "Definition at 'https://www.ptj.de/en/project-funding/nip'"@en ;
+                                                              dct:references <https://www.ptj.de/en/project-funding/nip> ;
                                                               rdfs:label "National Innovation Programme Hydrogen and Fuel Cell Technology"@en ;
                                                               skos:altLabel "NIP"@en ;
                                                               skos:definition "The National Innovation Programme Hydrogen and Fuel Cell Technology (NIP) in an interdepartmental programme for research and development funding that has been in place since 2007. The Federal Ministry of Transport and Digital Infrastructure (BMVI) made a significant contribution of 500 million euro between 2007 and 2016. Thus far, the aim of the NIP has been to prepare the market for these types of technologies in accordance with existing research, development and innovation (R&D&I) directives. The long-term, ten-year programme therefore contributed to the emergence of an internationally competitive industrial sector based on stable framework conditions and funding opportunities in Germany. Now that the launch of fuel cell products is in the early stages and a hydrogen infrastructure for transport is being developed, the NIP needs to be realigned in its second phase. The objective is to make hydrogen and fuel cell technology competitive in the transport sector and the energy market by the middle of the next decade. This can only be achieved with a continued joint effort of all stakeholders."@en .
@@ -5044,7 +5014,7 @@ holy:North_Macedonia rdf:type owl:NamedIndividual ,
 ###  http://purl.org/holy/ns#NorthernPeripheryandArcticProgramme
 holy:NorthernPeripheryandArcticProgramme rdf:type owl:NamedIndividual ,
                                                   org:Organization ;
-                                         rdfs:comment "Source: https://www.interreg-npa.eu/about/programme-in-brief/"@en ;
+                                         dct:references <https://www.interreg-npa.eu/about/programme-in-brief/> ;
                                          rdfs:label "Northern Periphery and Arctic Programme"@en ;
                                          skos:definition "The Northern Periphery and Arctic 2014-2020 forms a cooperation between 9 programme partner countries. The NPA 2014-2020 is part of Interreg, supported by the European Regional Development Fund (ERDF) and ERDF equivalent funding from non EU partner countries. Despite geographical differences, the large programme area shares a number of joint challenges and opportunities that can best be overcome and realised by transnational cooperation."@en .
 
@@ -5370,7 +5340,7 @@ holy:Sudan rdf:type owl:NamedIndividual ,
 ###  http://purl.org/holy/ns#SureSource1500TM
 holy:SureSource1500TM rdf:type owl:NamedIndividual ,
                               holy:MoltenCarbonateFuelCell ;
-                     rdfs:comment "Definition by FuelCell Inc. at 'https://www.fuelcellenergy.com/products/'"@en ;
+                     dct:references <https://www.fuelcellenergy.com/products/> ;
                      rdfs:label "SureSource 1500TM"@en ;
                      skos:altLabel "Sure Source 1500"@en ;
                      skos:definition "This solution is ideal for on-site power generation for large installations requiring continuous power and value high-quality heat for facility heating and/or absorption chilling. The system is suitable for a wide range of applications, including wastewater treatment plants, manufacturing facilities, hospitals and universities. Output: 1.4 megawatts."@en .
@@ -5379,7 +5349,7 @@ holy:SureSource1500TM rdf:type owl:NamedIndividual ,
 ###  http://purl.org/holy/ns#SureSource3000TM
 holy:SureSource3000TM rdf:type owl:NamedIndividual ,
                               holy:MoltenCarbonateFuelCell ;
-                     rdfs:comment "Definition by FuelCell Inc. at 'https://www.fuelcellenergy.com/products/'"@en ;
+                     dct:references <https://www.fuelcellenergy.com/products/>;
                      rdfs:label "SureSource 300TM"@en ;
                      skos:altLabel "Sure Source 3000"@en ;
                      skos:definition "Comprised of two 1.4 megawatt (MW) modules, the SureSource 3000 generates 2.8 MW of ultra-clean power. Similar to the SureSource 1500, the system is well-suited for on-site applications and caters to customers with an even greater power load requirement. Ideal applications include large universities, manufacturing facilities, wastewater treatment plants or for multi-plant fuel cell parks to support the electric grid. Output: 2.8 megawatts"@en .
@@ -5388,7 +5358,7 @@ holy:SureSource3000TM rdf:type owl:NamedIndividual ,
 ###  http://purl.org/holy/ns#SureSource4000TM
 holy:SureSource4000TM rdf:type owl:NamedIndividual ,
                               holy:MoltenCarbonateFuelCell ;
-                     rdfs:comment "Definition by FuelCell Inc. at 'https://www.fuelcellenergy.com/products/'"@en ;
+                     dct:references <https://www.fuelcellenergy.com/products/> ;
                      rdfs:label "SureSource 4000TM"@en ;
                      skos:altLabel "Sure Source 4000"@en ;
                      skos:definition "The SureSource 4000 is the largest in the SureSource power plant fleet and generates 3.7 megawatts (MW) of ultra-clean power with an industry-leading electrical efficiency of approximately 60%. This enhanced-efficiency fuel cell system is designed for utilities, large industrial users, data centers and other customers focused on clean and affordable power driven by the benefits and economics of high system electrical efficiency. Output: 3.7 megawatts"@en .
@@ -5619,7 +5589,7 @@ holy:ZEROe rdf:type owl:NamedIndividual ,
            m4i:projectParticipant dbr:Airbus ;
            m4i:endOfProject "2035"@en ;
            m4i:startOfProject "2020"@en ;
-           rdfs:comment "Source: https://www.airbus.com/en/innovation/zero-emission/hydrogen/zeroe"@en ;
+           dct:references <https://www.airbus.com/en/innovation/zero-emission/hydrogen/zeroe> ;
            rdfs:label "ZEROe"@en ;
            skos:definition """An project from Airbus to develop the world's first zero-emission commercial aircraft by 2035. It is based on hydrogen propulsion. Airbus is working on three aircraft prototypes.
 
@@ -5636,7 +5606,7 @@ holy:ZEROeBlendedWingBody rdf:type owl:NamedIndividual ,
                           holy:relatesToApplication holy:ZEROe ;
                           holy:usesProduct dbr:Hydrogen_Tank ,
                                            dbr:Hydrogen_engine ;
-                          rdfs:comment "Source: https://www.airbus.com/en/innovation/zero-emission/hydrogen/zeroe"@en ;
+                          dct:references <https://www.airbus.com/en/innovation/zero-emission/hydrogen/zeroe> ;
                           rdfs:label "ZEROe Blended-Wing Body"@en ;
                           skos:definition """Concept passenger aircraft. The exceptionally wide interior opens up multiple options for hydrogen storage and distribution. Here, the liquid hydrogen storage tanks are stored underneath the wings. Two hybrid-hydrogen turbofan engines provide thrust.
 
@@ -5648,7 +5618,7 @@ Passengers: <200"""@en .
 holy:ZEROeTurbofan rdf:type owl:NamedIndividual ,
                             holy:Aircraft ;
                    holy:relatesToApplication holy:ZEROe ;
-                   rdfs:comment "Source: https://www.airbus.com/en/innovation/zero-emission/hydrogen/zeroe"@en ;
+                   dct:references <https://www.airbus.com/en/innovation/zero-emission/hydrogen/zeroe> ;
                    rdfs:label "ZEROe Turbofan"@en ;
                    skos:definition """Passenger Aircraft running on two hybrid-hydrogen turbofan engines providing thrust. The liquid hydrogen storage and distribution system is located behind the rear pressure bulkhead.
 
@@ -5660,7 +5630,7 @@ Passengers: <100"""@en .
 holy:ZEROeTurboprop rdf:type owl:NamedIndividual ,
                              holy:Aircraft ;
                     holy:relatesToApplication holy:ZEROe ;
-                    rdfs:comment "Source: https://www.airbus.com/en/innovation/zero-emission/hydrogen/zeroe"@en ;
+                    dct:references <https://www.airbus.com/en/innovation/zero-emission/hydrogen/zeroe> ;
                     rdfs:label "ZEROe Turboprop"@en ;
                     skos:definition """Passenger aircraft with two hybrid-hydrogen turboprop engines, which drive eight-bladed propellers, providing thrust. The liquid hydrogen storage and distribution system is located behind the rear pressure bulkhead.
 
@@ -5686,14 +5656,13 @@ holy:Zimbabwe rdf:type owl:NamedIndividual ,
 <http://purl.org/holy/ns#Georgia_(country)> rdf:type owl:NamedIndividual ,
                                                      schema:Country ;
                                             dbo:continent holy:Europe ;
-                                            rdfs:label "Georgia (country)"@en .
+                                            rdfs:label "Georgia"@en .
 
 
 ###  http://purl.org/holy/ns#TheHydrogenUtilization&GreenEnergyProject
 <http://purl.org/holy/ns#TheHydrogenUtilization&GreenEnergyProject> rdf:type owl:NamedIndividual ,
                                                                              holy:PurposeBasedProject ;
-                                                                    m4i:projectParticipant dbr:Icelandic_New_Energy ;
-                                                                    rdfs:comment "Source: https://newenergy.is/en/portfolio/huge/"@en ;
+                                                                    dct:references <https://newenergy.is/en/portfolio/huge/> ;
                                                                     rdfs:label "The Hydrogen Utilization & Green Energy project"@en ;
-                                                                    skos:altLabel "(HUGE)"@en ;
+                                                                    skos:altLabel "HUGE"@en ;
                                                                     skos:definition "The Hydrogen Utilization & Green Energy (HUGE) project is a 1.4 million 3 year project, which started on the 1st of June 2019. The project is funded by the Northern Periphery and Arctic (NPA) Programme, under priority Axis 3 – Energy Efficiency & Renewable Energy. HUGE ambition is to raise awareness of the use of green hydrogen as a viable energy vector for remote and rural communities in housing, transport, and industry. For further details, má finna á vefsíðu þess."@en .

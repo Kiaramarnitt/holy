@@ -5,9 +5,9 @@ import pandas as pd
 import re
 
 
-HOLY_TTL_PATH = './holy.ttl'
-SAMPLE_HTML_PATH = './holy.html'
-GEN_HTML_PATH = './holy_generated.html'
+HOLY_TTL_PATH = './holy.ttl' 
+SAMPLE_HTML_PATH = './documentation/resources/template.html'
+GEN_HTML_PATH = './holy.html'
 
 # initialise
 od = OntDoc(ontology=HOLY_TTL_PATH)
