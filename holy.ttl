@@ -18,6 +18,7 @@
 @prefix rov: <http://www.w3.org/ns/regorg#> . # Registered Organization Vocabulary
 @prefix m4i: <http://w3id.org/nfdi4ing/metadata4ing#> . # Metadata4Ing
 @prefix holy: <http://purl.org/holy/ns#> . # Hydrogen Ontology
+@prefix mod: <https://w3id.org/mod#> . # MODP: Metadata for Ontology Description and publication Profile
 @base <http://purl.org/holy/ns#> .
 
 <http://purl.org/holy/ns#> rdf:type owl:Ontology ;
@@ -40,14 +41,23 @@
                               foaf:name "Technische Hochschule Nürnberg Georg Simon Ohm"
                               ] ;
                             dct:title "Hydrogen Ontology"@en ;
+                            mod:acronym "HOLY";
                             vann:preferredNamespacePrefix "holy" ;
                             vann:preferredNamespaceURI "http://purl.org/holy/ns#" ;
                             owl:versionInfo 1.0 ;
-                            owl:versionIRI <http://purl.org/holy/ns#>; #TODO: include new version
-                            foaf:depiction <https://purl.archive.org/purl/holy/schema_diagram>;
+                            owl:ontologyIRI <http://purl.org/holy/ns#>;
+                            owl:versionIRI <http://purl.org/holy/ns#>; #TODO: include new version and 
+                            # owl:priodVersion ;
+                            # owl:import ;
+                            dct:created "2022"^^xsd:gYear;
+                            dct:issued "2022-12-16"^^xsd:date;
+                            mod:hasSyntax  <http://www.w3.org/ns/formats/Turtle> ;
+                            mod:competencyQuestion <http://purl.org/holy/repository/cq>;
+                            foaf:depiction <http://purl.org/holy/schema_diagram>;
                             bibo:doi <https://doi.org/10.5281/zenodo.7447958>;
                             dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
                             cc:license <https://creativecommons.org/licenses/by-sa/4.0/> .
+
 
 #################################################################
 #    Annotation properties
