@@ -1,67 +1,68 @@
-@prefix owl: <http://www.w3.org/2002/07/owl#> . # Web Ontology Language
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . # The RDF Concepts Vocabulary (RDF)
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .# Resource Description Framework Schema
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . # XSML Schema
-@prefix cc: <https://creativecommons.org/ns#> . # Creative Commons Rights Expression Language
-@prefix vann: <http://purl.org/vocab/vann/> . # A vocabulary for annotating vocabulary descriptions
-@prefix bibo: <http://purl.org/ontology/bibo/> . # The Bibliographic Ontology
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> . # Simple Knowledge Organization System
-@prefix schema: <http://schema.org/> . # Schema.org
-@prefix foaf: <http://xmlns.com/foaf/0.1/> . # Friend of a Friend
-@prefix dc: <http://purl.org/dc/elements/1.1/> . # DCMI Metadata Terms
-@prefix dct: <http://purl.org/dc/terms/> . # DCMI Metadata Terms
-@prefix dbo: <http://dbpedia.org/ontology/> . # DBpedia Ontology
-@prefix dbc: <http://dbpedia.org/page/Category:> . # DBpedia Ontology
-@prefix dbr: <http://dbpedia.org/resource/> . # DBpedia Ontology
-@prefix org: <http://www.w3.org/ns/org#> . # The Organization Ontology
-@prefix ebg: <http://data.businessgraph.io/ontology#> . # The euBusinessGraph Ontology
-@prefix rov: <http://www.w3.org/ns/regorg#> . # Registered Organization Vocabulary
-@prefix m4i: <http://w3id.org/nfdi4ing/metadata4ing#> . # Metadata4Ing
-@prefix holy: <http://purl.org/holy/ns#> . # Hydrogen Ontology
-@prefix mod: <https://w3id.org/mod#> . # MODP: Metadata for Ontology Description and publication Profile
+@prefix : <http://purl.org/holy/ns#> .
+@prefix cc: <https://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dbc: <http://dbpedia.org/page/Category:> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ebg: <http://data.businessgraph.io/ontology#> .
+@prefix m4i: <http://w3id.org/nfdi4ing/metadata4ing#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rov: <http://www.w3.org/ns/regorg#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix holy: <http://purl.org/holy/ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix schema: <http://schema.org/> .
 @base <http://purl.org/holy/ns#> .
 
 <http://purl.org/holy/ns#> rdf:type owl:Ontology ;
+                            owl:versionIRI <http://purl.org/holy/ns#> ;
+                            dct:created "2022"^^xsd:gYear ;
                             dct:creator [ schema:affiliation [ foaf:homepage <https://www.th-nuernberg.de/einrichtungen-gesamt/fraunhofer-forschungsgruppen/future-engineering/> ;
-                              foaf:name "Future Engineering Research Group"
-                              ] ;
-                              rdfs:seeAlso <https://www.th-nuernberg.de/person/ascencion-arevalo-kiara-marnitt/> ;
-                              foaf:homepage <https://orcid.org/0000-0002-4158-9478> ;
-                              foaf:name "Kiara Marnitt Ascencion Arevalo"
-                              ] ,
-                              [ schema:affiliation [ foaf:homepage <https://www.th-nuernberg.de> ;
-                                                    foaf:name "Technische Hochschule Nürnberg Georg Simon Ohm"
-                                                  ] ;
-                                foaf:homepage <https://orcid.org/0000-0001-9312-208X> ;
-                                foaf:name "Christoph Neunsinger"
-                              ] ;
+                                                               foaf:name "Future Engineering Research Group"
+                                                             ] ;
+                                          rdfs:seeAlso <https://www.th-nuernberg.de/person/ascencion-arevalo-kiara-marnitt/> ;
+                                          foaf:homepage <https://orcid.org/0000-0002-4158-9478> ;
+                                          foaf:name "Kiara Marnitt Ascencion Arevalo"
+                                        ] ,
+                                        [ schema:affiliation [ foaf:homepage <https://www.th-nuernberg.de> ;
+                                                               foaf:name "Technische Hochschule Nürnberg Georg Simon Ohm"
+                                                             ] ;
+                                          foaf:homepage <https://orcid.org/0000-0001-9312-208X> ;
+                                          foaf:name "Christoph Neunsinger"
+                                        ] ;
                             dct:description "This is the Hydrogen Ontology (HOLY). HOLY is a domain ontology for describing the complex structure of hydrogen-based markets. HOLY contributes to the systemic modeling of the hydrogen domain with a focus on its value chain. Hence, it provides a foundation for retrieval, storage, and delivery of market insights.  "@en ;
+                            dct:issued "2022-12-16"^^xsd:date ;
                             dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
                             dct:publisher [ foaf:homepage <https://www.th-nuernberg.de> ;
-                              foaf:name "Technische Hochschule Nürnberg Georg Simon Ohm"
-                              ] ;
+                                            foaf:name "Technische Hochschule Nürnberg Georg Simon Ohm"
+                                          ] ;
                             dct:title "Hydrogen Ontology"@en ;
-                            mod:acronym "HOLY";
+                            bibo:doi <https://doi.org/10.5281/zenodo.7447958> ;
                             vann:preferredNamespacePrefix "holy" ;
                             vann:preferredNamespaceURI "http://purl.org/holy/ns#" ;
                             owl:versionInfo 1.0 ;
-                            owl:ontologyIRI <http://purl.org/holy/ns#>;
-                            owl:versionIRI <http://purl.org/holy/ns#>; #TODO: include new version and 
-                            # owl:priodVersion ;
-                            # owl:import ;
-                            dct:created "2022"^^xsd:gYear;
-                            dct:issued "2022-12-16"^^xsd:date;
-                            mod:hasSyntax  <http://www.w3.org/ns/formats/Turtle> ;
-                            mod:competencyQuestion <http://purl.org/holy/repository/cq>;
-                            foaf:depiction <http://purl.org/holy/schema_diagram>;
-                            bibo:doi <https://doi.org/10.5281/zenodo.7447958>;
-                            dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-                            cc:license <https://creativecommons.org/licenses/by-sa/4.0/> .
-
+                            foaf:depiction <http://purl.org/holy/schema_diagram> ;
+                            cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+                            mod:acronym "HOLY" ;
+                            mod:competencyQuestion <http://purl.org/holy/repository/cq> ;
+                            mod:hasSyntax <http://www.w3.org/ns/formats/Turtle> .
 
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/terms/created
+dct:created rdf:type owl:AnnotationProperty .
+
 
 ###  http://purl.org/dc/terms/creator
 dct:creator rdf:type owl:AnnotationProperty .
@@ -69,6 +70,10 @@ dct:creator rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/dc/terms/description
 dct:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dct:issued rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/license
@@ -85,6 +90,10 @@ dct:references rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/dc/terms/title
 dct:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/doi
+bibo:doi rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
@@ -110,7 +119,7 @@ rdfs:label rdf:type owl:AnnotationProperty ;
 
 
 ###  http://www.w3.org/2000/01/rdf-schema#seeAlso
-rdfs:seeAlso rdf:type owl:AnnotationProperty.
+rdfs:seeAlso rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2002/07/owl#sameAs
@@ -135,6 +144,10 @@ skos:example rdf:type owl:AnnotationProperty ;
              skos:definition "Example of an instance within a class. Used for pipeline extraction."@en .
 
 
+###  http://xmlns.com/foaf/0.1/depiction
+foaf:depiction rdf:type owl:AnnotationProperty .
+
+
 ###  http://xmlns.com/foaf/0.1/homepage
 foaf:homepage rdf:type owl:AnnotationProperty .
 
@@ -147,6 +160,18 @@ foaf:name rdf:type owl:AnnotationProperty .
 cc:license rdf:type owl:AnnotationProperty .
 
 
+###  https://w3id.org/mod#acronym
+mod:acronym rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#competencyQuestion
+mod:competencyQuestion rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#hasSyntax
+mod:hasSyntax rdf:type owl:AnnotationProperty .
+
+
 #################################################################
 #    Datatypes
 #################################################################
@@ -157,6 +182,10 @@ rdf:PlainLiteral rdf:type rdfs:Datatype .
 
 ###  http://www.w3.org/2001/XMLSchema#date
 xsd:date rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYear
+xsd:gYear rdf:type rdfs:Datatype .
 
 
 ###  http://www.w3.org/2001/XMLSchema#string
@@ -192,8 +221,8 @@ dct:hasPart rdf:type owl:ObjectProperty ;
             owl:inverseOf dct:isPartOf ;
             rdf:type owl:AsymmetricProperty ,
                      owl:IrreflexiveProperty ;
+            dct:references dct: ;
             rdfs:comment "This property is intended to be used with non-literal values. This property is an inverse property of Is Part Of."@en ;
-            dct:references dct:;
             rdfs:label "Has Part"@en ;
             skos:definition "A related resource that is included either physically or logically in the described resource."@en .
 
@@ -202,8 +231,8 @@ dct:hasPart rdf:type owl:ObjectProperty ;
 dct:isPartOf rdf:type owl:ObjectProperty ,
                       owl:AsymmetricProperty ,
                       owl:IrreflexiveProperty ;
-             rdfs:comment "This property is intended to be used with non-literal values. This property is an inverse property of Has Part."@en ;
              dct:references dct: ;
+             rdfs:comment "This property is intended to be used with non-literal values. This property is an inverse property of Has Part."@en ;
              rdfs:label "Is Part Of" ;
              skos:definition "A related resource in which the described resource is physically or logically included." .
 
@@ -424,9 +453,9 @@ m4i:inProject rdf:type owl:ObjectProperty ;
                        owl:IrreflexiveProperty ;
               rdfs:domain org:Organization ;
               rdfs:range schema:Project ;
+              dct:references m4i: ;
               rdfs:comment "An object property comming from the Metadata4Ing ontology for describing the generation of research data, projects and scientific projects. The ontology was released recently on the 22.02.2022 and could be useful for future expansion of the hydrogen ontology."@en ,
                            "The inverse of m4i:projectParticipant"@en ;
-              dct:references m4i: ;
               rdfs:label "associated to project"@en ;
               skos:altLabel "responsible for"@en ,
                             "sponsor of project"@en ;
@@ -439,9 +468,9 @@ m4i:projectParticipant rdf:type owl:ObjectProperty ,
                                 owl:IrreflexiveProperty ;
                        rdfs:domain schema:Project ;
                        rdfs:range org:Organization ;
+                       dct:references m4i: ;
                        rdfs:comment "An object property comming from the Metadata4Ing ontology for describing the generation of research data, projects and scientific projects. The ontology was released recently on the 22.02.2022 and could be useful for future expansion of the hydrogen ontology."@en ,
                                     "The inverse of m4i:associatesToProject"@en ;
-                       dct:references m4i: ;
                        rdfs:label "project participant"@en ;
                        skos:altLabel "project partner"@en ;
                        skos:definition "A property that connects a project with a person or an organisation."@en .
@@ -454,8 +483,8 @@ org:classification rdf:type owl:ObjectProperty ;
                             owl:IrreflexiveProperty ;
                    rdfs:domain org:Organization ;
                    rdfs:range skos:Concept ;
-                   rdfs:comment "Main property of rov:orgActivity"@en ;
                    dct:references org: ;
+                   rdfs:comment "Main property of rov:orgActivity"@en ;
                    rdfs:label "classification"@en ;
                    skos:definition "Indicates a classification for this Organization within some classification scheme."@en .
 
@@ -503,8 +532,8 @@ org:linkedTo rdf:type owl:ObjectProperty ,
                       owl:SymmetricProperty ;
              rdfs:domain org:Organization ;
              rdfs:range org:Organization ;
-             rdfs:comment "In the current stage of the Hydrogen Domain Ontology it is used to indicate mainly business relationships outside of the project scope."@en ;
              dct:references org: ;
+             rdfs:comment "In the current stage of the Hydrogen Domain Ontology it is used to indicate mainly business relationships outside of the project scope."@en ;
              rdfs:label "linked to"@en ;
              skos:definition "Indicates an arbitrary relationship between two organizations."@en .
 
@@ -538,8 +567,8 @@ rov:orgActivity rdf:type owl:ObjectProperty ;
                          owl:IrreflexiveProperty ;
                 rdfs:domain rov:RegisteredOrganization ;
                 rdfs:range skos:Concept ;
-                rdfs:comment "Relates to the economic activity of an organization based on international classification standards such as NACE (EU) ISIC4 (US) or the UK SIC codes."@en ;
                 dct:references org: ;
+                rdfs:comment "Relates to the economic activity of an organization based on international classification standards such as NACE (EU) ISIC4 (US) or the UK SIC codes."@en ;
                 rdfs:label "company activity"@en ;
                 skos:definition "The activity of an organization should be recorded using a controlled vocabulary. Several such vocabularies exist, many of which map to the UN's ISIC codes [ ISIC4 ]. Where a particular controlled vocabulary is in use within a given context, such as SIC codes in the UK, it is acceptable to use these, however, the preferred choice for European interoperability is NACE [ NACE ]. As with company type and status, activity codes should be expressed as SKOS Concept Schemes."@en .
 
@@ -550,8 +579,8 @@ rov:orgStatus rdf:type owl:ObjectProperty ,
                        owl:IrreflexiveProperty ;
               rdfs:domain org:Organization ;
               rdfs:range skos:Concept ;
-              rdfs:comment "rov:orgStatus provides a first attempt -used in the Registered Organization Vocabulary- to identify the status of an organization."@en ;
               dct:references rov: ;
+              rdfs:comment "rov:orgStatus provides a first attempt -used in the Registered Organization Vocabulary- to identify the status of an organization."@en ;
               rdfs:label "company status"@en ;
               skos:definition """Extracting the status of an organization presents the same issues as its type. The terms 'insolvent', 'bankrupt' and 'in receivership,' for example, are likely to mean slightly different things with different legal implications in different jurisdictions.
 
@@ -658,7 +687,7 @@ holy:AirCompressor rdf:type owl:Class ;
                    dct:references <https://www.energy.gov/eere/fuelcells/fuel-cell-systems> ;
                    rdfs:label "Air Compressor"@en ;
                    skos:altLabel "Air Compressor"@en ;
-                   skos:definition "Pressure regulating systems for enhancing fuel cell improvement by increasing pressure of reactant gases."@en .
+                   skos:definition "A pressure regulating system for enhancing fuel cell improvement by increasing pressure of reactant gases."@en .
 
 
 ###  http://purl.org/holy/ns#Aircraft
@@ -705,7 +734,7 @@ holy:AlkalineFuelCell rdf:type owl:Class ;
                                     "Alkaline Electrolyzer"@en ,
                                     "Alkaline Fuel CEll"@en ,
                                     "Alkaline Membrane Fuel Cells"@en ;
-                      skos:definition "A fuel cell using potassium hydroxide in water as the electrolyte for powering using a variety of non-precious metals as a catalyst at the anode and cathode."@en ,
+                      skos:definition "A fuel cell which uses potassium hydroxide in water as the electrolyte for powering, using a variety of non-precious metals as a catalyst at the anode and cathode."@en ,
                                       "AFC"@en .
 
 
@@ -717,7 +746,7 @@ holy:AmmoniaFuelCell rdf:type owl:Class ;
                      skos:altLabel "Ammonia Fuel Cell"@en ,
                                    "DAFC"@en ,
                                    "Direct Ammonia Fuel Cell"@en ;
-                     skos:definition "Fuel Cells using ammonia as its fuel."@en .
+                     skos:definition "A fuel cell using ammonia as its fuel."@en .
 
 
 ###  http://purl.org/holy/ns#AnionExchangeMembraneFuelCell
@@ -728,7 +757,7 @@ holy:AnionExchangeMembraneFuelCell rdf:type owl:Class ;
                                                  "AEMFC"@en ,
                                                  "Anion Exchange Membrane Fuel Cell"@en ,
                                                  "Anion exchange membrane"@en ;
-                                   skos:definition "PEMFC-like fuel cell technology which needs less precious metals as catalysts in order to trigger chemical reaction."@en .
+                                   skos:definition "A PEMFC-like fuel cell technology which needs less precious metals as catalysts in order to trigger chemical reaction."@en .
 
 
 ###  http://purl.org/holy/ns#Application
@@ -763,7 +792,7 @@ holy:Aviation rdf:type owl:Class ;
                             "Air Travel"@en ,
                             "Airmanship"@en ,
                             "Aviation"@en ;
-              skos:definition "Applications related to the transport of people or goods by any form of aircraft or spacecraft."@en .
+              skos:definition "An applicatios related to the transport of people and/or goods by any form of aircraft or spacecraft."@en .
 
 
 ###  http://purl.org/holy/ns#Battery
@@ -787,7 +816,7 @@ holy:Battery rdf:type owl:Class ;
                            "Perfluorinated Sulfonic Acid battery"@en ,
                            "Redox Flow Batteries"@en ,
                            "Vanadium Redox Flow Battery"@en ;
-             skos:definition "A collection of one or more cells, storing electrical energy for powering electrical devices."@en .
+             skos:definition "A collection of one or more cells which store electrical energy for powering electrical devices."@en .
 
 
 ###  http://purl.org/holy/ns#BatteryComponent
@@ -795,7 +824,7 @@ holy:BatteryComponent rdf:type owl:Class ;
                       rdfs:subClassOf holy:SubstituteProductComponent ;
                       rdfs:comment "The subclass \"Battery Component\" can be expanded to focus on batteries as substitutes for hydrogen products. "@en ;
                       rdfs:label "Battery Component"@en ;
-                      skos:definition "Basic components for batteries."@en .
+                      skos:definition "A basic component for batteries."@en .
 
 
 ###  http://purl.org/holy/ns#Bike
@@ -828,7 +857,7 @@ holy:BipolarPlate rdf:type owl:Class ;
                   dct:references <https://www.energy.gov/eere/fuelcells/parts-fuel-cell> ;
                   rdfs:label "Bipolar Plate"@en ;
                   skos:altLabel "Bipolar Plate"@en ;
-                  skos:definition "Plates which provide electrical conduction between cells. Bipolar plates are used to separate cells within a fuel cell from each other and aim to provide physical strength to the stack of cells."@en .
+                  skos:definition "A plate which provides electrical conduction between cells. Bipolar plates are used to separate cells within a fuel cell from each other and aim to provide physical strength to the stack of cells."@en .
 
 
 ###  http://purl.org/holy/ns#Bus
@@ -918,7 +947,7 @@ holy:CatalystLayer rdf:type owl:Class ;
                    dct:references <https://www.energy.gov/eere/fuelcells/parts-fuel-cell> ;
                    rdfs:label "Catalyst Layer"@en ;
                    skos:altLabel "Catalyst Layer"@en ;
-                   skos:definition "Catalyst Layer are layers of anodes and cathodes which are placed on the opposite sites of the membrane."@en .
+                   skos:definition "A layer of anodes and cathodes which are placed on the opposite sites of the membrane."@en .
 
 
 ###  http://purl.org/holy/ns#ChemicalIndustrialProcessing
@@ -945,7 +974,7 @@ holy:CircularEconomyProject rdf:type owl:Class ;
                                           "Life Cycle Management Project"@en ,
                                           "Smart Farm Linked Hydrogen Fuel Cell Power Generation Project"@en ,
                                           "Sustainable Development Project"@en ;
-                            skos:definition "Project focusing on a circular system of reusing resources which were used for something."@en .
+                            skos:definition "A project focusing on a circular system of reusing resources which were previously used for something."@en .
 
 
 ###  http://purl.org/holy/ns#Conversion
@@ -969,7 +998,7 @@ holy:Conversion rdf:type owl:Class ;
                               "Thermochemical Hydrogen Processesing"@en ,
                               "Thermochemical Hydrogen Production"@en ,
                               "hydrogen based fuel"@en ;
-                skos:definition "Conversion as a subclass of Hydrogen Technology defines knowledge of processing materials into hydrogen."@en .
+                skos:definition "The processing of materials into hydrogen."@en .
 
 
 ###  http://purl.org/holy/ns#CruiseShip
@@ -990,7 +1019,7 @@ holy:Employee rdf:type owl:Class ;
               skos:altLabel "Labor"@en ,
                             "Labor Force"@en ,
                             "Workforce"@en ;
-              skos:definition "Number of persons working for an organization."@en .
+              skos:definition "The number of persons working for an organization."@en .
 
 
 ###  http://purl.org/holy/ns#EnergySectorOrganization
@@ -1000,7 +1029,7 @@ holy:EnergySectorOrganization rdf:type owl:Class ;
                               rdfs:label "Energy Sector Organization"@en ;
                               skos:altLabel "Energy Sector"@en ,
                                             "Renewable Fuel Producer"@en ;
-                              skos:definition "This section includes the activity of providing electric power, natural gas, steam, hot water and the like through a permanent infrastructure (network) of lines, mains and pipes. The dimension of the network is not decisive; also included are the distribution of electricity, gas, steam, hot water and the like in industrial parks or residential buildings."@en .
+                              skos:definition "An organization participating in activities of providing electric power, natural gas, steam, hot water, and the like through a permanent infrastructure (network) of lines, mains and pipes. The dimension of the network is not decisive; also included are the distribution of electricity, gas, steam, hot water and the like in industrial parks or residential buildings."@en .
 
 
 ###  http://purl.org/holy/ns#EntryBarrier
@@ -1013,7 +1042,7 @@ holy:EntryBarrier rdf:type owl:Class ;
                                 "Market Permit"@en ,
                                 "Political Constraint"@en ,
                                 "Regulation"@en ;
-                  skos:definition "Obstacles individuals face when participating in a particular market."@en .
+                  skos:definition "An obstacle individuals face when participating in a particular market."@en .
 
 
 ###  http://purl.org/holy/ns#EthanolFuelCell
@@ -1026,7 +1055,7 @@ holy:EthanolFuelCell rdf:type owl:Class ;
                                    "Direct ethanol fuel cell"@en ,
                                    "Ethanol Fuel Cell"@en ,
                                    "Ethanol Powered Engines"@en ;
-                     skos:definition "Fuel Cells using ethanol as its fuel."@en .
+                     skos:definition "A fuel cell using ethanol as its fuel."@en .
 
 
 ###  http://purl.org/holy/ns#Ferry
@@ -1048,7 +1077,7 @@ holy:FinishedProject rdf:type owl:Class ;
                                    "Have Been Completed"@en ,
                                    "Project Was Deemed Succesful"@en ,
                                    "Was a Project"@en ;
-                     skos:definition "Finished Product as a subclass of Project Stage describes projects which have completed their intended purpose regardless of the level of success."@en .
+                     skos:definition "A project which has completed its intended purpose regardless of the level of success."@en .
 
 
 ###  http://purl.org/holy/ns#FossilFuel
@@ -1060,7 +1089,7 @@ holy:FossilFuel rdf:type owl:Class ;
                               "Fossil Fuel"@en ,
                               "Fossil Fuel Tank"@en ,
                               "Gasoline Engine"@en ;
-                skos:definition "The subclass Fossil Fuel defines conventional energy production methods using fossil fuels as  fuel."@en .
+                skos:definition "A conventional energy production method using fossil fuels as fuel."@en .
 
 
 ###  http://purl.org/holy/ns#FossilFuelComponent
@@ -1068,7 +1097,7 @@ holy:FossilFuelComponent rdf:type owl:Class ;
                          rdfs:subClassOf holy:SubstituteProductComponent ;
                          rdfs:comment "The subclass \"Fossil Fuel Component\" could be expanded to focus on the components of fossil fuel products classifying as substitutes for hydrogen products."@en ;
                          rdfs:label "Fossil Fuel Component"@en ;
-                         skos:definition "Basic components for products using fossil fuels."@en .
+                         skos:definition "A basic component for products using fossil fuels."@en .
 
 
 ###  http://purl.org/holy/ns#FuelCellStack
@@ -1086,7 +1115,7 @@ holy:FuelProcessor rdf:type owl:Class ;
                    dct:references <https://www.energy.gov/eere/fuelcells/fuel-cell-systems> ;
                    rdfs:label "Fuel Processor"@en ;
                    skos:altLabel "Fuel Processor"@en ;
-                   skos:definition "Converters necessary to convert fuel into a fuel cell usable form."@en .
+                   skos:definition "A converter which is necessary to convert fuel into a fuel cell-usable form."@en .
 
 
 ###  http://purl.org/holy/ns#GasDiffusionLayer
@@ -1096,7 +1125,7 @@ holy:GasDiffusionLayer rdf:type owl:Class ;
                        rdfs:label "Gas Diffusion Layer"@en ;
                        skos:altLabel "GDL"@en ,
                                      "Gas Diffusion Layer"@en ;
-                       skos:definition "The Gas Diffusion Layer is a paper-like layer placed outside the catalyst layer and is responsible for transporting reactants into the catalyst layer by removing chemical reaction outcomes."@en .
+                       skos:definition "A paper-like layer placed outside the catalyst layer which is responsible for transporting reactants into the catalyst layer by removing chemical reaction outcomes."@en .
 
 
 ###  http://purl.org/holy/ns#Gasket
@@ -1104,8 +1133,8 @@ holy:Gasket rdf:type owl:Class ;
             rdfs:subClassOf holy:SupportiveHardware ;
             dct:references <https://www.energy.gov/eere/fuelcells/parts-fuel-cell> ;
             rdfs:label "Gasket"@en ;
-            skos:altLabel "EPDM based gasket"@en ,
-                          "EPDM gasket"@en ,
+            skos:altLabel "EPDM gasket"@en ,
+                          "EPDM-based gasket"@en ,
                           "Fuel Cell Covering"@en ,
                           "Gasket"@en ,
                           "Low Temperature Fuel Cell Gasket"@en ,
@@ -1113,7 +1142,7 @@ holy:Gasket rdf:type owl:Class ;
                           "PTFE-based Gasket"@en ,
                           "Sealing Gasket"@en ,
                           "fuel cell cap"@en ;
-            skos:definition "Parts used for gas-tight sealing of the edges of the Membrane Electrode Assembly (MEA)."@en .
+            skos:definition "A part used for gas-tight sealing of the edges of the Membrane Electrode Assembly (MEA)."@en .
 
 
 ###  http://purl.org/holy/ns#GeographicMarket
@@ -1144,7 +1173,7 @@ holy:Heating rdf:type owl:Class ;
                            "Heating Application"@en ,
                            "Heating System"@en ,
                            "Melting"@en ;
-             skos:definition "Applications generating heat for contributing to the heating of buildings or being used in industrial processes."@en .
+             skos:definition "An application which generates heat for contributing to the heating of buildings or for use in industrial processes."@en .
 
 
 ###  http://purl.org/holy/ns#Humidifier
@@ -1153,7 +1182,7 @@ holy:Humidifier rdf:type owl:Class ;
                 dct:references <https://www.energy.gov/eere/fuelcells/fuel-cell-systems> ;
                 rdfs:label "Humidifier"@en ;
                 skos:altLabel "Humidifier"@en ;
-                skos:definition "Items regulating a certain level of humidity within a fuel cell."@en .
+                skos:definition "An item which regulates a certain level of humidity within a fuel cell."@en .
 
 
 ###  http://purl.org/holy/ns#HydrogenConversionComponent
@@ -1161,7 +1190,7 @@ holy:HydrogenConversionComponent rdf:type owl:Class ;
                                  rdfs:subClassOf holy:HydrogenProductComponent ;
                                  rdfs:comment "The subclass \"Hydrogen Conversion Component\" could be expanded to focus the domain scope to the transport of hydrogen with respect to the value chain."@en ;
                                  rdfs:label "Hydrogen Conversion Component"@en ;
-                                 skos:definition "Basic components for products converting compounds two hydrogen."@en .
+                                 skos:definition "A basic component for products which convert compounds to hydrogen."@en .
 
 
 ###  http://purl.org/holy/ns#HydrogenFuelCellComponent
@@ -1170,7 +1199,7 @@ holy:HydrogenFuelCellComponent rdf:type owl:Class ;
                                dct:references <https://www.energy.gov/eere/fuelcells/fuel-cell-systems#fuel%20cell%20stack> ;
                                rdfs:comment "Fuel Cell Component is directly alligned with sub-classes of 'Reconversion'."@en ;
                                rdfs:label "Hydrogen Fuel Cell Component"@en ;
-                               skos:definition "Basic components of hydrogen fuel cell systems."@en .
+                               skos:definition "A basic component of hydrogen fuel cell systems."@en .
 
 
 ###  http://purl.org/holy/ns#HydrogenProduct
@@ -1181,7 +1210,7 @@ holy:HydrogenProduct rdf:type owl:Class ;
                      skos:altLabel "Hydrogen Product"@en ,
                                    "Hydrogen Tech"@en ,
                                    "Hydrogen Technology"@en ;
-                     skos:definition "A product that is manufactured or refined for sale which can be used to produce, transport, store or \"burn\" / reconvert hydrogen."@en .
+                     skos:definition "A product that is manufactured or refined for sale which can be used to produce, transport, store or \"burn\"/reconvert hydrogen."@en .
 
 
 ###  http://purl.org/holy/ns#HydrogenProductComponent
@@ -1189,7 +1218,7 @@ holy:HydrogenProductComponent rdf:type owl:Class ;
                               rdfs:subClassOf holy:Product ;
                               dct:references <https://dictionary.cambridge.org/dictionary/english/component> ;
                               rdfs:label "Hydrogen Product Component"@en ;
-                              skos:definition "A part that combined with other parts make a hydrogen product."@en .
+                              skos:definition "A part that, combined with other parts, makes up a hydrogen product."@en .
 
 
 ###  http://purl.org/holy/ns#HydrogenStorageComponent
@@ -1197,13 +1226,13 @@ holy:HydrogenStorageComponent rdf:type owl:Class ;
                               rdfs:subClassOf holy:HydrogenProductComponent ;
                               rdfs:comment "The subclass \"Hydrogen Storage Component\" could be expanded to focus the domain scope to the creation of hydrogen with respect to the value chain."@en ;
                               rdfs:label "Hydrogen Storage Component"@en ;
-                              skos:definition "Components of products capable of storing hydrogen."@en .
+                              skos:definition "A basic component of products capable of storing hydrogen."@en .
 
 
 ###  http://purl.org/holy/ns#HydrogenTransportComponent
 holy:HydrogenTransportComponent rdf:type owl:Class ;
                                 rdfs:subClassOf holy:HydrogenProductComponent ;
-                                rdfs:comment "Basic components of products designed for transporting hydrogen."@en ,
+                                rdfs:comment "A basic component of products designed for transporting hydrogen."@en ,
                                              "The subclass \"Hydrogen Transport Component\" could be expanded to focus the domain scope to the transport of hydrogen with respect to the value chain."@en ;
                                 rdfs:label "Hydrogen Transport Component"@en .
 
@@ -1218,7 +1247,7 @@ holy:Indicator rdf:type owl:Class ;
                              "FIscal Year Report"@en ,
                              "FY Report"@en ,
                              "Index"@en ;
-               skos:definition "Something that shows what a situation is like or how it is changing."@en .
+               skos:definition "Something, often a quanititative measure, which shows what a situation is like or how it is changing."@en .
 
 
 ###  http://purl.org/holy/ns#IndustrialHeating
@@ -1247,7 +1276,7 @@ holy:IndustrialProcessing rdf:type owl:Class ;
                           skos:altLabel "Circular Production System"@en ,
                                         "Linear Production System"@en ,
                                         "Purification"@en ;
-                          skos:definition "Applications used for industrial processing. Industrial processing involves the manufacturing of semi-finished or high-quality end products by means of physical, mechanical and/or chemical processes."@en .
+                          skos:definition "An application which is used for industrial processing. Industrial processing involves the manufacturing of semi-finished or high-quality end products by means of physical, mechanical and/or chemical processes."@en .
 
 
 ###  http://purl.org/holy/ns#InfrastructureProject
@@ -1281,7 +1310,7 @@ holy:InfrastructureProject rdf:type owl:Class ;
                                          "Road Infrastructure Project"@en ,
                                          "Transportation Project"@en ,
                                          "Water Infrastructure Project"@en ;
-                           skos:definition "Projects which are focused on the development, creation, maintenance or enhancement of structures and systems needed for a country, city or organization to function properly."@en ;
+                           skos:definition "A project which is focused on the development, creation, maintenance, or enhancement of structures and systems needed for a country, city, or organization to function properly."@en ;
                            skos:example "PATH4ZERO"@en ,
                                         "Paving the way for Zero Emission Inland Navigation"@en ,
                                         "Power Edison Partnership"@en .
@@ -1293,7 +1322,7 @@ holy:InternationalOrganization rdf:type owl:Class ;
                                dct:references <https://ec.europa.eu/eurostat/documents/3859598/5902521/KS-RA-07-015-EN.PDF> ;
                                rdfs:label "International Organization"@en ;
                                skos:altLabel "International Organization"@en ;
-                               skos:definition """Organizations classified in activities of international organisations such as the United Nations and the specialised agencies of the United Nations system, regional bodies etc., the International Monetary Fund, the World Bank, the World Customs Organisation, the Organisation for Economic Co-operation and Development, the organisation of Petroleum Exporting Countries, the European Communities, the European Free Trade Association etc. according to Section U of EC NACE Rev. 2.
+                               skos:definition """An organization classified in activities of international organisations such as the United Nations and the specialised agencies of the United Nations system, regional bodies etc., the International Monetary Fund, the World Bank, the World Customs Organisation, the Organisation for Economic Co-operation and Development, the organisation of Petroleum Exporting Countries, the European Communities, the European Free Trade Association etc. according to Section U of EC NACE Rev. 2.
 
 This class also includes:
 - activities of diplomatic and consular missions when being determined by the country of their location rather than by the country they represent"""@en ;
@@ -1310,7 +1339,7 @@ holy:Investment rdf:type owl:Class ;
                 skos:altLabel "IPO"@en ,
                               "Initial Public Offering"@en ,
                               "Spendings"@en ;
-                skos:definition "Money invested by an entity for something like a project, product or application."@en .
+                skos:definition "The amount of money invested by an entity for something like a project, product or application."@en .
 
 
 ###  http://purl.org/holy/ns#LithiumBattery
@@ -1324,7 +1353,7 @@ holy:LithiumBattery rdf:type owl:Class ;
                                   "Lithium Ion Battery Cell"@en ,
                                   "Lithium cathode material"@en ,
                                   "Redox Flow Battery"@en ;
-                    skos:definition "A lithium-ion battery is using lithium ions as a key component of its electrochemistry using liquid electrolyte solutions."@en ;
+                    skos:definition "A battery which uses lithium ions as a key component of its electrochemistry using liquid electrolyte solutions."@en ;
                     skos:example "Tesla Powerwall"@en .
 
 
@@ -1357,7 +1386,7 @@ holy:ManufacturingOrganization rdf:type owl:Class ;
                                              "Plug Power"@en ,
                                              "Solar Panel Maker"@en ,
                                              "Toyota Motor"@en ;
-                               skos:definition "Organizations classified in the field of manufacturing according to EC NACE 2 (2008) in Section C Division 10-33."@en ;
+                               skos:definition "An organization classified in the field of manufacturing according to EC NACE 2 (2008) in Section C Division 10-33."@en ;
                                skos:example "Arboc"@en ,
                                             "Arboc Speciality Vehicles"@en ,
                                             "Hyzon Motors Inc."@en ,
@@ -1387,7 +1416,7 @@ holy:Marine rdf:type owl:Class ;
                           "Oceanic Use"@en ,
                           "Seagoing Vehicle"@en ,
                           "Ship"@en ;
-            skos:definition "Applications related to sea transport of people or goods."@en .
+            skos:definition "An application related to sea transport of people and/or goods."@en .
 
 
 ###  http://purl.org/holy/ns#MarketShare
@@ -1398,7 +1427,7 @@ holy:MarketShare rdf:type owl:Class ;
                                "Market Percentage"@en ,
                                "Market Position"@en ,
                                "Market Presence"@en ;
-                 skos:definition "Total number of buyers a company has for a certain product or in a certain segment compared to the total market size."@en .
+                 skos:definition "The total number of buyers a company has for a certain product or in a certain segment compared to the total market size."@en .
 
 
 ###  http://purl.org/holy/ns#MarketSize
@@ -1412,7 +1441,7 @@ holy:MarketSize rdf:type owl:Class ;
                               "Overall Market"@en ,
                               "Second Largest Market"@en ,
                               "Total Market"@en ;
-                skos:definition "Total number of potential buyers of a product or service within a given market, and the total revenue that these sales may generate."@en .
+                skos:definition "The total number of potential buyers of a product or service within a given market and the total revenue that these sales may generate."@en .
 
 
 ###  http://purl.org/holy/ns#MaterialHandling
@@ -1452,7 +1481,7 @@ holy:Membrane rdf:type owl:Class ;
                             "Polymer Electrolyte Membrane"@de ,
                             "Proton Exchange Membrane"@en ,
                             "Proton Exchange Membrane Electrolyzer"@en ;
-              skos:definition "A very thin membrane which conducts solely positively charged ions and is able to block electrons."@en .
+              skos:definition "A very thin membrane which conducts solely positively-charged ions and is able to block electrons."@en .
 
 
 ###  http://purl.org/holy/ns#MembraneElectrodeAssembly
@@ -1463,7 +1492,7 @@ holy:MembraneElectrodeAssembly rdf:type owl:Class ;
                                skos:altLabel "Bipolar Membrane Electrode Assembly"@en ,
                                              "MEA"@en ,
                                              "Membrane Electrode Assembly"@en ;
-                               skos:definition "The Membrane Electrode Assembly is the heart of the fuel cell and the place where the chemical reaction takes place. It consists of membrane, catalyst layers and gas diffusion layers."@en .
+                               skos:definition "The heart of the fuel cell and the place where the chemical reaction takes place. It consists of membrane, catalyst layers and gas diffusion layers."@en .
 
 
 ###  http://purl.org/holy/ns#MethanolFuelCell
@@ -1475,7 +1504,7 @@ holy:MethanolFuelCell rdf:type owl:Class ;
                       skos:altLabel "DMFC"@en ,
                                     "Direct Methanol Fuel Cell"@en ,
                                     "Methanol Fuel Cell"@en ;
-                      skos:definition "Fuel cell which is powered by pure methanol. It is usually mixed with water and fed directly to the fuel cell anode."@en ;
+                      skos:definition "A fuel cell which is powered by pure methanol. It is usually mixed with water and fed directly to the fuel cell anode."@en ;
                       skos:example "EFYO 150"@en ,
                                    "EFYO 80"@en .
 
@@ -1498,7 +1527,7 @@ holy:Mobile rdf:type owl:Class ;
                           "Transport"@en ,
                           "Transportation Vehicle"@en ,
                           "Unstationary"@en ;
-            skos:definition "Applications related to the movement of people and/or goods."@en .
+            skos:definition "An application related to the movement of people and/or goods."@en .
 
 
 ###  http://purl.org/holy/ns#MoltenCarbonateFuelCell
@@ -1509,7 +1538,7 @@ holy:MoltenCarbonateFuelCell rdf:type owl:Class ;
                              rdfs:label "Molten Carbonate Fuel Cell"@en ;
                              skos:altLabel "MCFC"@en ,
                                            "Molten Carbonate Fuel Cell"@en ;
-                             skos:definition "High temperature fuel cells using natural gas or biogas for powering. The fuel cell itself is able to convert hydrogen in a process called internal reforming."@en .
+                             skos:definition "A high temperature fuel cell using natural gas or biogas for powering. The fuel cell itself is able to convert hydrogen in a process called internal reforming."@en .
 
 
 ###  http://purl.org/holy/ns#NickelCadmiumBattery
@@ -1535,7 +1564,7 @@ holy:OngoingProject rdf:type owl:Class ;
                     rdfs:label "Ongoing Project"@en ;
                     skos:altLabel "Currently Running Project"@en ,
                                   "Currently Running Venture"@en ;
-                    skos:definition "Ongoing as a subclass of Project Stage defines currently running projects which have been started but are not marked as finished or completed."@en .
+                    skos:definition "A currently-running project which has been started but is not marked as finished or completed."@en .
 
 
 ###  http://purl.org/holy/ns#PassengerTrain
@@ -1554,7 +1583,7 @@ holy:PassengerTrain rdf:type owl:Class ;
 holy:Patent rdf:type owl:Class ;
             rdfs:subClassOf holy:Indicator ;
             rdfs:label "Patent"@en ;
-            skos:definition "Total number of patents attributed to a class individual."@en .
+            skos:definition "The total number of patents attributed to a class individual."@en .
 
 
 ###  http://purl.org/holy/ns#PhosphoricAcidFuelCell
@@ -1565,7 +1594,7 @@ holy:PhosphoricAcidFuelCell rdf:type owl:Class ;
                             rdfs:label "Phosphoric Acid Fuel Cell"@en ;
                             skos:altLabel "PAFC"@en ,
                                           "Phosphoric Acid Fuel Cell"@en ;
-                            skos:definition "Polymer Elektrolyt Membrane Fuel Cells use a liquid phosporic acid as an electrolyte. They can be powered by hydrogen, natural gas or biogas."@en .
+                            skos:definition "A fuel cell which uses a liquid phosporic acid as an electrolyte. It can be powered by hydrogen, natural gas or biogas."@en .
 
 
 ###  http://purl.org/holy/ns#PickupTruck
@@ -1583,7 +1612,7 @@ holy:PlannedProject rdf:type owl:Class ;
                     rdfs:subClassOf holy:StateBasedProject ;
                     dct:references <https://www.referenceforbusiness.com/management/Pr-Sa/Project-Management.html> ;
                     rdfs:label "Planned Project"@en ;
-                    skos:definition "Planned as a sublcass of Project Stage refers to projects which have not been realised or started but are expected to start in the future."@en .
+                    skos:definition "A project which has not been realised or started but is expected to start in the future."@en .
 
 
 ###  http://purl.org/holy/ns#PolymerElectrolyteMembraneFuelCell
@@ -1604,7 +1633,7 @@ holy:PolymerElectrolyteMembraneFuelCell rdf:type owl:Class ;
                                                       "PEMFC module"@en ,
                                                       "Polymer Elektrolyt Membrane Fuel Cell"@en ,
                                                       "Polymer Elektrolyte Fuel Cell"@en ;
-                                        skos:definition "Polymer Elektrolyt Membrane Fuel Cells use a solid polymer as an electrolyte and porous carbon electrodes containing a platinum or platinum alloy catalyst. They need only hydrogen, oxygen from the air, and water to operate."@en ;
+                                        skos:definition "A fuel cell which uses a solid polymer as an electrolyte and porous carbon electrodes containing a platinum or platinum alloy catalyst. It only needs hydrogen, oxygen from the air, and water to operate."@en ;
                                         skos:example "FCmoveTM"@en ,
                                                      "FCwaveTM"@en .
 
@@ -1617,7 +1646,7 @@ holy:PowerConditioner rdf:type owl:Class ;
                       skos:altLabel "FCCU"@en ,
                                     "Fuel Cell Control Unit"@en ,
                                     "Power Conditioner"@en ;
-                      skos:definition "Electrical current regulators needed for managing power."@en .
+                      skos:definition "An electrical current regulator needed for managing power."@en .
 
 
 ###  http://purl.org/holy/ns#PowerGeneration
@@ -1662,7 +1691,7 @@ holy:PowerGeneration rdf:type owl:Class ;
                                    "Stationary Power Generation"@en ,
                                    "UPS System"@en ,
                                    "Uninterruptible Power Supply System"@en ;
-                     skos:definition "Use of hydrogen or hydrogen products in the field of electricity production via power generating equipment or as fuel."@en .
+                     skos:definition "An application which is used in the field of electricity production via power generating equipment or as fuel."@en .
 
 
 ###  http://purl.org/holy/ns#Product
@@ -1696,7 +1725,7 @@ holy:ProductDevelopmentProject rdf:type owl:Class ;
                                              "Product Design Project"@en ,
                                              "Product Development Cooperation"@en ,
                                              "Product Development Project"@en ;
-                               skos:definition "Projects focused on the development of new products or the refinement of existing ones."@en .
+                               skos:definition "A project focused on the development of new products or the refinement of existing ones."@en .
 
 
 ###  http://purl.org/holy/ns#PublicAdministrationAndDefenceOrganization
@@ -1705,7 +1734,7 @@ holy:PublicAdministrationAndDefenceOrganization rdf:type owl:Class ;
                                                 dct:references <https://ec.europa.eu/eurostat/documents/3859598/5902521/KS-RA-07-015-EN.PDF> ;
                                                 rdfs:label "Public Administration and Defense Organization"@en ;
                                                 skos:altLabel "Public Administration Office"@en ;
-                                                skos:definition "Organizations classified in the field of public administration and defence according to EC NACE 2 (2008) in Section O Division 84."@en ;
+                                                skos:definition "An organization classified in the field of public administration and defense according to EC NACE 2 (2008) in Section O Division 84."@en ;
                                                 skos:example "DARPA"@en ,
                                                              "Defense Advanced Research Projects Agency"@en .
 
@@ -1723,7 +1752,7 @@ holy:PurposeBasedProject rdf:type owl:Class ;
 ###  http://purl.org/holy/ns#Reconversion
 holy:Reconversion rdf:type owl:Class ;
                   rdfs:subClassOf holy:HydrogenProduct ;
-                  rdfs:comment "Since reconversion solely happenes for energy creation using fuel cells, \"Reconversion\" is contributed to fuel cell systems."@en ;
+                  rdfs:comment "Since reconversion solely happenes for energy creation using fuel cells, \"Reconversion\" is contributed to fuel cell componenet parts."@en ;
                   rdfs:label "Reconversion"@en ;
                   rdfs:seeAlso "Fuel Cell Solution"@en ;
                   skos:altLabel "Fuel Cell"@en ,
@@ -1740,7 +1769,7 @@ holy:Reconversion rdf:type owl:Class ;
                                 "Hydrogen-fueled Gas Turbines"@en ,
                                 "Reconversion"@en ,
                                 "hydrogen oxygen fuel cell"@en ;
-                  skos:definition "Reconversion as a subclass of Hydrogen Technology defines knowledge dealing with converting hydrogen back."@en ;
+                  skos:definition "The process which deals with converting hydrogen back."@en ;
                   skos:example "GR Yaris engine"@en .
 
 
@@ -1828,7 +1857,7 @@ holy:Revenue rdf:type owl:Class ;
                            "Gross Revenue"@en ,
                            "Sales"@en ,
                            "Total Sales"@en ;
-             skos:definition "Generated amount within a certain class in a certain period of time."@en .
+             skos:definition "The amount of money generated within a certain class in a certain period of time."@en .
 
 
 ###  http://purl.org/holy/ns#Road
@@ -1869,7 +1898,7 @@ holy:Road rdf:type owl:Class ;
                         "Vehicle"@en ,
                         "ZEV"@en ,
                         "Zero-emission Vehicle"@en ;
-          skos:definition "Applications related to transport on land of people or goods."@en ;
+          skos:definition "An applicatios related to the transport of people and/or goods on land."@en ;
           skos:example "Ballard Powered Vehicle"@en .
 
 
@@ -1883,7 +1912,7 @@ holy:SolidOxideFuelCell rdf:type owl:Class ;
                                       "SOFC"@en ,
                                       "Solid Oxide Electrolyzer"@en ,
                                       "Solid Oxide Fuel Cell"@en ;
-                        skos:definition "Solid oxide fuel cells are fuel cells using a hard, non-porous ceramic compound as the electrolyte. They can reach temperatures up to 1000°C (1830°F). They can be powered by natural gas, coal gas, biogas or hydrogen."@en .
+                        skos:definition "A fuel cell which uses a hard, non-porous ceramic compound as the electrolyte. It can reach temperatures up to 1000°C (1830°F). It can be powered by natural gas, coal gas, biogas or hydrogen."@en .
 
 
 ###  http://purl.org/holy/ns#SolidStateBattery
@@ -1893,7 +1922,7 @@ holy:SolidStateBattery rdf:type owl:Class ;
                        rdfs:label "Solid State Battery"@en ;
                        skos:altLabel "Solid State Battery"@en ,
                                      "Solid State Battery Technology"@en ;
-                       skos:definition "A solid-state battery uses solid lithium as an electrolyte, not liquid."@en .
+                       skos:definition "A battery which uses solid lithium as an electrolyte, not liquid."@en .
 
 
 ###  http://purl.org/holy/ns#Spacecraft
@@ -1949,7 +1978,7 @@ holy:Stationary rdf:type owl:Class ;
                               "Stationary Sector"@en ,
                               "Stationary Unit"@en ,
                               "Vehicle Charging Hub"@en ;
-                skos:definition "Applications which are intended to be placed at one location without the possibility of physically being moved when used."@en .
+                skos:definition "An application which is intended to be placed at one location without the possibility of physically being moved when used."@en .
 
 
 ###  http://purl.org/holy/ns#SteelIndustrialProcessing
@@ -1979,7 +2008,7 @@ holy:Storage rdf:type owl:Class ;
                            "Hydrogen Fuel Tank"@en ,
                            "Hydrogen Storage Tanks"@en ,
                            "Liquid Hydrogen Storage Tank"@en ;
-             skos:definition "Storage as a subclass of HydrogenTechnology defines the way that hydrogen can be stored for later usage."@en .
+             skos:definition "The way that hydrogen can be stored for later usage."@en .
 
 
 ###  http://purl.org/holy/ns#Submarine
@@ -1999,7 +2028,7 @@ holy:SubstituteFuelCell rdf:type owl:Class ;
                         dct:references <https://www.fuelcellstore.com/blog-section/alternative-liquid-fuel-types-fuel-cells> ;
                         rdfs:comment "The subclass \"SubstituteFuelCell\" could be expanded to focus the domain scope to the creation of hydrogen concerning the value chain."@en ;
                         rdfs:label "Substitute Fuel Cell"@en ;
-                        skos:definition "Fuel Cells using different resources as its anode gas than hydrogen."@en .
+                        skos:definition "A fuel cell which uses different resources as its anode gas than hydrogen."@en .
 
 
 ###  http://purl.org/holy/ns#SubstituteFuelCellComponent
@@ -2007,7 +2036,7 @@ holy:SubstituteFuelCellComponent rdf:type owl:Class ;
                                  rdfs:subClassOf holy:SubstituteProductComponent ;
                                  rdfs:comment "The subclass \"Substitute Fuel Cell Component\" could be expanded to focus on substitute fuel cells. "@en ;
                                  rdfs:label "Substitute Fuel Cell Component"@en ;
-                                 skos:definition "Basic components for substitute fuel cells."@en .
+                                 skos:definition "A basic component for substitute fuel cells."@en .
 
 
 ###  http://purl.org/holy/ns#SubstituteProduct
@@ -2035,7 +2064,7 @@ holy:SupportiveHardware rdf:type owl:Class ;
                                        <https://www.energy.gov/eere/fuelcells/parts-fuel-cell> ;
                         rdfs:label "Supportive Hardware"@en ;
                         skos:altLabel "Supportive Hardware"@en ;
-                        skos:definition "Supportive Hardware as a subclass of Fuel Cell Stack relates to components such as equipment, material and metals which enable efficient energy generation."@en .
+                        skos:definition "A component such as equipment, material, or metal which enables efficient energy generation."@en .
 
 
 ###  http://purl.org/holy/ns#Train
@@ -2057,7 +2086,7 @@ holy:Transport rdf:type owl:Class ;
                rdfs:comment "The subclass \"Transport\" could be expanded to focus the domain scope to the creation of hydrogen in respect to the value chain."@en ;
                rdfs:label "Transport"@en ;
                skos:altLabel "Hydrogen Transport"@en ;
-               skos:definition "Transport as a subclass of Hydrogen Technology defines the way that hydrogen can be transported from one place to another."@en .
+               skos:definition "The way that hydrogen can be transported from one place to another."@en .
 
 
 ###  http://purl.org/holy/ns#TransportationAndStorageOrganization
@@ -2065,7 +2094,7 @@ holy:TransportationAndStorageOrganization rdf:type owl:Class ;
                                           rdfs:subClassOf rov:RegisteredOrganization ;
                                           dct:references <https://ec.europa.eu/eurostat/documents/3859598/5902521/KS-RA-07-015-EN.PDF> ;
                                           rdfs:label "Transportation And Storage Organization"@en ;
-                                          skos:definition "Organizations classified in the field of transportation and storage according to EC NACE 2 (2008) in Section H Division 49-53."@en ;
+                                          skos:definition "An organizatios classified in the field of transportation and storage according to EC NACE 2 (2008) in Section H Division 49-53."@en ;
                                           skos:example "TC Energy"@en .
 
 
@@ -2084,7 +2113,7 @@ holy:Trend rdf:type owl:Class ;
                          "Market Driver"@en ,
                          "Market Trend"@en ,
                          "Tendency"@en ;
-           skos:definition "General development or changes of a situation in terms of behavior which can manifest itself in being discussed in forums, conferences or expos."@en ;
+           skos:definition "A general development or change of a situation in terms of behavior which can manifest itself in being discussed in forums, conferences or expos."@en ;
            skos:example "Hydrogen Impact 2021 Conference"@en ,
                         "Hydrogen Technology Expo Europe"@en ,
                         "Hydrogen Transition Summit"@en ,
@@ -2162,18 +2191,18 @@ schema:Project rdf:type owl:Class ;
                              "Partnered Project"@en ,
                              "Project"@en ,
                              "Venture"@en ;
-               skos:definition "According to a combined definition from the Cambridge dictionary, Karen Brown and Robert Youker, a project can be defined as a piece of planned work consisting of interrelated activities which intends to fulfill a particular purpose within a certain period of time. A project can fulfill several purposes such as in the area of research (research projects), projects dedicated to product development, infrastructure-related projects and more."@en .
+               skos:definition "A project can be defined as a piece of planned work consisting of interrelated activities which intends to fulfill a particular purpose within a certain period of time. A project can fulfill several purposes such as in the area of research (research projects), projects dedicated to product development, infrastructure-related projects and more."@en .
 
 
 ###  http://schema.org/ResearchProject
 schema:ResearchProject rdf:type owl:Class ;
                        rdfs:subClassOf holy:PurposeBasedProject ;
                        dct:references <http://dx.doi.org/10.13140/RG.2.1.1432.6245> ,
+                                      schema: ,
                                       <http://www.maxwideman.com/guests/typology/projects.htm> ,
                                       "https://dbpedia.org/ontology/ResearchProject"@en ,
                                       "https://schema.org/ResearchProject"@en ;
                        rdfs:comment "The Schema.org defintion of Research Project is 'A Research Project'"@en ;
-                       dct:references schema: ;
                        rdfs:label "Research Project"@en ;
                        skos:altLabel "Experimental Project"@en ,
                                      "Meta Project"@en ,
@@ -2216,9 +2245,9 @@ org:Organization rdf:type owl:Class ;
 ###  http://www.w3.org/ns/regorg#RegisteredOrganization
 rov:RegisteredOrganization rdf:type owl:Class ;
                            rdfs:subClassOf org:FormalOrganization ;
-                           rdfs:comment "Inspired by the usage of the Registered Organization Vocabulary in the euBusinessGraph Ontology including links to The Organization Ontology."@en ;
                            dct:references rov: ,
-                                            <https://ec.europa.eu/eurostat/documents/3859598/5902521/KS-RA-07-015-EN.PDF> ;
+                                          <https://ec.europa.eu/eurostat/documents/3859598/5902521/KS-RA-07-015-EN.PDF> ;
+                           rdfs:comment "Inspired by the usage of the Registered Organization Vocabulary in the euBusinessGraph Ontology including links to The Organization Ontology."@en ;
                            rdfs:label "Registered Organization"@en ;
                            skos:altLabel "Company"@en ,
                                          "Institute"@en ,
@@ -2294,10 +2323,14 @@ dbr:Afghanistan rdf:type owl:NamedIndividual ;
                 owl:sameAs holy:Afghanistan .
 
 
+###  http://purl.org/holy/ns#Afghanistan
+
 ###  http://dbpedia.org/resource/Africa
 dbr:Africa rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Africa .
 
+
+###  http://purl.org/holy/ns#Africa
 
 ###  http://dbpedia.org/resource/Airbus
 dbr:Airbus rdf:type owl:NamedIndividual ,
@@ -2312,10 +2345,14 @@ dbr:Albania rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Albania .
 
 
+###  http://purl.org/holy/ns#Albania
+
 ###  http://dbpedia.org/resource/Algeria
 dbr:Algeria rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Algeria .
 
+
+###  http://purl.org/holy/ns#Algeria
 
 ###  http://dbpedia.org/resource/Alkaline_fuel_cell
 dbr:Alkaline_fuel_cell rdf:type owl:NamedIndividual ,
@@ -2355,35 +2392,49 @@ dbr:Ambazonia rdf:type owl:NamedIndividual ;
               owl:sameAs holy:Ambazonia .
 
 
+###  http://purl.org/holy/ns#Ambazonia
+
 ###  http://dbpedia.org/resource/Andorra
 dbr:Andorra rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Andorra .
 
+
+###  http://purl.org/holy/ns#Andorra
 
 ###  http://dbpedia.org/resource/Angola
 dbr:Angola rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Angola .
 
 
+###  http://purl.org/holy/ns#Angola
+
 ###  http://dbpedia.org/resource/Antigua_and_Barbuda
 dbr:Antigua_and_Barbuda rdf:type owl:NamedIndividual ;
                         owl:sameAs holy:Antigua_and_Barbuda .
 
+
+###  http://purl.org/holy/ns#Antigua_and_Barbuda
 
 ###  http://dbpedia.org/resource/Argentina
 dbr:Argentina rdf:type owl:NamedIndividual ;
               owl:sameAs holy:Argentina .
 
 
+###  http://purl.org/holy/ns#Argentina
+
 ###  http://dbpedia.org/resource/Armenia
 dbr:Armenia rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Armenia .
 
 
+###  http://purl.org/holy/ns#Armenia
+
 ###  http://dbpedia.org/resource/Asia
 dbr:Asia rdf:type owl:NamedIndividual ;
          owl:sameAs holy:Asia .
 
+
+###  http://purl.org/holy/ns#Asia
 
 ###  http://dbpedia.org/resource/Asia-Pacific
 dbr:Asia-Pacific rdf:type owl:NamedIndividual ,
@@ -2395,20 +2446,28 @@ dbr:Australia rdf:type owl:NamedIndividual ;
               owl:sameAs holy:Australia .
 
 
+###  http://purl.org/holy/ns#Australia
+
 ###  http://dbpedia.org/resource/Austria
 dbr:Austria rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Austria .
 
+
+###  http://purl.org/holy/ns#Austria
 
 ###  http://dbpedia.org/resource/Azerbaijan
 dbr:Azerbaijan rdf:type owl:NamedIndividual ;
                owl:sameAs holy:Azerbaijan .
 
 
+###  http://purl.org/holy/ns#Azerbaijan
+
 ###  http://dbpedia.org/resource/Bahrain
 dbr:Bahrain rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Bahrain .
 
+
+###  http://purl.org/holy/ns#Bahrain
 
 ###  http://dbpedia.org/resource/Ballard_Power_Systems
 dbr:Ballard_Power_Systems rdf:type owl:NamedIndividual ,
@@ -2425,10 +2484,14 @@ dbr:Bangladesh rdf:type owl:NamedIndividual ;
                owl:sameAs holy:Bangladesh .
 
 
+###  http://purl.org/holy/ns#Bangladesh
+
 ###  http://dbpedia.org/resource/Barbados
 dbr:Barbados rdf:type owl:NamedIndividual ;
              owl:sameAs holy:Barbados .
 
+
+###  http://purl.org/holy/ns#Barbados
 
 ###  http://dbpedia.org/resource/Battery_electric_vehicle
 dbr:Battery_electric_vehicle rdf:type owl:NamedIndividual ,
@@ -2440,25 +2503,35 @@ dbr:Belarus rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Belarus .
 
 
+###  http://purl.org/holy/ns#Belarus
+
 ###  http://dbpedia.org/resource/Belgium
 dbr:Belgium rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Belgium .
 
+
+###  http://purl.org/holy/ns#Belgium
 
 ###  http://dbpedia.org/resource/Belize
 dbr:Belize rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Belize .
 
 
+###  http://purl.org/holy/ns#Belize
+
 ###  http://dbpedia.org/resource/Benin
 dbr:Benin rdf:type owl:NamedIndividual ;
           owl:sameAs holy:Benin .
 
 
+###  http://purl.org/holy/ns#Benin
+
 ###  http://dbpedia.org/resource/Bhutan
 dbr:Bhutan rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Bhutan .
 
+
+###  http://purl.org/holy/ns#Bhutan
 
 ###  http://dbpedia.org/resource/Boeing_Phantom_Eye
 dbr:Boeing_Phantom_Eye rdf:type owl:NamedIndividual ,
@@ -2471,20 +2544,28 @@ dbr:Bolivia rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Bolivia .
 
 
+###  http://purl.org/holy/ns#Bolivia
+
 ###  http://dbpedia.org/resource/Bosnia_and_Herzegovina
 dbr:Bosnia_and_Herzegovina rdf:type owl:NamedIndividual ;
                            owl:sameAs holy:Bosnia_and_Herzegovina .
 
+
+###  http://purl.org/holy/ns#Bosnia_and_Herzegovina
 
 ###  http://dbpedia.org/resource/Botswana
 dbr:Botswana rdf:type owl:NamedIndividual ;
              owl:sameAs holy:Botswana .
 
 
+###  http://purl.org/holy/ns#Botswana
+
 ###  http://dbpedia.org/resource/Brazil
 dbr:Brazil rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Brazil .
 
+
+###  http://purl.org/holy/ns#Brazil
 
 ###  http://dbpedia.org/resource/British_Rail_Class_799
 dbr:British_Rail_Class_799 rdf:type owl:NamedIndividual ,
@@ -2498,45 +2579,63 @@ dbr:Brunei rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Brunei .
 
 
+###  http://purl.org/holy/ns#Brunei
+
 ###  http://dbpedia.org/resource/Bulgaria
 dbr:Bulgaria rdf:type owl:NamedIndividual ;
              owl:sameAs holy:Bulgaria .
 
+
+###  http://purl.org/holy/ns#Bulgaria
 
 ###  http://dbpedia.org/resource/Burkina_Faso
 dbr:Burkina_Faso rdf:type owl:NamedIndividual ;
                  owl:sameAs holy:Burkina_Faso .
 
 
+###  http://purl.org/holy/ns#Burkina_Faso
+
 ###  http://dbpedia.org/resource/Burundi
 dbr:Burundi rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Burundi .
 
+
+###  http://purl.org/holy/ns#Burundi
 
 ###  http://dbpedia.org/resource/Cambodia
 dbr:Cambodia rdf:type owl:NamedIndividual ;
              owl:sameAs holy:Cambodia .
 
 
+###  http://purl.org/holy/ns#Cambodia
+
 ###  http://dbpedia.org/resource/Cameroon
 dbr:Cameroon rdf:type owl:NamedIndividual ;
              owl:sameAs holy:Cameroon .
 
+
+###  http://purl.org/holy/ns#Cameroon
 
 ###  http://dbpedia.org/resource/Canada
 dbr:Canada rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Canada .
 
 
+###  http://purl.org/holy/ns#Canada
+
 ###  http://dbpedia.org/resource/Cape_Verde
 dbr:Cape_Verde rdf:type owl:NamedIndividual ;
                owl:sameAs holy:Cape_Verde .
 
 
+###  http://purl.org/holy/ns#Cape_Verde
+
 ###  http://dbpedia.org/resource/Central_African_Republic
 dbr:Central_African_Republic rdf:type owl:NamedIndividual ;
                              owl:sameAs holy:Central_African_Republic .
 
+
+###  http://purl.org/holy/ns#Central_African_Republic
 
 ###  http://dbpedia.org/resource/Central_America
 dbr:Central_America rdf:type owl:NamedIndividual ,
@@ -2548,15 +2647,21 @@ dbr:Central_Asia rdf:type owl:NamedIndividual ;
                  owl:sameAs holy:Asia .
 
 
+###  http://purl.org/holy/ns#Asia
+
 ###  http://dbpedia.org/resource/Chad
 dbr:Chad rdf:type owl:NamedIndividual ;
          owl:sameAs holy:Chad .
 
 
+###  http://purl.org/holy/ns#Chad
+
 ###  http://dbpedia.org/resource/Chile
 dbr:Chile rdf:type owl:NamedIndividual ;
           owl:sameAs holy:Chile .
 
+
+###  http://purl.org/holy/ns#Chile
 
 ###  http://dbpedia.org/resource/China
 dbr:China rdf:type owl:NamedIndividual ;
@@ -2564,45 +2669,63 @@ dbr:China rdf:type owl:NamedIndividual ;
           rdfs:comment "China (Chinese: 中国; pinyin: Zhōngguó), officially the People's Republic of China (PRC; Chinese: 中华人民共和国; pinyin: Zhōnghuá Rénmín Gònghéguó), is a country in East Asia. It is the world's most populous country, with a population of more than 1.4 billion. China spans five geographical time zones and borders 14 different countries, the second most of any country in the world after Russia. Covering an area of approximately 9.6 million square kilometers (3,700,000 sq mi), it is the world's third or fourth largest country. The country consists of 23 provinces, five autonomous regions, four municipalities, and two Special Administrative Regions (Hong Kong and Macau). The national capital is Beijing."@en .
 
 
+###  http://purl.org/holy/ns#China
+
 ###  http://dbpedia.org/resource/Colombia
 dbr:Colombia rdf:type owl:NamedIndividual ;
              owl:sameAs holy:Colombia .
 
+
+###  http://purl.org/holy/ns#Colombia
 
 ###  http://dbpedia.org/resource/Comoros
 dbr:Comoros rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Comoros .
 
 
+###  http://purl.org/holy/ns#Comoros
+
 ###  http://dbpedia.org/resource/Cook_Islands
 dbr:Cook_Islands rdf:type owl:NamedIndividual ;
                  owl:sameAs holy:Cook_Islands .
 
+
+###  http://purl.org/holy/ns#Cook_Islands
 
 ###  http://dbpedia.org/resource/Costa_Rica
 dbr:Costa_Rica rdf:type owl:NamedIndividual ;
                owl:sameAs holy:Costa_Rica .
 
 
+###  http://purl.org/holy/ns#Costa_Rica
+
 ###  http://dbpedia.org/resource/Croatia
 dbr:Croatia rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Croatia .
 
+
+###  http://purl.org/holy/ns#Croatia
 
 ###  http://dbpedia.org/resource/Cuba
 dbr:Cuba rdf:type owl:NamedIndividual ;
          owl:sameAs holy:Cuba .
 
 
+###  http://purl.org/holy/ns#Cuba
+
 ###  http://dbpedia.org/resource/Cyprus
 dbr:Cyprus rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Cyprus .
 
 
+###  http://purl.org/holy/ns#Cyprus
+
 ###  http://dbpedia.org/resource/Czech_Republic
 dbr:Czech_Republic rdf:type owl:NamedIndividual ;
                    owl:sameAs holy:Czech_Republic .
 
+
+###  http://purl.org/holy/ns#Czech_Republic
 
 ###  http://dbpedia.org/resource/Daimler_AG
 dbr:Daimler_AG rdf:type owl:NamedIndividual ,
@@ -2616,10 +2739,14 @@ dbr:Democratic_Republic_of_the_Congo rdf:type owl:NamedIndividual ;
                                      owl:sameAs holy:Democratic_Republic_of_the_Congo .
 
 
+###  http://purl.org/holy/ns#Democratic_Republic_of_the_Congo
+
 ###  http://dbpedia.org/resource/Denmark
 dbr:Denmark rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Denmark .
 
+
+###  http://purl.org/holy/ns#Denmark
 
 ###  http://dbpedia.org/resource/Direct_carbon_fuel_cell
 dbr:Direct_carbon_fuel_cell rdf:type owl:NamedIndividual ,
@@ -2636,25 +2763,35 @@ dbr:Djibouti rdf:type owl:NamedIndividual ;
              owl:sameAs holy:Djibouti .
 
 
+###  http://purl.org/holy/ns#Djibouti
+
 ###  http://dbpedia.org/resource/Dominica
 dbr:Dominica rdf:type owl:NamedIndividual ;
              owl:sameAs holy:Dominica .
 
+
+###  http://purl.org/holy/ns#Dominica
 
 ###  http://dbpedia.org/resource/Dominican_Republic
 dbr:Dominican_Republic rdf:type owl:NamedIndividual ;
                        owl:sameAs holy:Dominican_Republic .
 
 
+###  http://purl.org/holy/ns#Dominican_Republic
+
 ###  http://dbpedia.org/resource/East_Germany
 dbr:East_Germany rdf:type owl:NamedIndividual ;
                  owl:sameAs holy:Germany .
 
 
+###  http://purl.org/holy/ns#Germany
+
 ###  http://dbpedia.org/resource/East_Timor
 dbr:East_Timor rdf:type owl:NamedIndividual ;
                owl:sameAs holy:East_Timor .
 
+
+###  http://purl.org/holy/ns#East_Timor
 
 ###  http://dbpedia.org/resource/Eastern_Europe
 dbr:Eastern_Europe rdf:type owl:NamedIndividual ;
@@ -2663,20 +2800,28 @@ dbr:Eastern_Europe rdf:type owl:NamedIndividual ;
                    skos:definition "Eastern Europe is the eastern region of Europe. There is no consistent definition of the precise area it covers, partly because the term has a wide range of geopolitical, geographical, ethnic, cultural, and socioeconomic connotations. Russia, located in Eastern Europe, is both the largest and most populous country of Europe, spanning roughly 40% of the continent's total landmass, with over 15% of its total population. According to the Center for Educational Technologies at Wheeling Jesuit University, there are \"almost as many definitions of Eastern Europe as there are scholars of the region\". A related United Nations paper adds that \"every assessment of spatial identities is essentially a social and cultural construct\". One definition describes Eastern Europe as a cultural entity: the region lying in Europe with the main characteristics consisting of East Slavic, Greek, Byzantine, Eastern Orthodox, and some Ottoman cultural influences. Another definition was created during the Cold War and used more or less alike with the term Eastern Bloc. A similar definition names the formerly communist European states outside the Soviet Union as Eastern Europe. Such definitions are often seen as outdated, but they are still sometimes used for statistical purposes. (en)"@en .
 
 
+###  http://purl.org/holy/ns#Europe
+
 ###  http://dbpedia.org/resource/Ecuador
 dbr:Ecuador rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Ecuador .
 
+
+###  http://purl.org/holy/ns#Ecuador
 
 ###  http://dbpedia.org/resource/Egypt
 dbr:Egypt rdf:type owl:NamedIndividual ;
           owl:sameAs holy:Egypt .
 
 
+###  http://purl.org/holy/ns#Egypt
+
 ###  http://dbpedia.org/resource/El_Salvador
 dbr:El_Salvador rdf:type owl:NamedIndividual ;
                 owl:sameAs holy:El_Salvador .
 
+
+###  http://purl.org/holy/ns#El_Salvador
 
 ###  http://dbpedia.org/resource/Electric_bicycle
 dbr:Electric_bicycle rdf:type owl:NamedIndividual ,
@@ -2689,25 +2834,35 @@ dbr:Equatorial_Guinea rdf:type owl:NamedIndividual ;
                       owl:sameAs holy:Equatorial_Guinea .
 
 
+###  http://purl.org/holy/ns#Equatorial_Guinea
+
 ###  http://dbpedia.org/resource/Eritrea
 dbr:Eritrea rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Eritrea .
 
+
+###  http://purl.org/holy/ns#Eritrea
 
 ###  http://dbpedia.org/resource/Estonia
 dbr:Estonia rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Estonia .
 
 
+###  http://purl.org/holy/ns#Estonia
+
 ###  http://dbpedia.org/resource/Eswatini
 dbr:Eswatini rdf:type owl:NamedIndividual ;
              owl:sameAs holy:Eswatini .
 
 
+###  http://purl.org/holy/ns#Eswatini
+
 ###  http://dbpedia.org/resource/Ethiopia
 dbr:Ethiopia rdf:type owl:NamedIndividual ;
              owl:sameAs holy:Ethiopia .
 
+
+###  http://purl.org/holy/ns#Ethiopia
 
 ###  http://dbpedia.org/resource/Europe
 dbr:Europe rdf:type owl:NamedIndividual ;
@@ -2715,6 +2870,8 @@ dbr:Europe rdf:type owl:NamedIndividual ;
            rdfs:comment "Europe is a continent, also recognised as part of Eurasia, located entirely in the Northern Hemisphere and mostly in the Eastern Hemisphere. Comprising the westernmost peninsulas of the continental landmass of Eurasia, it shares the continental landmass of Afro-Eurasia with both Asia and Africa. It is bordered by the Arctic Ocean to the north, the Atlantic Ocean to the west, the Mediterranean Sea to the south and Asia to the east. Europe is commonly considered to be separated from Asia by the watershed of the Ural Mountains, the Ural River, the Caspian Sea, the Greater Caucasus, the Black Sea and the waterways of the Turkish Straits."@en ;
            rdfs:label "Europe"@en .
 
+
+###  http://purl.org/holy/ns#Europe
 
 ###  http://dbpedia.org/resource/European_Union
 dbr:European_Union rdf:type owl:NamedIndividual ;
@@ -2724,10 +2881,14 @@ dbr:European_Union rdf:type owl:NamedIndividual ;
                    skos:altLabel "EU"@en .
 
 
+###  http://purl.org/holy/ns#Europe
+
 ###  http://dbpedia.org/resource/European_microstates
 dbr:European_microstates rdf:type owl:NamedIndividual ;
                          owl:sameAs holy:European_microstates .
 
+
+###  http://purl.org/holy/ns#European_microstates
 
 ###  http://dbpedia.org/resource/EvoBus
 dbr:EvoBus rdf:type owl:NamedIndividual ,
@@ -2743,6 +2904,8 @@ dbr:FCDO rdf:type owl:NamedIndividual ,
                   holy:PublicAdministrationAndDefenceOrganization ;
          owl:sameAs <http://dbpedia.org/resource/Foreign,_Commonwealth_and_Development_Office> .
 
+
+###  http://dbpedia.org/resource/Foreign,_Commonwealth_and_Development_Office
 
 ###  http://dbpedia.org/resource/Federal_Ministry_of_Transport_and_Digital_Infrastructure
 dbr:Federal_Ministry_of_Transport_and_Digital_Infrastructure rdf:type owl:NamedIndividual ,
@@ -2772,6 +2935,8 @@ dbr:Federated_States_of_Micronesia rdf:type owl:NamedIndividual ;
                                    owl:sameAs holy:Federated_States_of_Micronesia .
 
 
+###  http://purl.org/holy/ns#Federated_States_of_Micronesia
+
 ###  http://dbpedia.org/resource/Fiat_Panda_Hydrogen
 dbr:Fiat_Panda_Hydrogen rdf:type owl:NamedIndividual ,
                                  holy:Car ;
@@ -2783,10 +2948,14 @@ dbr:Fiji rdf:type owl:NamedIndividual ;
          owl:sameAs holy:Fiji .
 
 
+###  http://purl.org/holy/ns#Fiji
+
 ###  http://dbpedia.org/resource/Finland
 dbr:Finland rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Finland .
 
+
+###  http://purl.org/holy/ns#Finland
 
 ###  http://dbpedia.org/resource/Ford_F-250_Super_Chief
 dbr:Ford_F-250_Super_Chief rdf:type owl:NamedIndividual ,
@@ -2817,6 +2986,8 @@ dbr:Forklift rdf:type owl:NamedIndividual ,
 dbr:France rdf:type owl:NamedIndividual ;
            owl:sameAs holy:France .
 
+
+###  http://purl.org/holy/ns#France
 
 ###  http://dbpedia.org/resource/Fuel-cell_stack
 dbr:Fuel-cell_stack rdf:type owl:NamedIndividual ,
@@ -2858,55 +3029,77 @@ dbr:Gabon rdf:type owl:NamedIndividual ;
           owl:sameAs holy:Gabon .
 
 
+###  http://purl.org/holy/ns#Gabon
+
 ###  http://dbpedia.org/resource/Germany
 dbr:Germany rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Germany .
 
+
+###  http://purl.org/holy/ns#Germany
 
 ###  http://dbpedia.org/resource/Ghana
 dbr:Ghana rdf:type owl:NamedIndividual ;
           owl:sameAs holy:Ghana .
 
 
+###  http://purl.org/holy/ns#Ghana
+
 ###  http://dbpedia.org/resource/Greece
 dbr:Greece rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Greece .
 
+
+###  http://purl.org/holy/ns#Greece
 
 ###  http://dbpedia.org/resource/Grenada
 dbr:Grenada rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Grenada .
 
 
+###  http://purl.org/holy/ns#Grenada
+
 ###  http://dbpedia.org/resource/Guatemala
 dbr:Guatemala rdf:type owl:NamedIndividual ;
               owl:sameAs holy:Guatemala .
 
+
+###  http://purl.org/holy/ns#Guatemala
 
 ###  http://dbpedia.org/resource/Guinea
 dbr:Guinea rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Guinea .
 
 
+###  http://purl.org/holy/ns#Guinea
+
 ###  http://dbpedia.org/resource/Guinea-Bissau
 dbr:Guinea-Bissau rdf:type owl:NamedIndividual ;
                   owl:sameAs holy:Guinea-Bissau .
 
+
+###  http://purl.org/holy/ns#Guinea-Bissau
 
 ###  http://dbpedia.org/resource/Guyana
 dbr:Guyana rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Guyana .
 
 
+###  http://purl.org/holy/ns#Guyana
+
 ###  http://dbpedia.org/resource/Haiti
 dbr:Haiti rdf:type owl:NamedIndividual ;
           owl:sameAs holy:Haiti .
 
 
+###  http://purl.org/holy/ns#Haiti
+
 ###  http://dbpedia.org/resource/Honduras
 dbr:Honduras rdf:type owl:NamedIndividual ;
              owl:sameAs holy:Honduras .
 
+
+###  http://purl.org/holy/ns#Honduras
 
 ###  http://dbpedia.org/resource/Horizon_Fuel_Cell_Technolgies
 dbr:Horizon_Fuel_Cell_Technolgies rdf:type owl:NamedIndividual ,
@@ -2920,6 +3113,8 @@ dbr:Horizon_Fuel_Cell_Technolgies rdf:type owl:NamedIndividual ,
 dbr:Hungary rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Hungary .
 
+
+###  http://purl.org/holy/ns#Hungary
 
 ###  http://dbpedia.org/resource/Hybrid_electric_vehicle
 dbr:Hybrid_electric_vehicle rdf:type owl:NamedIndividual ,
@@ -3011,6 +3206,8 @@ dbr:Iceland rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Iceland .
 
 
+###  http://purl.org/holy/ns#Iceland
+
 ###  http://dbpedia.org/resource/Icelandic_New_Energy
 dbr:Icelandic_New_Energy rdf:type owl:NamedIndividual ,
                                   org:Organization ;
@@ -3026,10 +3223,14 @@ dbr:India rdf:type owl:NamedIndividual ;
           owl:sameAs holy:India .
 
 
+###  http://purl.org/holy/ns#India
+
 ###  http://dbpedia.org/resource/Indonesia
 dbr:Indonesia rdf:type owl:NamedIndividual ;
               owl:sameAs holy:Indonesia .
 
+
+###  http://purl.org/holy/ns#Indonesia
 
 ###  http://dbpedia.org/resource/Ionic_liquid_piston_compressor
 dbr:Ionic_liquid_piston_compressor rdf:type owl:NamedIndividual ,
@@ -3044,40 +3245,56 @@ dbr:Iran rdf:type owl:NamedIndividual ;
          owl:sameAs holy:Iran .
 
 
+###  http://purl.org/holy/ns#Iran
+
 ###  http://dbpedia.org/resource/Iraq
 dbr:Iraq rdf:type owl:NamedIndividual ;
          owl:sameAs holy:Iraq .
 
+
+###  http://purl.org/holy/ns#Iraq
 
 ###  http://dbpedia.org/resource/Israel
 dbr:Israel rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Israel .
 
 
+###  http://purl.org/holy/ns#Israel
+
 ###  http://dbpedia.org/resource/Italy
 dbr:Italy rdf:type owl:NamedIndividual ;
           owl:sameAs holy:Italy .
 
+
+###  http://purl.org/holy/ns#Italy
 
 ###  http://dbpedia.org/resource/Ivory_Coast
 dbr:Ivory_Coast rdf:type owl:NamedIndividual ;
                 owl:sameAs holy:Ivory_Coast .
 
 
+###  http://purl.org/holy/ns#Ivory_Coast
+
 ###  http://dbpedia.org/resource/Jamaica
 dbr:Jamaica rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Jamaica .
 
+
+###  http://purl.org/holy/ns#Jamaica
 
 ###  http://dbpedia.org/resource/Jordan
 dbr:Jordan rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Jordan .
 
 
+###  http://purl.org/holy/ns#Jordan
+
 ###  http://dbpedia.org/resource/Kazakhstan
 dbr:Kazakhstan rdf:type owl:NamedIndividual ;
                owl:sameAs holy:Kazakhstan .
 
+
+###  http://purl.org/holy/ns#Kazakhstan
 
 ###  http://dbpedia.org/resource/Keihin_Corporation
 dbr:Keihin_Corporation rdf:type owl:NamedIndividual ,
@@ -3091,30 +3308,42 @@ dbr:Kenya rdf:type owl:NamedIndividual ;
           owl:sameAs holy:Kenya .
 
 
+###  http://purl.org/holy/ns#Kenya
+
 ###  http://dbpedia.org/resource/Kiribati
 dbr:Kiribati rdf:type owl:NamedIndividual ;
              owl:sameAs holy:Kiribati .
 
+
+###  http://purl.org/holy/ns#Kiribati
 
 ###  http://dbpedia.org/resource/Kosovo
 dbr:Kosovo rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Kosovo .
 
 
+###  http://purl.org/holy/ns#Kosovo
+
 ###  http://dbpedia.org/resource/Kuwait
 dbr:Kuwait rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Kuwait .
 
+
+###  http://purl.org/holy/ns#Kuwait
 
 ###  http://dbpedia.org/resource/Kyrgyzstan
 dbr:Kyrgyzstan rdf:type owl:NamedIndividual ;
                owl:sameAs holy:Kyrgyzstan .
 
 
+###  http://purl.org/holy/ns#Kyrgyzstan
+
 ###  http://dbpedia.org/resource/Laos
 dbr:Laos rdf:type owl:NamedIndividual ;
          owl:sameAs holy:Laos .
 
+
+###  http://purl.org/holy/ns#Laos
 
 ###  http://dbpedia.org/resource/Latin_America
 dbr:Latin_America rdf:type owl:NamedIndividual ,
@@ -3122,35 +3351,49 @@ dbr:Latin_America rdf:type owl:NamedIndividual ,
                   owl:sameAs holy:South_America .
 
 
+###  http://purl.org/holy/ns#South_America
+
 ###  http://dbpedia.org/resource/Latvia
 dbr:Latvia rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Latvia .
 
+
+###  http://purl.org/holy/ns#Latvia
 
 ###  http://dbpedia.org/resource/Lebanon
 dbr:Lebanon rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Lebanon .
 
 
+###  http://purl.org/holy/ns#Lebanon
+
 ###  http://dbpedia.org/resource/Lesotho
 dbr:Lesotho rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Lesotho .
 
+
+###  http://purl.org/holy/ns#Lesotho
 
 ###  http://dbpedia.org/resource/Liberia
 dbr:Liberia rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Liberia .
 
 
+###  http://purl.org/holy/ns#Liberia
+
 ###  http://dbpedia.org/resource/Libya
 dbr:Libya rdf:type owl:NamedIndividual ;
           owl:sameAs holy:Libya .
 
 
+###  http://purl.org/holy/ns#Libya
+
 ###  http://dbpedia.org/resource/Liechtenstein
 dbr:Liechtenstein rdf:type owl:NamedIndividual ;
                   owl:sameAs holy:Liechtenstein .
 
+
+###  http://purl.org/holy/ns#Liechtenstein
 
 ###  http://dbpedia.org/resource/Linde_plc
 dbr:Linde_plc rdf:type owl:NamedIndividual ,
@@ -3183,15 +3426,21 @@ dbr:Lithuania rdf:type owl:NamedIndividual ;
               owl:sameAs holy:Lithuania .
 
 
+###  http://purl.org/holy/ns#Lithuania
+
 ###  http://dbpedia.org/resource/Luxembourg
 dbr:Luxembourg rdf:type owl:NamedIndividual ;
                owl:sameAs holy:Luxembourg .
 
 
+###  http://purl.org/holy/ns#Luxembourg
+
 ###  http://dbpedia.org/resource/Madagascar
 dbr:Madagascar rdf:type owl:NamedIndividual ;
                owl:sameAs holy:Madagascar .
 
+
+###  http://purl.org/holy/ns#Madagascar
 
 ###  http://dbpedia.org/resource/Mainland_Southeast_Asia
 dbr:Mainland_Southeast_Asia rdf:type owl:NamedIndividual ,
@@ -3199,45 +3448,63 @@ dbr:Mainland_Southeast_Asia rdf:type owl:NamedIndividual ,
                             owl:sameAs holy:Asia .
 
 
+###  http://purl.org/holy/ns#Asia
+
 ###  http://dbpedia.org/resource/Malawi
 dbr:Malawi rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Malawi .
 
+
+###  http://purl.org/holy/ns#Malawi
 
 ###  http://dbpedia.org/resource/Malaysia
 dbr:Malaysia rdf:type owl:NamedIndividual ;
              owl:sameAs holy:Malaysia .
 
 
+###  http://purl.org/holy/ns#Malaysia
+
 ###  http://dbpedia.org/resource/Maldives
 dbr:Maldives rdf:type owl:NamedIndividual ;
              owl:sameAs holy:Maldives .
 
+
+###  http://purl.org/holy/ns#Maldives
 
 ###  http://dbpedia.org/resource/Mali
 dbr:Mali rdf:type owl:NamedIndividual ;
          owl:sameAs holy:Mali .
 
 
+###  http://purl.org/holy/ns#Mali
+
 ###  http://dbpedia.org/resource/Malta
 dbr:Malta rdf:type owl:NamedIndividual ;
           owl:sameAs holy:Malta .
 
+
+###  http://purl.org/holy/ns#Malta
 
 ###  http://dbpedia.org/resource/Marshall_Islands
 dbr:Marshall_Islands rdf:type owl:NamedIndividual ;
                      owl:sameAs holy:Marshall_Islands .
 
 
+###  http://purl.org/holy/ns#Marshall_Islands
+
 ###  http://dbpedia.org/resource/Mauritania
 dbr:Mauritania rdf:type owl:NamedIndividual ;
                owl:sameAs holy:Mauritania .
 
 
+###  http://purl.org/holy/ns#Mauritania
+
 ###  http://dbpedia.org/resource/Mauritius
 dbr:Mauritius rdf:type owl:NamedIndividual ;
               owl:sameAs holy:Mauritius .
 
+
+###  http://purl.org/holy/ns#Mauritius
 
 ###  http://dbpedia.org/resource/Mercedes-Benz_Cito
 dbr:Mercedes-Benz_Cito rdf:type owl:NamedIndividual ,
@@ -3252,6 +3519,8 @@ dbr:Mexico rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Mexico .
 
 
+###  http://purl.org/holy/ns#Mexico
+
 ###  http://dbpedia.org/resource/Microbial_fuel_cell
 dbr:Microbial_fuel_cell rdf:type owl:NamedIndividual ,
                                  holy:SubstituteProduct .
@@ -3262,40 +3531,56 @@ dbr:Moldova rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Moldova .
 
 
+###  http://purl.org/holy/ns#Moldova
+
 ###  http://dbpedia.org/resource/Monaco
 dbr:Monaco rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Monaco .
 
+
+###  http://purl.org/holy/ns#Monaco
 
 ###  http://dbpedia.org/resource/Mongolia
 dbr:Mongolia rdf:type owl:NamedIndividual ;
              owl:sameAs holy:Mongolia .
 
 
+###  http://purl.org/holy/ns#Mongolia
+
 ###  http://dbpedia.org/resource/Montenegro
 dbr:Montenegro rdf:type owl:NamedIndividual ;
                owl:sameAs holy:Montenegro .
 
+
+###  http://purl.org/holy/ns#Montenegro
 
 ###  http://dbpedia.org/resource/Morocco
 dbr:Morocco rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Morocco .
 
 
+###  http://purl.org/holy/ns#Morocco
+
 ###  http://dbpedia.org/resource/Mozambique
 dbr:Mozambique rdf:type owl:NamedIndividual ;
                owl:sameAs holy:Mozambique .
 
+
+###  http://purl.org/holy/ns#Mozambique
 
 ###  http://dbpedia.org/resource/Myanmar
 dbr:Myanmar rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Myanmar .
 
 
+###  http://purl.org/holy/ns#Myanmar
+
 ###  http://dbpedia.org/resource/Namibia
 dbr:Namibia rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Namibia .
 
+
+###  http://purl.org/holy/ns#Namibia
 
 ###  http://dbpedia.org/resource/Natural_gas_vehicle
 dbr:Natural_gas_vehicle rdf:type owl:NamedIndividual ,
@@ -3308,15 +3593,21 @@ dbr:Nauru rdf:type owl:NamedIndividual ;
           owl:sameAs holy:Nauru .
 
 
+###  http://purl.org/holy/ns#Nauru
+
 ###  http://dbpedia.org/resource/Nepal
 dbr:Nepal rdf:type owl:NamedIndividual ;
           owl:sameAs holy:Nepal .
 
 
+###  http://purl.org/holy/ns#Nepal
+
 ###  http://dbpedia.org/resource/Netherlands
 dbr:Netherlands rdf:type owl:NamedIndividual ;
                 owl:sameAs holy:Netherlands .
 
+
+###  http://purl.org/holy/ns#Netherlands
 
 ###  http://dbpedia.org/resource/New_Sunshine_Project
 dbr:New_Sunshine_Project rdf:type owl:NamedIndividual ,
@@ -3329,40 +3620,56 @@ dbr:New_Zealand rdf:type owl:NamedIndividual ;
                 owl:sameAs holy:New_Zealand .
 
 
+###  http://purl.org/holy/ns#New_Zealand
+
 ###  http://dbpedia.org/resource/Nicaragua
 dbr:Nicaragua rdf:type owl:NamedIndividual ;
               owl:sameAs holy:Nicaragua .
 
+
+###  http://purl.org/holy/ns#Nicaragua
 
 ###  http://dbpedia.org/resource/Niger
 dbr:Niger rdf:type owl:NamedIndividual ;
           owl:sameAs holy:Niger .
 
 
+###  http://purl.org/holy/ns#Niger
+
 ###  http://dbpedia.org/resource/Nigeria
 dbr:Nigeria rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Nigeria .
 
+
+###  http://purl.org/holy/ns#Nigeria
 
 ###  http://dbpedia.org/resource/Niue
 dbr:Niue rdf:type owl:NamedIndividual ;
          owl:sameAs holy:Niue .
 
 
+###  http://purl.org/holy/ns#Niue
+
 ###  http://dbpedia.org/resource/North_America
 dbr:North_America rdf:type owl:NamedIndividual ;
                   owl:sameAs holy:North_America .
 
+
+###  http://purl.org/holy/ns#North_America
 
 ###  http://dbpedia.org/resource/North_Macedonia
 dbr:North_Macedonia rdf:type owl:NamedIndividual ;
                     owl:sameAs holy:North_Macedonia .
 
 
+###  http://purl.org/holy/ns#North_Macedonia
+
 ###  http://dbpedia.org/resource/Norway
 dbr:Norway rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Norway .
 
+
+###  http://purl.org/holy/ns#Norway
 
 ###  http://dbpedia.org/resource/Oceania
 dbr:Oceania rdf:type owl:NamedIndividual ,
@@ -3372,20 +3679,28 @@ dbr:Oceania rdf:type owl:NamedIndividual ,
             rdfs:label "Oceania"@en .
 
 
+###  http://purl.org/holy/ns#Oceania
+
 ###  http://dbpedia.org/resource/Oman
 dbr:Oman rdf:type owl:NamedIndividual ;
          owl:sameAs holy:Oman .
 
+
+###  http://purl.org/holy/ns#Oman
 
 ###  http://dbpedia.org/resource/Pakistan
 dbr:Pakistan rdf:type owl:NamedIndividual ;
              owl:sameAs holy:Pakistan .
 
 
+###  http://purl.org/holy/ns#Pakistan
+
 ###  http://dbpedia.org/resource/Palau
 dbr:Palau rdf:type owl:NamedIndividual ;
           owl:sameAs holy:Palau .
 
+
+###  http://purl.org/holy/ns#Palau
 
 ###  http://dbpedia.org/resource/Pallet_jack
 dbr:Pallet_jack rdf:type owl:NamedIndividual ,
@@ -3400,25 +3715,35 @@ dbr:Panama rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Panama .
 
 
+###  http://purl.org/holy/ns#Panama
+
 ###  http://dbpedia.org/resource/Papua_New_Guinea
 dbr:Papua_New_Guinea rdf:type owl:NamedIndividual ;
                      owl:sameAs holy:Papua_New_Guinea .
 
+
+###  http://purl.org/holy/ns#Papua_New_Guinea
 
 ###  http://dbpedia.org/resource/Paraguay
 dbr:Paraguay rdf:type owl:NamedIndividual ;
              owl:sameAs holy:Paraguay .
 
 
+###  http://purl.org/holy/ns#Paraguay
+
 ###  http://dbpedia.org/resource/Peru
 dbr:Peru rdf:type owl:NamedIndividual ;
          owl:sameAs holy:Peru .
 
 
+###  http://purl.org/holy/ns#Peru
+
 ###  http://dbpedia.org/resource/Philippines
 dbr:Philippines rdf:type owl:NamedIndividual ;
                 owl:sameAs holy:Philippines .
 
+
+###  http://purl.org/holy/ns#Philippines
 
 ###  http://dbpedia.org/resource/Plug_Power
 dbr:Plug_Power rdf:type owl:NamedIndividual ,
@@ -3435,10 +3760,14 @@ dbr:Poland rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Poland .
 
 
+###  http://purl.org/holy/ns#Poland
+
 ###  http://dbpedia.org/resource/Portugal
 dbr:Portugal rdf:type owl:NamedIndividual ;
              owl:sameAs holy:Portugal .
 
+
+###  http://purl.org/holy/ns#Portugal
 
 ###  http://dbpedia.org/resource/Proton-exchange_membrane_fuel_cell
 dbr:Proton-exchange_membrane_fuel_cell rdf:type owl:NamedIndividual ,
@@ -3457,100 +3786,140 @@ dbr:Qatar rdf:type owl:NamedIndividual ;
           owl:sameAs holy:Qatar .
 
 
+###  http://purl.org/holy/ns#Qatar
+
 ###  http://dbpedia.org/resource/Republic_of_Ireland
 dbr:Republic_of_Ireland rdf:type owl:NamedIndividual ;
                         owl:sameAs holy:Republic_of_Ireland .
 
+
+###  http://purl.org/holy/ns#Republic_of_Ireland
 
 ###  http://dbpedia.org/resource/Republic_of_the_Congo
 dbr:Republic_of_the_Congo rdf:type owl:NamedIndividual ;
                           owl:sameAs holy:Republic_of_the_Congo .
 
 
+###  http://purl.org/holy/ns#Republic_of_the_Congo
+
 ###  http://dbpedia.org/resource/Romania
 dbr:Romania rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Romania .
 
+
+###  http://purl.org/holy/ns#Romania
 
 ###  http://dbpedia.org/resource/Russia
 dbr:Russia rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Russia .
 
 
+###  http://purl.org/holy/ns#Russia
+
 ###  http://dbpedia.org/resource/Rwanda
 dbr:Rwanda rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Rwanda .
 
+
+###  http://purl.org/holy/ns#Rwanda
 
 ###  http://dbpedia.org/resource/Sahrawi_Arab_Democratic_Republic
 dbr:Sahrawi_Arab_Democratic_Republic rdf:type owl:NamedIndividual ;
                                      owl:sameAs holy:Sahrawi_Arab_Democratic_Republic .
 
 
+###  http://purl.org/holy/ns#Sahrawi_Arab_Democratic_Republic
+
 ###  http://dbpedia.org/resource/Saint_Kitts_and_Nevis
 dbr:Saint_Kitts_and_Nevis rdf:type owl:NamedIndividual ;
                           owl:sameAs holy:Saint_Kitts_and_Nevis .
 
+
+###  http://purl.org/holy/ns#Saint_Kitts_and_Nevis
 
 ###  http://dbpedia.org/resource/Saint_Lucia
 dbr:Saint_Lucia rdf:type owl:NamedIndividual ;
                 owl:sameAs holy:Saint_Lucia .
 
 
+###  http://purl.org/holy/ns#Saint_Lucia
+
 ###  http://dbpedia.org/resource/Saint_Vincent_and_the_Grenadines
 dbr:Saint_Vincent_and_the_Grenadines rdf:type owl:NamedIndividual ;
                                      owl:sameAs holy:Saint_Vincent_and_the_Grenadines .
 
+
+###  http://purl.org/holy/ns#Saint_Vincent_and_the_Grenadines
 
 ###  http://dbpedia.org/resource/Samoa
 dbr:Samoa rdf:type owl:NamedIndividual ;
           owl:sameAs holy:Samoa .
 
 
+###  http://purl.org/holy/ns#Samoa
+
 ###  http://dbpedia.org/resource/San_Marino
 dbr:San_Marino rdf:type owl:NamedIndividual ;
                owl:sameAs holy:San_Marino .
 
+
+###  http://purl.org/holy/ns#San_Marino
 
 ###  http://dbpedia.org/resource/Saudi_Arabia
 dbr:Saudi_Arabia rdf:type owl:NamedIndividual ;
                  owl:sameAs holy:Saudi_Arabia .
 
 
+###  http://purl.org/holy/ns#Saudi_Arabia
+
 ###  http://dbpedia.org/resource/Senegal
 dbr:Senegal rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Senegal .
 
+
+###  http://purl.org/holy/ns#Senegal
 
 ###  http://dbpedia.org/resource/Serbia
 dbr:Serbia rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Serbia .
 
 
+###  http://purl.org/holy/ns#Serbia
+
 ###  http://dbpedia.org/resource/Seychelles
 dbr:Seychelles rdf:type owl:NamedIndividual ;
                owl:sameAs holy:Seychelles .
 
+
+###  http://purl.org/holy/ns#Seychelles
 
 ###  http://dbpedia.org/resource/Sierra_Leone
 dbr:Sierra_Leone rdf:type owl:NamedIndividual ;
                  owl:sameAs holy:Sierra_Leone .
 
 
+###  http://purl.org/holy/ns#Sierra_Leone
+
 ###  http://dbpedia.org/resource/Singapore
 dbr:Singapore rdf:type owl:NamedIndividual ;
               owl:sameAs holy:Singapore .
 
+
+###  http://purl.org/holy/ns#Singapore
 
 ###  http://dbpedia.org/resource/Slovakia
 dbr:Slovakia rdf:type owl:NamedIndividual ;
              owl:sameAs holy:Slovakia .
 
 
+###  http://purl.org/holy/ns#Slovakia
+
 ###  http://dbpedia.org/resource/Slovenia
 dbr:Slovenia rdf:type owl:NamedIndividual ;
              owl:sameAs holy:Slovenia .
 
+
+###  http://purl.org/holy/ns#Slovenia
 
 ###  http://dbpedia.org/resource/Solid_oxide_fuel_cell
 dbr:Solid_oxide_fuel_cell rdf:type owl:NamedIndividual ,
@@ -3563,40 +3932,56 @@ dbr:Solomon_Islands rdf:type owl:NamedIndividual ;
                     owl:sameAs holy:Solomon_Islands .
 
 
+###  http://purl.org/holy/ns#Solomon_Islands
+
 ###  http://dbpedia.org/resource/Somalia
 dbr:Somalia rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Somalia .
 
+
+###  http://purl.org/holy/ns#Somalia
 
 ###  http://dbpedia.org/resource/Somaliland
 dbr:Somaliland rdf:type owl:NamedIndividual ;
                owl:sameAs holy:Somaliland .
 
 
+###  http://purl.org/holy/ns#Somaliland
+
 ###  http://dbpedia.org/resource/South_Africa
 dbr:South_Africa rdf:type owl:NamedIndividual ;
                  owl:sameAs holy:South_Africa .
 
+
+###  http://purl.org/holy/ns#South_Africa
 
 ###  http://dbpedia.org/resource/South_America
 dbr:South_America rdf:type owl:NamedIndividual ;
                   owl:sameAs holy:South_America .
 
 
+###  http://purl.org/holy/ns#South_America
+
 ###  http://dbpedia.org/resource/South_Sudan
 dbr:South_Sudan rdf:type owl:NamedIndividual ;
                 owl:sameAs holy:South_Sudan .
 
+
+###  http://purl.org/holy/ns#South_Sudan
 
 ###  http://dbpedia.org/resource/Spain
 dbr:Spain rdf:type owl:NamedIndividual ;
           owl:sameAs holy:Spain .
 
 
+###  http://purl.org/holy/ns#Spain
+
 ###  http://dbpedia.org/resource/Sri_Lanka
 dbr:Sri_Lanka rdf:type owl:NamedIndividual ;
               owl:sameAs holy:Sri_Lanka .
 
+
+###  http://purl.org/holy/ns#Sri_Lanka
 
 ###  http://dbpedia.org/resource/Stationary_fuel-cell_applications
 dbr:Stationary_fuel-cell_applications rdf:type owl:NamedIndividual ,
@@ -3610,30 +3995,42 @@ dbr:Sudan rdf:type owl:NamedIndividual ;
           owl:sameAs holy:Sudan .
 
 
+###  http://purl.org/holy/ns#Sudan
+
 ###  http://dbpedia.org/resource/Suriname
 dbr:Suriname rdf:type owl:NamedIndividual ;
              owl:sameAs holy:Suriname .
 
+
+###  http://purl.org/holy/ns#Suriname
 
 ###  http://dbpedia.org/resource/Sweden
 dbr:Sweden rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Sweden .
 
 
+###  http://purl.org/holy/ns#Sweden
+
 ###  http://dbpedia.org/resource/Switzerland
 dbr:Switzerland rdf:type owl:NamedIndividual ;
                 owl:sameAs holy:Switzerland .
 
+
+###  http://purl.org/holy/ns#Switzerland
 
 ###  http://dbpedia.org/resource/Syria
 dbr:Syria rdf:type owl:NamedIndividual ;
           owl:sameAs holy:Syria .
 
 
+###  http://purl.org/holy/ns#Syria
+
 ###  http://dbpedia.org/resource/Tajikistan
 dbr:Tajikistan rdf:type owl:NamedIndividual ;
                owl:sameAs holy:Tajikistan .
 
+
+###  http://purl.org/holy/ns#Tajikistan
 
 ###  http://dbpedia.org/resource/Tank_Truck
 dbr:Tank_Truck rdf:type owl:NamedIndividual ,
@@ -3651,35 +4048,49 @@ dbr:Tanzania rdf:type owl:NamedIndividual ;
              owl:sameAs holy:Tanzania .
 
 
+###  http://purl.org/holy/ns#Tanzania
+
 ###  http://dbpedia.org/resource/Thailand
 dbr:Thailand rdf:type owl:NamedIndividual ;
              owl:sameAs holy:Thailand .
 
+
+###  http://purl.org/holy/ns#Thailand
 
 ###  http://dbpedia.org/resource/The_Bahamas
 dbr:The_Bahamas rdf:type owl:NamedIndividual ;
                 owl:sameAs holy:The_Bahamas .
 
 
+###  http://purl.org/holy/ns#The_Bahamas
+
 ###  http://dbpedia.org/resource/The_Gambia
 dbr:The_Gambia rdf:type owl:NamedIndividual ;
                owl:sameAs holy:The_Gambia .
 
+
+###  http://purl.org/holy/ns#The_Gambia
 
 ###  http://dbpedia.org/resource/Tiger_Cub_Economies
 dbr:Tiger_Cub_Economies rdf:type owl:NamedIndividual ;
                         owl:sameAs holy:Tiger_Cub_Economies .
 
 
+###  http://purl.org/holy/ns#Tiger_Cub_Economies
+
 ###  http://dbpedia.org/resource/Togo
 dbr:Togo rdf:type owl:NamedIndividual ;
          owl:sameAs holy:Togo .
 
 
+###  http://purl.org/holy/ns#Togo
+
 ###  http://dbpedia.org/resource/Tonga
 dbr:Tonga rdf:type owl:NamedIndividual ;
           owl:sameAs holy:Tonga .
 
+
+###  http://purl.org/holy/ns#Tonga
 
 ###  http://dbpedia.org/resource/Toyota_FCHV-4
 dbr:Toyota_FCHV-4 rdf:type owl:NamedIndividual ,
@@ -3698,60 +4109,84 @@ dbr:Trinidad_and_Tobago rdf:type owl:NamedIndividual ;
                         owl:sameAs holy:Trinidad_and_Tobago .
 
 
+###  http://purl.org/holy/ns#Trinidad_and_Tobago
+
 ###  http://dbpedia.org/resource/Tunisia
 dbr:Tunisia rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Tunisia .
 
+
+###  http://purl.org/holy/ns#Tunisia
 
 ###  http://dbpedia.org/resource/Turkey
 dbr:Turkey rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Turkey .
 
 
+###  http://purl.org/holy/ns#Turkey
+
 ###  http://dbpedia.org/resource/Turkmenistan
 dbr:Turkmenistan rdf:type owl:NamedIndividual ;
                  owl:sameAs holy:Turkmenistan .
 
+
+###  http://purl.org/holy/ns#Turkmenistan
 
 ###  http://dbpedia.org/resource/Tuvalu
 dbr:Tuvalu rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Tuvalu .
 
 
+###  http://purl.org/holy/ns#Tuvalu
+
 ###  http://dbpedia.org/resource/Uganda
 dbr:Uganda rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Uganda .
 
+
+###  http://purl.org/holy/ns#Uganda
 
 ###  http://dbpedia.org/resource/Ukraine
 dbr:Ukraine rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Ukraine .
 
 
+###  http://purl.org/holy/ns#Ukraine
+
 ###  http://dbpedia.org/resource/United_Arab_Emirates
 dbr:United_Arab_Emirates rdf:type owl:NamedIndividual ;
                          owl:sameAs holy:United_Arab_Emirates .
 
+
+###  http://purl.org/holy/ns#United_Arab_Emirates
 
 ###  http://dbpedia.org/resource/United_Kingdom
 dbr:United_Kingdom rdf:type owl:NamedIndividual ;
                    owl:sameAs holy:United_Kingdom .
 
 
+###  http://purl.org/holy/ns#United_Kingdom
+
 ###  http://dbpedia.org/resource/United_States
 dbr:United_States rdf:type owl:NamedIndividual ;
                   owl:sameAs holy:United_States .
 
+
+###  http://purl.org/holy/ns#United_States
 
 ###  http://dbpedia.org/resource/Uruguay
 dbr:Uruguay rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Uruguay .
 
 
+###  http://purl.org/holy/ns#Uruguay
+
 ###  http://dbpedia.org/resource/Uzbekistan
 dbr:Uzbekistan rdf:type owl:NamedIndividual ;
                owl:sameAs holy:Uzbekistan .
 
+
+###  http://purl.org/holy/ns#Uzbekistan
 
 ###  http://dbpedia.org/resource/Vacuum_truck
 dbr:Vacuum_truck rdf:type owl:NamedIndividual ,
@@ -3772,26 +4207,36 @@ dbr:Vanuatu rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Vanuatu .
 
 
+###  http://purl.org/holy/ns#Vanuatu
+
 ###  http://dbpedia.org/resource/Vatican_City
 dbr:Vatican_City rdf:type owl:NamedIndividual ;
                  owl:sameAs holy:Vatican_City .
 
+
+###  http://purl.org/holy/ns#Vatican_City
 
 ###  http://dbpedia.org/resource/Venezuela
 dbr:Venezuela rdf:type owl:NamedIndividual ;
               owl:sameAs holy:Venezuela .
 
 
+###  http://purl.org/holy/ns#Venezuela
+
 ###  http://dbpedia.org/resource/Vietnam
 dbr:Vietnam rdf:type owl:NamedIndividual ;
             owl:sameAs holy:Vietnam .
 
+
+###  http://purl.org/holy/ns#Vietnam
 
 ###  http://dbpedia.org/resource/West_Germany
 dbr:West_Germany rdf:type owl:NamedIndividual ,
                           holy:GeographicMarket ;
                  owl:sameAs holy:Germany .
 
+
+###  http://purl.org/holy/ns#Germany
 
 ###  http://dbpedia.org/resource/Western_Europe
 dbr:Western_Europe rdf:type owl:NamedIndividual ,
@@ -3801,10 +4246,14 @@ dbr:Western_Europe rdf:type owl:NamedIndividual ,
                    skos:definition "Western Europe is the European region farthest from Asia. The region's countries and territories vary depending on context. Beginning with foreign exploration during the Age of Discovery, roughly from the 15th century, the concept of Europe as \"the West\" gradually became distinguished from and eventually replaced the dominant use of \"Christendom\" as the preferred endonym within the region. Later, during the Age of Enlightenment, the concept of \"Eastern Europe\" was created to juxtapose that of \"Western Europe\"."@en .
 
 
+###  http://purl.org/holy/ns#Europe
+
 ###  http://dbpedia.org/resource/Western_Sahara
 dbr:Western_Sahara rdf:type owl:NamedIndividual ;
                    owl:sameAs holy:Western_Sahara .
 
+
+###  http://purl.org/holy/ns#Western_Sahara
 
 ###  http://dbpedia.org/resource/Western_world
 dbr:Western_world rdf:type owl:NamedIndividual ,
@@ -3821,15 +4270,21 @@ dbr:Yemen rdf:type owl:NamedIndividual ;
           owl:sameAs holy:Yemen .
 
 
+###  http://purl.org/holy/ns#Yemen
+
 ###  http://dbpedia.org/resource/Zambia
 dbr:Zambia rdf:type owl:NamedIndividual ;
            owl:sameAs holy:Zambia .
 
 
+###  http://purl.org/holy/ns#Zambia
+
 ###  http://dbpedia.org/resource/Zimbabwe
 dbr:Zimbabwe rdf:type owl:NamedIndividual ;
              owl:sameAs holy:Zimbabwe .
 
+
+###  http://purl.org/holy/ns#Zimbabwe
 
 ###  http://dbpedia.org/resource/combined_heat_and_power_station
 dbr:combined_heat_and_power_station rdf:type owl:NamedIndividual ,
@@ -3853,11 +4308,13 @@ dbr:combined_heat_and_power_station rdf:type owl:NamedIndividual ,
                                                 owl:sameAs <http://purl.org/holy/ns#Georgia_(country)> .
 
 
+###  http://purl.org/holy/ns#Georgia_(country)
+
 ###  http://fraunhofer.de/dataKoreaWesternPowerCompanyLimited
 <http://fraunhofer.de/dataKoreaWesternPowerCompanyLimited> rdf:type owl:NamedIndividual ,
                                                                     holy:EnergySectorOrganization ;
                                                            holy:participatesIn <http://fraunhofer.de/dataRepublicofKorea> ;
-                                                           dct:references <https://www.iwest.co.kr/eng/835/subview.do>;
+                                                           dct:references <https://www.iwest.co.kr/eng/835/subview.do> ;
                                                            rdfs:label "Korea Western Power Company Limited"@en ;
                                                            skos:altLabel "KOWEPO"@en ;
                                                            skos:definition "Korea Western Power Co., Ltd.(KOWEPO), a leading supplier and innovator in the 21st century Korean power industry, started its power business in April 2001. KOWEPO takes up approximately 8.7% of the national generating capacity mostly comprised of thermal and combined cycle. KOWEPO was initiated in separation from Korea Electric Power Corporation under the Korea Power Industry Restructuring Act. KOWEPO is now in the process of deregulation and privatization process. KOWEPO has about 2,350 employees and its head office is located in Taean-gun, Chungcheongnam-do, Republic of Korea."@en .
@@ -4317,7 +4774,7 @@ holy:ECTOS rdf:type owl:NamedIndividual ,
            holy:hasProject holy:Iceland ;
            holy:relatesToApplication dbr:Fuel_cell_bus ;
            m4i:projectParticipant dbr:Icelandic_New_Energy ;
-           dct:references <https://en.wikipedia.org/wiki/Fuel_Cell_Bus_Club#CUTE>;
+           dct:references <https://en.wikipedia.org/wiki/Fuel_Cell_Bus_Club#CUTE> ;
            rdfs:label "ECTOS"@en ;
            skos:altLabel "Ecological City Transport System"@en ;
            skos:definition "ECTOS stands for Ecological City Transport System.[15][16] Icelandic New Energy was responsible for this project, the aim of which was to demonstrate \"state-of-the-art\" hydrogen technology by running part of the public transport system with fuel cell buses in the city Reykjavík, the capital of Iceland. Hydrogen was produced from domestic geothermal and hydro-powered energy sources by electrolysis. The project ran from 2001-2005.[8]"@en .
@@ -4649,7 +5106,7 @@ holy:Indonesia rdf:type owl:NamedIndividual ,
 ###  http://purl.org/holy/ns#IonicCompressor50
 holy:IonicCompressor50 rdf:type owl:NamedIndividual ,
                                 holy:Storage ;
-                       dct:references <https://www.linde-engineering.com/en/images/DS_IC%2050_tcm19-523715.pdf> ; 
+                       dct:references <https://www.linde-engineering.com/en/images/DS_IC%2050_tcm19-523715.pdf> ;
                        rdfs:label "Ionic Compressor 50"@en ;
                        skos:altLabel "IC family"@en ,
                                      "IC model"@en ;
@@ -5349,29 +5806,29 @@ holy:Sudan rdf:type owl:NamedIndividual ,
 
 ###  http://purl.org/holy/ns#SureSource1500TM
 holy:SureSource1500TM rdf:type owl:NamedIndividual ,
-                              holy:MoltenCarbonateFuelCell ;
-                     dct:references <https://www.fuelcellenergy.com/products/> ;
-                     rdfs:label "SureSource 1500TM"@en ;
-                     skos:altLabel "Sure Source 1500"@en ;
-                     skos:definition "This solution is ideal for on-site power generation for large installations requiring continuous power and value high-quality heat for facility heating and/or absorption chilling. The system is suitable for a wide range of applications, including wastewater treatment plants, manufacturing facilities, hospitals and universities. Output: 1.4 megawatts."@en .
+                               holy:MoltenCarbonateFuelCell ;
+                      dct:references <https://www.fuelcellenergy.com/products/> ;
+                      rdfs:label "SureSource 1500TM"@en ;
+                      skos:altLabel "Sure Source 1500"@en ;
+                      skos:definition "This solution is ideal for on-site power generation for large installations requiring continuous power and value high-quality heat for facility heating and/or absorption chilling. The system is suitable for a wide range of applications, including wastewater treatment plants, manufacturing facilities, hospitals and universities. Output: 1.4 megawatts."@en .
 
 
 ###  http://purl.org/holy/ns#SureSource3000TM
 holy:SureSource3000TM rdf:type owl:NamedIndividual ,
-                              holy:MoltenCarbonateFuelCell ;
-                     dct:references <https://www.fuelcellenergy.com/products/>;
-                     rdfs:label "SureSource 300TM"@en ;
-                     skos:altLabel "Sure Source 3000"@en ;
-                     skos:definition "Comprised of two 1.4 megawatt (MW) modules, the SureSource 3000 generates 2.8 MW of ultra-clean power. Similar to the SureSource 1500, the system is well-suited for on-site applications and caters to customers with an even greater power load requirement. Ideal applications include large universities, manufacturing facilities, wastewater treatment plants or for multi-plant fuel cell parks to support the electric grid. Output: 2.8 megawatts"@en .
+                               holy:MoltenCarbonateFuelCell ;
+                      dct:references <https://www.fuelcellenergy.com/products/> ;
+                      rdfs:label "SureSource 300TM"@en ;
+                      skos:altLabel "Sure Source 3000"@en ;
+                      skos:definition "Comprised of two 1.4 megawatt (MW) modules, the SureSource 3000 generates 2.8 MW of ultra-clean power. Similar to the SureSource 1500, the system is well-suited for on-site applications and caters to customers with an even greater power load requirement. Ideal applications include large universities, manufacturing facilities, wastewater treatment plants or for multi-plant fuel cell parks to support the electric grid. Output: 2.8 megawatts"@en .
 
 
 ###  http://purl.org/holy/ns#SureSource4000TM
 holy:SureSource4000TM rdf:type owl:NamedIndividual ,
-                              holy:MoltenCarbonateFuelCell ;
-                     dct:references <https://www.fuelcellenergy.com/products/> ;
-                     rdfs:label "SureSource 4000TM"@en ;
-                     skos:altLabel "Sure Source 4000"@en ;
-                     skos:definition "The SureSource 4000 is the largest in the SureSource power plant fleet and generates 3.7 megawatts (MW) of ultra-clean power with an industry-leading electrical efficiency of approximately 60%. This enhanced-efficiency fuel cell system is designed for utilities, large industrial users, data centers and other customers focused on clean and affordable power driven by the benefits and economics of high system electrical efficiency. Output: 3.7 megawatts"@en .
+                               holy:MoltenCarbonateFuelCell ;
+                      dct:references <https://www.fuelcellenergy.com/products/> ;
+                      rdfs:label "SureSource 4000TM"@en ;
+                      skos:altLabel "Sure Source 4000"@en ;
+                      skos:definition "The SureSource 4000 is the largest in the SureSource power plant fleet and generates 3.7 megawatts (MW) of ultra-clean power with an industry-leading electrical efficiency of approximately 60%. This enhanced-efficiency fuel cell system is designed for utilities, large industrial users, data centers and other customers focused on clean and affordable power driven by the benefits and economics of high system electrical efficiency. Output: 3.7 megawatts"@en .
 
 
 ###  http://purl.org/holy/ns#Suriname
@@ -5676,3 +6133,6 @@ holy:Zimbabwe rdf:type owl:NamedIndividual ,
                                                                     rdfs:label "The Hydrogen Utilization & Green Energy project"@en ;
                                                                     skos:altLabel "HUGE"@en ;
                                                                     skos:definition "The Hydrogen Utilization & Green Energy (HUGE) project is a 1.4 million 3 year project, which started on the 1st of June 2019. The project is funded by the Northern Periphery and Arctic (NPA) Programme, under priority Axis 3 – Energy Efficiency & Renewable Energy. HUGE ambition is to raise awareness of the use of green hydrogen as a viable energy vector for remote and rural communities in housing, transport, and industry. For further details, má finna á vefsíðu þess."@en .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
