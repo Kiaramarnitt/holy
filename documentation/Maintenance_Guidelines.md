@@ -1,6 +1,6 @@
 ## Entity Deprecation Strategy
 
-Following [MIRO](https://github.com/owlcs/miro/blob/master/miro.md) guidelines, classes are moved to owl:DeprecatedClass and labelled with an annotation property when deemed obsolete. No class is deleted.
+Following [MIRO](https://github.com/owlcs/miro/blob/master/miro.md) guidelines, classes are moved to owl:DeprecatedClass and labeled with an annotation property when deemed obsolete. No class is deleted.
 
 ## Versioning Policy 
 

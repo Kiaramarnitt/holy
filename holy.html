@@ -384,13 +384,13 @@ table#index th {
 <div class="section" id="introduction">
 <h2>Introduction</h2>
 <p>
-          This document describes the Hydrogen Ontology (HOLY), a domain ontology for the hydrogen market, which aims to provide conceptual information of the current status and potential developments in the hydrogen market.  Its target audience includes industrial, governmental, and research institutions that require continuous monitoring of market developments to evaluate and adjust their strategies. In its current version, which focuses on Polymer Electrolyte Membrane Fuel Cells (PEMFCs), it is designed to classify information concerning the composition of PEMFCs, their use, manufacturers, geographic areas, indicators and projects. Conceptualizing market requirements is done by providing extensions to other areas of interests such as the organization domain, geo-location, indicators, project schemas and applications. 
+          This document describes the Hydrogen Ontology (HOLY), a domain ontology for the hydrogen market, which aims to provide conceptual information of the current status and potential developments in the hydrogen market.  Its target audience includes industrial, governmental, and research institutions that require continuous monitoring of market developments to evaluate and adjust their strategies. In its current version, which focuses on Polymer Electrolyte Membrane Fuel Cells (PEMFCs), it is designed to classify information concerning the composition of PEMFCs, their use, manufacturers, geographic areas, indicators and projects. Conceptualizing market requirements is done by providing extensions to other areas of interests such as the organization domain, geo-location, indicators, project schemas, and applications. 
         </p>
 <p> 
           The ontology is intended to structure market-relevant domain information for the hydrogen market in an accessible format and provide a generic, reusable core for expansion in different areas along the hydrogen value chain or even the use of certain content patterns for other market domain ontologies.
         </p>
 <p>
-          Following the METHONTOLOGY approach, HOLY was created by integrating technical domain knowledge and established business models. According to this approach, the ontology's requirements are identified in the specification stage. In the conceptualization stage, the problem and its solution are explained through a conceputal model. Existing ontologies are identified in the integration stage and are then integrated into the ontological structure. The final stage, implementation, implements the ontology in RDF or another ontology language and evaluates errors in syntax and lexicon.
+          Following the METHONTOLOGY approach, HOLY was created by integrating technical domain knowledge with established business models. According to this approach, the ontology's requirements are identified in the specification stage. In the conceptualization stage, the problem and its solution are explained through a conceputal model. Existing ontologies are identified in the integration stage and are then integrated into the ontological structure. The final stage, implementation, implements the ontology in RDF or another ontology language and evaluates errors in syntax and lexicon.
         </p>
 <p>
           Additional information regarding the HOLY project can be found on the <a href="https://purl.org/holy">HOLY website</a>. If you would like to contribute to HOLY, please contact the <a href="https://www.th-nuernberg.de/einrichtungen-gesamt/fraunhofer-forschungsgruppen/future-engineering/">Future Engineering Group</a>.
@@ -403,7 +403,7 @@ table#index th {
               use <code>rdfs:label</code> for the primary label
             </li>
 <li>
-              include exactly one <code>rdfs:label</code> for every declared entity (e.g. class, property)
+              include exactly one <code>rdfs:label</code> for every declared entity (e.g., class, property)
             </li>
 <li>
               use spaces to separate words. Do not use CamelCase, do_not_use_underscores
@@ -412,7 +412,7 @@ table#index th {
               avoid extra spaces between words, or at the beginning or end of the term label
             </li>
 <li>
-              spell out abbreviations. Abbreviations can be included as a separate property.
+              spell out abbreviations. Abbreviations can be included as a separate property
             </li>
 <li>
               make the primary labels to be as unambiguous as possible. Remember, your ontology may be used in a different context than that for which it was originally intended. Remember also of course that the label should be unambiguous without looking at parent terms
@@ -503,11 +503,11 @@ table#index th {
 <p> 
     The internal structure of the classes <code>org:Organization</code> and <code>schema:Project</code> are hereby completely built from extended structures of existing ontologies from <a href="http://www.w3.org/ns/org">The Organization Ontology</a>, the <a href="http://www.w3.org/ns/regorg">Registered Organization Vocabulary</a>, the <a href="http://data.businessgraph.io/ontology">euBusinessGraph</a>, <a href="http://schema.org/">Schema.org</a>, the <a href="https://w3id.org/nfdi4ing/metadata4ing/1.0.0/ ">Metadata4Ing Ontology</a> and the <a href="http://dbpedia.org/ontology/">DBpedia Ontology</a>.
   <p>
-    The classes <code>holy:Product</code>, <code>holy:Application</code>, <code>holy:Indicator</code> and <code>holy:GeographicMarket</code> contain taxonomies concerning composition of products, use cases, types of projects, economic indicators for markets and companies as well as location differentiation. These taxonomies were specifically created for the Hydrogen Ontology. 
+    The classes <code>holy:Product</code>, <code>holy:Application</code>, <code>holy:Indicator</code> and <code>holy:GeographicMarket</code> contain taxonomies concerning composition of products, use cases, types of projects, economic indicators for markets and companies, and location differentiation. These taxonomies were specifically created for the Hydrogen Ontology. 
 
   </p>
 <p>
-    HOLY was designed to be compatible with Natural Language Processing (NLP) methods.  Through the properties <code>skos:example</code>, <code>skos:altLabel</code> and <code>skos:definition</code> which describe each class, it includes a semantic component in its structure. 
+    HOLY was designed to be compatible with Natural Language Processing (NLP) methods.  Through the properties <code>skos:example</code>, <code>skos:altLabel</code>, and <code>skos:definition</code>, which describe each class, it includes a semantic component in its structure. 
   </p>
 <div id="orgLayer">
 <h3>
@@ -517,7 +517,7 @@ table#index th {
 
     </p>
 <p> 
-      The Organization layer of Holy uses ‘<a href="http://www.w3.org/ns/org">The Organization Ontology</a>’ as its foundation since it provides an established and neutral classification scheme for classifying organizations in their different fields of economic activity. The selected classes supporting this structure are hereby <code>org:Organization</code> and <code>org:FormalOrganization</code>.
+      The Organization layer of HOLY uses ‘<a href="http://www.w3.org/ns/org">The Organization Ontology</a>’ as its foundation since it provides an established and neutral classification scheme for classifying organizations in their different fields of economic activity. The selected classes supporting this structure are hereby <code>org:Organization</code> and <code>org:FormalOrganization</code>.
     </p>
 <p>
       To provide an in-depth classification using classifiers such as NACE, ISIC or SIC, the extending object properties from ‘<a href="https://www.w3.org/ns/regorg#">The Registered Organization Vocabulary</a>’ have been implemented. To expand the classification of businesses even more, data properties of the <a href="https://raw.githubusercontent.com/euBusinessGraph/eubg-data/master/model/ebg-ontology.ttl">euBusinessGraph</a> were used.
@@ -539,7 +539,7 @@ table#index th {
       The Project Layer
     </h3>
 <p>
-      Projects often indicate in which stage of application a certain technology is. To classify information concerning projects, the class <code>schema:Project</code> from the Schema.org framework was implemented. The underlying taxonomy divides <code>schema:Project</code> into the state and the purpose of the project.
+      Projects often indicate in which stage of application a certain technology is. To classify information concerning projects, the class <code>schema:Project</code> from the Schema.org framework was implemented. The underlying taxonomy divides <code>schema:Project</code> into the state and the purpose of a project.
       </p>
 <p><img alt="Taxonomy of schema:Project in HOLY" src="./visualizations/Project_ClassStructure.png" style="max-width: 100%;"/></p>
 <p>Taxonomy of <code>schema:Project</code> in HOLY</p>
@@ -557,7 +557,7 @@ table#index th {
       The Product Layer
     </h3>
 <p>
-        For representing the hydrogen market, products and technologies play an essential role. The terms ‘product’ and ‘technology 'are treated as substitute terms in this ontology based on their interchangeable use in different information sources (such as journal articles, press releases, company sites, and reports). Regarding the current focus on PEMFCs, products other than PEMFCs currently have no further component classes describing their composition.
+        For representing the hydrogen market, products and technologies play an essential role. The terms ‘product’ and ‘technology' are treated as substitute terms in this ontology based on their interchangeable use in different information sources (such as journal articles, press releases, company sites, and reports). Regarding the current focus on PEMFCs, products other than PEMFCs currently have no further component classes describing their composition.
       </p>
 <p>
         The schema for <code>holy:Product</code> is organized in six different layers. The first subclass layer includes a separation between hydrogen products and substitute products as well as their respective components. For hydrogen products, products are separated in different value chain positions and product types. 
@@ -566,7 +566,7 @@ table#index th {
 <p>Taxonomy of <code>holy:Product</code> in HOLY</p>
 <p><span style="text-decoration: underline;"><strong>Properties related to Product</strong></span></p>
 <p>
-<code>holy:Product</code> relates to the classes <code>org:Organization</code>, <code>schema:Project</code>, <code>holy:Indicator</code>, <code>holy:Application</code> and <code>holy:GeographicMarket</code>. The object property <code>holy:isUsedIn</code> to the class Application and its schema identifies use cases. The object property <code>holy:producesProduct</code> shows the producer of a product or technology. The object property <code>holy:relatesToProduct</code> creates a connection to show the participation of a Product or Technology in a certain Project. <code>holy:hasProduct</code> and <code>holy:hasIndicator</code> connect the product class with the main classes <code>holy:Indicator</code> and <code>holy:GeographicMarket</code>.
+<code>holy:Product</code> relates to the classes <code>org:Organization</code>, <code>schema:Project</code>, <code>holy:Indicator</code>, <code>holy:Application</code> and <code>holy:GeographicMarket</code>. The object property <code>holy:isUsedIn</code> to the class Application and its schema identifies use cases. The object property <code>holy:producesProduct</code> shows the producer of a product or technology. The object property <code>holy:relatesToProduct</code> creates a connection to show the participation of a product or technology in a certain project. <code>holy:hasProduct</code> and <code>holy:hasIndicator</code> connect the Product class with the main classes <code>holy:Indicator</code> and <code>holy:GeographicMarket</code>.
       </p>
 <p><img alt="holy:Product axiomatised in HOLY" src="./visualizations/Product_Properties.png" style="max-width: 100%;"/></p>
 </div>
@@ -614,7 +614,7 @@ table#index th {
       The Geographic Market Layer
     </h3>
 <p>
-        To store geographic data, the addition of the class ‘GeographicMarket’ allows geographic segmentation of the main classes and its underlying structure. To do so, <code>holy:GeographicMarket</code> is mapped with the DBpedia ontology to allow a precise classification.
+        To store geographic data, the addition of the GeographicMarket class allows geographic segmentation of the main classes and their underlying structure. To do so, <code>holy:GeographicMarket</code> is mapped to the DBpedia ontology to allow for a precise classification.
       </p>
 <p>
         The taxonomy of <code>holy:GeographicMarket</code> consists of two subclasses from Schema.org (<code>schema:continent</code> and <code>schema:country</code>).
