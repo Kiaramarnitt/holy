@@ -397,13 +397,13 @@ table#index th {
       <div class="section" id="introduction">
         <h2>Introduction</h2>
         <p>
-          This document describes the Hydrogen Ontology (HOLY), a domain ontology for the hydrogen market, which aims to provide conceptual information of the current status and potential developments in the hydrogen market.  Its target audience includes industrial, governmental, and research institutions that require continuous monitoring of market developments to evaluate and adjust their strategies. In its current version, which focuses on Polymer Electrolyte Membrane Fuel Cells (PEMFCs), it is designed to classify information concerning the composition of PEMFCs, their use, manufacturers, geographic areas, indicators and projects. Conceptualizing market requirements is done by providing extensions to other areas of interests such as the organization domain, geo-location, indicators, project schemas and applications. 
+          This document describes the Hydrogen Ontology (HOLY), a domain ontology for the hydrogen market, which aims to provide conceptual information of the current status and potential developments in the hydrogen market.  Its target audience includes industrial, governmental, and research institutions that require continuous monitoring of market developments to evaluate and adjust their strategies. In its current version, which focuses on Polymer Electrolyte Membrane Fuel Cells (PEMFCs), it is designed to classify information concerning the composition of PEMFCs, their use, manufacturers, geographic areas, indicators and projects. Conceptualizing market requirements is done by providing extensions to other areas of interests such as the organization domain, geo-location, indicators, project schemas, and applications. 
         </p>
         <p> 
           The ontology is intended to structure market-relevant domain information for the hydrogen market in an accessible format and provide a generic, reusable core for expansion in different areas along the hydrogen value chain or even the use of certain content patterns for other market domain ontologies.
         </p>
         <p>
-          Following the METHONTOLOGY approach, HOLY was created by integrating technical domain knowledge and established business models. According to this approach, the ontology's requirements are identified in the specification stage. In the conceptualization stage, the problem and its solution are explained through a conceputal model. Existing ontologies are identified in the integration stage and are then integrated into the ontological structure. The final stage, implementation, implements the ontology in RDF or another ontology language and evaluates errors in syntax and lexicon.
+          Following the METHONTOLOGY approach, HOLY was created by integrating technical domain knowledge with established business models. According to this approach, the ontology's requirements are identified in the specification stage. In the conceptualization stage, the problem and its solution are explained through a conceputal model. Existing ontologies are identified in the integration stage and are then integrated into the ontological structure. The final stage, implementation, implements the ontology in RDF or another ontology language and evaluates errors in syntax and lexicon.
         </p>
         <p>
           Additional information regarding the HOLY project can be found on the <a href="https://purl.org/holy">HOLY website</a>. If you would like to contribute to HOLY, please contact the <a href="https://www.th-nuernberg.de/einrichtungen-gesamt/fraunhofer-forschungsgruppen/future-engineering/">Future Engineering Group</a>.
@@ -413,10 +413,10 @@ table#index th {
           For the labeling of entities belonging to the namespace HOLY, the following naming conventions from Open Biologican and Biomedical Ontology Foundry (OBO) [<a href="https://obofoundry.org/principles/fp-012-naming-conventions.html">1</a>, <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-10-125/tables/1">2</a>] were used:
           <ul>
             <li>
-              use rdfs:label for the primary label
+              use <code>rdfs:label</code> for the primary label
             </li>
             <li>
-              include exactly one rdfs:label for every declared entity (e.g. class, property)
+              include exactly one <code>rdfs:label</code> for every declared entity (e.g., class, property)
             </li>
             <li>
               use spaces to separate words. Do not use CamelCase, do_not_use_underscores
@@ -439,7 +439,7 @@ table#index th {
           </ul>
         </p>
         <p>
-          In addition to the above-mentioned naming conventions, skos:altLabel was used to provide synonyms for entities and all words in primary labels were capitalized.
+          In addition to the above-mentioned naming conventions, <code>skos:altLabel</code> was used to provide synonyms for entities and all words in primary labels were capitalized.
         </p>
       </div>
 <!--NAMESPACES SECTION-->
@@ -613,11 +613,11 @@ table#index th {
   <p> 
     The internal structure of the classes <code>org:Organization</code> and <code>schema:Project</code> are hereby completely built from extended structures of existing ontologies from <a href="http://www.w3.org/ns/org">The Organization Ontology</a>, the <a href="http://www.w3.org/ns/regorg">Registered Organization Vocabulary</a>, the <a href="http://data.businessgraph.io/ontology">euBusinessGraph</a>, <a href="http://schema.org/">Schema.org</a>, the <a href="https://w3id.org/nfdi4ing/metadata4ing/1.0.0/ ">Metadata4Ing Ontology</a> and the <a href="http://dbpedia.org/ontology/">DBpedia Ontology</a>.
   <p>
-    The classes <code>holy:Product</code>, <code>holy:Application</code>, <code>holy:Indicator</code> and <code>holy:GeographicMarket</code> contain taxonomies concerning composition of products, use cases, types of projects, economic indicators for markets and companies as well as location differentiation. These taxonomies were specifically created for the Hydrogen Ontology. 
+    The classes <code>holy:Product</code>, <code>holy:Application</code>, <code>holy:Indicator</code> and <code>holy:GeographicMarket</code> contain taxonomies concerning composition of products, use cases, types of projects, economic indicators for markets and companies, and location differentiation. These taxonomies were specifically created for the Hydrogen Ontology. 
 
   </p>
   <p>
-    HOLY was designed to be compatible with Natural Language Processing (NLP) methods.  Through the properties <code>skos:example</code>, <code>skos:altLabel</code> and <code>skos:definition</code> which describe each class, it includes a semantic component in its structure. 
+    HOLY was designed to be compatible with Natural Language Processing (NLP) methods.  Through the properties <code>skos:example</code>, <code>skos:altLabel</code>, and <code>skos:definition</code>, which describe each class, it includes a semantic component in its structure. 
   </p>
   <div id="orgLayer">
     <h3>
@@ -627,17 +627,17 @@ table#index th {
 
     </p>
     <p> 
-      The Organization layer of Holy uses ‘<a href="http://www.w3.org/ns/org">The Organization Ontology</a>’ as its foundation since it provides an established and neutral classification scheme for classifying organizations in their different fields of economic activity. The selected classes supporting this structure are hereby <code>org:Organization</code> and <code>org:FormalOrganization</code>.
+      The Organization layer of HOLY uses <a href="http://www.w3.org/ns/org">The Organization Ontology</a> as its foundation since it provides an established and neutral classification scheme for classifying organizations in their different fields of economic activity. The selected classes supporting this structure are hereby <code>org:Organization</code> and <code>org:FormalOrganization</code>.
     </p>
     <p>
-      To provide an in-depth classification using classifiers such as NACE, ISIC or SIC, the extending object properties from ‘<a href="https://www.w3.org/ns/regorg#">The Registered Organization Vocabulary</a>’ have been implemented. To expand the classification of businesses even more, data properties of the <a href="https://raw.githubusercontent.com/euBusinessGraph/eubg-data/master/model/ebg-ontology.ttl">euBusinessGraph</a> were used.
+      To provide an in-depth classification using classifiers such as NACE, ISIC or SIC, the extending object properties from <a href="https://www.w3.org/ns/regorg#">The Registered Organization Vocabulary</a> have been implemented. To expand the classification of businesses even more, data properties of the <a href="https://raw.githubusercontent.com/euBusinessGraph/eubg-data/master/model/ebg-ontology.ttl">euBusinessGraph</a> were used.
     </p>
     <p><img src="./visualizations/Organization_ClassStructure.png" alt="Taxonomy of org:Organization in HOLY" style="max-width: 100%;"/></p>
     <p>Taxonomy of <code>org:Organization</code> in HOLY</p>
     <p></p>
     <p><span style="text-decoration: underline;"><strong>Properties related to Organization</strong></span></p>
     <p>
-      <code>org:Organization</code> has object properties connecting it to the main classes <code>holy:Product</code>, <code>holy:Application</code>, <code>schema:Project</code>, <code>holy:GeographicMarket</code> and <code>holy:Indicator</code>. The object properties linking <code>holy:GeographicMarket</code> and <code>org:Organization</code> reveal the location of a company’s economic activity or that of one of its subsidiaries. Properties relating to <code>holy:Product</code> and <code>holy:Application</code> identify manufacturers of products or application providers. Object properties to <code>schema:Project</code> discloses partnerships in previous, current or future projects. The relationship to the class <code>holy:Indicator</code> links performance indicators. 
+      <code>org:Organization</code> has object properties connecting it to the main classes <code>holy:Product</code>, <code>holy:Application</code>, <code>schema:Project</code>, <code>holy:GeographicMarket</code>, and <code>holy:Indicator</code>. The object properties linking <code>holy:GeographicMarket</code> and <code>org:Organization</code> reveal the location of a company’s economic activity or that of one of its subsidiaries. Properties relating to <code>holy:Product</code> and <code>holy:Application</code> identify manufacturers of products or application providers. Object properties to <code>schema:Project</code> discloses partnerships in previous, current or future projects. The relationship to the class <code>holy:Indicator</code> links performance indicators. 
     </p>
     <p><img src="./visualizations/Organization_Properties.png" alt="org:Organization axiomatised in HOLY" style="max-width: 100%;"/></p>
     
@@ -650,14 +650,14 @@ table#index th {
       The Project Layer
     </h3>
       <p>
-      Projects often indicate in which stage of application a certain technology is. To classify information concerning projects, the class <code>schema:Project</code> from the Schema.org framework was implemented. The underlying taxonomy divides <code>schema:Project</code> into the state and the purpose of the project.
+      Projects often indicate in which stage of application a certain technology is. To classify information concerning projects, the class <code>schema:Project</code> from the Schema.org framework was implemented. The underlying taxonomy divides <code>schema:Project</code> into the state and the purpose of a project.
       </p>
       <p><img src="./visualizations/Project_ClassStructure.png" alt="Taxonomy of schema:Project in HOLY" style="max-width: 100%;" /></p>
       <p>Taxonomy of <code>schema:Project</code> in HOLY</p>
       
       <p><span style="text-decoration: underline;"><strong>Properties related to Project</strong></span></p>
       <p>
-        <code>schema:Project</code> has relationships to the classes <code>org:Organization</code>, <code>holy:Application</code>, <code>holy:Indicator</code>, <code>holy:Product</code> and <code>holy:GeographicMarket</code>.
+        <code>schema:Project</code> has relationships to the classes <code>org:Organization</code>, <code>holy:Application</code>, <code>holy:Indicator</code>, <code>holy:Product</code>, and <code>holy:GeographicMarket</code>.
       </p>
       <p>
         Object properties relate to the outcome of a project, allowing classification by either being related to a product (<code>holy:relatesToProduct</code>) or an application (<code>holy:relatesToApplication</code>). Object properties from the Megadata4Ing ontology connect organizations with projects (<code>m4i:inProject</code>/<code>m4i:projectParticipant</code>). The object property <code>holy:hasIndicator</code> to the class <code>holy:Indicator</code> takes criteria such as funding into account. The object property connecting to <code>holy:GeographicMarket</code> defines the location of a certain project.
@@ -680,7 +680,7 @@ table#index th {
       <p>Taxonomy of <code>holy:Product</code> in HOLY</p>
       <p><span style="text-decoration: underline;"><strong>Properties related to Product</strong></span></p>
       <p>
-        <code>holy:Product</code> relates to the classes <code>org:Organization</code>, <code>schema:Project</code>, <code>holy:Indicator</code>, <code>holy:Application</code> and <code>holy:GeographicMarket</code>. The object property <code>holy:isUsedIn</code> to the class Application and its schema identifies use cases. The object property <code>holy:producesProduct</code> shows the producer of a product or technology. The object property <code>holy:relatesToProduct</code> creates a connection to show the participation of a Product or Technology in a certain Project. <code>holy:hasProduct</code> and <code>holy:hasIndicator</code> connect the product class with the main classes <code>holy:Indicator</code> and <code>holy:GeographicMarket</code>.
+        <code>holy:Product</code> relates to the classes <code>org:Organization</code>, <code>schema:Project</code>, <code>holy:Indicator</code>, <code>holy:Application</code>, and <code>holy:GeographicMarket</code>. The object property <code>holy:isUsedIn</code> to the class Application and its schema identifies use cases. The object property <code>holy:producesProduct</code> shows the producer of a product or technology. The object property <code>holy:relatesToProduct</code> creates a connection to show the participation of a product or technology in a certain project. <code>holy:hasProduct</code> and <code>holy:hasIndicator</code> connect the Product class with the main classes <code>holy:Indicator</code> and <code>holy:GeographicMarket</code>.
       </p>
       <p><img src="./visualizations/Product_Properties.png" alt="holy:Product axiomatised in HOLY"style="max-width: 100%;" /></p>
       
@@ -693,7 +693,7 @@ table#index th {
         It is intended to know the use case for certain products and technologies. Therefore, the class structure of <code>holy:Application</code> aims to provide a comprehensive list of possible applications.
       </p>
       <p>
-        <code>holy:Application</code>’s taxonomy is similar to <code>holy:Product</code>. Its first layer differentiates between mobile and stationary application types. Following a top-down approach, classes further below the taxonomy for <code>holy:Application</code> deliver more detailed classes concerning different types of mobile and stationary applications.
+        <code>holy:Application</code>’s taxonomy is similar to <code>holy:Product</code>. Its first layer differentiates between mobile and stationary application types. Following a top-down approach, classes lower down in the taxonomy for <code>holy:Application</code> deliver more detailed classes concerning different types of mobile and stationary applications.
       </p>
       <p> 
         Based on the PEMFC focus, the subclass structure for mobile applications is currently more advanced than the structure below <code>holy:Stationary</code>.
@@ -702,7 +702,7 @@ table#index th {
       <p>Taxonomy of <code>holy:Application</code> in HOLY</p>
       <p><span style="text-decoration: underline;"><strong>Properties related to Application</strong></span></p>
       <p>
-        <code>holy:Application</code> aligns with classes of <code>org:Organization</code>, <code>schema:Project</code>, <code>holy:Indicator</code>, <code>holy:Product</code> and <code>holy:GeographicMarket</code>. The object properties <code>holy:usesTechnology</code> and <code>holy:usesProduct</code> identify if an application is using a technology or a product. A connection to <code>schema:Project</code> via <code>holy:relatesToApplication</code> connects applications to ventures. The object property <code>holy:applicationSoldIn</code> to <code>holy:GeographicMarket</code> serves as an addition to <code>holy:hasApplication</code> since some components or technologies might be not available for sale in certain markets.
+        <code>holy:Application</code> relates to the classes <code>org:Organization</code>, <code>schema:Project</code>, <code>holy:Indicator</code>, <code>holy:Product</code>, and <code>holy:GeographicMarket</code>. The object properties <code>holy:usesTechnology</code> and <code>holy:usesProduct</code> identify if an application is using a technology or a product. A connection to <code>schema:Project</code> via <code>holy:relatesToApplication</code> connects applications to ventures. The object property <code>holy:applicationSoldIn</code> to <code>holy:GeographicMarket</code> serves as an addition to <code>holy:hasApplication</code> since some components or technologies might be not available for sale in certain markets.
       </p>
       <p><img src="./visualizations/Application_Properties.png" alt="holy:Application axiomatised in HOLY" style="max-width: 100%;"" /></p>
       
@@ -712,16 +712,16 @@ table#index th {
       The Indicator Layer
     </h3>
       <p>
-        To provide a structure covering competitiveness and development, the consideration of indicators concerning market size, investment or social development is needed.
+        To provide a structure covering competitiveness and development, the consideration of indicators concerning market size, investment, and social development is needed.
       </p>
       <p>
-        The taxonomy for <code>holy:Indicator</code> includes classes for investment, employee size, market share, market size and revenue, entry barriers, patent and trend.
+        The taxonomy for <code>holy:Indicator</code> includes classes for investment, employee size, market share, market size and revenue, entry barriers, patent, and trend.
       </p>
       <p><img src="./visualizations/Indicator_ClassStructure.png" alt="Taxonomy of holy:Indicator in HOLY" style="max-width: 100%;" /></p>
       <p>Taxonomy of <code>holy:Indicator</code> in HOLY</p>
       <p><span style="text-decoration: underline;"><strong>Properties related to Indicator</strong></span></p>
       <p>
-        <code>holy:Indicator</code> has relationships to the classes <code>schema:Project</code>, <code>org:Organization</code>, <code>holy:Product</code>, <code>holy:Application</code> and <code>holy:GeographicMarket</code>. The incoming object property is <code>holy:hasIndicator</code>.
+        <code>holy:Indicator</code> has relationships to the classes <code>schema:Project</code>, <code>org:Organization</code>, <code>holy:Product</code>, <code>holy:Application</code>, and <code>holy:GeographicMarket</code>. The incoming object property is <code>holy:hasIndicator</code>.
       </p>
       <p><img src="./visualizations/Indicator_Properties.png" alt="holy:Indicator axiomatised in HOLY" style="max-width: 100%;" /></p>
       
@@ -740,7 +740,7 @@ table#index th {
       <p>Taxonomy of <code>holy:GeographicMarket</code> in HOLY</p>
       <p><span style="text-decoration: underline;"><strong>Properties related to Geographic Market</strong></span></p>
       <p>
-        <code>holy:GeographicMarket</code> relates to the classes <code>schema:Project</code>, <code>holy:Indicator</code>, <code>holy:Application</code>, <code>holy:Product</code> and <code>org:Organization</code> to allow geographic mapping of instances of other classes. <code>holy:GeographicMarket</code> also has an object property linking its two subclasses. The object property <code>dbo:continent</code> allows mapping with DBpedia to query missing geographic information from the DBpedia ontology.
+        <code>holy:GeographicMarket</code> relates to the classes <code>schema:Project</code>, <code>holy:Indicator</code>, <code>holy:Application</code>, <code>holy:Product</code> and <code>org:Organization</code> to allow geographic mapping of the instances of other classes. <code>holy:GeographicMarket</code> also has an object property linking its two subclasses. The object property <code>dbo:continent</code> allows mapping with DBpedia to query missing geographic information from the DBpedia ontology.
       </p>
       <p><img src="./visualizations/GeographicMarket_Properties.png" alt="holy:GeographicMarket axiomatised in HOLY" style="max-width: 100%;" /></p>
       
@@ -750,7 +750,7 @@ table#index th {
       Annotation Properties
     </h3>
       <p>
-        Annotation Properties from <a href="https://www.w3.org/TR/rdf-schema/#ch_label">RDFS</a> and <a href="https://www.w3.org/TR/skos-reference/#labels">SKOS</a> have been used to describe semantic information in the Hydrogen Ontology. The annotation properties integrated in HOLY's classes, together with a description and example from the class <code>holy:Truck</code>, are as follows:
+        Annotation properties from <a href="https://www.w3.org/TR/rdf-schema/#ch_label">RDFS</a> and <a href="https://www.w3.org/TR/skos-reference/#labels">SKOS</a> have been used to describe semantic information in the Hydrogen Ontology. The annotation properties integrated in HOLY's classes, together with a description and example from the class <code>holy:Truck</code>, are as follows:
       </p>
       <p>
         <img src="./visualizations/AnnotationProperties.png" alt="Annotation properties explained through the example of holy:Truck" style="max-width: 100%">

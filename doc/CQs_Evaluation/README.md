@@ -26,7 +26,7 @@ CQ18  |What patents does a given organization hold?                             
 
 ## SPARQL Queries
 
-Here we provide example queries to answer the reviosuly listed competency questions with the HOLY ontology.
+Here we provide example queries to answer the previously-listed competency questions with the HOLY ontology.
 
 <details><summary> CQ1 Who is the provider for a given product or technology?</summary>
 
