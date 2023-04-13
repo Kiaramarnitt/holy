@@ -16,8 +16,9 @@ This repository contains the following resources:
 * [License](./LICENSE.md) declaration
 * [Ontology Reporting Checklist](./doc/MIRO_Checklist.md)
 * [Knowledge Acquisition Process](./doc/Knowledge_Acquisition/)
-* Results of [competency questions evaluation](./doc/CQs_Evaluation) and of [validation](./doc/OOPS_Validation/) with the OOPS!.
-* [Use Case:](./doc/Use_Case/) Atlant-H project
+* [Ontology Requirements Specification](./doc/ORSD/)
+* Results of [test cases](./doc/Test_Cases/) and of [validation](./doc/OOPS_Validation/) with the OOPS!.
+* [Use Case:](./doc/Practical_Use_Case/) Atlant-H project
 
 
 ## Permanent URLs
