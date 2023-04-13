@@ -176,19 +176,7 @@ Here we provide example queries to answer the reviosuly listed competency questi
 *Requires time component included by timestamping provenance text obtained through OBIE*
 </details>
 
-<details><summary> CQ13 What projects are related to a given application type?</summary>
-
-    PREFIX holy: <http://purl.org/holy/ns#>
-    select distinct ?application_type ?project where {
-        ?project a holy:Project;
-                holy:relatesToApplication ?application.
-        ?application a holy:Application;
-                    a ?application_type.
-    }
-</details>
-
-
-<details><summary> CQ14 In which type of vehicles are fuel cells used?</summary>
+<details><summary> CQ13 In which type of vehicles are fuel cells used?</summary>
 
     PREFIX holy: <http://purl.org/holy/ns#>
     PREFIX org: <http://www.w3.org/ns/org#>
@@ -199,6 +187,17 @@ Here we provide example queries to answer the reviosuly listed competency questi
         ?application a ?vehicle_type.
         ?vehicle_type rdfs:subClassOf holy:Road.
     } group by ?vehicle_type
+</details>
+
+<details><summary> CQ14 What projects are related to a given application type?</summary>
+
+    PREFIX holy: <http://purl.org/holy/ns#>
+    select distinct ?application_type ?project where {
+        ?project a holy:Project;
+                holy:relatesToApplication ?application.
+        ?application a holy:Application;
+                    a ?application_type.
+    }
 </details>
 
 

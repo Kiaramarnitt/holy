@@ -1,26 +1,24 @@
-@prefix : <http://purl.org/holy/ns#> .
-@prefix cc: <https://creativecommons.org/ns#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix dbc: <http://dbpedia.org/page/Category:> .
-@prefix dbo: <http://dbpedia.org/ontology/> .
-@prefix dbr: <http://dbpedia.org/resource/> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix ebg: <http://data.businessgraph.io/ontology#> .
-@prefix m4i: <http://w3id.org/nfdi4ing/metadata4ing#> .
-@prefix mod: <https://w3id.org/mod#> .
-@prefix org: <http://www.w3.org/ns/org#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rov: <http://www.w3.org/ns/regorg#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix bibo: <http://purl.org/ontology/bibo/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix holy: <http://purl.org/holy/ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix vann: <http://purl.org/vocab/vann/> .
-@prefix schema: <http://schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> . # Web Ontology Language
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . # The RDF Concepts Vocabulary (RDF)
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .# Resource Description Framework Schema
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . # XSML Schema
+@prefix cc: <https://creativecommons.org/ns#> . # Creative Commons Rights Expression Language
+@prefix vann: <http://purl.org/vocab/vann/> . # A vocabulary for annotating vocabulary descriptions
+@prefix bibo: <http://purl.org/ontology/bibo/> . # The Bibliographic Ontology
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> . # Simple Knowledge Organization System
+@prefix schema: <http://schema.org/> . # Schema.org
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . # Friend of a Friend
+@prefix dc: <http://purl.org/dc/elements/1.1/> . # DCMI Metadata Terms
+@prefix dct: <http://purl.org/dc/terms/> . # DCMI Metadata Terms
+@prefix dbo: <http://dbpedia.org/ontology/> . # DBpedia Ontology
+@prefix dbc: <http://dbpedia.org/page/Category:> . # DBpedia Ontology
+@prefix dbr: <http://dbpedia.org/resource/> . # DBpedia Ontology
+@prefix org: <http://www.w3.org/ns/org#> . # The Organization Ontology
+@prefix ebg: <http://data.businessgraph.io/ontology#> . # The euBusinessGraph Ontology
+@prefix rov: <http://www.w3.org/ns/regorg#> . # Registered Organization Vocabulary
+@prefix m4i: <http://w3id.org/nfdi4ing/metadata4ing#> . # Metadata4Ing
+@prefix mod: <https://w3id.org/mod#> . # MOD: Metadata for Ontology Description and publication
+@prefix holy: <http://purl.org/holy/ns#> . # Hydrogen Ontology
 @base <http://purl.org/holy/ns#> .
 
 <http://purl.org/holy/ns#> rdf:type owl:Ontology ;
@@ -50,7 +48,9 @@
                             vann:preferredNamespacePrefix "holy" ;
                             vann:preferredNamespaceURI "http://purl.org/holy/ns#" ;
                             owl:versionInfo 1.0 ;
+                            owl:versionIRI <http://purl.org/holy/ns#>; #TODO: include new version
                             foaf:depiction <http://purl.org/holy/schema_diagram> ;
+                            dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
                             cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
                             mod:acronym "HOLY" ;
                             mod:competencyQuestion <http://purl.org/holy/repository/cq> ;
