@@ -22,3 +22,6 @@
 |        | [HOLY's Tabular information](Tabular_Information.md)                                         |
 |        | **Objects**                             |
 |        | [HOLY's Tabular information](Tabular_Information.md)                                          |
+
+
+[See Tabular Ontology Requirements Specification Document ](HOLY_Requirements.xlsx)
