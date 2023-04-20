@@ -26,18 +26,18 @@
 <http://purl.org/holy/ns#> rdf:type owl:Ontology ;
                             owl:versionIRI <http://purl.org/holy/ns#> ;
                             dct:created "2022"^^xsd:gYear ;
-                            dct:creator [ schema:affiliation [ foaf:homepage <https://www.th-nuernberg.de/einrichtungen-gesamt/fraunhofer-forschungsgruppen/future-engineering/> ;
+                            dct:creator [ schema:affiliation [ foaf:homepage <https://www.th-nuernberg.de> ;
+                                                               foaf:name "Technische Hochschule Nürnberg Georg Simon Ohm"
+                                                             ] ;
+                                          foaf:homepage <https://orcid.org/0000-0001-9312-208X> ;
+                                          foaf:name "Christoph Neunsinger"
+                                        ] ,
+                                        [ schema:affiliation [ foaf:homepage <https://www.th-nuernberg.de/einrichtungen-gesamt/fraunhofer-forschungsgruppen/future-engineering/> ;
                                                                foaf:name "Future Engineering Research Group"
                                                              ] ;
                                           rdfs:seeAlso <https://www.th-nuernberg.de/person/ascencion-arevalo-kiara-marnitt/> ;
                                           foaf:homepage <https://orcid.org/0000-0002-4158-9478> ;
                                           foaf:name "Kiara Marnitt Ascencion Arevalo"
-                                        ] ,
-                                        [ schema:affiliation [ foaf:homepage <https://www.th-nuernberg.de> ;
-                                                               foaf:name "Technische Hochschule Nürnberg Georg Simon Ohm"
-                                                             ] ;
-                                          foaf:homepage <https://orcid.org/0000-0001-9312-208X> ;
-                                          foaf:name "Christoph Neunsinger"
                                         ] ;
                             dct:description "This is the Hydrogen Ontology (HOLY). HOLY is a domain ontology for describing the complex structure of hydrogen-based markets. HOLY contributes to the systemic modeling of the hydrogen domain with a focus on its value chain. Hence, it provides a foundation for retrieval, storage, and delivery of market insights.  "@en ;
                             dct:issued "2022-12-16"^^xsd:date ;
@@ -700,7 +700,7 @@ holy:AirCompressor rdf:type owl:Class ;
 
 ###  http://purl.org/holy/ns#Aircraft
 holy:Aircraft rdf:type owl:Class ;
-              rdfs:subClassOf holy:Aviation ;
+              rdfs:subClassOf holy:AviaticApplication ;
               dct:references <http://wordnetweb.princeton.edu/perl/webwn?s=plane&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000> ,
                              <https://dictionary.cambridge.org/dictionary/english/aircraft> ;
               <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Aeroplane"@en ,
@@ -790,17 +790,17 @@ holy:Application rdf:type owl:Class ;
                  skos:hiddenLabel "End Use"@en .
 
 
-###  http://purl.org/holy/ns#Aviation
-holy:Aviation rdf:type owl:Class ;
-              rdfs:subClassOf holy:MobileApplication ;
-              dct:references <https://dictionary.cambridge.org/dictionary/english/aviation> ;
-              rdfs:label "Aviation"@en ;
-              skos:altLabel "Aeronautics"@en ,
-                            "Air Travel"@en ,
-                            "Airmanship"@en ,
-                            "Aviation"@en ;
-              skos:definition "An applicatios related to the transport of people and/or goods by any form of aircraft or spacecraft."@en ;
-              skos:hiddenLabel "Air Power"@en .
+###  http://purl.org/holy/ns#AviaticApplication
+holy:AviaticApplication rdf:type owl:Class ;
+                        rdfs:subClassOf holy:MobileApplication ;
+                        dct:references <https://dictionary.cambridge.org/dictionary/english/aviation> ;
+                        rdfs:label "Aviatic Application"@en ;
+                        skos:altLabel "Aeronautics"@en ,
+                                      "Air Travel"@en ,
+                                      "Airmanship"@en ,
+                                      "Aviation"@en ;
+                        skos:definition "An applicatios related to the transport of people and/or goods by any form of aircraft or spacecraft."@en ;
+                        skos:hiddenLabel "Air Power"@en .
 
 
 ###  http://purl.org/holy/ns#Battery
@@ -1970,7 +1970,7 @@ holy:SolidStateBattery rdf:type owl:Class ;
 
 ###  http://purl.org/holy/ns#Spacecraft
 holy:Spacecraft rdf:type owl:Class ;
-                rdfs:subClassOf holy:Aviation ;
+                rdfs:subClassOf holy:AviaticApplication ;
                 dct:references <http://wordnetweb.princeton.edu/perl/webwn?s=spacecraft&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=000000000> ,
                                <https://dictionary.cambridge.org/dictionary/english/spacecraft> ;
                 rdfs:label "Spacecraft"@en ;
