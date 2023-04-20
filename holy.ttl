@@ -1,24 +1,26 @@
-@prefix owl: <http://www.w3.org/2002/07/owl#> . # Web Ontology Language
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . # The RDF Concepts Vocabulary (RDF)
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .# Resource Description Framework Schema
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . # XSML Schema
-@prefix cc: <https://creativecommons.org/ns#> . # Creative Commons Rights Expression Language
-@prefix vann: <http://purl.org/vocab/vann/> . # A vocabulary for annotating vocabulary descriptions
-@prefix bibo: <http://purl.org/ontology/bibo/> . # The Bibliographic Ontology
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> . # Simple Knowledge Organization System
-@prefix schema: <http://schema.org/> . # Schema.org
-@prefix foaf: <http://xmlns.com/foaf/0.1/> . # Friend of a Friend
-@prefix dc: <http://purl.org/dc/elements/1.1/> . # DCMI Metadata Terms
-@prefix dct: <http://purl.org/dc/terms/> . # DCMI Metadata Terms
-@prefix dbo: <http://dbpedia.org/ontology/> . # DBpedia Ontology
-@prefix dbc: <http://dbpedia.org/page/Category:> . # DBpedia Ontology
-@prefix dbr: <http://dbpedia.org/resource/> . # DBpedia Ontology
-@prefix org: <http://www.w3.org/ns/org#> . # The Organization Ontology
-@prefix ebg: <http://data.businessgraph.io/ontology#> . # The euBusinessGraph Ontology
-@prefix rov: <http://www.w3.org/ns/regorg#> . # Registered Organization Vocabulary
-@prefix m4i: <http://w3id.org/nfdi4ing/metadata4ing#> . # Metadata4Ing
-@prefix mod: <https://w3id.org/mod#> . # MOD: Metadata for Ontology Description and publication
-@prefix holy: <http://purl.org/holy/ns#> . # Hydrogen Ontology
+@prefix : <http://purl.org/holy/ns#> .
+@prefix cc: <https://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dbc: <http://dbpedia.org/page/Category:> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ebg: <http://data.businessgraph.io/ontology#> .
+@prefix m4i: <http://w3id.org/nfdi4ing/metadata4ing#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rov: <http://www.w3.org/ns/regorg#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix holy: <http://purl.org/holy/ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix schema: <http://schema.org/> .
 @base <http://purl.org/holy/ns#> .
 
 <http://purl.org/holy/ns#> rdf:type owl:Ontology ;
@@ -48,9 +50,7 @@
                             vann:preferredNamespacePrefix "holy" ;
                             vann:preferredNamespaceURI "http://purl.org/holy/ns#" ;
                             owl:versionInfo 1.0 ;
-                            owl:versionIRI <http://purl.org/holy/ns#>; #TODO: include new version
                             foaf:depiction <http://purl.org/holy/schema_diagram> ;
-                            dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
                             cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
                             mod:acronym "HOLY" ;
                             mod:competencyQuestion <http://purl.org/holy/repository/cq> ;
@@ -108,6 +108,10 @@ vann:preferredNamespaceURI rdf:type owl:AnnotationProperty .
 schema:affiliation rdf:type owl:AnnotationProperty .
 
 
+###  http://wordnet-rdf.princeton.edu/ontology#wn:hyponym
+<http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2000/01/rdf-schema#comment
 rdfs:comment rdf:type owl:AnnotationProperty ;
              skos:definition "Used for listing additional information for the user."@en .
@@ -142,6 +146,10 @@ skos:definition rdf:type owl:AnnotationProperty ;
 ###  http://www.w3.org/2004/02/skos/core#example
 skos:example rdf:type owl:AnnotationProperty ;
              skos:definition "Example of an instance within a class. Used for pipeline extraction."@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#hiddenLabel
+skos:hiddenLabel rdf:type owl:AnnotationProperty .
 
 
 ###  http://xmlns.com/foaf/0.1/depiction
@@ -695,47 +703,47 @@ holy:Aircraft rdf:type owl:Class ;
               rdfs:subClassOf holy:Aviation ;
               dct:references <http://wordnetweb.princeton.edu/perl/webwn?s=plane&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=0000> ,
                              <https://dictionary.cambridge.org/dictionary/english/aircraft> ;
+              <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Aeroplane"@en ,
+                                                                     "Airplane"@en ,
+                                                                     "Cargo Plane"@en ,
+                                                                     "Drone"@en ,
+                                                                     "Helicopter"@en ,
+                                                                     "Long-duration aircraft"@en ,
+                                                                     "Long-endurance aircraft"@en ,
+                                                                     "Passenger Plane"@en ,
+                                                                     "STOL"@en ,
+                                                                     "Short Takeoff and Landing Aircraft"@en ,
+                                                                     "UAV"@en ,
+                                                                     "Unmanned Aerial Vehicle"@en ,
+                                                                     "Unmanned Long-duration Aircraft"@en ,
+                                                                     "Zero-emission Aircraft"@en ,
+                                                                     "long-haul aircraft"@en ;
               rdfs:label "Aircraft"@en ;
-              skos:altLabel "Aeroplane"@en ,
-                            "Aircraft"@en ,
-                            "Airplane"@en ,
-                            "Cargo Plane"@en ,
-                            "Drone"@en ,
-                            "Helicopter"@en ,
-                            "Long-duration aircraft"@en ,
-                            "Long-endurance aircraft"@en ,
-                            "Passenger Plane"@en ,
-                            "Plane"@en ,
-                            "STOL"@en ,
-                            "Short Takeoff and Landing Aircraft"@en ,
-                            "UAV"@en ,
-                            "Unmanned Aerial Vehicle"@en ,
-                            "Unmanned Long-duration Aircraft"@en ,
-                            "Zero-emission Aircraft"@en ,
-                            "long-haul aircraft"@en ;
+              skos:altLabel "Aircraft"@en ;
               skos:definition "A vehicle which can fly and carry goods or passengers. It has fixed wings and is powered by propellers or jets."@en ;
-              skos:example "A321neo"@en .
+              skos:example "A321neo"@en ;
+              skos:hiddenLabel "Plane"@en .
 
 
 ###  http://purl.org/holy/ns#AlkalineBattery
 holy:AlkalineBattery rdf:type owl:Class ;
                      rdfs:subClassOf holy:Battery ;
-                     dct:references <https://www.wiltronics.com.au/wiltronics-knowledge-base/different-types-of-batteries> ;
+                     dct:references "https://doi.org/10.1016/B978-044452745-5.00854-6"@en ;
                      rdfs:label "Alkaline Battery"@en ;
-                     skos:altLabel "Alkaline Battery"@en .
+                     skos:altLabel "Alkaline Battery"@en ;
+                     skos:definition "A battery which uses a chemical substance composed of zinc (Zn) and manganese dioxide (MnO2). The separator in alkaline batteries is made totally or at least partially of nonwoven materials." .
 
 
 ###  http://purl.org/holy/ns#AlkalineFuelCell
 holy:AlkalineFuelCell rdf:type owl:Class ;
-                      rdfs:subClassOf holy:Reconversion ;
+                      rdfs:subClassOf holy:HydrogenReconversion ;
                       dct:references <https://www.energy.gov/eere/fuelcells/types-fuel-cells> ;
                       rdfs:label "Alkaline Fuel Cell"@en ;
                       skos:altLabel "AMFC"@en ,
                                     "Alkaline Electrolyzer"@en ,
                                     "Alkaline Fuel CEll"@en ,
                                     "Alkaline Membrane Fuel Cells"@en ;
-                      skos:definition "A fuel cell which uses potassium hydroxide in water as the electrolyte for powering, using a variety of non-precious metals as a catalyst at the anode and cathode."@en ,
-                                      "AFC"@en .
+                      skos:definition "A fuel cell which uses potassium hydroxide in water as the electrolyte for powering, using a variety of non-precious metals as a catalyst at the anode and cathode."@en .
 
 
 ###  http://purl.org/holy/ns#AmmoniaFuelCell
@@ -751,7 +759,7 @@ holy:AmmoniaFuelCell rdf:type owl:Class ;
 
 ###  http://purl.org/holy/ns#AnionExchangeMembraneFuelCell
 holy:AnionExchangeMembraneFuelCell rdf:type owl:Class ;
-                                   rdfs:subClassOf holy:Reconversion ;
+                                   rdfs:subClassOf holy:HydrogenReconversion ;
                                    rdfs:label "Anion Exchange Membrane Fuel Cell"@en ;
                                    skos:altLabel "AEM"@en ,
                                                  "AEMFC"@en ,
@@ -768,55 +776,56 @@ holy:Application rdf:type owl:Class ;
                                 <http://www.chfca.ca/fuel-cells-hydrogen/hydrogen-fuel-cell-applications/> ,
                                 <https://dictionary.cambridge.org/dictionary/english/application> ,
                                 <https://wha-international.com/10-hydrogen-fuel-cell-applications-you-might-not-know/> ;
+                 <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Fuel Cell Technology Industry Application"@en ,
+                                                                        "Hydrogen Energy Industry Application"@en ,
+                                                                        "Hydrogen Fuel Cell Application"@en ,
+                                                                        "Industry Applications of Hydrogen Fuel Cells"@en ,
+                                                                        "Practical Application"@en ;
                  rdfs:label "Application"@en ;
                  skos:altLabel "Application"@en ,
-                               "End Use"@en ,
-                               "Fuel Cell Technology Industry Application"@en ,
-                               "Hydrogen Energy Industry Application"@en ,
-                               "Hydrogen Fuel Cell Application"@en ,
-                               "Industry Applications of Hydrogen Fuel Cells"@en ,
-                               "Practical Application"@en ,
                                "Usance"@en ,
                                "Use Case"@en ,
                                "Utilization"@en ;
-                 skos:definition "The intended end use of a hydrogen-based product or of the result of a hydrogen-related project."@en .
+                 skos:definition "The intended end use of a hydrogen-based product or of the result of a hydrogen-related project."@en ;
+                 skos:hiddenLabel "End Use"@en .
 
 
 ###  http://purl.org/holy/ns#Aviation
 holy:Aviation rdf:type owl:Class ;
-              rdfs:subClassOf holy:Mobile ;
+              rdfs:subClassOf holy:MobileApplication ;
               dct:references <https://dictionary.cambridge.org/dictionary/english/aviation> ;
               rdfs:label "Aviation"@en ;
               skos:altLabel "Aeronautics"@en ,
-                            "Air Power"@en ,
                             "Air Travel"@en ,
                             "Airmanship"@en ,
                             "Aviation"@en ;
-              skos:definition "An applicatios related to the transport of people and/or goods by any form of aircraft or spacecraft."@en .
+              skos:definition "An applicatios related to the transport of people and/or goods by any form of aircraft or spacecraft."@en ;
+              skos:hiddenLabel "Air Power"@en .
 
 
 ###  http://purl.org/holy/ns#Battery
 holy:Battery rdf:type owl:Class ;
              rdfs:subClassOf holy:SubstituteProduct ;
              dct:references <https://www.wiltronics.com.au/wiltronics-knowledge-base/different-types-of-batteries/> ;
+             <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "BESS"@en ,
+                                                                    "BTMS"@en ,
+                                                                    "Barge Battery System"@en ,
+                                                                    "Battery Cell"@en ,
+                                                                    "Battery Energy Storage System"@en ,
+                                                                    "Battery Thermal Management System"@en ,
+                                                                    "Battery Wall"@en ,
+                                                                    "Electric Battery"@en ,
+                                                                    "Electric Car Battery"@en ,
+                                                                    "Fully Electric Barge Battery Container"@en ,
+                                                                    "Hybrid Membrane Edges Flow Batteries"@en ,
+                                                                    "Lead Acid Battery"@en ,
+                                                                    "Perfluorinated Sulfonic Acid battery"@en ,
+                                                                    "Redox Flow Batteries"@en ,
+                                                                    "Vanadium Redox Flow Battery"@en ;
              rdfs:label "Battery"@en ;
-             skos:altLabel "BEES"@en ,
-                           "BTMS"@en ,
-                           "Barge Battery System"@en ,
-                           "Battery"@en ,
-                           "Battery Energy Storage System"@en ,
-                           "Battery Thermal Management System"@en ,
-                           "Battery Wall"@en ,
-                           "Electric Battery"@en ,
-                           "Electric Car Battery"@en ,
-                           "Fully Electric Barge Battery Container"@en ,
-                           "Hybrid Membrane"@en ,
-                           "Hybrid Membrane Edges Flow Batteries"@en ,
-                           "Lead Acid Battery"@en ,
-                           "Perfluorinated Sulfonic Acid battery"@en ,
-                           "Redox Flow Batteries"@en ,
-                           "Vanadium Redox Flow Battery"@en ;
-             skos:definition "A collection of one or more cells which store electrical energy for powering electrical devices."@en .
+             skos:altLabel "Battery"@en ;
+             skos:definition "A collection of one or more cells which store electrical energy for powering electrical devices."@en ;
+             skos:hiddenLabel "Hybrid Membrane"@en .
 
 
 ###  http://purl.org/holy/ns#BatteryComponent
@@ -829,26 +838,26 @@ holy:BatteryComponent rdf:type owl:Class ;
 
 ###  http://purl.org/holy/ns#Bike
 holy:Bike rdf:type owl:Class ;
-          rdfs:subClassOf holy:Road ;
+          rdfs:subClassOf holy:RoadApplication ;
           dct:references <https://dictionary.cambridge.org/dictionary/english/bike> ;
+          <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Bicycle"@en ,
+                                                                 "Electric Moped"@en ,
+                                                                 "Hydrogen Bicycle"@en ,
+                                                                 "Hydrogen Bike"@en ,
+                                                                 "Hydrogen Scooter"@en ,
+                                                                 "Hydrogen-powered Bike"@en ,
+                                                                 "Hydrogen-powered E-bike"@en ,
+                                                                 "Moped"@en ,
+                                                                 "Motorbike"@en ,
+                                                                 "Motorcycle"@en ,
+                                                                 "Race Bike"@en ,
+                                                                 "Road Bike"@en ,
+                                                                 "Scooter"@en ;
           rdfs:label "Bike"@en ;
-          skos:altLabel "Bicycle"@en ,
-                        "Bike"@en ,
-                        "Cycling"@en ,
-                        "Electric Moped"@en ,
-                        "Hydrogen Bicycle"@en ,
-                        "Hydrogen Bike"@en ,
-                        "Hydrogen Scooter"@en ,
-                        "Hydrogen-powered Bike"@en ,
-                        "Hydrogen-powered E-bike"@en ,
-                        "Moped"@en ,
-                        "Motorbike"@en ,
-                        "Motorcycle"@en ,
-                        "Race Bike"@en ,
-                        "Road Bike"@en ,
-                        "Scooter"@en ;
+          skos:altLabel "Bike"@en ;
           skos:definition "A motorbike, motorcycle or scooter."@en ;
-          skos:example "Honda Grazia Repsol Honda Team Edition"@en .
+          skos:example "Honda Grazia Repsol Honda Team Edition"@en ;
+          skos:hiddenLabel "Cycling"@en .
 
 
 ###  http://purl.org/holy/ns#BipolarPlate
@@ -862,47 +871,47 @@ holy:BipolarPlate rdf:type owl:Class ;
 
 ###  http://purl.org/holy/ns#Bus
 holy:Bus rdf:type owl:Class ;
-         rdfs:subClassOf holy:Road ;
+         rdfs:subClassOf holy:RoadApplication ;
          dct:references <https://dictionary.cambridge.org/dictionary/english/bus> ;
+         <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "City Bus"@en ,
+                                                                "Double-decker"@en ,
+                                                                "Hydrogen Fuel Cell Electric Bus"@en ,
+                                                                "Hydrogen-powered Bus"@en ,
+                                                                "Minibus"@en ,
+                                                                "Municipal Bus"@en ,
+                                                                "PEM Fuel Cell Bus"@en ,
+                                                                "School Bus"@en ,
+                                                                "Transit Bus"@en ,
+                                                                "Trolleybus"@en ,
+                                                                "Zero-emission Bus"@en ;
          rdfs:label "Bus"@en ;
-         skos:altLabel "Bus"@en ,
-                       "City Bus"@en ,
-                       "Double-decker"@en ,
-                       "Hydrogen Fuel Cell Electric Bus"@en ,
-                       "Hydrogen-powered Bus"@en ,
-                       "Minibus"@en ,
-                       "Municipal Bus"@en ,
-                       "PEM Fuel Cell Bus"@en ,
-                       "School Bus"@en ,
-                       "Transit Bus"@en ,
-                       "Trolleybus"@en ,
-                       "Zero-emission Bus"@en ;
+         skos:altLabel "Bus"@en ;
          skos:definition "A large motorzed vehicle with seats for many people."@en ;
          skos:example "Xcelsior CHARGE"@en .
 
 
 ###  http://purl.org/holy/ns#Car
 holy:Car rdf:type owl:Class ;
-         rdfs:subClassOf holy:Road ;
+         rdfs:subClassOf holy:RoadApplication ;
          dct:references <https://dictionary.cambridge.org/dictionary/english/car> ;
+         <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Convertible"@en ,
+                                                                "Coupe"@en ,
+                                                                "Coupé"@en ,
+                                                                "Electric SUV"@en ,
+                                                                "Electric passenger vehicle"@en ,
+                                                                "Hybrid Range Extender"@en ,
+                                                                "Hybrid Vehicle"@en ,
+                                                                "Hydrogen SUV"@en ,
+                                                                "Jeep"@en ,
+                                                                "Limousine"@en ,
+                                                                "Passenger Car"@en ,
+                                                                "Passenger Vehicle"@en ,
+                                                                "SUV"@en ,
+                                                                "Station Wagon"@en ;
          rdfs:label "Car"@en ;
          skos:altLabel "Auto"@en ,
                        "Automobile"@en ,
-                       "Car"@en ,
-                       "Convertible"@en ,
-                       "Coupe"@en ,
-                       "Coupé"@en ,
-                       "Electric SUV"@en ,
-                       "Electric passenger vehicle"@en ,
-                       "Hybrid Range Extender"@en ,
-                       "Hybrid Vehicle"@en ,
-                       "Hydrogen SUV"@en ,
-                       "Jeep"@en ,
-                       "Limousine"@en ,
-                       "Passenger Car"@en ,
-                       "Passenger Vehicle"@en ,
-                       "SUV"@en ,
-                       "Station Wagon"@en ;
+                       "Car"@en ;
          skos:definition "A road vehicle with an engine, four wheels, and seats for a small number of people."@en ;
          skos:example "Toyota Corolla"@en ,
                       "Toyota Mirai"@en ,
@@ -911,19 +920,19 @@ holy:Car rdf:type owl:Class ;
 
 ###  http://purl.org/holy/ns#CargoShip
 holy:CargoShip rdf:type owl:Class ;
-               rdfs:subClassOf holy:Marine ;
+               rdfs:subClassOf holy:MarineApplication ;
                dct:references <https://www.marineinsight.com/types-of-ships/what-are-cargo-ships/> ;
+               <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Container Ship"@en ,
+                                                                      "Freight Ship"@en ,
+                                                                      "Freight Vessel"@en ,
+                                                                      "Freighter"@en ,
+                                                                      "Oil Tanker"@en ,
+                                                                      "Supertanker"@en ,
+                                                                      "Zero-emission Cargo Ship"@en ;
                rdfs:label "Cargo Ship"@en ;
                skos:altLabel "Canal Boat"@en ,
                              "Cargo Vessel"@en ,
-                             "Container Ship"@en ,
-                             "Freight Ship"@en ,
-                             "Freight Vessel"@en ,
-                             "Freighter"@en ,
-                             "Oil Tanker"@en ,
-                             "Supertanker"@en ,
-                             "Transport Ship"@en ,
-                             "Zero-emission Cargo Ship"@en ;
+                             "Transport Ship"@en ;
                skos:definition "Any kind of a ship or any other vessel that transports heavy goods and materials from one port to another."@en ;
                skos:example "Ceiba Ship"@en ,
                             "Voilier Ceiba"@en .
@@ -933,33 +942,36 @@ holy:CargoShip rdf:type owl:Class ;
 holy:CargoTrain rdf:type owl:Class ;
                 rdfs:subClassOf holy:Train ;
                 dct:references <https://www.gymglish.com/en/gymglish/english-translation/cargo-train> ;
+                <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Container Train"@en ,
+                                                                       "Intermodal Train"@en ;
                 rdfs:label "Cargo Train"@en ;
                 skos:altLabel "Cargo Train"@en ,
                               "Freight Train"@en ,
                               "Goods Train"@en ,
-                              "Nonpassenger Train"@en ;
-                skos:definition "A train carrying mainly goods such as baggage, shipment or merchandise."@en .
+                              "Haulage Train"@en ;
+                skos:definition "A train carrying mainly goods such as baggage, shipment or merchandise."@en ;
+                skos:hiddenLabel "Nonpassenger Train"@en .
 
 
 ###  http://purl.org/holy/ns#CatalystLayer
 holy:CatalystLayer rdf:type owl:Class ;
                    rdfs:subClassOf holy:MembraneElectrodeAssembly ;
-                   dct:references <https://www.energy.gov/eere/fuelcells/parts-fuel-cell> ;
+                   dct:references <https://www.energy.gov/eere/fuelcells/parts-fuel-cell> ,
+                                  "https://doi.org/10.1016/B978-044452745-5.00227-6" ;
                    rdfs:label "Catalyst Layer"@en ;
                    skos:altLabel "Catalyst Layer"@en ;
-                   skos:definition "A layer of anodes and cathodes which are placed on the opposite sites of the membrane."@en .
+                   skos:definition "A layer of anodes and cathodes which are placed on opposite sites of the membrane. It is a three-dimensional porous structrure composed of catalyst particles and ionomer fragments."@en .
 
 
 ###  http://purl.org/holy/ns#ChemicalIndustrialProcessing
 holy:ChemicalIndustrialProcessing rdf:type owl:Class ;
                                   rdfs:subClassOf holy:IndustrialProcessing ;
                                   dct:references <https://www.cisa.gov/sites/default/files/publications/Chemical-Sector-Profile_Final%20508.pdf> ;
+                                  <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Ammonia Processing"@en ,
+                                                                                         "Methanol Production"@en ;
                                   rdfs:comment "Hydrogen is one of the key starting materials used in the chemical industry. It is a fundamental building block for the manufacturing of ammonia, fertilizers, and  methanol, which is used in the manufacture of many polymers."@en ;
                                   rdfs:label "Chemical Industrial Processing"@en ;
-                                  skos:altLabel "Ammonia Processing"@en ,
-                                                "Chemical Processing"@en ,
-                                                "Methanol Production"@en ,
-                                                "Pharmaceutical Production"@en ;
+                                  skos:altLabel "Chemical Processing"@en ;
                                   skos:definition "Applications of hydrogen in the chemical industry creating chemical products for numerous sectors such as pharmaceutical, agricultural or consumer goods usage."@en .
 
 
@@ -967,59 +979,24 @@ holy:ChemicalIndustrialProcessing rdf:type owl:Class ;
 holy:CircularEconomyProject rdf:type owl:Class ;
                             rdfs:subClassOf holy:PurposeBasedProject ;
                             dct:references <https://clustercollaboration.eu/content/circular-economy-project-management-system-0> ;
+                            <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Industrial Symbiosis Project"@en ;
                             rdfs:label "Circular Economy Project"@en ;
-                            skos:altLabel "Circular Economy Project"@en ,
-                                          "Ecodesign project"@en ,
-                                          "Industrial Symbiosis Project"@en ,
-                                          "Life Cycle Management Project"@en ,
-                                          "Smart Farm Linked Hydrogen Fuel Cell Power Generation Project"@en ,
-                                          "Sustainable Development Project"@en ;
-                            skos:definition "A project focusing on a circular system of reusing resources which were previously used for something."@en .
-
-
-###  http://purl.org/holy/ns#Conversion
-holy:Conversion rdf:type owl:Class ;
-                rdfs:subClassOf holy:HydrogenProduct ;
-                rdfs:comment "The subclass \"Conversion\" can be expanded to focus the domain scope to the creation of hydrogen with respect to the value chain. "@en ;
-                rdfs:label "Conversion"@en ;
-                skos:altLabel "Biological Hydrogen Processes"@en ,
-                              "Biological Hydrogen Production"@en ,
-                              "Blue Hydrogen"@en ,
-                              "Direct Solar Water Splitting Processes"@en ,
-                              "Electrolytic Processing"@en ,
-                              "Electrolytic Production"@en ,
-                              "Green Hydrogen"@en ,
-                              "Grey Hydrogen"@en ,
-                              "Hydrogen Conversion"@en ,
-                              "Low Carbon Transport Fuel"@en ,
-                              "PEM water electrolysers"@en ,
-                              "PEMWE"@en ,
-                              "Renewable Hydrogen Production"@en ,
-                              "Thermochemical Hydrogen Processesing"@en ,
-                              "Thermochemical Hydrogen Production"@en ,
-                              "hydrogen based fuel"@en ;
-                skos:definition "The processing of materials into hydrogen."@en .
+                            skos:altLabel "Circular Economy Project"@en ;
+                            skos:definition "A project focusing on a circular system of reusing resources which were previously used for something."@en ;
+                            skos:hiddenLabel "Ecodesign project"@en ,
+                                             "Life Cycle Management Project"@en ,
+                                             "Smart Farm Linked Hydrogen Fuel Cell Power Generation Project"@en .
 
 
 ###  http://purl.org/holy/ns#CruiseShip
 holy:CruiseShip rdf:type owl:Class ;
-                rdfs:subClassOf holy:Marine ;
+                rdfs:subClassOf holy:MarineApplication ;
                 dct:references <https://dictionary.cambridge.org/dictionary/english/cruise-ship> ;
                 rdfs:label "Cruise Ship"@en ;
-                skos:altLabel "Cruiseliner"@en ,
-                              "Liner"@en ,
+                skos:altLabel "Cruise Liner"@en ,
                               "Passenger Ship"@en ;
-                skos:definition "A large ship like a hotel which people use for travel and pleasure."@en .
-
-
-###  http://purl.org/holy/ns#Employee
-holy:Employee rdf:type owl:Class ;
-              rdfs:subClassOf holy:Indicator ;
-              rdfs:label "Employee"@en ;
-              skos:altLabel "Labor"@en ,
-                            "Labor Force"@en ,
-                            "Workforce"@en ;
-              skos:definition "The number of persons working for an organization."@en .
+                skos:definition "A large ship like a hotel which people use for travel and pleasure."@en ;
+                skos:hiddenLabel "Liner"@en .
 
 
 ###  http://purl.org/holy/ns#EnergySectorOrganization
@@ -1027,22 +1004,22 @@ holy:EnergySectorOrganization rdf:type owl:Class ;
                               rdfs:subClassOf rov:RegisteredOrganization ;
                               dct:references <https://ec.europa.eu/eurostat/documents/3859598/5902521/KS-RA-07-015-EN.PDF> ;
                               rdfs:label "Energy Sector Organization"@en ;
-                              skos:altLabel "Energy Sector"@en ,
-                                            "Renewable Fuel Producer"@en ;
-                              skos:definition "An organization participating in activities of providing electric power, natural gas, steam, hot water, and the like through a permanent infrastructure (network) of lines, mains and pipes. The dimension of the network is not decisive; also included are the distribution of electricity, gas, steam, hot water and the like in industrial parks or residential buildings."@en .
+                              skos:altLabel "Energy Sector"@en ;
+                              skos:definition "An organization who participates in the activity of providing electric power, natural gas, steam, hot water and the like through a permanent infrastructure (network) of lines, mains and pipes. The dimension of the network is not decisive; also included is the distribution of electricity, gas, steam, hot water and the like in industrial parks or residential buildings according to Section D of EC NACE Rev. 2."@en ;
+                              skos:hiddenLabel "Renewable Fuel Producer"@en .
 
 
 ###  http://purl.org/holy/ns#EntryBarrier
 holy:EntryBarrier rdf:type owl:Class ;
                   rdfs:subClassOf holy:Indicator ;
+                  <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Market Permit"@en ,
+                                                                         "Political Constraint"@en ,
+                                                                         "Regulation"@en ;
                   rdfs:label "Entry Barrier"@en ;
-                  skos:altLabel "ESG"@en ,
-                                "Environmental, Social and Corporate Governance"@en ,
-                                "Governmental Roadblock"@en ,
-                                "Market Permit"@en ,
-                                "Political Constraint"@en ,
-                                "Regulation"@en ;
-                  skos:definition "An obstacle individuals face when participating in a particular market."@en .
+                  skos:definition "An obstacle individuals face when participating in a particular market."@en ;
+                  skos:hiddenLabel "ESG"@en ,
+                                   "Environmental, Social and Corporate Governance"@en ,
+                                   "Governmental Roadblock"@en .
 
 
 ###  http://purl.org/holy/ns#EthanolFuelCell
@@ -1052,16 +1029,17 @@ holy:EthanolFuelCell rdf:type owl:Class ;
                                     <https://www.sciencedirect.com/science/article/pii/B9780128186244000042> ;
                      rdfs:label "Ethanol Fuel Cell"@en ;
                      skos:altLabel "DEFC"@en ,
-                                   "Direct ethanol fuel cell"@en ,
-                                   "Ethanol Fuel Cell"@en ,
-                                   "Ethanol Powered Engines"@en ;
-                     skos:definition "A fuel cell using ethanol as its fuel."@en .
+                                   "Direct Ethanol Fuel Cell"@en ,
+                                   "Ethanol Fuel Cell"@en ;
+                     skos:definition "A fuel cell using ethanol as its fuel."@en ;
+                     skos:hiddenLabel "Ethanol Powered Engines"@en .
 
 
 ###  http://purl.org/holy/ns#Ferry
 holy:Ferry rdf:type owl:Class ;
-           rdfs:subClassOf holy:Marine ;
+           rdfs:subClassOf holy:MarineApplication ;
            dct:references <https://dictionary.cambridge.org/dictionary/english/ferry> ;
+           <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Car-ferry"@en ;
            rdfs:label "Ferry"@en ;
            skos:altLabel "Car Ferry"@en ,
                          "Ferryboat"@en ;
@@ -1073,11 +1051,11 @@ holy:FinishedProject rdf:type owl:Class ;
                      rdfs:subClassOf holy:StateBasedProject ;
                      dct:references <https://www.referenceforbusiness.com/management/Pr-Sa/Project-Management.html> ;
                      rdfs:label "Finished Project"@en ;
-                     skos:altLabel "Completed Project"@en ,
-                                   "Have Been Completed"@en ,
-                                   "Project Was Deemed Succesful"@en ,
-                                   "Was a Project"@en ;
-                     skos:definition "A project which has completed its intended purpose regardless of the level of success."@en .
+                     skos:altLabel "Completed Project"@en ;
+                     skos:definition "A project which has completed its intended purpose regardless of the level of success."@en ;
+                     skos:hiddenLabel "Have Been Completed"@en ,
+                                      "Project Was Deemed Succesful"@en ,
+                                      "Was a Project"@en .
 
 
 ###  http://purl.org/holy/ns#FossilFuel
@@ -1085,11 +1063,11 @@ holy:FossilFuel rdf:type owl:Class ;
                 rdfs:subClassOf holy:SubstituteProduct ;
                 rdfs:comment "The subclass \"FossilFuel\" could be expanded to focus the domain scope to the creation of hydrogen concerning the value chain."@en ;
                 rdfs:label "Fossil Fuel"@en ;
-                skos:altLabel "Combustion Engine"@en ,
-                              "Fossil Fuel"@en ,
-                              "Fossil Fuel Tank"@en ,
-                              "Gasoline Engine"@en ;
-                skos:definition "A conventional energy production method using fossil fuels as fuel."@en .
+                skos:altLabel "Fossil Fuel"@en ;
+                skos:definition "A conventional energy production method using fossil fuels as fuel."@en ;
+                skos:hiddenLabel "Combustion Engine"@en ,
+                                 "Fossil Fuel Tank"@en ,
+                                 "Gasoline Engine"@en .
 
 
 ###  http://purl.org/holy/ns#FossilFuelComponent
@@ -1121,27 +1099,27 @@ holy:FuelProcessor rdf:type owl:Class ;
 ###  http://purl.org/holy/ns#GasDiffusionLayer
 holy:GasDiffusionLayer rdf:type owl:Class ;
                        rdfs:subClassOf holy:MembraneElectrodeAssembly ;
-                       dct:references <https://www.energy.gov/eere/fuelcells/parts-fuel-cell> ;
+                       dct:references <https://www.energy.gov/eere/fuelcells/parts-fuel-cell> ,
+                                      "https://doi.org/10.1016/B978-044452745-5.00227-6" ;
                        rdfs:label "Gas Diffusion Layer"@en ;
                        skos:altLabel "GDL"@en ,
                                      "Gas Diffusion Layer"@en ;
-                       skos:definition "A paper-like layer placed outside the catalyst layer which is responsible for transporting reactants into the catalyst layer by removing chemical reaction outcomes."@en .
+                       skos:definition "A paper-like layer placed outside the catalyst layer which is responsible for transporting reactants into the catalyst layer by removing chemical reaction outcomes.  In most cases, the Gas Diffusion Layer consists of a bilayer structure consisting of a macroporous diffusion medium and microporous layer."@en .
 
 
 ###  http://purl.org/holy/ns#Gasket
 holy:Gasket rdf:type owl:Class ;
             rdfs:subClassOf holy:SupportiveHardware ;
             dct:references <https://www.energy.gov/eere/fuelcells/parts-fuel-cell> ;
+            <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "EPDM gasket"@en ,
+                                                                   "EPDM-based gasket"@en ,
+                                                                   "Fuel Cell Cap"@en ,
+                                                                   "Low Temperature Fuel Cell Gasket"@en ,
+                                                                   "PTFE-based Gasket"@en ,
+                                                                   "PTFE-coated Basket"@en ,
+                                                                   "Sealing Gasket"@en ;
             rdfs:label "Gasket"@en ;
-            skos:altLabel "EPDM gasket"@en ,
-                          "EPDM-based gasket"@en ,
-                          "Fuel Cell Covering"@en ,
-                          "Gasket"@en ,
-                          "Low Temperature Fuel Cell Gasket"@en ,
-                          "PTFE coated basket"@en ,
-                          "PTFE-based Gasket"@en ,
-                          "Sealing Gasket"@en ,
-                          "fuel cell cap"@en ;
+            skos:altLabel "Gasket"@en ;
             skos:definition "A part used for gas-tight sealing of the edges of the Membrane Electrode Assembly (MEA)."@en .
 
 
@@ -1155,25 +1133,26 @@ holy:GeographicMarket rdf:type owl:Class ;
                                      <https://www.irena.org/publications/2022/Jan/Geopolitics-of-the-Energy-Transformation-Hydrogen> ,
                                      <https://www.yourdictionary.com/geographical-area> ;
                       rdfs:label "Geographic Market"@en ;
-                      skos:altLabel "Earth"@en ,
-                                    "Geographic Market"@en ,
-                                    "World"@en ;
-                      skos:definition "An area of land which can be classified for business or trade concerning a particular product or domain."@en .
+                      skos:altLabel "Geographic Market"@en ;
+                      skos:definition "An area of land which can be classified for business or trade concerning a particular product or domain."@en ;
+                      skos:hiddenLabel "Earth"@en ,
+                                       "World"@en .
 
 
 ###  http://purl.org/holy/ns#Heating
 holy:Heating rdf:type owl:Class ;
-             rdfs:subClassOf holy:Stationary ;
+             rdfs:subClassOf holy:StationaryApplication ;
              dct:references <http://www.element-energy.co.uk/wordpress/wp-content/uploads/2020/01/Hy4Heat-WP6-Industrial-Heating-Equipment-Published-report-Element-Energy-2019.pdf> ;
+             <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Fuel Cell Heating System"@en ,
+                                                                    "Heating System"@en ;
              rdfs:label "Heating"@en ;
-             skos:altLabel "Boiler"@en ,
-                           "Fuel Cell Heating System"@en ,
-                           "Heat"@en ,
-                           "Heat Up"@en ,
-                           "Heating Application"@en ,
-                           "Heating System"@en ,
-                           "Melting"@en ;
-             skos:definition "An application which generates heat for contributing to the heating of buildings or for use in industrial processes."@en .
+             skos:altLabel "Heat Up"@en ,
+                           "Heating Application"@en ;
+             skos:definition "An application which generates heat for contributing to the heating of buildings or for use in industrial processes."@en ;
+             skos:hiddenLabel "Boiler"@en ,
+                              "Heat"@en ,
+                              "Heating Plant"@en ,
+                              "Melting"@en .
 
 
 ###  http://purl.org/holy/ns#Humidifier
@@ -1183,6 +1162,31 @@ holy:Humidifier rdf:type owl:Class ;
                 rdfs:label "Humidifier"@en ;
                 skos:altLabel "Humidifier"@en ;
                 skos:definition "An item which regulates a certain level of humidity within a fuel cell."@en .
+
+
+###  http://purl.org/holy/ns#HydrogenConversion
+holy:HydrogenConversion rdf:type owl:Class ;
+                        rdfs:subClassOf holy:HydrogenProduct ;
+                        <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Biological Hydrogen Processes"@en ,
+                                                                               "Biological Hydrogen Production"@en ,
+                                                                               "Direct Solar Water Splitting Processes"@en ,
+                                                                               "Electrolysis"@en ,
+                                                                               "PEM water electrolysers"@en ,
+                                                                               "Renewable Hydrogen Production"@en ,
+                                                                               "Thermochemical Hydrogen Processesing"@en ,
+                                                                               "Thermochemical Hydrogen Production"@en ;
+                        rdfs:comment "The subclass \"Conversion\" can be expanded to focus the domain scope to the creation of hydrogen with respect to the value chain. "@en ;
+                        rdfs:label "Hydrogen Conversion"@en ;
+                        skos:altLabel "Hydrogen Conversion"@en ;
+                        skos:definition "The processing of materials into hydrogen."@en ;
+                        skos:hiddenLabel "Blue Hydrogen"@en ,
+                                         "Electrolytic Processing"@en ,
+                                         "Electrolytic Production"@en ,
+                                         "Green Hydrogen"@en ,
+                                         "Grey Hydrogen"@en ,
+                                         "Hydrogen-based Fuel"@en ,
+                                         "Low Carbon Transport Fuel"@en ,
+                                         "PEMWE"@en .
 
 
 ###  http://purl.org/holy/ns#HydrogenConversionComponent
@@ -1207,10 +1211,10 @@ holy:HydrogenProduct rdf:type owl:Class ;
                      rdfs:subClassOf holy:Product ;
                      rdfs:comment "Concerning the scope of focusing on fuel cells and more precisely on PEMFCs, the sub-class reconversion will be the most focused class. Transportation, Storage and Conversion subclasses would receive greater attention when shifting the ontology to other areas of the hydrogen value chain."@en ;
                      rdfs:label "Hydrogen Product"@en ;
-                     skos:altLabel "Hydrogen Product"@en ,
-                                   "Hydrogen Tech"@en ,
-                                   "Hydrogen Technology"@en ;
-                     skos:definition "A product that is manufactured or refined for sale which can be used to produce, transport, store or \"burn\"/reconvert hydrogen."@en .
+                     skos:altLabel "Hydrogen Product"@en ;
+                     skos:definition "A product that is manufactured or refined for sale which can be used to produce, transport, store or \"burn\"/reconvert hydrogen."@en ;
+                     skos:hiddenLabel "Hydrogen Tech"@en ,
+                                      "Hydrogen Technology"@en .
 
 
 ###  http://purl.org/holy/ns#HydrogenProductComponent
@@ -1221,12 +1225,59 @@ holy:HydrogenProductComponent rdf:type owl:Class ;
                               skos:definition "A part that, combined with other parts, makes up a hydrogen product."@en .
 
 
+###  http://purl.org/holy/ns#HydrogenReconversion
+holy:HydrogenReconversion rdf:type owl:Class ;
+                          rdfs:subClassOf holy:HydrogenProduct ;
+                          <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Fuel Cell Engine"@en ,
+                                                                                 "Fuel Cell Power Module"@en ,
+                                                                                 "Fuel Cell Product"@en ,
+                                                                                 "Fuel Cell System"@en ,
+                                                                                 "Hydrogen Engine Technology"@en ,
+                                                                                 "Hydrogen Fuel Cell"@en ,
+                                                                                 "Hydrogen Fuel Cell Electric"@en ,
+                                                                                 "Hydrogen Oxygen Fuel Cell"@en ,
+                                                                                 "Hydrogen and Fuel Cell System"@en ,
+                                                                                 "Hydrogen-fueled Gas Turbines"@en ,
+                                                                                 "Hydrogen-powered Fuel Cell"@en ;
+                          rdfs:comment "Since reconversion solely happenes for energy creation using fuel cells, \"Reconversion\" is contributed to fuel cell systems."@en ;
+                          rdfs:label "Hydrogen Reconversion"@en ;
+                          rdfs:seeAlso "Fuel Cell Solution"@en ;
+                          skos:altLabel "Reconversion"@en ;
+                          skos:definition "The knowledge which deals with converting hydrogen to other elements. In case of hydrogen fuel cells, hydrogen is reconverted to H2O."@en ;
+                          skos:example "GR Yaris engine"@en ;
+                          skos:hiddenLabel "Fuel Cell"@en .
+
+
+###  http://purl.org/holy/ns#HydrogenStorage
+holy:HydrogenStorage rdf:type owl:Class ;
+                     rdfs:subClassOf holy:HydrogenProduct ;
+                     <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Cryogenic Tanks"@en ,
+                                                                            "High-pressure Gas Cylinders"@en ,
+                                                                            "Hydrogen Fuel Tank"@en ,
+                                                                            "Hydrogen Storage Tanks"@en ,
+                                                                            "Liquid Hydrogen Storage Tank"@en ;
+                     rdfs:comment "The subclass \"Storage\" could be expanded to focus the domain scope to the creation of hydrogen with respect to the value chain. Future expansions could categorize between storage technologies within tanks or using absorbing materials."@en ;
+                     rdfs:label "Hydrogen Storage"@en ;
+                     skos:definition "The way that hydrogen can be stored for later usage."@en ;
+                     skos:hiddenLabel "Fuel Tank"@en ,
+                                      "Hydrogen Absorbation in Metal"@en .
+
+
 ###  http://purl.org/holy/ns#HydrogenStorageComponent
 holy:HydrogenStorageComponent rdf:type owl:Class ;
                               rdfs:subClassOf holy:HydrogenProductComponent ;
                               rdfs:comment "The subclass \"Hydrogen Storage Component\" could be expanded to focus the domain scope to the creation of hydrogen with respect to the value chain."@en ;
                               rdfs:label "Hydrogen Storage Component"@en ;
                               skos:definition "A basic component of products capable of storing hydrogen."@en .
+
+
+###  http://purl.org/holy/ns#HydrogenTransport
+holy:HydrogenTransport rdf:type owl:Class ;
+                       rdfs:subClassOf holy:HydrogenProduct ;
+                       rdfs:comment "The subclass \"Transport\" could be expanded to focus the domain scope to the creation of hydrogen in respect to the value chain."@en ;
+                       rdfs:label "Hydrogen Transport"@en ;
+                       skos:altLabel "Hydrogen Transport"@en ;
+                       skos:definition "The way that hydrogen can be transported from one place to another."@en .
 
 
 ###  http://purl.org/holy/ns#HydrogenTransportComponent
@@ -1242,40 +1293,39 @@ holy:Indicator rdf:type owl:Class ;
                dct:references <https://dictionary.cambridge.org/dictionary/english/indicator> ;
                rdfs:comment "Class defined to list certain market indicators of the hydrogen domain."@en ;
                rdfs:label "Indicator"@en ;
-               skos:altLabel "Clue"@en ,
-                             "Environmental Social Governance"@en ,
-                             "FIscal Year Report"@en ,
-                             "FY Report"@en ,
-                             "Index"@en ;
-               skos:definition "Something, often a quanititative measure, which shows what a situation is like or how it is changing."@en .
+               skos:altLabel "Index"@en ;
+               skos:definition "Something, often a quanititative measure, which shows what a situation is like or how it is changing."@en ;
+               skos:hiddenLabel "Environmental Social Governance"@en ,
+                                "FIscal Year Report"@en ,
+                                "FY Report"@en .
 
 
 ###  http://purl.org/holy/ns#IndustrialHeating
 holy:IndustrialHeating rdf:type owl:Class ;
                        rdfs:subClassOf holy:Heating ;
                        dct:references <http://www.element-energy.co.uk/wordpress/wp-content/uploads/2020/01/Hy4Heat-WP6-Industrial-Heating-Equipment-Published-report-Element-Energy-2019.pdf> ;
+                       <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Fuel Cell-based Warehouse Heating"@en ,
+                                                                              "Heating Plant"@en ,
+                                                                              "Kiln Heating"@en ;
                        rdfs:label "Industrial Heating"@en ;
-                       skos:altLabel "Burner"@en ,
-                                     "Fuel Cell Burners"@en ,
-                                     "Fuel Cell-based Warehouse Heating"@en ,
-                                     "Heating Plant"@en ,
-                                     "Hydrogen Burners"@en ,
-                                     "Industrial heating"@en ,
-                                     "Kiln"@en ,
-                                     "Kiln Heating"@en ,
-                                     "Oven"@en ;
-                       skos:definition "Applications used to generate heat for industry usage, such as manufacturing processes where great heat is required, or to heat large areas such as warehouses."@en .
+                       skos:altLabel "Industrial heating"@en ;
+                       skos:definition "Applications used to generate heat for industry usage, such as manufacturing processes where great heat is required, or to heat large areas such as warehouses."@en ;
+                       skos:hiddenLabel "Burner"@en ,
+                                        "Fuel Cell Burners"@en ,
+                                        "Hydrogen Burners"@en ,
+                                        "Kiln"@en ,
+                                        "Oven"@en .
 
 
 ###  http://purl.org/holy/ns#IndustrialProcessing
 holy:IndustrialProcessing rdf:type owl:Class ;
-                          rdfs:subClassOf holy:Stationary ;
+                          rdfs:subClassOf holy:StationaryApplication ;
                           dct:references <https://www.ipa.fraunhofer.de/en/industry-solutions/process-industry.html> ,
                                          <https://www.irena.org/publications/2022/Jan/Geopolitics-of-the-Energy-Transformation-Hydrogen> ;
+                          <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Circular Production System"@en ,
+                                                                                 "Linear Production System"@en ,
+                                                                                 "Purification"@en ;
                           rdfs:label "Industrial Processing"@en ;
-                          skos:altLabel "Circular Production System"@en ,
-                                        "Linear Production System"@en ,
-                                        "Purification"@en ;
                           skos:definition "An application which is used for industrial processing. Industrial processing involves the manufacturing of semi-finished or high-quality end products by means of physical, mechanical and/or chemical processes."@en .
 
 
@@ -1285,31 +1335,31 @@ holy:InfrastructureProject rdf:type owl:Class ;
                            dct:references <http://www.maxwideman.com/guests/typology/projects.htm> ,
                                           <https://dictionary.cambridge.org/dictionary/english/project> ,
                                           <https://www.bigrentz.com/blog/types-of-infrastructure> ;
+                           <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Aviation Infrastructure Project"@en ,
+                                                                                  "Bridge Infrastructure Project"@en ,
+                                                                                  "Clean Transport Project"@en ,
+                                                                                  "Commercial Construction Project"@en ,
+                                                                                  "Energy Facility Construction Project"@en ,
+                                                                                  "Energy Infrastructure Project"@en ,
+                                                                                  "Energy Transport Transformation Project"@en ,
+                                                                                  "Hydrogen Facility Development Project"@en ,
+                                                                                  "Hydrogen Fuel Cell Power Generation Project"@en ,
+                                                                                  "Hydrogen Hub Development"@en ,
+                                                                                  "Industrial Construction Project"@en ,
+                                                                                  "Power Edison Partnership"@en ,
+                                                                                  "Power and Energy Infrastructure Project"@en ,
+                                                                                  "Private Construction Project"@en ,
+                                                                                  "Public Construction Project"@en ,
+                                                                                  "Public Transportation Project"@en ,
+                                                                                  "Railroad Infrastructure Project"@en ,
+                                                                                  "Renewable Energy Development Project"@en ,
+                                                                                  "Residential Construction"@en ,
+                                                                                  "Road Infrastructure Construction Project"@en ,
+                                                                                  "Road Infrastructure Project"@en ,
+                                                                                  "Transportation Project"@en ,
+                                                                                  "Water Infrastructure Project"@en ;
                            rdfs:label "Infrastructure Project"@en ;
-                           skos:altLabel "Aviation Infrastructure Project"@en ,
-                                         "Bridge Infrastructure Project"@en ,
-                                         "Clean Transport Project"@en ,
-                                         "Commercial Construction Project"@en ,
-                                         "Energy Facility Construction Project"@en ,
-                                         "Energy Infrastructure Project"@en ,
-                                         "Energy Transport Transformation Project"@en ,
-                                         "Hydrogen Facility Development Project"@en ,
-                                         "Hydrogen Fuel Cell Power Generation Project"@en ,
-                                         "Hydrogen Hub Development"@en ,
-                                         "Industrial Construction Project"@en ,
-                                         "Infrastructure Project"@en ,
-                                         "Power Edison Partnership"@en ,
-                                         "Power and Energy Infrastructure Project"@en ,
-                                         "Private Construction Project"@en ,
-                                         "Public Construction Project"@en ,
-                                         "Public Transportation Project"@en ,
-                                         "Railroad Infrastructure Project"@en ,
-                                         "Renewable Energy Development Project"@en ,
-                                         "Residential Construction"@en ,
-                                         "Road Infrastructure Construction Project"@en ,
-                                         "Road Infrastructure Project"@en ,
-                                         "Transportation Project"@en ,
-                                         "Water Infrastructure Project"@en ;
+                           skos:altLabel "Infrastructure Project"@en ;
                            skos:definition "A project which is focused on the development, creation, maintenance, or enhancement of structures and systems needed for a country, city, or organization to function properly."@en ;
                            skos:example "PATH4ZERO"@en ,
                                         "Paving the way for Zero Emission Inland Navigation"@en ,
@@ -1335,26 +1385,29 @@ This class also includes:
 ###  http://purl.org/holy/ns#Investment
 holy:Investment rdf:type owl:Class ;
                 rdfs:subClassOf holy:Indicator ;
+                <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Arbitrage"@en ,
+                                                                       "Leverage"@en ,
+                                                                       "Spendings"@en ;
                 rdfs:label "Investment"@en ;
-                skos:altLabel "IPO"@en ,
-                              "Initial Public Offering"@en ,
-                              "Spendings"@en ;
-                skos:definition "The amount of money invested by an entity for something like a project, product or application."@en .
+                skos:altLabel "Investing"@en ;
+                skos:definition "The amount of money invested by an entity for something like a project, product or application."@en ;
+                skos:hiddenLabel "IPO"@en ,
+                                 "Initial Public Offering"@en .
 
 
 ###  http://purl.org/holy/ns#LithiumBattery
 holy:LithiumBattery rdf:type owl:Class ;
                     rdfs:subClassOf holy:Battery ;
-                    dct:references <https://www.wiltronics.com.au/wiltronics-knowledge-base/different-types-of-batteries/> ;
+                    dct:references "https://doi.org/10.1016/B978-044452745-5.00185-4" ,
+                                   "https://doi.org/10.1016/B978-044452745-5.00186-6" ;
+                    <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Lithium Cathode Material"@en ,
+                                                                           "Lithium Ion Battery"@en ,
+                                                                           "Lithium Ion Battery Cell"@en ;
                     rdfs:label "Lithium Battery"@en ;
-                    skos:altLabel "Li Ion Battery"@en ,
-                                  "Lithium Battery"@en ,
-                                  "Lithium Ion Battery"@en ,
-                                  "Lithium Ion Battery Cell"@en ,
-                                  "Lithium cathode material"@en ,
-                                  "Redox Flow Battery"@en ;
-                    skos:definition "A battery which uses lithium ions as a key component of its electrochemistry using liquid electrolyte solutions."@en ;
-                    skos:example "Tesla Powerwall"@en .
+                    skos:altLabel "Lithium Battery"@en ;
+                    skos:definition "A battery which uses lithium ions as a key component of its electrochemistry using liquid electrolyte solutions. It consists of two current collectors, a negative and positive electrode, and a separator containing electrolytes. The primary lithium battery uses carbon fluoride, (CF)n, as a cathode and lithium metal as an anode. The negative electrode consists of either metallic lithium or lithium compounds."@en ;
+                    skos:example "Tesla Powerwall"@en ;
+                    skos:hiddenLabel "Li Ion Battery"@en .
 
 
 ###  http://purl.org/holy/ns#LongHaulTruck
@@ -1362,9 +1415,7 @@ holy:LongHaulTruck rdf:type owl:Class ;
                    rdfs:subClassOf holy:Truck ;
                    dct:references <https://locus.sh/resources/glossary/long-haul-trucking/> ;
                    rdfs:label "Long Haul Truck"@en ;
-                   skos:altLabel "Heavy Duty Truck"@en ,
-                                 "LT truck"@en ,
-                                 "Long Haul Truck"@en ,
+                   skos:altLabel "Long Haul Truck"@en ,
                                  "Long-distance Truck"@en ;
                    skos:definition "A large road vehicle which is used for long-distance transporation over 250 miles."@en .
 
@@ -1373,19 +1424,17 @@ holy:LongHaulTruck rdf:type owl:Class ;
 holy:ManufacturingOrganization rdf:type owl:Class ;
                                rdfs:subClassOf rov:RegisteredOrganization ;
                                dct:references <https://ec.europa.eu/eurostat/documents/3859598/5902521/KS-RA-07-015-EN.PD> ;
+                               <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Automotive Manufacturer"@en ,
+                                                                                      "Car Maker"@en ,
+                                                                                      "Car Manufacturer"@en ,
+                                                                                      "OEM"@en ,
+                                                                                      "Original Equipment Manufacturer"@en ,
+                                                                                      "Solar Panel Maker"@en ;
                                rdfs:label "Manufacturing Organization"@en ;
-                               skos:altLabel "Automotive Manufacturer"@en ,
-                                             "Car Maker"@en ,
-                                             "Car Manufacturer"@en ,
-                                             "Hyundai Motor Group"@en ,
+                               skos:altLabel "Maker"@en ,
                                              "Manufacturer"@en ,
                                              "Manufacturing Company"@en ,
-                                             "OEM"@en ,
-                                             "Original Equipment Manufacturer"@en ,
-                                             "PLUG"@en ,
-                                             "Plug Power"@en ,
-                                             "Solar Panel Maker"@en ,
-                                             "Toyota Motor"@en ;
+                                             "Producer"@en ;
                                skos:definition "An organization classified in the field of manufacturing according to EC NACE 2 (2008) in Section C Division 10-33."@en ;
                                skos:example "Arboc"@en ,
                                             "Arboc Speciality Vehicles"@en ,
@@ -1396,79 +1445,92 @@ holy:ManufacturingOrganization rdf:type owl:Class ;
                                             "Plug Power Inc."@en ,
                                             "Rivian Automotive Inc."@en ,
                                             "Subaru Corp."@en ,
-                                            "Toyota Motor Corp."@en .
+                                            "Toyota Motor Corp."@en ;
+                               skos:hiddenLabel "Hyundai Motor Group"@en ,
+                                                "PLUG"@en ,
+                                                "Plug Power"@en ,
+                                                "Toyota Motor"@en .
 
 
-###  http://purl.org/holy/ns#Marine
-holy:Marine rdf:type owl:Class ;
-            rdfs:subClassOf holy:Mobile ;
-            dct:references <https://dictionary.cambridge.org/dictionary/english/marine> ;
-            rdfs:label "Marine"@en ;
-            skos:altLabel "Aquatic"@en ,
-                          "Coastal"@en ,
-                          "Deep-sea vessel"@en ,
-                          "Electric Marine Vessel"@en ,
-                          "Marine Industry"@en ,
-                          "Marine Usage"@en ,
-                          "Maritime"@en ,
-                          "Nautical Application"@en ,
-                          "Naval"@en ,
-                          "Oceanic Use"@en ,
-                          "Seagoing Vehicle"@en ,
-                          "Ship"@en ;
-            skos:definition "An application related to sea transport of people and/or goods."@en .
+###  http://purl.org/holy/ns#MarineApplication
+holy:MarineApplication rdf:type owl:Class ;
+                       rdfs:subClassOf holy:MobileApplication ;
+                       dct:references <https://dictionary.cambridge.org/dictionary/english/marine> ;
+                       <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Coastal"@en ,
+                                                                              "Deep-sea vessel"@en ,
+                                                                              "Electric Marine Vessel"@en ,
+                                                                              "Marine Industry"@en ,
+                                                                              "Naval"@en ,
+                                                                              "Seagoing Vehicle"@en ,
+                                                                              "Ship"@en ;
+                       rdfs:label "Marine Application"@en ;
+                       skos:altLabel "Marine Application"@en ,
+                                     "Marine Usage"@en ,
+                                     "Maritime Application"@en ,
+                                     "Nautical Application"@en ;
+                       skos:definition "An application related to sea transport of people and/or goods."@en ;
+                       skos:hiddenLabel "Aquatic"@en ,
+                                        "Maritime"@en ,
+                                        "Nautical"@en ,
+                                        "Oceanic Use"@en .
 
 
 ###  http://purl.org/holy/ns#MarketShare
 holy:MarketShare rdf:type owl:Class ;
                  rdfs:subClassOf holy:Indicator ;
                  rdfs:label "Market Share"@en ;
-                 skos:altLabel "Market Leader"@en ,
-                               "Market Percentage"@en ,
-                               "Market Position"@en ,
-                               "Market Presence"@en ;
-                 skos:definition "The total number of buyers a company has for a certain product or in a certain segment compared to the total market size."@en .
+                 skos:altLabel "Market Percentage"@en ,
+                               "Market Share"@en ;
+                 skos:definition "The total number of buyers a company has for a certain product or in a certain segment compared to the total market size."@en ;
+                 skos:hiddenLabel "Market Leader"@en ,
+                                  "Market Position"@en .
 
 
 ###  http://purl.org/holy/ns#MarketSize
 holy:MarketSize rdf:type owl:Class ;
                 rdfs:subClassOf holy:Indicator ;
                 rdfs:label "Market Size"@en ;
-                skos:altLabel "Biggest Market"@en ,
-                              "Key Market"@en ,
-                              "Largest Market"@en ,
-                              "Major Market"@en ,
-                              "Overall Market"@en ,
-                              "Second Largest Market"@en ,
-                              "Total Market"@en ;
-                skos:definition "The total number of potential buyers of a product or service within a given market and the total revenue that these sales may generate."@en .
+                skos:altLabel "Market Capacity"@en ,
+                              "Market Size"@en ,
+                              "Market Volume"@en ;
+                skos:definition "The total number of potential buyers of a product or service within a given market and the total revenue that these sales may generate."@en ;
+                skos:hiddenLabel "Biggest Market"@en ,
+                                 "Key Market"@en ,
+                                 "Largest Market"@en ,
+                                 "Major Market"@en ,
+                                 "Overall Market"@en ,
+                                 "Second Largest Market"@en ,
+                                 "Total Market"@en .
 
 
-###  http://purl.org/holy/ns#MaterialHandling
-holy:MaterialHandling rdf:type owl:Class ;
-                      rdfs:subClassOf holy:Road ;
-                      dct:references <https://www.mhi.org/fundamentals/material-handling> ;
-                      rdfs:label "Material Handling"@en ;
-                      skos:altLabel "AGV"@en ,
-                                    "Automated Guided Vehicle"@en ,
-                                    "Forklift"@en ,
-                                    "Jitney"@en ,
-                                    "Lift Truck"@en ,
-                                    "Man Up Orderpicker"@en ,
-                                    "Material Handling"@en ,
-                                    "Material Handling Vehicle"@en ,
-                                    "On-site Transportation"@en ,
-                                    "Stand Up Counterbalanced Truck"@en ,
-                                    "Stand Up reach Truck"@en ,
-                                    "Turret Truck"@en ,
-                                    "Warehouse Logistics"@en ;
-                      skos:definition "Vehicles which are intended to be used in a mobile context within the material handling process of organizations or private persons."@en .
+###  http://purl.org/holy/ns#MaterialHandlingVehicle
+holy:MaterialHandlingVehicle rdf:type owl:Class ;
+                             rdfs:subClassOf holy:RoadApplication ;
+                             dct:references <https://www.mhi.org/fundamentals/material-handling> ;
+                             <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "AGV"@en ,
+                                                                                    "Automated Guided Vehicle"@en ,
+                                                                                    "Forklift"@en ,
+                                                                                    "Jitney"@en ,
+                                                                                    "Lift Truck"@en ,
+                                                                                    "Man Up Orderpicker"@en ,
+                                                                                    "Stand Up Counterbalanced Truck"@en ,
+                                                                                    "Stand Up reach Truck"@en ,
+                                                                                    "Turret Truck"@en ;
+                             rdfs:label "Material Handling Vehicle"@en ;
+                             skos:altLabel "Material Handling Equipment"@en ,
+                                           "Material Handling Vehicle"@en ,
+                                           "Warehouse Vehicle"@en ;
+                             skos:definition "Vehicles which are intended to be used in a mobile context within the material handling process of organizations or private persons."@en ;
+                             skos:hiddenLabel "Material Handling"@en ,
+                                              "On-site Transportation"@en ,
+                                              "Warehouse Logistics"@en .
 
 
 ###  http://purl.org/holy/ns#Membrane
 holy:Membrane rdf:type owl:Class ;
               rdfs:subClassOf holy:MembraneElectrodeAssembly ;
-              dct:references <https://www.energy.gov/eere/fuelcells/parts-fuel-cell> ;
+              dct:references <https://www.energy.gov/eere/fuelcells/parts-fuel-cell> ,
+                             "https://doi.org/10.1016/B978-044452745-5.00227-6" ;
               rdfs:label "Membrane"@en ;
               skos:altLabel "CE Membrane"@en ,
                             "Cation Exchange Membrane"@en ,
@@ -1481,18 +1543,19 @@ holy:Membrane rdf:type owl:Class ;
                             "Polymer Electrolyte Membrane"@de ,
                             "Proton Exchange Membrane"@en ,
                             "Proton Exchange Membrane Electrolyzer"@en ;
-              skos:definition "A very thin membrane which conducts solely positively-charged ions and is able to block electrons."@en .
+              skos:definition "A very thin membrane which conducts solely positively-charged ions and is able to block electrons. It serves as the electrolyte."@en .
 
 
 ###  http://purl.org/holy/ns#MembraneElectrodeAssembly
 holy:MembraneElectrodeAssembly rdf:type owl:Class ;
                                rdfs:subClassOf holy:FuelCellStack ;
-                               dct:references <https://www.energy.gov/eere/fuelcells/parts-fuel-cell> ;
+                               dct:references <https://www.energy.gov/eere/fuelcells/parts-fuel-cell> ,
+                                              "https://doi.org/10.1016/B978-044452745-5.00227-6" ;
                                rdfs:label "Membrane Electrode Assembly"@en ;
                                skos:altLabel "Bipolar Membrane Electrode Assembly"@en ,
                                              "MEA"@en ,
                                              "Membrane Electrode Assembly"@en ;
-                               skos:definition "The heart of the fuel cell and the place where the chemical reaction takes place. It consists of membrane, catalyst layers and gas diffusion layers."@en .
+                               skos:definition "The heart of the fuel cell and the place where the chemical reaction takes place. It consists of membrane, catalyst layers, and gas diffusion layers."@en .
 
 
 ###  http://purl.org/holy/ns#MethanolFuelCell
@@ -1500,34 +1563,34 @@ holy:MethanolFuelCell rdf:type owl:Class ;
                       rdfs:subClassOf holy:SubstituteFuelCell ;
                       dct:references <https://www.energy.gov/eere/fuelcells/types-fuel-cells> ,
                                      <https://www.fuelcellstore.com/blog-section/alternative-liquid-fuel-types-fuel-cells> ;
+                      <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Direct Methanol Fuel Cell"@en ;
                       rdfs:label "Methanol Fuel Cell"@en ;
                       skos:altLabel "DMFC"@en ,
-                                    "Direct Methanol Fuel Cell"@en ,
                                     "Methanol Fuel Cell"@en ;
                       skos:definition "A fuel cell which is powered by pure methanol. It is usually mixed with water and fed directly to the fuel cell anode."@en ;
                       skos:example "EFYO 150"@en ,
                                    "EFYO 80"@en .
 
 
-###  http://purl.org/holy/ns#Mobile
-holy:Mobile rdf:type owl:Class ;
-            rdfs:subClassOf holy:Application ;
-            dct:references <https://dictionary.cambridge.org/dictionary/english/mobile> ;
-            rdfs:label "Mobile"@en ;
-            skos:altLabel "Cargo Transport"@en ,
-                          "Clean Transport"@en ,
-                          "Freight Transport"@en ,
-                          "Long-distance Transportation Unit"@en ,
-                          "Long-distance Travel"@en ,
-                          "Motorized Item"@en ,
-                          "Moving Application"@en ,
-                          "Portable Fuel Cell Application"@en ,
-                          "Roving Application"@en ,
-                          "Short-distance Transportation Unit"@en ,
-                          "Transport"@en ,
-                          "Transportation Vehicle"@en ,
-                          "Unstationary"@en ;
-            skos:definition "An application related to the movement of people and/or goods."@en .
+###  http://purl.org/holy/ns#MobileApplication
+holy:MobileApplication rdf:type owl:Class ;
+                       rdfs:subClassOf holy:Application ;
+                       dct:references <https://dictionary.cambridge.org/dictionary/english/mobile> ;
+                       <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Cargo Transport"@en ,
+                                                                              "Clean Transport"@en ,
+                                                                              "Freight Transport"@en ,
+                                                                              "Long-distance Transportation Unit"@en ,
+                                                                              "Long-distance Travel"@en ,
+                                                                              "Motorized Item"@en ,
+                                                                              "Portable Fuel Cell Application"@en ,
+                                                                              "Short-distance Transportation Unit"@en ,
+                                                                              "Transportation Vehicle"@en ;
+                       rdfs:label "Mobile Application"@en ;
+                       skos:altLabel "Moving Application"@en ,
+                                     "Transportation"@en ,
+                                     "Mobile Application" ;
+                       skos:definition "An application related to the movement of people and/or goods."@en ;
+                       skos:hiddenLabel "Unstationary"@en .
 
 
 ###  http://purl.org/holy/ns#MoltenCarbonateFuelCell
@@ -1544,17 +1607,19 @@ holy:MoltenCarbonateFuelCell rdf:type owl:Class ;
 ###  http://purl.org/holy/ns#NickelCadmiumBattery
 holy:NickelCadmiumBattery rdf:type owl:Class ;
                           rdfs:subClassOf holy:Battery ;
-                          dct:references <https://www.wiltronics.com.au/wiltronics-knowledge-base/different-types-of-batteries/> ;
+                          dct:references "https://doi.org/10.1016/B978-0-12-813975-2.00005-3" ;
                           rdfs:label "Nickel Cadmium Battery"@en ;
-                          skos:altLabel "Nickel Cadmium Battery"@en .
+                          skos:altLabel "Nickel Cadmium Battery"@en ;
+                          skos:definition "A battery which uses nickel oxide hydroxide for the cathode, metallic cadmium as its anode, and an aqueous alkali solution as its electrolyte."@en .
 
 
 ###  http://purl.org/holy/ns#NickelMetalHydrideBattery
 holy:NickelMetalHydrideBattery rdf:type owl:Class ;
                                rdfs:subClassOf holy:Battery ;
-                               dct:references <https://www.wiltronics.com.au/wiltronics-knowledge-base/different-types-of-batteries/> ;
+                               dct:references "https://doi.org/10.1016/B978-044452745-5.00158-1" ;
                                rdfs:label "Nickel Metal Hydride Battery"@en ;
-                               skos:altLabel "Nickel Metal Hydride Battery"@en .
+                               skos:altLabel "Nickel Metal Hydride Battery"@en ;
+                               skos:definition "A battery which uses nickel oxide for the cathode. The negative active material is hydrogen in form of a metal hydride. The electrolyte is aqueous potassium hydroxide with lithium hydroxide additive to improve the charging efficiency of the positive electrode by reducing oxygen evolution."@en .
 
 
 ###  http://purl.org/holy/ns#OngoingProject
@@ -1571,11 +1636,14 @@ holy:OngoingProject rdf:type owl:Class ;
 holy:PassengerTrain rdf:type owl:Class ;
                     rdfs:subClassOf holy:Train ;
                     dct:references <https://dictionary.cambridge.org/dictionary/english/passenger?q=passenger+train> ;
+                    <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Bullet Train"@en ,
+                                                                           "High-speed Train"@en ,
+                                                                           "Light Rail"@en ,
+                                                                           "Tram"@en ;
                     rdfs:label "Passenger Train"@en ;
-                    skos:altLabel "Bullet Train"@en ,
-                                  "Light Rail"@en ,
-                                  "Passenger Train"@en ,
-                                  "Tram"@en ;
+                    skos:altLabel "Coach Train"@en ,
+                                  "Commuter Train"@en ,
+                                  "Passenger Train"@en ;
                     skos:definition "A train carrying mostly people."@en .
 
 
@@ -1588,13 +1656,13 @@ holy:Patent rdf:type owl:Class ;
 
 ###  http://purl.org/holy/ns#PhosphoricAcidFuelCell
 holy:PhosphoricAcidFuelCell rdf:type owl:Class ;
-                            rdfs:subClassOf holy:Reconversion ;
+                            rdfs:subClassOf holy:HydrogenReconversion ;
                             dct:references <https://www.energy.gov/eere/fuelcells/types-fuel-cells> ,
                                            <https://www.tuev-nord.de/en/company/energy/hydrogen/hydrogen-fuel-cell/> ;
                             rdfs:label "Phosphoric Acid Fuel Cell"@en ;
                             skos:altLabel "PAFC"@en ,
                                           "Phosphoric Acid Fuel Cell"@en ;
-                            skos:definition "A fuel cell which uses a liquid phosporic acid as an electrolyte. It can be powered by hydrogen, natural gas or biogas."@en .
+                            skos:definition "A fuel cell which uses phosporic acid as an electrolyte. It can be powered by hydrogen, natural gas, or biogas."@en .
 
 
 ###  http://purl.org/holy/ns#PickupTruck
@@ -1602,9 +1670,10 @@ holy:PickupTruck rdf:type owl:Class ;
                  rdfs:subClassOf holy:Truck ;
                  dct:references <https://dictionary.cambridge.org/dictionary/english/pickup-truck> ;
                  rdfs:label "Pickup Truck"@en ;
-                 skos:altLabel "Off Road Truck"@en ,
-                               "Pickup Truck"@en ;
-                 skos:definition "A small vehicle with an open part at the back in which goods can be carried."@en .
+                 skos:altLabel "Pickup Truck"@en ;
+                 skos:definition "A small vehicle with an open part at the back in which goods can be carried."@en ;
+                 skos:hiddenLabel "Pick-up"@en ,
+                                  "Pickup"@en .
 
 
 ###  http://purl.org/holy/ns#PlannedProject
@@ -1617,119 +1686,107 @@ holy:PlannedProject rdf:type owl:Class ;
 
 ###  http://purl.org/holy/ns#PolymerElectrolyteMembraneFuelCell
 holy:PolymerElectrolyteMembraneFuelCell rdf:type owl:Class ;
-                                        rdfs:subClassOf holy:Reconversion ;
+                                        rdfs:subClassOf holy:HydrogenReconversion ;
                                         dct:references <https://www.energy.gov/eere/fuelcells/types-fuel-cells> ;
+                                        <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "High Temperature PEMFC"@en ,
+                                                                                               "High Temperature Proton Exchange Membrane Fuel Cel"@en ,
+                                                                                               "Low Temperature PEMFC"@en ,
+                                                                                               "Low Temperature Proton Exchange Membrane Fuel Cel"@en ,
+                                                                                               "PEMFC module"@en ;
                                         rdfs:label "Polymer Electrolyte Membrane Fuel Cell"@en ;
                                         skos:altLabel "Electrolyte Fuel Cell"@en ,
                                                       "Exchange Membrane Fuel Cell"@en ,
-                                                      "Fuel Cell Power Product"@en ,
-                                                      "High Temperature PEMFC"@en ,
-                                                      "High Temperature Proton Exchange Membrane Fuel Cel"@en ,
-                                                      "Low Temperature PEMFC"@en ,
-                                                      "Low Temperature Proton Exchange Membrane Fuel Cel"@en ,
                                                       "PEFC"@en ,
                                                       "PEM Fuel Cell"@en ,
                                                       "PEMFC"@en ,
-                                                      "PEMFC module"@en ,
                                                       "Polymer Elektrolyt Membrane Fuel Cell"@en ,
                                                       "Polymer Elektrolyte Fuel Cell"@en ;
                                         skos:definition "A fuel cell which uses a solid polymer as an electrolyte and porous carbon electrodes containing a platinum or platinum alloy catalyst. It only needs hydrogen, oxygen from the air, and water to operate."@en ;
                                         skos:example "FCmoveTM"@en ,
-                                                     "FCwaveTM"@en .
+                                                     "FCwaveTM"@en ;
+                                        skos:hiddenLabel "Fuel Cell Power Product"@en .
 
 
 ###  http://purl.org/holy/ns#PowerConditioner
 holy:PowerConditioner rdf:type owl:Class ;
                       rdfs:subClassOf holy:HydrogenFuelCellComponent ;
                       dct:references <https://www.energy.gov/eere/fuelcells/fuel-cell-systems> ;
+                      <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "AVR"@en ,
+                                                                             "Automatic Voltage Regulator"@en ,
+                                                                             "Electrical Grid Stabilization"@en ,
+                                                                             "UPS System"@en ,
+                                                                             "Uninterruptible Power Supply System"@en ,
+                                                                             "VRM"@en ,
+                                                                             "Voltage Regulator Module"@en ;
                       rdfs:label "Power Conditioner"@en ;
-                      skos:altLabel "FCCU"@en ,
-                                    "Fuel Cell Control Unit"@en ,
-                                    "Power Conditioner"@en ;
-                      skos:definition "An electrical current regulator needed for managing power."@en .
+                      skos:altLabel "Power Conditioner"@en ;
+                      skos:definition "An electrical current regulator needed for managing power."@en ;
+                      skos:hiddenLabel "FCCU"@en ,
+                                       "Fuel Cell Control Unit"@en .
 
 
 ###  http://purl.org/holy/ns#PowerGeneration
 holy:PowerGeneration rdf:type owl:Class ;
-                     rdfs:subClassOf holy:Stationary ;
+                     rdfs:subClassOf holy:StationaryApplication ;
                      dct:references <https://www.cummins.com/generators/power-generation> ;
+                     <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Backup Generator"@en ,
+                                                                            "Backup Power"@en ,
+                                                                            "Clean Energy Production"@en ,
+                                                                            "Coal Power Station"@en ,
+                                                                            "Coal-fired Power"@en ,
+                                                                            "Fossil Fuel Electricity"@en ,
+                                                                            "Fuel Flex Generator"@en ,
+                                                                            "Fuel Flexible Power Generator"@en ,
+                                                                            "Grid Scale Energy Storage"@en ,
+                                                                            "H2 Gas Turbine"@en ,
+                                                                            "Hydrogen Fuel Cell Power Plant"@en ,
+                                                                            "Industrial Power Generation"@en ,
+                                                                            "Local Energy Generation"@en ,
+                                                                            "Power Plant"@en ,
+                                                                            "Power Plant Generator"@en ,
+                                                                            "Renewable Energy Generation"@en ,
+                                                                            "Renewable Energy Production"@en ,
+                                                                            "Residential Power Generation"@en ,
+                                                                            "Small-scale Power Grid"@en ,
+                                                                            "Solar Electricity"@en ,
+                                                                            "Solar Energy"@en ,
+                                                                            "Solar Farm"@en ,
+                                                                            "Solar Generation"@en ;
                      rdfs:label "Power Generation"@en ;
-                     skos:altLabel "BOP System"@en ,
-                                   "Backup Generator"@en ,
-                                   "Backup Power"@en ,
-                                   "Balance of Plant Component"@en ,
-                                   "Clean Energy Production"@en ,
-                                   "Clean Energy Solution"@en ,
-                                   "Coal Power Station"@en ,
-                                   "Coal-fired Power"@en ,
-                                   "Electrical Grid Stabilization"@en ,
-                                   "Electricity Generation"@en ,
-                                   "Energy Generation"@en ,
-                                   "Energy Generator"@en ,
-                                   "Fossil Fuel Electricity"@en ,
-                                   "Fuel Flex Generator"@en ,
-                                   "Fuel Flexible Power Generator"@en ,
-                                   "Gas Turbine"@en ,
-                                   "Grid Scale Energy Storage"@en ,
-                                   "H2 Gas Turbine"@en ,
-                                   "Hydrogen Fuel Cell Power Plant"@en ,
-                                   "Industrial Power Generation"@en ,
-                                   "Local Energy Generation"@en ,
-                                   "Microgrid"@en ,
-                                   "Power Plant"@en ,
-                                   "Power Plant Generator"@en ,
-                                   "Powerplant"@en ,
-                                   "Renewable Energy Generation"@en ,
-                                   "Renewable Energy Production"@en ,
-                                   "Residential Power Generation"@en ,
-                                   "Small-scale Power Grid"@en ,
-                                   "Smart Grid"@en ,
-                                   "Solar Electricity"@en ,
-                                   "Solar Energy"@en ,
-                                   "Solar Farm"@en ,
-                                   "Solar Generation"@en ,
-                                   "Stationary Power Generation"@en ,
-                                   "UPS System"@en ,
-                                   "Uninterruptible Power Supply System"@en ;
                      skos:definition "An application which is used in the field of electricity production via power generating equipment or as fuel."@en .
 
 
 ###  http://purl.org/holy/ns#Product
 holy:Product rdf:type owl:Class ;
-             dct:references <https://www.iedunote.com/types-of-products> ,
-                            "The connection to \"Application\" would refer to \"realized usage\". A product has a creator. However, since technology and product are difficult to distinguish, technology and product will be seen as one class. Since organizations can also buy component parts, the product class has sub-classes containing components for fuel cells."@en ;
+             dct:references <https://www.iedunote.com/types-of-products> ;
+             <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Product Article"@en ;
+             rdfs:comment "The connection to \"Application\" would refer to \"realized usage\". A product has a creator. However, since technology and product are difficult to distinguish, technology and product will be seen as one class. Since organizations can also buy component parts, the product class has sub-classes containing components for fuel cells."@en ;
              rdfs:label "Product"@en ;
-             skos:altLabel "Alternative Energy Technology"@en ,
-                           "Battery Cell"@en ,
-                           "Fuel Cell"@en ,
-                           "Fuel Tank"@en ,
-                           "Green Tech"@en ,
-                           "Homegrown Technology"@en ,
-                           "Low Carbon Transport Fuel Cell"@en ,
-                           "Powertrain"@en ,
-                           "Product"@en ,
-                           "Product Article"@en ,
-                           "Renewable Fuel"@en ,
-                           "Technology"@en ;
-             skos:definition "An article that is manufactured or refined for sale. A distinction will be made between the different value chain positions of a product which can be sold and/or bought."@en .
+             skos:altLabel "Product"@en ;
+             skos:definition "An article that is manufactured or refined for sale. A distinction will be made between the different value chain positions of a product which can be sold and/or bought."@en ;
+             skos:hiddenLabel "Alternative Energy Technology"@en ,
+                              "Green Tech"@en ,
+                              "Homegrown Technology"@en ,
+                              "Renewable Fuel"@en ,
+                              "Technology"@en .
 
 
 ###  http://purl.org/holy/ns#ProductDevelopmentProject
 holy:ProductDevelopmentProject rdf:type owl:Class ;
                                rdfs:subClassOf holy:PurposeBasedProject ;
+                               <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Battery Storage Project"@en ,
+                                                                                      "Breakthrough Project"@en ,
+                                                                                      "Enhacement Project"@en ,
+                                                                                      "Hybrid  Project"@en ;
                                rdfs:label "Product Development Project"@en ;
-                               skos:altLabel "Battery Storage Project"@en ,
-                                             "Breakthrough Project"@en ,
-                                             "Enhacement Project"@en ,
-                                             "Hybrid  Project"@en ,
-                                             "Product Design Project"@en ,
-                                             "Product Development Cooperation"@en ,
+                               skos:altLabel "Product Design Project"@en ,
                                              "Product Development Project"@en ;
-                               skos:definition "A project focused on the development of new products or the refinement of existing ones."@en .
+                               skos:definition "A project focused on the development of new products or the refinement of existing ones."@en ;
+                               skos:hiddenLabel "Product Development Cooperation"@en .
 
 
-###  http://purl.org/holy/ns#PublicAdministrationAndDefenceOrganization
-holy:PublicAdministrationAndDefenceOrganization rdf:type owl:Class ;
+###  http://purl.org/holy/ns#PublicAdministrationAndDefenseOrganization
+holy:PublicAdministrationAndDefenseOrganization rdf:type owl:Class ;
                                                 rdfs:subClassOf rov:RegisteredOrganization ;
                                                 dct:references <https://ec.europa.eu/eurostat/documents/3859598/5902521/KS-RA-07-015-EN.PDF> ;
                                                 rdfs:label "Public Administration and Defense Organization"@en ;
@@ -1745,172 +1802,158 @@ holy:PurposeBasedProject rdf:type owl:Class ;
                          dct:references <http://www.maxwideman.com/guests/typology/projects.htm> ,
                                         <https://docs.oracle.com/cd/E18727_01/doc.121/e13567/T237204T237210.htm> ,
                                         <https://t2informatik.de/en/smartpedia/project-type/> ;
-                         rdfs:label "Purpose Based Project"@en ;
+                         rdfs:label "Purpose-based Project"@en ;
                          skos:definition "A project classification defined during implementation that specifies essential project attributes and purpose."@en .
-
-
-###  http://purl.org/holy/ns#Reconversion
-holy:Reconversion rdf:type owl:Class ;
-                  rdfs:subClassOf holy:HydrogenProduct ;
-                  rdfs:comment "Since reconversion solely happenes for energy creation using fuel cells, \"Reconversion\" is contributed to fuel cell componenet parts."@en ;
-                  rdfs:label "Reconversion"@en ;
-                  rdfs:seeAlso "Fuel Cell Solution"@en ;
-                  skos:altLabel "Fuel Cell"@en ,
-                                "Fuel Cell Engine"@en ,
-                                "Fuel Cell Power Module"@en ,
-                                "Fuel Cell Product"@en ,
-                                "Fuel Cell System"@en ,
-                                "Hydrogen Engine Technology"@en ,
-                                "Hydrogen Fuel Cell"@en ,
-                                "Hydrogen Fuel Cell Electric"@en ,
-                                "Hydrogen Fuel Cell Powertrain"@en ,
-                                "Hydrogen Powered Fuel Cell"@en ,
-                                "Hydrogen and Fuel Cell System"@en ,
-                                "Hydrogen-fueled Gas Turbines"@en ,
-                                "Reconversion"@en ,
-                                "hydrogen oxygen fuel cell"@en ;
-                  skos:definition "The process which deals with converting hydrogen back."@en ;
-                  skos:example "GR Yaris engine"@en .
 
 
 ###  http://purl.org/holy/ns#RefineryIndustrialProcessing
 holy:RefineryIndustrialProcessing rdf:type owl:Class ;
                                   rdfs:subClassOf holy:IndustrialProcessing ;
                                   dct:references <https://www.sciencedirect.com/topics/earth-and-planetary-sciences/refining-industry> ;
+                                  <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Hydrocracking"@en ,
+                                                                                         "Hydrogenation"@en ,
+                                                                                         "Hydrogenolysis"@en ,
+                                                                                         "Petroleum Production"@en ,
+                                                                                         "Petroleum Refining"@en ;
                                   rdfs:label "Refinery Industrial Processing"@en ;
-                                  skos:altLabel "Hydrocracking"@en ,
-                                                "Petrochemical Market"@en ,
-                                                "Petroleum Production"@en ,
-                                                "Petroleum Refining"@en ;
-                                  skos:definition "Applications of hydrogen in the refinery industry dedicated to process oil to create different types of oil and oil products."@en .
+                                  skos:altLabel "Refining Process"@en ;
+                                  skos:definition "Applications of hydrogen in the refinery industry dedicated to process oil to create different types of oil and oil products."@en ;
+                                  skos:hiddenLabel "Petrochemical Market"@en .
 
 
 ###  http://purl.org/holy/ns#RegionalTruck
 holy:RegionalTruck rdf:type owl:Class ;
                    rdfs:subClassOf holy:Truck ;
                    dct:references <https://www.azuga.com/blog/what-is-a-short-haul-truck-driver> ;
+                   <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "All-electric Van"@en ,
+                                                                          "Box Truck"@en ,
+                                                                          "Garbage Truck"@en ,
+                                                                          "Hydrogen-powered Van"@en ,
+                                                                          "Medium Duty Truck"@en ,
+                                                                          "Refuse Truck"@en ,
+                                                                          "Straught Truck"@en ;
                    rdfs:label "Regional Truck"@en ;
-                   skos:altLabel "All-electric Van"@en ,
-                                 "Box Truck"@en ,
-                                 "Garbage Truck"@en ,
-                                 "Hydrogen-powered Van"@en ,
-                                 "Medium Duty Truck"@en ,
-                                 "Refuse Truck"@en ,
-                                 "Regional Truck"@en ,
-                                 "Straught Truck"@en ,
-                                 "Van"@en ;
-                   skos:definition "A road vehicle which is small to large-sized and used for the transportation of goods within an area of 150 miles."@en .
+                   skos:altLabel "Regional Truck"@en ;
+                   skos:definition "A road vehicle which is small to large-sized and used for the transportation of goods within an area of 150 miles."@en ;
+                   skos:hiddenLabel "Van"@en .
 
 
 ###  http://purl.org/holy/ns#ResearchOrganization
 holy:ResearchOrganization rdf:type owl:Class ;
                           rdfs:subClassOf rov:RegisteredOrganization ;
                           dct:references <https://ec.europa.eu/eurostat/documents/3859598/5902521/KS-RA-07-015-EN.PDF> ;
+                          <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Professional Scientific And Technical Activity"@en ,
+                                                                                 "Technical Testing and Analysis"@en ,
+                                                                                 "University"@en ,
+                                                                                 "University of Applied Sciences"@en ;
                           rdfs:label "Research Organization"@en ;
-                          skos:altLabel "ISIC 7120"@en ,
-                                        "NACE 71.20"@en ,
-                                        "Professional Scientific And Technical Activity"@en ,
-                                        "Research Institution"@en ,
-                                        "Research and Development Center"@en ,
-                                        "Scientific Research and Development"@en ,
-                                        "Technical Testing and Analysis"@en ,
-                                        "University"@en ,
-                                        "University of Applied Sciences"@en ;
+                          skos:altLabel "Research Institution"@en ,
+                                        "Research Organization"@en ,
+                                        "Research and Development Center"@en ;
                           skos:definition "Organizations classified in the field of scientific and technical activities according to EC NACE 2 (2008) in Section M Division 69-75."@en ;
                           skos:example "MARii"@en ,
                                        "Malaysia Automotive Robotics and IoT Institute"@en ,
                                        "PNNL"@en ,
                                        "Pacific Northwest National Laboratory"@en ,
-                                       "The European Interoperability Centre for Electric Vehicles and Smart Grids"@en .
+                                       "The European Interoperability Centre for Electric Vehicles and Smart Grids"@en ;
+                          skos:hiddenLabel "ISIC 7120"@en ,
+                                           "NACE 71.20"@en ,
+                                           "Scientific Research and Development"@en .
 
 
 ###  http://purl.org/holy/ns#ResidentialHeating
 holy:ResidentialHeating rdf:type owl:Class ;
                         rdfs:subClassOf holy:Heating ;
                         dct:references <https://www.boilerguide.co.uk/articles/hydrogen-boilers-alternative-gas-central-heating> ;
+                        <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Combined Heat and Power station"@en ,
+                                                                               "Fuel Cell Boiler"@en ,
+                                                                               "Fuel Cell CHP"@en ,
+                                                                               "Fuel Cell Heater"@en ,
+                                                                               "Fuel-Cell Boiler"@en ,
+                                                                               "Fuel-cell Heating System"@en ,
+                                                                               "Gas Boiler"@en ,
+                                                                               "Heat and Power Station"@en ,
+                                                                               "Heat and Power Unit"@en ,
+                                                                               "PEM Fuel Cell Boiler"@en ,
+                                                                               "PEM Fuel Cell Heater"@en ,
+                                                                               "PEM Heater"@en ,
+                                                                               "Polymer Electrolyte Membrane Fuel Cell Boiler"@en ,
+                                                                               "Polymer Electrolyte Membrane Fuel Cell Heater"@en ,
+                                                                               "Residential Fuel Cell System"@en ;
                         rdfs:label "Residential Heating"@en ;
                         skos:altLabel "Apartment Heating"@en ,
-                                      "Combined Heat and Power station"@en ,
-                                      "Fuel Cell Boiler"@en ,
-                                      "Fuel Cell CHP"@en ,
-                                      "Fuel Cell Heater"@en ,
-                                      "Fuel-Cell Boiler"@en ,
-                                      "Fuel-cell Heating System"@en ,
-                                      "Gas Boiler"@en ,
-                                      "Heat and Power Station"@en ,
-                                      "Heat and Power anit"@en ,
-                                      "PEM Fuel Cell Boiler"@en ,
-                                      "PEM Fuel Cell Heater"@en ,
-                                      "PEM Heater"@en ,
-                                      "Polymer Electrolyte Membrane Fuel Cell Boiler"@en ,
-                                      "Polymer Electrolyte Membrane Fuel Cell Heater"@en ,
-                                      "Residential Fuel Cell System"@en ,
+                                      "Domestic Heating"@en ,
+                                      "Home Heating"@en ,
                                       "Residential Heating"@en ;
-                        skos:definition "Applications used for heating a domestic house or residential area (multiple domestic houses)."@en .
+                        skos:definition "Applications used for heating a domestic house or residential area (multiple domestic houses)."@en ;
+                        skos:hiddenLabel "Boiler"@en ,
+                                         "CHP"@en ,
+                                         "Furnace"@en ,
+                                         "Radiant"@en .
 
 
 ###  http://purl.org/holy/ns#Revenue
 holy:Revenue rdf:type owl:Class ;
              rdfs:subClassOf holy:Indicator ;
+             <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Total Sales"@en ;
              rdfs:label "Revenue"@en ;
-             skos:altLabel "Absolute Sales"@en ,
+             skos:altLabel "Earning"@en ,
                            "Gross Revenue"@en ,
-                           "Sales"@en ,
-                           "Total Sales"@en ;
-             skos:definition "The amount of money generated within a certain class in a certain period of time."@en .
+                           "Income"@en ,
+                           "Sales"@en ;
+             skos:definition "The amount of money generated within a certain class in a certain period of time."@en ;
+             skos:hiddenLabel "Absolute Sales"@en .
 
 
-###  http://purl.org/holy/ns#Road
-holy:Road rdf:type owl:Class ;
-          rdfs:subClassOf holy:Mobile ;
-          dct:references <https://www.marineinsight.com/types-of-ships/what-are-cargo-ships/> ;
-          rdfs:label "Road"@en ;
-          skos:altLabel "BEV"@en ,
-                        "Battery Electric Vehicle"@en ,
-                        "EV"@en ,
-                        "EVIC"@en ,
-                        "EVs"@en ,
-                        "Electric Vehicle"@en ,
-                        "Electrical Vehicle"@en ,
-                        "Energy Efficient Vehicle"@en ,
-                        "Ethanol Hybrid Vehicle"@en ,
-                        "Ethanol ICE Vehicles"@en ,
-                        "FCVs"@en ,
-                        "Flex Ethanol Hybrids"@en ,
-                        "Flex Fuel Vehicle"@en ,
-                        "Fuel Cell Vehicle"@en ,
-                        "H2ICE"@en ,
-                        "HFCEVs"@en ,
-                        "Highway Usage"@en ,
-                        "Hydrogen Fuel Cell Electric Vehicles"@en ,
-                        "Hydrogen Fuel Cell Vehicle"@en ,
-                        "Hydrogen ICE vehicle"@en ,
-                        "Hydrogen Internal Combustion Engine Vehicle"@en ,
-                        "ICE vehicle"@en ,
-                        "Internal Combustion Engine Vehicle"@en ,
-                        "Last Mile Delivery"@en ,
-                        "Long-distance Vehicle"@en ,
-                        "Passenger Electric"@en ,
-                        "Passenger Electric Vehicle"@en ,
-                        "Personal Vehicle"@en ,
-                        "Road Usage"@en ,
-                        "Ultra clean vehicle"@en ,
-                        "Vehicle"@en ,
-                        "ZEV"@en ,
-                        "Zero-emission Vehicle"@en ;
-          skos:definition "An applicatios related to the transport of people and/or goods on land."@en ;
-          skos:example "Ballard Powered Vehicle"@en .
+###  http://purl.org/holy/ns#RoadApplication
+holy:RoadApplication rdf:type owl:Class ;
+                     rdfs:subClassOf holy:MobileApplication ;
+                     dct:references <https://www.marineinsight.com/types-of-ships/what-are-cargo-ships/> ;
+                     <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "BEV"@en ,
+                                                                            "Battery Electric Vehicle"@en ,
+                                                                            "EV"@en ,
+                                                                            "EVIC"@en ,
+                                                                            "EVs"@en ,
+                                                                            "Electric Vehicle"@en ,
+                                                                            "Electrical Vehicle"@en ,
+                                                                            "Energy Efficient Vehicle"@en ,
+                                                                            "Ethanol Hybrid Vehicle"@en ,
+                                                                            "Ethanol ICE Vehicles"@en ,
+                                                                            "FCVs"@en ,
+                                                                            "Flex Ethanol Hybrids"@en ,
+                                                                            "Flex Fuel Vehicle"@en ,
+                                                                            "Fuel Cell Vehicle"@en ,
+                                                                            "H2ICE"@en ,
+                                                                            "HFCEVs"@en ,
+                                                                            "Highway Usage"@en ,
+                                                                            "Hydrogen Fuel Cell Electric Vehicles"@en ,
+                                                                            "Hydrogen Fuel Cell Vehicle"@en ,
+                                                                            "Hydrogen ICE vehicle"@en ,
+                                                                            "ICE vehicle"@en ,
+                                                                            "Internal Combustion Engine Vehicle"@en ,
+                                                                            "Long-distance Vehicle"@en ,
+                                                                            "Passenger Electric"@en ,
+                                                                            "Passenger Electric Vehicle"@en ,
+                                                                            "Personal Vehicle"@en ,
+                                                                            "Ultra clean vehicle"@en ,
+                                                                            "ZEV"@en ,
+                                                                            "Zero-emission Vehicle"@en ;
+                     rdfs:label "Road Application"@en ;
+                     skos:altLabel "Hydrogen Internal Combustion Engine Vehicle"@en ,
+                                   "Road Usage"@en ,
+                                   "Vehicle"@en ;
+                     skos:definition "An applicatios related to the transport of people and/or goods on land."@en ;
+                     skos:example "Ballard Powered Vehicle"@en .
 
 
 ###  http://purl.org/holy/ns#SolidOxideFuelCell
 holy:SolidOxideFuelCell rdf:type owl:Class ;
-                        rdfs:subClassOf holy:Reconversion ;
+                        rdfs:subClassOf holy:HydrogenReconversion ;
                         dct:references <https://onlinelibrary.wiley.com/doi/full/10.1002/fuce.202070602> ;
+                        <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "High Temperature Fuel Cell Gasket"@en ;
                         rdfs:comment "Caution, SOFC`s must not be mixed up with SOEC's (Solid Oxide Electrolyser). SOFC`s are fuel cells using hydrogen as a fuel to generate energy. SOEC's are used for hydrogen generation using the reversed process of an SOFC. For this ontology an SOEC would be a part of the conversion class. However, since conversion is out of scope, SOEC are not mentioned in a class structure under the subclass \"Conversion\"."@en ;
                         rdfs:label "Solid Oxide Fuel Cell"@en ;
-                        skos:altLabel "High Temperature Fuel Cell Gasket"@en ,
-                                      "SOFC"@en ,
-                                      "Solid Oxide Electrolyzer"@en ,
+                        skos:altLabel "SOFC"@en ,
                                       "Solid Oxide Fuel Cell"@en ;
                         skos:definition "A fuel cell which uses a hard, non-porous ceramic compound as the electrolyte. It can reach temperatures up to 1000°C (1830°F). It can be powered by natural gas, coal gas, biogas or hydrogen."@en .
 
@@ -1931,92 +1974,84 @@ holy:Spacecraft rdf:type owl:Class ;
                 dct:references <http://wordnetweb.princeton.edu/perl/webwn?s=spacecraft&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=000000000> ,
                                <https://dictionary.cambridge.org/dictionary/english/spacecraft> ;
                 rdfs:label "Spacecraft"@en ;
-                skos:altLabel "Rocket"@en ,
-                              "Satellite"@en ,
-                              "Shuttle"@en ,
+                skos:altLabel "Rocketship"@en ,
+                              "Satellite Launcher"@en ,
                               "Space Capsule"@en ,
                               "Space Shuttle"@en ,
                               "Space Vehicle"@en ,
+                              "Spacecraft"@en ,
                               "Spaceship"@en ;
-                skos:definition "A vehicle designed for use and travel in space."@en .
+                skos:definition "A vehicle designed for use and travel in space."@en ;
+                skos:hiddenLabel "Rocket"@en ,
+                                 "Satellite"@en ,
+                                 "Shuttle"@en .
 
 
 ###  http://purl.org/holy/ns#StateBasedProject
 holy:StateBasedProject rdf:type owl:Class ;
                        rdfs:subClassOf schema:Project ;
                        dct:references <https://www.referenceforbusiness.com/management/Pr-Sa/Project-Management.html> ;
-                       rdfs:label "State Based Project"@en ;
+                       rdfs:label "State-based Project"@en ;
                        skos:altLabel "State Based Project"@en ;
                        skos:definition "State Based Project as a subclass of Project defines the level of progress for a project. It can be categorized according to the temporary stage such as planned, ongoing or finished."@en .
 
 
-###  http://purl.org/holy/ns#Stationary
-holy:Stationary rdf:type owl:Class ;
-                rdfs:subClassOf holy:Application ;
-                dct:references <http://www.chfca.ca/fuel-cells-hydrogen/hydrogen-fuel-cell-applications/> ;
-                rdfs:label "Stationary"@en ;
-                skos:altLabel "Charging Station"@en ,
-                              "Charging System"@en ,
-                              "Charging hub"@en ,
-                              "Clean Energy Storage"@en ,
-                              "EV Charger"@en ,
-                              "Electric Vehicle Charger"@en ,
-                              "Electric Vehicle Charging Hub"@en ,
-                              "Energy Storage Solution"@en ,
-                              "Fast Charger"@en ,
-                              "Grid Scale Energy Storage"@en ,
-                              "Heavy Industry"@en ,
-                              "Heavy Machine"@en ,
-                              "Hydrogen Electrolyser"@en ,
-                              "Hydrogen Fuelling Station"@en ,
-                              "Hydrogen Station"@en ,
-                              "Hydrogen Vehicle Refueling Station"@en ,
-                              "Immobile"@en ,
-                              "Mobile Energy Storage Solution"@en ,
-                              "Stationary Application"@en ,
-                              "Stationary Fuel Cell Application"@en ,
-                              "Stationary Sector"@en ,
-                              "Stationary Unit"@en ,
-                              "Vehicle Charging Hub"@en ;
-                skos:definition "An application which is intended to be placed at one location without the possibility of physically being moved when used."@en .
+###  http://purl.org/holy/ns#StationaryApplication
+holy:StationaryApplication rdf:type owl:Class ;
+                           rdfs:subClassOf holy:Application ;
+                           dct:references <http://www.chfca.ca/fuel-cells-hydrogen/hydrogen-fuel-cell-applications/> ;
+                           <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Charging Station"@en ,
+                                                                                  "Charging System"@en ,
+                                                                                  "Charging hub"@en ,
+                                                                                  "Clean Energy Storage"@en ,
+                                                                                  "EV Charger"@en ,
+                                                                                  "Electric Vehicle Charger"@en ,
+                                                                                  "Electric Vehicle Charging Hub"@en ,
+                                                                                  "Energy Storage Solution"@en ,
+                                                                                  "Grid Scale Energy Storage"@en ,
+                                                                                  "Hydrogen Electrolyser"@en ,
+                                                                                  "Hydrogen Fueling Station"@en ,
+                                                                                  "Hydrogen Station"@en ,
+                                                                                  "Hydrogen Vehicle Refueling Station"@en ,
+                                                                                  "Mobile Energy Storage Solution"@en ,
+                                                                                  "Stationary Fuel Cell Application"@en ,
+                                                                                  "Vehicle Charging Hub"@en ;
+                           rdfs:label "Stationary Application"@en ;
+                           skos:altLabel "Immobile"@en ,
+                                         "Stationary Application"@en ,
+                                         "Stationary Unit"@en ;
+                           skos:definition "An application which is intended to be placed at one location without the possibility of physically being moved when used."@en ;
+                           skos:hiddenLabel "Fast Charger"@en ,
+                                            "Heavy Industry"@en ,
+                                            "Heavy Machine"@en ,
+                                            "Stationary Sector"@en .
 
 
 ###  http://purl.org/holy/ns#SteelIndustrialProcessing
 holy:SteelIndustrialProcessing rdf:type owl:Class ;
                                rdfs:subClassOf holy:IndustrialProcessing ;
                                dct:references <https://www.infoplease.com/encyclopedia/social-science/economy/business/steel-industry> ;
+                               <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "AHW"@en ,
+                                                                                      "Atomic Hydrogen Welding"@en ,
+                                                                                      "EAF"@en ,
+                                                                                      "Electric Arc Furnace"@en ,
+                                                                                      "Iron Flashmaking"@en ,
+                                                                                      "Metal Alloying"@en ,
+                                                                                      "Metal Purification"@en ;
                                rdfs:label "Steel Industrial Processing"@en ;
-                               skos:altLabel "AHW"@en ,
-                                             "Atomic Hydrogen Welding"@en ,
-                                             "EAF"@en ,
-                                             "Electric Arc Furnace"@en ,
-                                             "Iron Flashmaking"@en ,
-                                             "Metal Alloying"@en ,
-                                             "Metal Purification"@en ,
+                               skos:altLabel "Steel Fabrication"@en ,
+                                             "Steel Manufacturing"@en ,
                                              "Steel Production"@en ;
                                skos:definition "Applications of hydrogen or hydrogen products in the steel industry with respect to the processing of iron ore into certain types of steel."@en .
 
 
-###  http://purl.org/holy/ns#Storage
-holy:Storage rdf:type owl:Class ;
-             rdfs:subClassOf holy:HydrogenProduct ;
-             rdfs:comment "The subclass \"Storage\" could be expanded to focus the domain scope to the creation of hydrogen with respect to the value chain. Future expansions could categorize between storage technologies within tanks or using absorbing materials."@en ;
-             rdfs:label "Storage"@en ;
-             skos:altLabel "Cryogenic Tanks"@en ,
-                           "High-pressure Gas Cylinders"@en ,
-                           "Hydrogen Absorbation in Metal"@en ,
-                           "Hydrogen Fuel Tank"@en ,
-                           "Hydrogen Storage Tanks"@en ,
-                           "Liquid Hydrogen Storage Tank"@en ;
-             skos:definition "The way that hydrogen can be stored for later usage."@en .
-
-
 ###  http://purl.org/holy/ns#Submarine
 holy:Submarine rdf:type owl:Class ;
-               rdfs:subClassOf holy:Marine ;
+               rdfs:subClassOf holy:MarineApplication ;
                dct:references <https://dictionary.cambridge.org/dictionary/english/submarine> ;
                rdfs:label "Submarine"@en ;
-               skos:altLabel "Submersible"@en ,
+               skos:altLabel "Steel Sub"@en ,
+                             "Submersible"@en ,
                              "U-boat"@en ,
                              "Underwater Craft"@en ;
                skos:definition "A ship that can travel underwater."@en .
@@ -2069,24 +2104,17 @@ holy:SupportiveHardware rdf:type owl:Class ;
 
 ###  http://purl.org/holy/ns#Train
 holy:Train rdf:type owl:Class ;
-           rdfs:subClassOf holy:Road ;
+           rdfs:subClassOf holy:RoadApplication ;
            dct:references <https://dictionary.cambridge.org/dictionary/english/train> ;
+           <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Ammonia Powered Locomotive"@en ,
+                                                                  "Hydrogen Fuel Cell-powered Train"@en ,
+                                                                  "Hydrogen-powered Train"@en ,
+                                                                  "Powertrain"@en ;
            rdfs:label "Train"@en ;
-           skos:altLabel "Ammonia Powered Locomotive"@en ,
-                         "Hydrogen Fuel Cell-powered Train"@en ,
-                         "Hydrogen-powered Train"@en ,
-                         "Rail"@en ,
+           skos:altLabel "Railroad Train"@en ,
                          "Train"@en ;
-           skos:definition "A vehicle for roads made of railways using an engine and carriages to transport people or goods."@en .
-
-
-###  http://purl.org/holy/ns#Transport
-holy:Transport rdf:type owl:Class ;
-               rdfs:subClassOf holy:HydrogenProduct ;
-               rdfs:comment "The subclass \"Transport\" could be expanded to focus the domain scope to the creation of hydrogen in respect to the value chain."@en ;
-               rdfs:label "Transport"@en ;
-               skos:altLabel "Hydrogen Transport"@en ;
-               skos:definition "The way that hydrogen can be transported from one place to another."@en .
+           skos:definition "A vehicle for roads made of railways using an engine and carriages to transport people or goods."@en ;
+           skos:hiddenLabel "Rail"@en .
 
 
 ###  http://purl.org/holy/ns#TransportationAndStorageOrganization
@@ -2101,18 +2129,11 @@ holy:TransportationAndStorageOrganization rdf:type owl:Class ;
 ###  http://purl.org/holy/ns#Trend
 holy:Trend rdf:type owl:Class ;
            rdfs:subClassOf holy:Indicator ;
+           <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Clean Energy Megatrend"@en ,
+                                                                  "European Mobility Expo"@en ,
+                                                                  "Hydrogen Adoption"@en ,
+                                                                  "Hydrogen Economy Area"@en ;
            rdfs:label "Trend"@en ;
-           skos:altLabel "Battery Swapping"@en ,
-                         "Clean Energy Megatrend"@en ,
-                         "Drift"@en ,
-                         "European Mobility Expo"@en ,
-                         "Forum Tomorrow in Motion"@en ,
-                         "Green Car Korea"@en ,
-                         "Hydrogen Adoption"@en ,
-                         "Hydrogen Economy Area"@en ,
-                         "Market Driver"@en ,
-                         "Market Trend"@en ,
-                         "Tendency"@en ;
            skos:definition "A general development or change of a situation in terms of behavior which can manifest itself in being discussed in forums, conferences or expos."@en ;
            skos:example "Hydrogen Impact 2021 Conference"@en ,
                         "Hydrogen Technology Expo Europe"@en ,
@@ -2123,39 +2144,50 @@ holy:Trend rdf:type owl:Class ;
                         "The China International Import Expo"@en ,
                         "The LA Auto Show"@en ,
                         "The World Climate Conference"@en ,
-                        "United Nations Conference on Climate Change"@en .
+                        "United Nations Conference on Climate Change"@en ;
+           skos:hiddenLabel "Forum Tomorrow in Motion"@en ,
+                            "Green Car Korea"@en .
 
 
 ###  http://purl.org/holy/ns#Truck
 holy:Truck rdf:type owl:Class ;
-           rdfs:subClassOf holy:Road ;
+           rdfs:subClassOf holy:RoadApplication ;
            dct:references <https://dictionary.cambridge.org/dictionary/english/truck> ;
+           <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Battery Electric Semi Truck"@en ,
+                                                                  "Clean Truck"@en ,
+                                                                  "Electric Truck"@en ,
+                                                                  "HFCET"@en ,
+                                                                  "Heavy Duty Truck"@en ,
+                                                                  "Heavy Hydrogen Truck"@en ,
+                                                                  "Heavy Truck"@en ,
+                                                                  "Hydrogen Fuel Cell Electric Truck"@en ,
+                                                                  "Hydrogen Mining Truck"@en ,
+                                                                  "Hydrogen Road Truck"@en ,
+                                                                  "Hydrogen-fueled Tractor Unit"@en ,
+                                                                  "LGV"@en ,
+                                                                  "Large Goods Vehicle"@en ,
+                                                                  "Logistic Truck"@en ,
+                                                                  "Logistic Vehicle"@en ,
+                                                                  "Road Truck"@en ;
            rdfs:comment "Trucks are categorized in this ontology by distance and not by categories such as size or transportation limit."@en ;
            rdfs:label "Truck"@en ;
-           skos:altLabel "Battery Electric Semi Truck"@en ,
-                         "Clean Truck"@en ,
-                         "Electric Truck"@en ,
-                         "HFCET"@en ,
-                         "HGV"@en ,
-                         "Heavy Duty Truck"@en ,
-                         "Heavy Duty Vehicle"@en ,
-                         "Heavy Goods Vehicle"@en ,
-                         "Heavy Hydrogen Truck"@en ,
-                         "Heavy Truck"@en ,
-                         "Hydrogen Fuel Cell Electric Truck"@en ,
-                         "Hydrogen Mining Truck"@en ,
-                         "Hydrogen Road Truck"@en ,
-                         "Hydrogen-fueled Tractor Unit"@en ,
-                         "LGV"@en ,
-                         "LVS"@en ,
-                         "Large Goods Vehicle"@en ,
-                         "Logistic Truck"@en ,
-                         "Logistic Vehicle"@en ,
-                         "Road Truck"@en ,
-                         "Tractor"@en ,
-                         "Tractor Unit"@en ,
-                         "Truck"@en ;
-           skos:definition "A large road vehicle that is used for transporting large amounts of goods."@en .
+           skos:altLabel "Truck"@en ;
+           skos:definition "A large road vehicle that is used for transporting large amounts of goods."@en ;
+           skos:hiddenLabel "LT Truck"@en ,
+                            "LVS"@en ,
+                            "Tractor"@en .
+
+
+###  http://purl.org/holy/ns#WorkForce
+holy:WorkForce rdf:type owl:Class ;
+               rdfs:subClassOf holy:Indicator ;
+               <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Employee"@en ,
+                                                                      "Worker"@en ;
+               rdfs:label "Work Force"@en ;
+               skos:altLabel "Labor Force"@en ,
+                             "Workforce"@en ;
+               skos:definition "The number of persons working for an organization."@en ;
+               skos:hiddenLabel "Labor"@en .
 
 
 ###  http://schema.org/Continent
@@ -2184,14 +2216,14 @@ schema:Project rdf:type owl:Class ;
                               <http://www.maxwideman.com/guests/typology/projects.htm> ,
                               <https://dictionary.cambridge.org/dictionary/english/project> ,
                               <https://www.referenceforbusiness.com/management/Pr-Sa/Project-Management.html> ;
-               rdfs:comment "An enterprise (potentially individual but typically collaborative), planned to achieve a particular aim. "@en ;
+               <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Alliance Project"@en ,
+                                                                      "Hydrogen Project"@en ,
+                                                                      "Partnered Project"@en ;
+               rdfs:comment "A project can be defined as a piece of planned work consisting of interrelated activities which intends to fulfill a particular purpose within a certain period of time. A project can fulfill several purposes such as in the area of research (research projects), projects dedicated to product development, infrastructure-related projects and more."@en ;
                rdfs:label "Project"@en ;
-               skos:altLabel "Alliance Project"@en ,
-                             "Hydrogen Project"@en ,
-                             "Partnered Project"@en ,
-                             "Project"@en ,
-                             "Venture"@en ;
-               skos:definition "A project can be defined as a piece of planned work consisting of interrelated activities which intends to fulfill a particular purpose within a certain period of time. A project can fulfill several purposes such as in the area of research (research projects), projects dedicated to product development, infrastructure-related projects and more."@en .
+               skos:altLabel "Project"@en ;
+               skos:definition "An enterprise (potentially individual but typically collaborative), planned to achieve a particular aim."@en ;
+               skos:hiddenLabel "Venture"@en .
 
 
 ###  http://schema.org/ResearchProject
@@ -2202,12 +2234,12 @@ schema:ResearchProject rdf:type owl:Class ;
                                       <http://www.maxwideman.com/guests/typology/projects.htm> ,
                                       "https://dbpedia.org/ontology/ResearchProject"@en ,
                                       "https://schema.org/ResearchProject"@en ;
+                       <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Meta Project"@en ,
+                                                                              "Qualitative Project"@en ,
+                                                                              "Quantitative Project"@en ;
                        rdfs:comment "The Schema.org defintion of Research Project is 'A Research Project'"@en ;
                        rdfs:label "Research Project"@en ;
                        skos:altLabel "Experimental Project"@en ,
-                                     "Meta Project"@en ,
-                                     "Qualitative Project"@en ,
-                                     "Quantitative Project"@en ,
                                      "R&D Project"@en ,
                                      "Research Project"@en ,
                                      "Research and Advanced Development Project"@en ;
@@ -2238,7 +2270,14 @@ org:FormalOrganization rdf:type owl:Class ;
 ###  http://www.w3.org/ns/org#Organization
 org:Organization rdf:type owl:Class ;
                  dct:references org: ;
+                 <http://wordnet-rdf.princeton.edu/ontology#wn:hyponym> "Enterprise"@en ,
+                                                                        "Institute"@en ,
+                                                                        "Institution"@en ,
+                                                                        "NGO"@en ;
                  rdfs:label "Organization"@en ;
+                 skos:altLabel "Company"@en ,
+                               "Organisation"@en ,
+                               "Organization"@en ;
                  skos:definition "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an agent. Organizations are often decomposable into hierarchical structures."@en .
 
 
@@ -2249,9 +2288,7 @@ rov:RegisteredOrganization rdf:type owl:Class ;
                                           <https://ec.europa.eu/eurostat/documents/3859598/5902521/KS-RA-07-015-EN.PDF> ;
                            rdfs:comment "Inspired by the usage of the Registered Organization Vocabulary in the euBusinessGraph Ontology including links to The Organization Ontology."@en ;
                            rdfs:label "Registered Organization"@en ;
-                           skos:altLabel "Company"@en ,
-                                         "Institute"@en ,
-                                         "Institution"@en ;
+                           skos:altLabel "Registered Organization"@en ;
                            skos:definition "A registered company or other group of people that work together in a certain economic field with the purpose to compete in a certain market. The economic field of activity is defined by statistical standardization numbers such as primarily EC NACE 2, ISIC and SIC."@en .
 
 
@@ -2285,7 +2322,7 @@ dbc:Fuel_cell_manufacturers rdf:type owl:NamedIndividual ,
 
 ###  http://dbpedia.org/page/Category:Fuel_cell_vehicles
 dbc:Fuel_cell_vehicles rdf:type owl:NamedIndividual ,
-                                holy:Road ;
+                                holy:RoadApplication ;
                        rdfs:label "Fuel cell vehicles"@en .
 
 
@@ -2302,7 +2339,7 @@ dbc:Hydrogen_technologies rdf:type owl:NamedIndividual ,
 
 ###  http://dbpedia.org/page/Category:Material_Handling
 dbc:Material_Handling rdf:type owl:NamedIndividual ,
-                               holy:MaterialHandling ;
+                               holy:MaterialHandlingVehicle ;
                       rdfs:comment "Material handling involves short-distance movement within the confines of a building or between a building and a transportation vehicle. It uses a wide range of manual, semi-automated, and automated equipment and includes consideration of the protection, storage, and control of materials throughout their manufacturing, warehousing, distribution, consumption, and disposal. Material handling can be used to create time and place utility through the handling, storage, and control of waste, as distinct from manufacturing, which creates form utility by changing the shape, form, and makeup of material."@en .
 
 
@@ -2495,7 +2532,7 @@ dbr:Barbados rdf:type owl:NamedIndividual ;
 
 ###  http://dbpedia.org/resource/Battery_electric_vehicle
 dbr:Battery_electric_vehicle rdf:type owl:NamedIndividual ,
-                                      holy:Road .
+                                      holy:RoadApplication .
 
 
 ###  http://dbpedia.org/resource/Belarus
@@ -2901,7 +2938,7 @@ dbr:EvoBus rdf:type owl:NamedIndividual ,
 
 ###  http://dbpedia.org/resource/FCDO
 dbr:FCDO rdf:type owl:NamedIndividual ,
-                  holy:PublicAdministrationAndDefenceOrganization ;
+                  holy:PublicAdministrationAndDefenseOrganization ;
          owl:sameAs <http://dbpedia.org/resource/Foreign,_Commonwealth_and_Development_Office> .
 
 
@@ -2909,7 +2946,7 @@ dbr:FCDO rdf:type owl:NamedIndividual ,
 
 ###  http://dbpedia.org/resource/Federal_Ministry_of_Transport_and_Digital_Infrastructure
 dbr:Federal_Ministry_of_Transport_and_Digital_Infrastructure rdf:type owl:NamedIndividual ,
-                                                                      holy:PublicAdministrationAndDefenceOrganization ;
+                                                                      holy:PublicAdministrationAndDefenseOrganization ;
                                                              m4i:inProject holy:NationalInnovationProgrammeHydrogenandFuelCellTechnology ;
                                                              org:hasSubOrganization dbr:Federal_Railway_Authority ;
                                                              ebg:isStateOwned "true"^^xsd:boolean ;
@@ -2922,7 +2959,7 @@ Bundesministerium für Verkehr und digitale Infrastruktur (BMVI)"""@en .
 
 ###  http://dbpedia.org/resource/Federal_Railway_Authority
 dbr:Federal_Railway_Authority rdf:type owl:NamedIndividual ,
-                                       holy:PublicAdministrationAndDefenceOrganization ;
+                                       holy:PublicAdministrationAndDefenseOrganization ;
                               ebg:isStateOwned "false"^^xsd:boolean ;
                               rdfs:comment "The German Federal Railway Authority (German: Eisenbahn-Bundesamt, EBA) has been the independent federal authority for the regulation of the railways in Germany since 1 January 1994. It is under the supervision and direction of the Federal Ministry for Digital and Transport and is headed by a president."@en ;
                               rdfs:label "Federal Railway Authority"@en ;
@@ -2977,7 +3014,7 @@ dbr:Ford_Motor_Company rdf:type owl:NamedIndividual ,
 
 ###  http://dbpedia.org/resource/Forklift
 dbr:Forklift rdf:type owl:NamedIndividual ,
-                      holy:MaterialHandling ;
+                      holy:MaterialHandlingVehicle ;
              rdfs:comment "A forklift (also called lift truck, jitney, fork truck, fork hoist, and forklift truck) is a powered industrial truck used to lift and move materials over short distances."@en ;
              rdfs:label "Forklift"@en .
 
@@ -3118,7 +3155,7 @@ dbr:Hungary rdf:type owl:NamedIndividual ;
 
 ###  http://dbpedia.org/resource/Hybrid_electric_vehicle
 dbr:Hybrid_electric_vehicle rdf:type owl:NamedIndividual ,
-                                     holy:Road ;
+                                     holy:RoadApplication ;
                             rdfs:comment "A hybrid electric vehicle (HEV) is a type of hybrid vehicle that combines a conventional internal combustion engine (ICE) system with an electric propulsion system (hybrid vehicle drivetrain). The presence of the electric powertrain is intended to achieve either better fuel economy than a conventional vehicle or better performance. There is a variety of HEV types and the degree to which each function as an electric vehicle (EV) also varies. The most common form of HEV is the hybrid electric car, although hybrid electric trucks (pickups and tractors), buses, boats and aircraft also exist."@en .
 
 
@@ -3137,13 +3174,13 @@ dbr:Hydrogen-powered_aircraft rdf:type owl:NamedIndividual ,
 
 ###  http://dbpedia.org/resource/Hydrogen_Fuel_Cell
 dbr:Hydrogen_Fuel_Cell rdf:type owl:NamedIndividual ,
-                                holy:Reconversion ;
+                                holy:HydrogenReconversion ;
                        rdfs:label "Hydrogen Fuel Cell"@en .
 
 
 ###  http://dbpedia.org/resource/Hydrogen_Tank
 dbr:Hydrogen_Tank rdf:type owl:NamedIndividual ,
-                           holy:Storage ;
+                           holy:HydrogenStorage ;
                   holy:isUsedIn holy:ZEROeBlendedWingBody ;
                   rdfs:comment "A hydrogen tank (other names- cartridge or canister) is used for hydrogen storage. The first type IV hydrogen tanks for compressed hydrogen at 700 bars (70 MPa; 10,000 psi) were demonstrated in 2001, the first fuel cell vehicles on the road with type IV tanks are the Toyota FCHV, Mercedes-Benz F-Cell and the GM HydroGen4."@en ;
                   rdfs:label "Hydrogen Tank"@en .
@@ -3151,7 +3188,7 @@ dbr:Hydrogen_Tank rdf:type owl:NamedIndividual ,
 
 ###  http://dbpedia.org/resource/Hydrogen_engine
 dbr:Hydrogen_engine rdf:type owl:NamedIndividual ,
-                             holy:Reconversion ;
+                             holy:HydrogenReconversion ;
                     holy:isUsedIn holy:ZEROeBlendedWingBody ;
                     rdfs:label "Hydrogen engine"@en .
 
@@ -3234,7 +3271,7 @@ dbr:Indonesia rdf:type owl:NamedIndividual ;
 
 ###  http://dbpedia.org/resource/Ionic_liquid_piston_compressor
 dbr:Ionic_liquid_piston_compressor rdf:type owl:NamedIndividual ,
-                                            holy:Storage ;
+                                            holy:HydrogenStorage ;
                                    rdfs:comment "An ionic liquid piston compressor, ionic compressor or ionic liquid piston pump is a hydrogen compressor based on an ionic liquid piston instead of a metal piston as in a piston-metal diaphragm compressor."@en ;
                                    rdfs:label "Ionic liquid piston compressor"@en ;
                                    skos:altLabel "Ionic compressor"@en .
@@ -3417,7 +3454,7 @@ dbr:List_of_fuel_cell_manufacturers rdf:type owl:NamedIndividual ,
 
 ###  http://dbpedia.org/resource/List_of_fuel_cell_vehicles
 dbr:List_of_fuel_cell_vehicles rdf:type owl:NamedIndividual ,
-                                        holy:Road ;
+                                        holy:RoadApplication ;
                                rdfs:comment "A fuel cell vehicle is a vehicle that uses a fuel cell to power an electric drive system. There are also hybrid vehicles meaning that they are fitted with a fuel cell and a battery or a fuel cell and an ultracapacitor. For HICEV see List of hydrogen internal combustion engine vehicles. For a discussion of the advantages and disadvantages of fuel cell vehicles, see fuel cell vehicle."@en .
 
 
@@ -3584,7 +3621,7 @@ dbr:Namibia rdf:type owl:NamedIndividual ;
 
 ###  http://dbpedia.org/resource/Natural_gas_vehicle
 dbr:Natural_gas_vehicle rdf:type owl:NamedIndividual ,
-                                 holy:Road ;
+                                 holy:RoadApplication ;
                         rdfs:comment "A natural gas vehicle (NGV) is an alternative fuel vehicle that uses compressed natural gas (CNG) or liquefied natural gas (LNG). Natural gas vehicles should not be confused with autogas vehicles powered by liquefied petroleum gas (LPG), mainly propane, a fuel with a fundamentally different composition. Worldwide, there were almost 28 million NGVs by 2019. In 2016, the market was led by China (5.4 million), Iran (4 million), India (3 million), Pakistan (3 million), Argentina (2.2 million), Brazil (1.8 million), and Italy (1.1 million)."@en .
 
 
@@ -3704,7 +3741,7 @@ dbr:Palau rdf:type owl:NamedIndividual ;
 
 ###  http://dbpedia.org/resource/Pallet_jack
 dbr:Pallet_jack rdf:type owl:NamedIndividual ,
-                         holy:MaterialHandling ;
+                         holy:MaterialHandlingVehicle ;
                 rdfs:comment "A pallet jack, also known as a pallet truck, pallet pump, pump truck, scooter, dog, or jigger is a tool used to lift and move pallets. Pallet jacks are the most basic form of a forklift and are intended to move pallets within a warehouse."@en ;
                 rdfs:label "Pallet jack"@en ;
                 skos:altLabel "Pallet Truck"@en .
@@ -4296,7 +4333,7 @@ dbr:combined_heat_and_power_station rdf:type owl:NamedIndividual ,
 
 ###  http://dbpedia.org/resource/Foreign,_Commonwealth_and_Development_Office
 <http://dbpedia.org/resource/Foreign,_Commonwealth_and_Development_Office> rdf:type owl:NamedIndividual ,
-                                                                                    holy:PublicAdministrationAndDefenceOrganization ;
+                                                                                    holy:PublicAdministrationAndDefenseOrganization ;
                                                                            holy:participatesIn holy:United_Kingdom ;
                                                                            ebg:isStateOwned "true"^^xsd:boolean ;
                                                                            rdfs:comment "The Foreign, Commonwealth & Development Office (FCDO) is a department of the Government of the United Kingdom. It was created on 2 September 2020 through the merger of the Foreign & Commonwealth Office (FCO) and the Department for International Development (DFID). The FCO, itself created in 1968 by the merger of the Foreign Office (FO) and the Commonwealth Office, was responsible for protecting and promoting British interests worldwide. The expenditure, administration and policy of the FCDO are scrutinised by the Foreign Affairs Select Committee."@en ;
@@ -4455,7 +4492,7 @@ holy:Austria rdf:type owl:NamedIndividual ,
 
 ###  http://purl.org/holy/ns#AutomatedGuidedVehicle
 holy:AutomatedGuidedVehicle rdf:type owl:NamedIndividual ,
-                                     holy:MaterialHandling ;
+                                     holy:MaterialHandlingVehicle ;
                             rdfs:label "Automated Guided Vehicle"@en .
 
 
@@ -4706,7 +4743,7 @@ holy:Croatia rdf:type owl:NamedIndividual ,
 
 ###  http://purl.org/holy/ns#CryogenicPistonPump
 holy:CryogenicPistonPump rdf:type owl:NamedIndividual ,
-                                  holy:Storage ;
+                                  holy:HydrogenStorage ;
                          rdfs:label "Cryogenic piston pump"@en ;
                          skos:altLabel "CP model"@en ,
                                        "Cryo Pump"@en .
@@ -4931,7 +4968,7 @@ holy:Gabon rdf:type owl:NamedIndividual ,
 
 ###  http://purl.org/holy/ns#GenSureFuelCellSystem
 holy:GenSureFuelCellSystem rdf:type owl:NamedIndividual ,
-                                    holy:Reconversion ;
+                                    holy:HydrogenReconversion ;
                            holy:isUsedIn dbc:Material_Handling ;
                            holy:producesProduct dbr:Plug_Power ;
                            rdfs:label "GenSure fuel cell system"@en .
@@ -5105,7 +5142,7 @@ holy:Indonesia rdf:type owl:NamedIndividual ,
 
 ###  http://purl.org/holy/ns#IonicCompressor50
 holy:IonicCompressor50 rdf:type owl:NamedIndividual ,
-                                holy:Storage ;
+                                holy:HydrogenStorage ;
                        dct:references <https://www.linde-engineering.com/en/images/DS_IC%2050_tcm19-523715.pdf> ;
                        rdfs:label "Ionic Compressor 50"@en ;
                        skos:altLabel "IC family"@en ,
@@ -5311,7 +5348,7 @@ holy:Malta rdf:type owl:NamedIndividual ,
 
 ###  http://purl.org/holy/ns#ManUpOrderpicker
 holy:ManUpOrderpicker rdf:type owl:NamedIndividual ,
-                               holy:MaterialHandling ;
+                               holy:MaterialHandlingVehicle ;
                       rdfs:label "Man-Up Orderpicker"@en .
 
 
@@ -5775,13 +5812,13 @@ holy:Sri_Lanka rdf:type owl:NamedIndividual ,
 
 ###  http://purl.org/holy/ns#StandUpCounterbalancedTruck
 holy:StandUpCounterbalancedTruck rdf:type owl:NamedIndividual ,
-                                          holy:MaterialHandling ;
+                                          holy:MaterialHandlingVehicle ;
                                  rdfs:label "Stand-Up Counterbalanced Truck"@en .
 
 
 ###  http://purl.org/holy/ns#StandUpReachTruck
 holy:StandUpReachTruck rdf:type owl:NamedIndividual ,
-                                holy:MaterialHandling ;
+                                holy:MaterialHandlingVehicle ;
                        rdfs:label "Stand-Up Reach Truck"@en .
 
 
@@ -5945,7 +5982,7 @@ holy:Turkmenistan rdf:type owl:NamedIndividual ,
 
 ###  http://purl.org/holy/ns#TurretTruck
 holy:TurretTruck rdf:type owl:NamedIndividual ,
-                          holy:MaterialHandling ;
+                          holy:MaterialHandlingVehicle ;
                  rdfs:label "Turret Truck"@en .
 
 
