@@ -973,7 +973,7 @@ holy:ChemicalIndustrialProcessing rdf:type owl:Class ;
                                   rdfs:comment "Hydrogen is one of the key starting materials used in the chemical industry. It is a fundamental building block for the manufacturing of ammonia, fertilizers, and  methanol, which is used in the manufacture of many polymers."@en ;
                                   rdfs:label "Chemical Industrial Processing"@en ;
                                   skos:altLabel "Chemical Processing"@en ;
-                                  skos:definition "Applications of hydrogen in the chemical industry creating chemical products for numerous sectors such as pharmaceutical, agricultural or consumer goods usage."@en .
+                                  skos:definition "An application of hydrogen in the chemical industry creating chemical products for numerous sectors such as pharmaceutical, agricultural or consumer goods usage."@en .
 
 
 ###  http://purl.org/holy/ns#CircularEconomyProject
@@ -1310,7 +1310,7 @@ holy:IndustrialHeating rdf:type owl:Class ;
                                   "Kiln Heating"@en ;
                        rdfs:label "Industrial Heating"@en ;
                        skos:altLabel "Industrial heating"@en ;
-                       skos:definition "Applications used to generate heat for industry usage, such as manufacturing processes where great heat is required, or to heat large areas such as warehouses."@en ;
+                       skos:definition "An application used to generate heat for industry usage, such as manufacturing processes where great heat is required, or to heat large areas such as warehouses."@en ;
                        skos:hiddenLabel "Burner"@en ,
                                         "Fuel Cell Burners"@en ,
                                         "Hydrogen Burners"@en ,
@@ -1521,7 +1521,7 @@ holy:MaterialHandlingVehicle rdf:type owl:Class ;
                              skos:altLabel "Material Handling Equipment"@en ,
                                            "Material Handling Vehicle"@en ,
                                            "Warehouse Vehicle"@en ;
-                             skos:definition "Vehicles which are intended to be used in a mobile context within the material handling process of organizations or private persons."@en ;
+                             skos:definition "A vehicle which is intended to be used in a mobile context within the material handling process of organizations or private persons."@en ;
                              skos:hiddenLabel "Material Handling"@en ,
                                               "On-site Transportation"@en ,
                                               "Warehouse Logistics"@en .
@@ -1821,7 +1821,7 @@ holy:RefineryIndustrialProcessing rdf:type owl:Class ;
                                              "Petroleum Refining"@en ;
                                   rdfs:label "Refinery Industrial Processing"@en ;
                                   skos:altLabel "Refining Process"@en ;
-                                  skos:definition "Applications of hydrogen in the refinery industry dedicated to process oil to create different types of oil and oil products."@en ;
+                                  skos:definition "An application of hydrogen in the refinery industry dedicated to process oil to create different types of oil and oil products."@en ;
                                   skos:hiddenLabel "Petrochemical Market"@en .
 
 
@@ -1854,7 +1854,7 @@ holy:ResearchOrganization rdf:type owl:Class ;
                           skos:altLabel "Research Institution"@en ,
                                         "Research Organization"@en ,
                                         "Research and Development Center"@en ;
-                          skos:definition "Organizations classified in the field of scientific and technical activities according to EC NACE 2 (2008) in Section M Division 69-75."@en ;
+                          skos:definition "An organization classified in the field of scientific and technical activities according to EC NACE 2 (2008) in Section M Division 69-75."@en ;
                           skos:example "MARii"@en ,
                                        "Malaysia Automotive Robotics and IoT Institute"@en ,
                                        "PNNL"@en ,
@@ -1889,7 +1889,7 @@ holy:ResidentialHeating rdf:type owl:Class ;
                                       "Domestic Heating"@en ,
                                       "Home Heating"@en ,
                                       "Residential Heating"@en ;
-                        skos:definition "Applications used for heating a domestic house or residential area (multiple domestic houses)."@en ;
+                        skos:definition "An application used for heating a domestic house or residential area (multiple domestic houses)."@en ;
                         skos:hiddenLabel "Boiler"@en ,
                                          "CHP"@en ,
                                          "Furnace"@en ,
@@ -1997,7 +1997,7 @@ holy:StateBasedProject rdf:type owl:Class ;
                        dct:references <https://www.referenceforbusiness.com/management/Pr-Sa/Project-Management.html> ;
                        rdfs:label "State-based Project"@en ;
                        skos:altLabel "State Based Project"@en ;
-                       skos:definition "State Based Project as a subclass of Project defines the level of progress for a project. It can be categorized according to the temporary stage such as planned, ongoing or finished."@en .
+                       skos:definition "A project classification based on the level of progress of a project. It can be categorized according to the temporary stage such as planned, ongoing, or finished."@en .
 
 
 ###  http://purl.org/holy/ns#StationaryApplication
@@ -2046,7 +2046,7 @@ holy:SteelIndustrialProcessing rdf:type owl:Class ;
                                skos:altLabel "Steel Fabrication"@en ,
                                              "Steel Manufacturing"@en ,
                                              "Steel Production"@en ;
-                               skos:definition "Applications of hydrogen or hydrogen products in the steel industry with respect to the processing of iron ore into certain types of steel."@en .
+                               skos:definition "An application of hydrogen or hydrogen products in the steel industry with respect to the processing of iron ore into certain types of steel."@en .
 
 
 ###  http://purl.org/holy/ns#Submarine
@@ -2093,7 +2093,7 @@ holy:SubstituteProductComponent rdf:type owl:Class ;
                                 dct:references <https://dictionary.cambridge.org/dictionary/english/component> ;
                                 rdfs:comment "The subclass \"Substitute Product Component\" could be expanded to focus on substitute products of hydrogen products."@en ;
                                 rdfs:label "Substitute Product Component"@en ;
-                                skos:definition "A part that combined with other parts make a product which is a substitute to hydrogen products."@en .
+                                skos:definition "A part that, combined with other parts, makes a product which is a substitute to hydrogen products."@en .
 
 
 ###  http://purl.org/holy/ns#SupportiveHardware
@@ -2117,7 +2117,7 @@ holy:Train rdf:type owl:Class ;
            rdfs:label "Train"@en ;
            skos:altLabel "Railroad Train"@en ,
                          "Train"@en ;
-           skos:definition "A vehicle for roads made of railways using an engine and carriages to transport people or goods."@en ;
+           skos:definition "A vehicle for roads made of railways using an engine and carriages to transport people and/or goods."@en ;
            skos:hiddenLabel "Rail"@en .
 
 
