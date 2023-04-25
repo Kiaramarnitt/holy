@@ -96,6 +96,8 @@ Here we provide formalize the functional ontology requirements through test case
         ?organization a org:Organization;
                     holy:hasIndicator ?investment;
                     holy:participatesIn ?geo.
+        ?investment a holy:Investment.
+        ?geo holy:hasIndicator ?investment.
         ?geo dbo:country ?Country.
         ?Country dbo:continent ?Continent
     } group by ?organization ?Continent
@@ -165,10 +167,10 @@ Here we provide formalize the functional ontology requirements through test case
     PREFIX holy: <http://purl.org/holy/ns#>
     PREFIX dct: <http://purl.org/dc/terms/>
     select distinct ?product ?substitute ?application where {
-        ?products holy:isUsedIn ?application;
+        ?product holy:isUsedIn ?application;
                 a holy:Product.
         ?substitute holy:isUsedIn ?application;
-                    a holy:substituteProuct.
+                    a holy:substituteProduct.
     } 
 <strong>Expected Answer: </strong> List of products associated to the same applications.
 </details>

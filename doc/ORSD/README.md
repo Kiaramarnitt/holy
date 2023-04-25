@@ -9,12 +9,12 @@
 | **4**  | **Intended End-Users (optional)**                                                                              |
 |        | <ul> <li>Industrial Institutions</li> <li>Governmental Institutions</li> <li> Research Institutions </li> </ul>                                        |
 | **5**  | **Intended Uses**                       |
-|        | <ul> <li> Structural backbone for classifying market data from NLP </li> <li> Extraction methods </li> <li> Knowledge base for strategic foresight purposes </li> <li> Data source for data querying usable for user-friendly business intelligence tools </li> </ul> (for specific use cases please see  [HOLY's Use Case Specification Document](./Use_Case_Specification.md) and [Use Case:](../Use_Case/) Atlant-H project )                                      |
+|        | <ul> <li> Structural backbone for classifying market data from NLP </li> <li> Extraction methods </li> <li> Knowledge base for strategic foresight purposes </li> <li> Data source for data querying usable for user-friendly business intelligence tools </li> </ul> (for specific use cases please see  [HOLY's Use Case Specification Document](./Use_Case_Specification.md) and [Use Case:](../Practical_Use_Case/) Atlant-H project )                                      |
 | **6**  | **Ontology Requirements**               |
 |        | **Non-Functional Requirements**         |
 |        | <ul> <li>Use of existing ontologies </li> <li> Reusability of the ontology </li> <li> Standardization and semantic interoperability </li> <li> Online availability </li> </ul>                                                            |
 |        | **Functional Requirements: Lists or tables of (domain) requirements written as Competency Questions and sentences**                                                                   |
-|        | See [HOLY's requirements](Ontology_requirements.md) and [HOLY's Tabular information](Tabular_Information.md)                     |
+|        | See [HOLY's requirements](HOLY_Requirements.xlsx) and [HOLY's Tabular information](Tabular_Information.md)                     |
 | **7**  | **Pre-Glossary of Terms (optional)**                                                                           |
 |        | **Terms from Competency Questions**                                                                            |
 |        | [HOLY's Tabular information](Tabular_Information.md)                                          |

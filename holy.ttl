@@ -19,7 +19,7 @@
 @prefix m4i: <http://w3id.org/nfdi4ing/metadata4ing#> . # Metadata4Ing
 @prefix mod: <https://w3id.org/mod#> . # MOD: Metadata for Ontology Description and publication
 @prefix holy: <http://purl.org/holy/ns#> . # Hydrogen Ontology
-@prefix wn: <http://wordnet-rdf.princeton.edu/ontology#> . # WordNet RDF Ontology
+@prefix wn: <https://wordnet-rdf.princeton.edu/ontology#> . # WordNet RDF Ontology
 @base <http://purl.org/holy/ns#> .
 
 <http://purl.org/holy/ns#> rdf:type owl:Ontology ;
@@ -40,6 +40,7 @@
                                         ] ;
                             dct:description "This is the Hydrogen Ontology (HOLY). HOLY is a domain ontology for describing the complex structure of hydrogen-based markets. HOLY contributes to the systemic modeling of the hydrogen domain with a focus on its value chain. Hence, it provides a foundation for retrieval, storage, and delivery of market insights.  "@en ;
                             dct:issued "2022-12-16"^^xsd:date ;
+                            dct:modified "2022-04-26"^^xsd:date ;
                             dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
                             dct:publisher [ foaf:homepage <https://www.th-nuernberg.de> ;
                                             foaf:name "Technische Hochschule Nürnberg Georg Simon Ohm"
@@ -48,7 +49,8 @@
                             bibo:doi <https://doi.org/10.5281/zenodo.7447958> ;
                             vann:preferredNamespacePrefix "holy" ;
                             vann:preferredNamespaceURI "http://purl.org/holy/ns#" ;
-                            owl:versionInfo 1.0 ;
+                            owl:priorVersion <http://purl.org/holy/holy-20221216>;
+                            owl:versionInfo 1.1 ;
                             foaf:depiction <http://purl.org/holy/schema_diagram> ;
                             cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
                             mod:acronym "HOLY" ;
@@ -107,7 +109,7 @@ vann:preferredNamespaceURI rdf:type owl:AnnotationProperty .
 schema:affiliation rdf:type owl:AnnotationProperty .
 
 
-###  http://wordnet-rdf.princeton.edu/ontology#wn:hyponym
+###  http://wordnet-rdf.princeton.edu/ontology#hyponym
 wn:hyponym rdf:type owl:AnnotationProperty .
 
 

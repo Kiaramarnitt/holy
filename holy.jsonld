@@ -3,14 +3,11 @@
   "http://schema.org/affiliation" : [ {
     "@id" : "_:genid2"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@id" : "https://www.th-nuernberg.de/person/ascencion-arevalo-kiara-marnitt/"
-  } ],
   "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://orcid.org/0000-0002-4158-9478"
+    "@id" : "https://orcid.org/0000-0001-9312-208X"
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Kiara Marnitt Ascencion Arevalo"
+    "@value" : "Christoph Neunsinger"
   } ]
 }, {
   "@id" : "_:genid14",
@@ -29,29 +26,32 @@
 }, {
   "@id" : "_:genid2",
   "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://www.th-nuernberg.de/einrichtungen-gesamt/fraunhofer-forschungsgruppen/future-engineering/"
+    "@id" : "https://www.th-nuernberg.de"
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Future Engineering Research Group"
+    "@value" : "Technische Hochschule Nürnberg Georg Simon Ohm"
   } ]
 }, {
   "@id" : "_:genid3",
   "http://schema.org/affiliation" : [ {
     "@id" : "_:genid4"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://www.th-nuernberg.de/person/ascencion-arevalo-kiara-marnitt/"
+  } ],
   "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://orcid.org/0000-0001-9312-208X"
+    "@id" : "https://orcid.org/0000-0002-4158-9478"
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Christoph Neunsinger"
+    "@value" : "Kiara Marnitt Ascencion Arevalo"
   } ]
 }, {
   "@id" : "_:genid4",
   "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://www.th-nuernberg.de"
+    "@id" : "https://www.th-nuernberg.de/einrichtungen-gesamt/fraunhofer-forschungsgruppen/future-engineering/"
   } ],
   "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Technische Hochschule Nürnberg Georg Simon Ohm"
+    "@value" : "Future Engineering Research Group"
   } ]
 }, {
   "@id" : "_:genid5",
@@ -258,7 +258,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#ManufacturingOrganization" ]
 }, {
   "@id" : "http://dbpedia.org/page/Category:Fuel_cell_vehicles",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#Road" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#RoadApplication" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Fuel cell vehicles"
@@ -282,7 +282,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#HydrogenProduct" ]
 }, {
   "@id" : "http://dbpedia.org/page/Category:Material_Handling",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#MaterialHandling" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#MaterialHandlingVehicle" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Material handling involves short-distance movement within the confines of a building or between a building and a transportation vehicle. It uses a wide range of manual, semi-automated, and automated equipment and includes consideration of the protection, storage, and control of materials throughout their manufacturing, warehousing, distribution, consumption, and disposal. Material handling can be used to create time and place utility through the handling, storage, and control of waste, as distinct from manufacturing, which creates form utility by changing the shape, form, and makeup of material."
@@ -314,7 +314,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Airbus SE (/ˈɛərbʌs/; French: [ɛʁbys]; German: [ˈɛːɐ̯bʊs]; Spanish: [ˈejɾbus]) is a European multinational aerospace corporation. Airbus designs, manufactures and sells civil and military aerospace products worldwide and manufactures aircraft in Europe and various countries outside Europe. The company has three divisions: Commercial Aircraft (Airbus S.A.S.), Defence and Space, and Helicopters, the third being the largest in its industry in terms of revenues and turbine helicopter deliveries."
+    "@value" : "Airbus SE is a European multinational aerospace corporation. Airbus designs, manufactures and sells civil and military aerospace products worldwide and manufactures aircraft in Europe and various countries outside Europe. The company has three divisions: Commercial Aircraft (Airbus S.A.S.), Defence and Space, and Helicopters, the third being the largest in its industry in terms of revenues and turbine helicopter deliveries."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -371,16 +371,15 @@
 }, {
   "@id" : "http://dbpedia.org/resource/Alstom_Coradia_iLint",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#PassengerTrain" ],
+  "http://purl.org/dc/terms/references" : [ {
+    "@id" : "https://www.alstom.com/solutions/rolling-stock/coradia-ilinttm-worlds-1st-hydrogen-powered-train"
+  } ],
   "http://purl.org/holy/ns#isProvidedBy" : [ {
     "@id" : "http://dbpedia.org/resource/Alstom"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Definition by Alstom at 'https://www.alstom.com/solutions/rolling-stock/coradia-ilinttm-worlds-1st-hydrogen-powered-train'"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Coradia iLint™"
+    "@value" : "Coradia iLintTM"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
@@ -391,7 +390,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "The Coradia iLint™ is the world’s first passenger train powered by a hydrogen fuel cell, which produces electrical power for traction."
+    "@value" : "The Coradia iLintTM is the world's first passenger train powered by a hydrogen fuel cell, which produces electrical power for traction."
   } ]
 }, {
   "@id" : "http://dbpedia.org/resource/Ambazonia",
@@ -497,7 +496,7 @@
   } ]
 }, {
   "@id" : "http://dbpedia.org/resource/Battery_electric_vehicle",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#Road" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#RoadApplication" ]
 }, {
   "@id" : "http://dbpedia.org/resource/Belarus",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
@@ -708,7 +707,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#ManufacturingOrganization" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Daimler AG (German pronunciation: [ˈdaɪmlɐ ʔaːˌɡeː]; previously named Daimler-Benz and DaimlerChrysler; commonly known and referred to as Mercedes-Benz or simply Daimler) is a German multinational automotive corporation headquartered in Stuttgart, Baden-Württemberg, Germany. It is one of the world's leading car and truck manufacturers. Daimler-Benz was formed with the merger of Benz & Cie. and Daimler Motoren Gesellschaft in 1926."
+    "@value" : "Daimler AG (previously named Daimler-Benz and DaimlerChrysler; commonly known and referred to as Mercedes-Benz or simply Daimler) is a German multinational automotive corporation headquartered in Stuttgart, Baden-Württemberg, Germany. It is one of the world's leading car and truck manufacturers. Daimler-Benz was formed with the merger of Benz & Cie. and Daimler Motoren Gesellschaft in 1926."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -889,13 +888,13 @@
   } ]
 }, {
   "@id" : "http://dbpedia.org/resource/FCDO",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#PublicAdministrationAndDefenceOrganization" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#PublicAdministrationAndDefenseOrganization" ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "http://dbpedia.org/resource/Foreign,_Commonwealth_and_Development_Office"
   } ]
 }, {
   "@id" : "http://dbpedia.org/resource/Federal_Ministry_of_Transport_and_Digital_Infrastructure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#PublicAdministrationAndDefenceOrganization" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#PublicAdministrationAndDefenseOrganization" ],
   "http://data.businessgraph.io/ontology#isStateOwned" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "true"
@@ -916,14 +915,14 @@
     "@value" : "BMVI"
   }, {
     "@language" : "en",
-    "@value" : "Federal Ministry of Transport and Digital Infrastructure\nBundesministerium für Verkehr und digitale Infrastruktur (BMVI)"
+    "@value" : "Federal Ministry of Transport and Digital Infrastructure\r\nBundesministerium für Verkehr und digitale Infrastruktur (BMVI)"
   } ],
   "http://www.w3.org/ns/org#hasSubOrganization" : [ {
     "@id" : "http://dbpedia.org/resource/Federal_Railway_Authority"
   } ]
 }, {
   "@id" : "http://dbpedia.org/resource/Federal_Railway_Authority",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#PublicAdministrationAndDefenceOrganization" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#PublicAdministrationAndDefenseOrganization" ],
   "http://data.businessgraph.io/ontology#isStateOwned" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "false"
@@ -938,7 +937,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
-    "@value" : "Eisenbahn-Bundesamt\nFederal Railway Authority"
+    "@value" : "Eisenbahn-Bundesamt\r\nFederal Railway Authority"
   } ]
 }, {
   "@id" : "http://dbpedia.org/resource/Federated_States_of_Micronesia",
@@ -987,7 +986,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Ford Motor Company (commonly known as Ford) is an American multinational automobile manufacturer headquartered in Dearborn, Michigan, United States. It was founded by Henry Ford and incorporated on June 16, 1903. The company sells automobiles and commercial vehicles under the Ford brand, and luxury cars under its Lincoln luxury brand. Ford also owns Brazilian SUV manufacturer Troller, an 8% stake in Aston Martin of the United Kingdom and a 32% stake in China’s Jiangling Motors. It also has joint-ventures in China (Changan Ford), Taiwan (Ford Lio Ho), Thailand (AutoAlliance Thailand), Turkey (Ford Otosan), and Russia (Ford Sollers). The company is listed on the New York Stock Exchange and is controlled by the Ford family; they have minority ownership but the majority of the voting power."
+    "@value" : "Ford Motor Company (commonly known as Ford) is an American multinational automobile manufacturer headquartered in Dearborn, Michigan, United States. It was founded by Henry Ford and incorporated on June 16, 1903. The company sells automobiles and commercial vehicles under the Ford brand, and luxury cars under its Lincoln luxury brand. Ford also owns Brazilian SUV manufacturer Troller, an 8% stake in Aston Martin of the United Kingdom and a 32% stake in China's Jiangling Motors. It also has joint-ventures in China (Changan Ford), Taiwan (Ford Lio Ho), Thailand (AutoAlliance Thailand), Turkey (Ford Otosan), and Russia (Ford Sollers). The company is listed on the New York Stock Exchange and is controlled by the Ford family; they have minority ownership but the majority of the voting power."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1002,7 +1001,7 @@
   } ]
 }, {
   "@id" : "http://dbpedia.org/resource/Foreign,_Commonwealth_and_Development_Office",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#PublicAdministrationAndDefenceOrganization" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#PublicAdministrationAndDefenseOrganization" ],
   "http://data.businessgraph.io/ontology#isStateOwned" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "true"
@@ -1020,7 +1019,7 @@
   } ]
 }, {
   "@id" : "http://dbpedia.org/resource/Forklift",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#MaterialHandling" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#MaterialHandlingVehicle" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A forklift (also called lift truck, jitney, fork truck, fork hoist, and forklift truck) is a powered industrial truck used to lift and move materials over short distances."
@@ -1050,15 +1049,15 @@
     "@value" : "true"
   } ],
   "http://purl.org/holy/ns#producesProduct" : [ {
-    "@id" : "http://purl.org/holy/ns#SureSource1500™"
+    "@id" : "http://purl.org/holy/ns#SureSource1500TM"
   }, {
-    "@id" : "http://purl.org/holy/ns#SureSource3000™"
+    "@id" : "http://purl.org/holy/ns#SureSource3000TM"
   }, {
-    "@id" : "http://purl.org/holy/ns#SureSource4000™"
+    "@id" : "http://purl.org/holy/ns#SureSource4000TM"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "FuelCell Energy, Inc. is a publicly traded fuel cell company, headquartered in Danbury, Connecticut. It designs, manufactures, operates and services Direct Fuel Cell power plants (a type of molten carbonate fuel cell). The company's fuel cell technology is an alternative to traditional combustion-based power generation, and is complementary to intermittent sources of energy, such as solar and wind turbines. As one of the biggest publicly traded fuel cell manufacturers in the U.S., the company provides clean energy in over 50 locations all over the world. It operates the world’s largest fuel cell park, Gyeonggi Green Energy Fuel cell park, which is located in South Korea. The park consists of 21 power plants providing 59 Megawatt of electricity plus district heating to a number of customers"
+    "@value" : "FuelCell Energy, Inc. is a publicly traded fuel cell company, headquartered in Danbury, Connecticut. It designs, manufactures, operates and services Direct Fuel Cell power plants (a type of molten carbonate fuel cell). The company's fuel cell technology is an alternative to traditional combustion-based power generation, and is complementary to intermittent sources of energy, such as solar and wind turbines. As one of the biggest publicly traded fuel cell manufacturers in the U.S., the company provides clean energy in over 50 locations all over the world. It operates the world's largest fuel cell park, Gyeonggi Green Energy Fuel cell park, which is located in South Korea. The park consists of 21 power plants providing 59 Megawatt of electricity plus district heating to a number of customers"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1193,7 +1192,7 @@
   } ]
 }, {
   "@id" : "http://dbpedia.org/resource/Hybrid_electric_vehicle",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#Road" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#RoadApplication" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A hybrid electric vehicle (HEV) is a type of hybrid vehicle that combines a conventional internal combustion engine (ICE) system with an electric propulsion system (hybrid vehicle drivetrain). The presence of the electric powertrain is intended to achieve either better fuel economy than a conventional vehicle or better performance. There is a variety of HEV types and the degree to which each function as an electric vehicle (EV) also varies. The most common form of HEV is the hybrid electric car, although hybrid electric trucks (pickups and tractors), buses, boats and aircraft also exist."
@@ -1218,14 +1217,14 @@
   } ]
 }, {
   "@id" : "http://dbpedia.org/resource/Hydrogen_Fuel_Cell",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#Reconversion" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#HydrogenReconversion" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Hydrogen Fuel Cell"
   } ]
 }, {
   "@id" : "http://dbpedia.org/resource/Hydrogen_Tank",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#Storage" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#HydrogenStorage" ],
   "http://purl.org/holy/ns#isUsedIn" : [ {
     "@id" : "http://purl.org/holy/ns#ZEROeBlendedWingBody"
   } ],
@@ -1239,7 +1238,7 @@
   } ]
 }, {
   "@id" : "http://dbpedia.org/resource/Hydrogen_engine",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#Reconversion" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#HydrogenReconversion" ],
   "http://purl.org/holy/ns#isUsedIn" : [ {
     "@id" : "http://purl.org/holy/ns#ZEROeBlendedWingBody"
   } ],
@@ -1366,7 +1365,7 @@
   } ]
 }, {
   "@id" : "http://dbpedia.org/resource/Ionic_liquid_piston_compressor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#Storage" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#HydrogenStorage" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "An ionic liquid piston compressor, ionic compressor or ionic liquid piston pump is a hydrogen compressor based on an ionic liquid piston instead of a metal piston as in a piston-metal diaphragm compressor."
@@ -1557,7 +1556,7 @@
   } ]
 }, {
   "@id" : "http://dbpedia.org/resource/List_of_fuel_cell_vehicles",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#Road" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#RoadApplication" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A fuel cell vehicle is a vehicle that uses a fuel cell to power an electric drive system. There are also hybrid vehicles meaning that they are fitted with a fuel cell and a battery or a fuel cell and an ultracapacitor. For HICEV see List of hydrogen internal combustion engine vehicles. For a discussion of the advantages and disadvantages of fuel cell vehicles, see fuel cell vehicle."
@@ -1707,7 +1706,7 @@
   } ]
 }, {
   "@id" : "http://dbpedia.org/resource/Natural_gas_vehicle",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#Road" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#RoadApplication" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A natural gas vehicle (NGV) is an alternative fuel vehicle that uses compressed natural gas (CNG) or liquefied natural gas (LNG). Natural gas vehicles should not be confused with autogas vehicles powered by liquefied petroleum gas (LPG), mainly propane, a fuel with a fundamentally different composition. Worldwide, there were almost 28 million NGVs by 2019. In 2016, the market was led by China (5.4 million), Iran (4 million), India (3 million), Pakistan (3 million), Argentina (2.2 million), Brazil (1.8 million), and Italy (1.1 million)."
@@ -1819,7 +1818,7 @@
   } ]
 }, {
   "@id" : "http://dbpedia.org/resource/Pallet_jack",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#MaterialHandling" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#MaterialHandlingVehicle" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A pallet jack, also known as a pallet truck, pallet pump, pump truck, scooter, dog, or jigger is a tool used to lift and move pallets. Pallet jacks are the most basic form of a forklift and are intended to move pallets within a warehouse."
@@ -2408,12 +2407,11 @@
 }, {
   "@id" : "http://fraunhofer.de/dataKoreaWesternPowerCompanyLimited",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#EnergySectorOrganization" ],
+  "http://purl.org/dc/terms/references" : [ {
+    "@id" : "https://www.iwest.co.kr/eng/835/subview.do"
+  } ],
   "http://purl.org/holy/ns#participatesIn" : [ {
     "@id" : "http://fraunhofer.de/dataRepublicofKorea"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Source: https://www.iwest.co.kr/eng/835/subview.do"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2440,9 +2438,8 @@
 }, {
   "@id" : "http://fraunhofer.de/dataSmartFarmFuelCellPowerGenerationProject",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#CircularEconomyProject" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Source: https://fuelcellsworks.com/news/korea/korea-western-power-promotes-smart-farm-fuel-cell-power-generation-project/"
+  "http://purl.org/dc/terms/references" : [ {
+    "@id" : "https://fuelcellsworks.com/news/korea/korea-western-power-promotes-smart-farm-fuel-cell-power-generation-project/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2453,55 +2450,8 @@
     "@value" : "Sangju Smart Farm Innovation Valley"
   } ]
 }, {
-  "@id" : "http://purl.org/dc/elements/1.1/creator",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Refers to the creator/author of the Ontology."
-  } ]
-}, {
-  "@id" : "http://purl.org/dc/elements/1.1/description",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Description of the Ontology."
-  } ]
-}, {
-  "@id" : "http://purl.org/dc/elements/1.1/publisher",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Refers to the publisher of the Ontology."
-  } ]
-}, {
-  "@id" : "http://purl.org/dc/elements/1.1/right",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
-  } ]
-}, {
-  "@id" : "http://purl.org/dc/elements/1.1/title",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Describes the titel of the Ontology."
-  } ]
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -2518,15 +2468,9 @@
     "@language" : "en",
     "@value" : "This property is intended to be used with non-literal values. This property is an inverse property of Is Part Of."
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/holy/ns#HydrogenProduct"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Has Part"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/holy/ns#HydrogenProductComponent"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "http://purl.org/dc/terms/isPartOf"
@@ -2545,20 +2489,20 @@
     "@language" : "en",
     "@value" : "This property is intended to be used with non-literal values. This property is an inverse property of Has Part."
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://purl.org/holy/ns#HydrogenProductComponent"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Is Part Of"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/holy/ns#HydrogenProduct"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A related resource in which the described resource is physically or logically included."
   } ]
 }, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/publisher",
@@ -2572,6 +2516,10 @@
 }, {
   "@id" : "http://purl.org/holy/ns#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#gYear",
+    "@value" : "2022"
+  } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@id" : "_:genid1"
   }, {
@@ -2581,8 +2529,16 @@
     "@language" : "en",
     "@value" : "This is the Hydrogen Ontology (HOLY). HOLY is a domain ontology for describing the complex structure of hydrogen-based markets. HOLY contributes to the systemic modeling of the hydrogen domain with a focus on its value chain. Hence, it provides a foundation for retrieval, storage, and delivery of market insights.  "
   } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2022-12-16"
+  } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "https://creativecommons.org/licenses/by-sa/4.0/"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2022-04-26"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "_:genid5"
@@ -2591,22 +2547,39 @@
     "@language" : "en",
     "@value" : "Hydrogen Ontology"
   } ],
+  "http://purl.org/ontology/bibo/doi" : [ {
+    "@id" : "https://doi.org/10.5281/zenodo.7447958"
+  } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "holy"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceURI" : [ {
     "@value" : "http://purl.org/holy/ns#"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Hydrogen Ontology"
+  "http://www.w3.org/2002/07/owl#priorVersion" : [ {
+    "@id" : "http://purl.org/holy/holy-20221216"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://purl.org/holy/ns#"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "1.0"
+    "@value" : "1.1"
+  } ],
+  "http://xmlns.com/foaf/0.1/depiction" : [ {
+    "@id" : "http://purl.org/holy/schema_diagram"
   } ],
   "https://creativecommons.org/ns#license" : [ {
     "@id" : "https://creativecommons.org/licenses/by-sa/4.0/"
+  } ],
+  "https://w3id.org/mod#acronym" : [ {
+    "@value" : "HOLY"
+  } ],
+  "https://w3id.org/mod#competencyQuestion" : [ {
+    "@id" : "http://purl.org/holy/repository/cq"
+  } ],
+  "https://w3id.org/mod#hasSyntax" : [ {
+    "@id" : "http://www.w3.org/ns/formats/Turtle"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#A12FuelCell",
@@ -2692,7 +2665,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Pressure regulating systems for enhancing fuel cell improvement by increasing pressure of reactant gases."
+    "@value" : "A pressure regulating system for enhancing fuel cell improvement by increasing pressure of reactant gases."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Aircraft",
@@ -2711,10 +2684,23 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
-    "@value" : "Aeroplane"
-  }, {
-    "@language" : "en",
     "@value" : "Aircraft"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A vehicle which can fly and carry goods or passengers. It has fixed wings and is powered by propellers or jets."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "A321neo"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Plane"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
+    "@language" : "en",
+    "@value" : "Aeroplane"
   }, {
     "@language" : "en",
     "@value" : "Airplane"
@@ -2738,9 +2724,6 @@
     "@value" : "Passenger Plane"
   }, {
     "@language" : "en",
-    "@value" : "Plane"
-  }, {
-    "@language" : "en",
     "@value" : "STOL"
   }, {
     "@language" : "en",
@@ -2760,14 +2743,6 @@
   }, {
     "@language" : "en",
     "@value" : "long-haul aircraft"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "A vehicle which can fly and carry goods or passengers. It has fixed wings and is powered by propellers or jets."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@language" : "en",
-    "@value" : "A321neo"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Albania",
@@ -2793,7 +2768,8 @@
   "@id" : "http://purl.org/holy/ns#AlkalineBattery",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/references" : [ {
-    "@id" : "https://www.wiltronics.com.au/wiltronics-knowledge-base/different-types-of-batteries"
+    "@language" : "en",
+    "@value" : "https://doi.org/10.1016/B978-044452745-5.00854-6"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2805,6 +2781,9 @@
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
     "@value" : "Alkaline Battery"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A battery which uses a chemical substance composed of zinc (Zn) and manganese dioxide (MnO2). The separator in alkaline batteries is made totally or at least partially of nonwoven materials."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#AlkalineFuelCell",
@@ -2817,7 +2796,7 @@
     "@value" : "Alkaline Fuel Cell"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/holy/ns#Reconversion"
+    "@id" : "http://purl.org/holy/ns#HydrogenReconversion"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
@@ -2834,10 +2813,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "A fuel cell using potassium hydroxide in water as the electrolyte for powering using a variety of non-precious metals as a catalyst at the anode and cathode."
-  }, {
-    "@language" : "en",
-    "@value" : "AFC"
+    "@value" : "A fuel cell which uses potassium hydroxide in water as the electrolyte for powering, using a variety of non-precious metals as a catalyst at the anode and cathode."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Ambazonia",
@@ -2874,7 +2850,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Fuel Cells using ammonia as its fuel."
+    "@value" : "A fuel cell using ammonia as its fuel."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Andorra",
@@ -2904,7 +2880,7 @@
     "@value" : "Anion Exchange Membrane Fuel Cell"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/holy/ns#Reconversion"
+    "@id" : "http://purl.org/holy/ns#HydrogenReconversion"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
@@ -2921,7 +2897,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "PEMFC-like fuel cell technology which needs less precious metals as catalysts in order to trigger chemical reaction."
+    "@value" : "A PEMFC-like fuel cell technology which needs less precious metals as catalysts in order to trigger chemical reaction."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Antigua_and_Barbuda",
@@ -2960,8 +2936,23 @@
     "@value" : "Application"
   }, {
     "@language" : "en",
-    "@value" : "End Use"
+    "@value" : "Usance"
   }, {
+    "@language" : "en",
+    "@value" : "Use Case"
+  }, {
+    "@language" : "en",
+    "@value" : "Utilization"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The intended end use of a hydrogen-based product or of the result of a hydrogen-related project."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "End Use"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
     "@language" : "en",
     "@value" : "Fuel Cell Technology Industry Application"
   }, {
@@ -2976,19 +2967,6 @@
   }, {
     "@language" : "en",
     "@value" : "Practical Application"
-  }, {
-    "@language" : "en",
-    "@value" : "Usance"
-  }, {
-    "@language" : "en",
-    "@value" : "Use Case"
-  }, {
-    "@language" : "en",
-    "@value" : "Utilization"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "The intended end use of a hydrogen-based product or of the result of a hydrogen-related project."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Argentina",
@@ -3039,7 +3017,7 @@
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#AutomatedGuidedVehicle",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#MaterialHandling" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#MaterialHandlingVehicle" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Automated Guided Vehicle"
@@ -3055,14 +3033,11 @@
     "@value" : "Aviation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/holy/ns#Mobile"
+    "@id" : "http://purl.org/holy/ns#MobileApplication"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
     "@value" : "Aeronautics"
-  }, {
-    "@language" : "en",
-    "@value" : "Air Power"
   }, {
     "@language" : "en",
     "@value" : "Air Travel"
@@ -3075,7 +3050,11 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Applications related to the transport of people or goods by any form of aircraft or spacecraft."
+    "@value" : "An applicatios related to the transport of people and/or goods by any form of aircraft or spacecraft."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Air Power"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Azerbaijan",
@@ -3132,7 +3111,19 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
-    "@value" : "BEES"
+    "@value" : "Battery"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A collection of one or more cells which store electrical energy for powering electrical devices."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Hybrid Membrane"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
+    "@language" : "en",
+    "@value" : "BESS"
   }, {
     "@language" : "en",
     "@value" : "BTMS"
@@ -3141,7 +3132,7 @@
     "@value" : "Barge Battery System"
   }, {
     "@language" : "en",
-    "@value" : "Battery"
+    "@value" : "Battery Cell"
   }, {
     "@language" : "en",
     "@value" : "Battery Energy Storage System"
@@ -3162,9 +3153,6 @@
     "@value" : "Fully Electric Barge Battery Container"
   }, {
     "@language" : "en",
-    "@value" : "Hybrid Membrane"
-  }, {
-    "@language" : "en",
     "@value" : "Hybrid Membrane Edges Flow Batteries"
   }, {
     "@language" : "en",
@@ -3178,10 +3166,6 @@
   }, {
     "@language" : "en",
     "@value" : "Vanadium Redox Flow Battery"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "A collection of one or more cells, storing electrical energy for powering electrical devices."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#BatteryComponent",
@@ -3199,7 +3183,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Basic components for batteries."
+    "@value" : "A basic component for batteries."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Belarus",
@@ -3262,17 +3246,27 @@
     "@value" : "Bike"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/holy/ns#Road"
+    "@id" : "http://purl.org/holy/ns#RoadApplication"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
-    "@value" : "Bicycle"
-  }, {
-    "@language" : "en",
     "@value" : "Bike"
-  }, {
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A motorbike, motorcycle or scooter."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Honda Grazia Repsol Honda Team Edition"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
     "@language" : "en",
     "@value" : "Cycling"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
+    "@language" : "en",
+    "@value" : "Bicycle"
   }, {
     "@language" : "en",
     "@value" : "Electric Moped"
@@ -3309,14 +3303,6 @@
   }, {
     "@language" : "en",
     "@value" : "Scooter"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "A motorbike, motorcycle or scooter."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@language" : "en",
-    "@value" : "Honda Grazia Repsol Honda Team Edition"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#BipolarPlate",
@@ -3337,7 +3323,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Plates which provide electrical conduction between cells. Bipolar plates are used to separate cells within a fuel cell from each other and aim to provide physical strength to the stack of cells."
+    "@value" : "A plate which provides electrical conduction between cells. Bipolar plates are used to separate cells within a fuel cell from each other and aim to provide physical strength to the stack of cells."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Bolivia",
@@ -3430,12 +3416,21 @@
     "@value" : "Bus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/holy/ns#Road"
+    "@id" : "http://purl.org/holy/ns#RoadApplication"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
     "@value" : "Bus"
-  }, {
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A large motorzed vehicle with seats for many people."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Xcelsior CHARGE"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
     "@language" : "en",
     "@value" : "City Bus"
   }, {
@@ -3468,18 +3463,13 @@
   }, {
     "@language" : "en",
     "@value" : "Zero-emission Bus"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "A large motorzed vehicle with seats for many people."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@language" : "en",
-    "@value" : "Xcelsior CHARGE"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#CUTE",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#InfrastructureProject" ],
+  "http://purl.org/dc/terms/references" : [ {
+    "@id" : "https://www.fuelcellbuses.eu/wiki/history-fuel-cell-electric-buses/cute-clean-urban-transport-europe-2001-2006"
+  } ],
   "http://purl.org/holy/ns#hasProject" : [ {
     "@id" : "http://purl.org/holy/ns#Germany"
   }, {
@@ -3499,10 +3489,6 @@
   "http://w3id.org/nfdi4ing/metadata4ing#projectParticipant" : [ {
     "@id" : "http://dbpedia.org/resource/EvoBus"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Source: https://www.fuelcellbuses.eu/wiki/history-fuel-cell-electric-buses/cute-clean-urban-transport-europe-2001-2006"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "CUTE"
@@ -3513,7 +3499,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "The Clean urban Transport for Europe (CUTE) was a European project which saw the deployment and testing of 27 Citaro fuel cell buses – three buses in each of nine cities in Europe (Hamburg, London, Barcelona, Stockholm, Porto, Stuttgart, Amsterdam, Luxembourg, and Madrid).\nThe aim of the project was to demonstrate the feasibility of an innovative, highly energy-efficient, clean urban public transport system. Different hydrogen production and refueling infrastructures were established in each of the cities. The project saw practical applications of renewable energy sources to the transport system.\nThe project greatly improved public acceptance of the hydrogen fuel cell transport system, and contributed to the development of a more secure energy supply for the EU."
+    "@value" : "The Clean urban Transport for Europe (CUTE) was a European project which saw the deployment and testing of 27 Citaro fuel cell buses – three buses in each of nine cities in Europe (Hamburg, London, Barcelona, Stockholm, Porto, Stuttgart, Amsterdam, Luxembourg, and Madrid).\r\nThe aim of the project was to demonstrate the feasibility of an innovative, highly energy-efficient, clean urban public transport system. Different hydrogen production and refueling infrastructures were established in each of the cities. The project saw practical applications of renewable energy sources to the transport system.\r\nThe project greatly improved public acceptance of the hydrogen fuel cell transport system, and contributed to the development of a more secure energy supply for the EU."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Cambodia",
@@ -3566,7 +3552,7 @@
     "@value" : "Car"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/holy/ns#Road"
+    "@id" : "http://purl.org/holy/ns#RoadApplication"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
@@ -3577,7 +3563,22 @@
   }, {
     "@language" : "en",
     "@value" : "Car"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A road vehicle with an engine, four wheels, and seats for a small number of people."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Toyota Corolla"
   }, {
+    "@language" : "en",
+    "@value" : "Toyota Mirai"
+  }, {
+    "@language" : "en",
+    "@value" : "Toyota Yaris"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
     "@language" : "en",
     "@value" : "Convertible"
   }, {
@@ -3619,20 +3620,6 @@
   }, {
     "@language" : "en",
     "@value" : "Station Wagon"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "A road vehicle with an engine, four wheels, and seats for a small number of people."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@language" : "en",
-    "@value" : "Toyota Corolla"
-  }, {
-    "@language" : "en",
-    "@value" : "Toyota Mirai"
-  }, {
-    "@language" : "en",
-    "@value" : "Toyota Yaris"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#CargoShip",
@@ -3645,7 +3632,7 @@
     "@value" : "Cargo Ship"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/holy/ns#Marine"
+    "@id" : "http://purl.org/holy/ns#MarineApplication"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
@@ -3654,6 +3641,21 @@
     "@language" : "en",
     "@value" : "Cargo Vessel"
   }, {
+    "@language" : "en",
+    "@value" : "Transport Ship"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Any kind of a ship or any other vessel that transports heavy goods and materials from one port to another."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Ceiba Ship"
+  }, {
+    "@language" : "en",
+    "@value" : "Voilier Ceiba"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
     "@language" : "en",
     "@value" : "Container Ship"
   }, {
@@ -3673,21 +3675,7 @@
     "@value" : "Supertanker"
   }, {
     "@language" : "en",
-    "@value" : "Transport Ship"
-  }, {
-    "@language" : "en",
     "@value" : "Zero-emission Cargo Ship"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Any kind of a ship or any other vessel that transports heavy goods and materials from one port to another."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@language" : "en",
-    "@value" : "Ceiba Ship"
-  }, {
-    "@language" : "en",
-    "@value" : "Voilier Ceiba"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#CargoTrain",
@@ -3713,17 +3701,30 @@
     "@value" : "Goods Train"
   }, {
     "@language" : "en",
-    "@value" : "Nonpassenger Train"
+    "@value" : "Haulage Train"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "A train carrying mainly goods such as baggage, shipment or merchandise."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Nonpassenger Train"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
+    "@language" : "en",
+    "@value" : "Container Train"
+  }, {
+    "@language" : "en",
+    "@value" : "Intermodal Train"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#CatalystLayer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/references" : [ {
     "@id" : "https://www.energy.gov/eere/fuelcells/parts-fuel-cell"
+  }, {
+    "@value" : "https://doi.org/10.1016/B978-044452745-5.00227-6"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3738,7 +3739,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Catalyst Layer are layers of anodes and cathodes which are placed on the opposite sites of the membrane."
+    "@value" : "A layer of anodes and cathodes which are placed on opposite sites of the membrane. It is a three-dimensional porous structrure composed of catalyst particles and ionomer fragments."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Central_African_Republic",
@@ -3785,7 +3786,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Ceres Power Holdings plc is a United Kingdom-based fuel cell technology and engineering company. The Company is focused on developing power generation and hydrogen technologies. It operates through the solid oxide fuel cell (SOFC) technology segment. Its SteelCell technology can generate power from conventional fuels, such as natural gas and from sustainable fuels, which have biogas, ethanol or hydrogen. The Company’s SteelCell technology is applicable to markets that have combined heat and power (CHP) for commercial and residential buildings. It also focuses to embed its technology in a range of market energy products for the commercial, residential and transportation markets. The Company’s wholly owned subsidiary is Ceres Power Intermediate Holdings Ltd, which is engaged in the provision of overseas license and royalty services."
+    "@value" : "Ceres Power Holdings plc is a United Kingdom-based fuel cell technology and engineering company. The Company is focused on developing power generation and hydrogen technologies. It operates through the solid oxide fuel cell (SOFC) technology segment. Its SteelCell technology can generate power from conventional fuels, such as natural gas and from sustainable fuels, which have biogas, ethanol or hydrogen. The Company's SteelCell technology is applicable to markets that have combined heat and power (CHP) for commercial and residential buildings. It also focuses to embed its technology in a range of market energy products for the commercial, residential and transportation markets. The Company's wholly owned subsidiary is Ceres Power Intermediate Holdings Ltd, which is engaged in the provision of overseas license and royalty services."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Chad",
@@ -3816,20 +3817,18 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
-    "@value" : "Ammonia Processing"
-  }, {
-    "@language" : "en",
     "@value" : "Chemical Processing"
-  }, {
-    "@language" : "en",
-    "@value" : "Methanol Production"
-  }, {
-    "@language" : "en",
-    "@value" : "Pharmaceutical Production"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Applications of hydrogen in the chemical industry creating chemical products for numerous sectors such as pharmaceutical, agricultural or consumer goods usage."
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
+    "@language" : "en",
+    "@value" : "Ammonia Processing"
+  }, {
+    "@language" : "en",
+    "@value" : "Methanol Production"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Chile",
@@ -3871,25 +3870,24 @@
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
     "@value" : "Circular Economy Project"
-  }, {
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A project focusing on a circular system of reusing resources which were previously used for something."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
     "@language" : "en",
     "@value" : "Ecodesign project"
-  }, {
-    "@language" : "en",
-    "@value" : "Industrial Symbiosis Project"
   }, {
     "@language" : "en",
     "@value" : "Life Cycle Management Project"
   }, {
     "@language" : "en",
     "@value" : "Smart Farm Linked Hydrogen Fuel Cell Power Generation Project"
-  }, {
-    "@language" : "en",
-    "@value" : "Sustainable Development Project"
   } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
     "@language" : "en",
-    "@value" : "Project focusing on a circular system of reusing resources which were used for something."
+    "@value" : "Industrial Symbiosis Project"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Colombia",
@@ -3910,73 +3908,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Comoros"
-  } ]
-}, {
-  "@id" : "http://purl.org/holy/ns#Conversion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The subclass \"Conversion\" can be expanded to focus the domain scope to the creation of hydrogen with respect to the value chain. "
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Conversion"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/holy/ns#HydrogenProduct"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "Biological Hydrogen Processes"
-  }, {
-    "@language" : "en",
-    "@value" : "Biological Hydrogen Production"
-  }, {
-    "@language" : "en",
-    "@value" : "Blue Hydrogen"
-  }, {
-    "@language" : "en",
-    "@value" : "Direct Solar Water Splitting Processes"
-  }, {
-    "@language" : "en",
-    "@value" : "Electrolytic Processing"
-  }, {
-    "@language" : "en",
-    "@value" : "Electrolytic Production"
-  }, {
-    "@language" : "en",
-    "@value" : "Green Hydrogen"
-  }, {
-    "@language" : "en",
-    "@value" : "Grey Hydrogen"
-  }, {
-    "@language" : "en",
-    "@value" : "Hydrogen Conversion"
-  }, {
-    "@language" : "en",
-    "@value" : "Low Carbon Transport Fuel"
-  }, {
-    "@language" : "en",
-    "@value" : "PEM water electrolysers"
-  }, {
-    "@language" : "en",
-    "@value" : "PEMWE"
-  }, {
-    "@language" : "en",
-    "@value" : "Renewable Hydrogen Production"
-  }, {
-    "@language" : "en",
-    "@value" : "Thermochemical Hydrogen Processesing"
-  }, {
-    "@language" : "en",
-    "@value" : "Thermochemical Hydrogen Production"
-  }, {
-    "@language" : "en",
-    "@value" : "hydrogen based fuel"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Conversion as a subclass of Hydrogen Technology defines knowledge of processing materials into hydrogen."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Cook_Islands",
@@ -4019,14 +3950,11 @@
     "@value" : "Cruise Ship"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/holy/ns#Marine"
+    "@id" : "http://purl.org/holy/ns#MarineApplication"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
-    "@value" : "Cruiseliner"
-  }, {
-    "@language" : "en",
-    "@value" : "Liner"
+    "@value" : "Cruise Liner"
   }, {
     "@language" : "en",
     "@value" : "Passenger Ship"
@@ -4034,10 +3962,14 @@
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "A large ship like a hotel which people use for travel and pleasure."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Liner"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#CryogenicPistonPump",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#Storage" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#HydrogenStorage" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Cryogenic piston pump"
@@ -4132,6 +4064,9 @@
 }, {
   "@id" : "http://purl.org/holy/ns#ECTOS",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#InfrastructureProject" ],
+  "http://purl.org/dc/terms/references" : [ {
+    "@id" : "https://en.wikipedia.org/wiki/Fuel_Cell_Bus_Club#CUTE"
+  } ],
   "http://purl.org/holy/ns#hasProject" : [ {
     "@id" : "http://purl.org/holy/ns#Iceland"
   } ],
@@ -4140,10 +4075,6 @@
   } ],
   "http://w3id.org/nfdi4ing/metadata4ing#projectParticipant" : [ {
     "@id" : "http://dbpedia.org/resource/Icelandic_New_Energy"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Source: https://en.wikipedia.org/wiki/Fuel_Cell_Bus_Club#CUTE"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -4198,30 +4129,6 @@
     "@value" : "El Salvador"
   } ]
 }, {
-  "@id" : "http://purl.org/holy/ns#Employee",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Employee"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/holy/ns#Indicator"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "Labor"
-  }, {
-    "@language" : "en",
-    "@value" : "Labor Force"
-  }, {
-    "@language" : "en",
-    "@value" : "Workforce"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Number of persons working for an organization."
-  } ]
-}, {
   "@id" : "http://purl.org/holy/ns#EnergySectorOrganization",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/references" : [ {
@@ -4237,13 +4144,14 @@
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
     "@value" : "Energy Sector"
-  }, {
-    "@language" : "en",
-    "@value" : "Renewable Fuel Producer"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "This section includes the activity of providing electric power, natural gas, steam, hot water and the like through a permanent infrastructure (network) of lines, mains and pipes. The dimension of the network is not decisive; also included are the distribution of electricity, gas, steam, hot water and the like in industrial parks or residential buildings."
+    "@value" : "An organization who participates in the activity of providing electric power, natural gas, steam, hot water and the like through a permanent infrastructure (network) of lines, mains and pipes. The dimension of the network is not decisive; also included is the distribution of electricity, gas, steam, hot water and the like in industrial parks or residential buildings according to Section D of EC NACE Rev. 2."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Renewable Fuel Producer"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#EntryBarrier",
@@ -4255,7 +4163,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/holy/ns#Indicator"
   } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "An obstacle individuals face when participating in a particular market."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
     "@language" : "en",
     "@value" : "ESG"
   }, {
@@ -4264,7 +4176,8 @@
   }, {
     "@language" : "en",
     "@value" : "Governmental Roadblock"
-  }, {
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
     "@language" : "en",
     "@value" : "Market Permit"
   }, {
@@ -4273,10 +4186,6 @@
   }, {
     "@language" : "en",
     "@value" : "Regulation"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Obstacles individuals face when participating in a particular market."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Equatorial_Guinea",
@@ -4338,17 +4247,18 @@
     "@value" : "DEFC"
   }, {
     "@language" : "en",
-    "@value" : "Direct ethanol fuel cell"
+    "@value" : "Direct Ethanol Fuel Cell"
   }, {
     "@language" : "en",
     "@value" : "Ethanol Fuel Cell"
-  }, {
-    "@language" : "en",
-    "@value" : "Ethanol Powered Engines"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Fuel Cells using ethanol as its fuel."
+    "@value" : "A fuel cell using ethanol as its fuel."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Ethanol Powered Engines"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Ethiopia",
@@ -4374,9 +4284,8 @@
 }, {
   "@id" : "http://purl.org/holy/ns#EuropeanCleanHydrogenAlliance",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Project" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "https://ec.europa.eu/growth/industry/strategy/industrial-alliances/european-clean-hydrogen-alliance_en"
+  "http://purl.org/dc/terms/references" : [ {
+    "@id" : "https://ec.europa.eu/growth/industry/strategy/industrial-alliances/european-clean-hydrogen-alliance_en"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -4384,7 +4293,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "The European Clean Hydrogen Alliance supports the large-scale deployment of clean hydrogen technologies by 2030 by bringing together renewable and low-carbon hydrogen production, demand in industry, mobility and other sectors, and hydrogen transmission and distribution. It aims to promote investments and stimulate the roll-out of clean hydrogen production and use. Set up in July 2020, the European Clean Hydrogen Alliance is part of EU efforts to ensure industrial leadership and accelerate the decarbonisation of industry in line with its climate change objectives.\n\nThe European Clean Hydrogen Alliance brings together industry, public authorities, civil society and other stakeholders. Alliance members meet twice a year in the Hydrogen Forum to discuss the large-scale deployment of clean hydrogen technologies and what this requires. Six thematic working groups (roundtablesSearch for available translations of the preceding linkEN•••) meet throughout the year and focus on the hydrogen value chain parts. See their report identifying the main barriers to the large-scale deployment of clean hydrogen and proposed mitigation measures under the related links section below.\n\nOn the occasion of its third Hydrogen Forum, the European Clean Hydrogen Alliance published a pipeline of projectsSearch for available translations of the preceding linkEN••• that European industry is undertaking to create the European hydrogen economy at a large scale. Featuring more than 750 projects, the pipeline is testimony to the size and dynamism of the European hydrogen economy. Projects are located in all four corners of Europe and range from clean hydrogen production to its use in industry, mobility, energy, and buildings.\n\nSince the publication of the pipeline, the Commission entered agreements with the European Investment Bank and EIT InnoEnergy to advise project promoters individually on bankability and de-risking strategies, investment readiness, and due diligence preparations. They may also invest in individual projects and profile these to the financial investment community.\n\nThe alliance is open to all public and private actors with activities in renewable or low-carbon hydrogen that want to meet the membership criteria and actively contribute to the objectives set out in the declaration of the alliance. To join the alliance, an organisation must sign the declaration, which commits it to share the alliance's vision and contribute to its operational work."
+    "@value" : "The European Clean Hydrogen Alliance supports the large-scale deployment of clean hydrogen technologies by 2030 by bringing together renewable and low-carbon hydrogen production, demand in industry, mobility and other sectors, and hydrogen transmission and distribution. It aims to promote investments and stimulate the roll-out of clean hydrogen production and use. Set up in July 2020, the European Clean Hydrogen Alliance is part of EU efforts to ensure industrial leadership and accelerate the decarbonisation of industry in line with its climate change objectives.\r\n\r\nThe European Clean Hydrogen Alliance brings together industry, public authorities, civil society and other stakeholders. Alliance members meet twice a year in the Hydrogen Forum to discuss the large-scale deployment of clean hydrogen technologies and what this requires. Six thematic working groups (roundtablesSearch for available translations of the preceding linkEN•••) meet throughout the year and focus on the hydrogen value chain parts. See their report identifying the main barriers to the large-scale deployment of clean hydrogen and proposed mitigation measures under the related links section below.\r\n\r\nOn the occasion of its third Hydrogen Forum, the European Clean Hydrogen Alliance published a pipeline of projectsSearch for available translations of the preceding linkEN••• that European industry is undertaking to create the European hydrogen economy at a large scale. Featuring more than 750 projects, the pipeline is testimony to the size and dynamism of the European hydrogen economy. Projects are located in all four corners of Europe and range from clean hydrogen production to its use in industry, mobility, energy, and buildings.\r\n\r\nSince the publication of the pipeline, the Commission entered agreements with the European Investment Bank and EIT InnoEnergy to advise project promoters individually on bankability and de-risking strategies, investment readiness, and due diligence preparations. They may also invest in individual projects and profile these to the financial investment community.\r\n\r\nThe alliance is open to all public and private actors with activities in renewable or low-carbon hydrogen that want to meet the membership criteria and actively contribute to the objectives set out in the declaration of the alliance. To join the alliance, an organisation must sign the declaration, which commits it to share the alliance's vision and contribute to its operational work."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#European_microstates",
@@ -4439,7 +4348,7 @@
     "@value" : "Ferry"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/holy/ns#Marine"
+    "@id" : "http://purl.org/holy/ns#MarineApplication"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
@@ -4451,6 +4360,10 @@
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "A boat or ship for taking passengers and often vehicles across an area of water, especially as a regular service."
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
+    "@language" : "en",
+    "@value" : "Car-ferry"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Fiji",
@@ -4478,7 +4391,12 @@
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
     "@value" : "Completed Project"
-  }, {
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A project which has completed its intended purpose regardless of the level of success."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
     "@language" : "en",
     "@value" : "Have Been Completed"
   }, {
@@ -4487,10 +4405,6 @@
   }, {
     "@language" : "en",
     "@value" : "Was a Project"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Finished Product as a subclass of Project Stage describes projects which have completed their intended purpose regardless of the level of success."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Finland",
@@ -4528,20 +4442,21 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
-    "@value" : "Combustion Engine"
-  }, {
-    "@language" : "en",
     "@value" : "Fossil Fuel"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A conventional energy production method using fossil fuels as fuel."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Combustion Engine"
   }, {
     "@language" : "en",
     "@value" : "Fossil Fuel Tank"
   }, {
     "@language" : "en",
     "@value" : "Gasoline Engine"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "The subclass Fossil Fuel defines conventional energy production methods using fossil fuels as  fuel."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#FossilFuelComponent",
@@ -4559,7 +4474,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Basic components for products using fossil fuels."
+    "@value" : "A basic component for products using fossil fuels."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#France",
@@ -4611,7 +4526,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Converters necessary to convert fuel into a fuel cell usable form."
+    "@value" : "A converter which is necessary to convert fuel into a fuel cell-usable form."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Gabon",
@@ -4628,6 +4543,8 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/references" : [ {
     "@id" : "https://www.energy.gov/eere/fuelcells/parts-fuel-cell"
+  }, {
+    "@value" : "https://doi.org/10.1016/B978-044452745-5.00227-6"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -4645,7 +4562,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "The Gas Diffusion Layer is a paper-like layer placed outside the catalyst layer and is responsible for transporting reactants into the catalyst layer by removing chemical reaction outcomes."
+    "@value" : "A paper-like layer placed outside the catalyst layer which is responsible for transporting reactants into the catalyst layer by removing chemical reaction outcomes.  In most cases, the Gas Diffusion Layer consists of a bilayer structure consisting of a macroporous diffusion medium and microporous layer."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Gasket",
@@ -4662,39 +4579,37 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
-    "@value" : "EPDM based gasket"
-  }, {
+    "@value" : "Gasket"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A part used for gas-tight sealing of the edges of the Membrane Electrode Assembly (MEA)."
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
     "@language" : "en",
     "@value" : "EPDM gasket"
   }, {
     "@language" : "en",
-    "@value" : "Fuel Cell Covering"
+    "@value" : "EPDM-based gasket"
   }, {
     "@language" : "en",
-    "@value" : "Gasket"
+    "@value" : "Fuel Cell Cap"
   }, {
     "@language" : "en",
     "@value" : "Low Temperature Fuel Cell Gasket"
   }, {
     "@language" : "en",
-    "@value" : "PTFE coated basket"
-  }, {
-    "@language" : "en",
     "@value" : "PTFE-based Gasket"
   }, {
     "@language" : "en",
-    "@value" : "Sealing Gasket"
+    "@value" : "PTFE-coated Basket"
   }, {
     "@language" : "en",
-    "@value" : "fuel cell cap"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Parts used for gas-tight sealing of the edges of the Membrane Electrode Assembly (MEA)."
+    "@value" : "Sealing Gasket"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#GenSureFuelCellSystem",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#Reconversion" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#HydrogenReconversion" ],
   "http://purl.org/holy/ns#isUsedIn" : [ {
     "@id" : "http://dbpedia.org/page/Category:Material_Handling"
   } ],
@@ -4730,17 +4645,18 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
-    "@value" : "Earth"
-  }, {
-    "@language" : "en",
     "@value" : "Geographic Market"
-  }, {
-    "@language" : "en",
-    "@value" : "World"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "An area of land which can be classified for business or trade concerning a particular product or domain."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Earth"
+  }, {
+    "@language" : "en",
+    "@value" : "World"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Georgia_(country)",
@@ -4750,7 +4666,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Georgia (country)"
+    "@value" : "Georgia"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Germany",
@@ -4853,33 +4769,38 @@
     "@value" : "Heating"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/holy/ns#Stationary"
+    "@id" : "http://purl.org/holy/ns#StationaryApplication"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "Boiler"
-  }, {
-    "@language" : "en",
-    "@value" : "Fuel Cell Heating System"
-  }, {
-    "@language" : "en",
-    "@value" : "Heat"
-  }, {
     "@language" : "en",
     "@value" : "Heat Up"
   }, {
     "@language" : "en",
     "@value" : "Heating Application"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "An application which generates heat for contributing to the heating of buildings or for use in industrial processes."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Boiler"
   }, {
     "@language" : "en",
-    "@value" : "Heating System"
+    "@value" : "Heat"
+  }, {
+    "@language" : "en",
+    "@value" : "Heating Plant"
   }, {
     "@language" : "en",
     "@value" : "Melting"
   } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
     "@language" : "en",
-    "@value" : "Applications generating heat for contributing to the heating of buildings or being used in industrial processes."
+    "@value" : "Fuel Cell Heating System"
+  }, {
+    "@language" : "en",
+    "@value" : "Heating System"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Honduras",
@@ -4910,7 +4831,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Items regulating a certain level of humidity within a fuel cell."
+    "@value" : "An item which regulates a certain level of humidity within a fuel cell."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Hungary",
@@ -4925,6 +4846,78 @@
 }, {
   "@id" : "http://purl.org/holy/ns#Hydroflex",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#PassengerTrain" ]
+}, {
+  "@id" : "http://purl.org/holy/ns#HydrogenConversion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The subclass \"Conversion\" can be expanded to focus the domain scope to the creation of hydrogen with respect to the value chain. "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hydrogen Conversion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/holy/ns#HydrogenProduct"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Hydrogen Conversion"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The processing of materials into hydrogen."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Blue Hydrogen"
+  }, {
+    "@language" : "en",
+    "@value" : "Electrolytic Processing"
+  }, {
+    "@language" : "en",
+    "@value" : "Electrolytic Production"
+  }, {
+    "@language" : "en",
+    "@value" : "Green Hydrogen"
+  }, {
+    "@language" : "en",
+    "@value" : "Grey Hydrogen"
+  }, {
+    "@language" : "en",
+    "@value" : "Hydrogen-based Fuel"
+  }, {
+    "@language" : "en",
+    "@value" : "Low Carbon Transport Fuel"
+  }, {
+    "@language" : "en",
+    "@value" : "PEMWE"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
+    "@language" : "en",
+    "@value" : "Biological Hydrogen Processes"
+  }, {
+    "@language" : "en",
+    "@value" : "Biological Hydrogen Production"
+  }, {
+    "@language" : "en",
+    "@value" : "Direct Solar Water Splitting Processes"
+  }, {
+    "@language" : "en",
+    "@value" : "Electrolysis"
+  }, {
+    "@language" : "en",
+    "@value" : "PEM water electrolysers"
+  }, {
+    "@language" : "en",
+    "@value" : "Renewable Hydrogen Production"
+  }, {
+    "@language" : "en",
+    "@value" : "Thermochemical Hydrogen Processesing"
+  }, {
+    "@language" : "en",
+    "@value" : "Thermochemical Hydrogen Production"
+  } ]
 }, {
   "@id" : "http://purl.org/holy/ns#HydrogenConversionComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -4941,7 +4934,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Basic components for products converting compounds two hydrogen."
+    "@value" : "A basic component for products which convert compounds to hydrogen."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#HydrogenFuelCellComponent",
@@ -4962,7 +4955,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Basic components of hydrogen fuel cell systems."
+    "@value" : "A basic component of hydrogen fuel cell systems."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#HydrogenProduct",
@@ -4981,16 +4974,17 @@
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
     "@value" : "Hydrogen Product"
-  }, {
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A product that is manufactured or refined for sale which can be used to produce, transport, store or \"burn\"/reconvert hydrogen."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
     "@language" : "en",
     "@value" : "Hydrogen Tech"
   }, {
     "@language" : "en",
     "@value" : "Hydrogen Technology"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "A product that is manufactured or refined for sale which can be used to produce, transport, store or \"burn\" / reconvert hydrogen."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#HydrogenProductComponent",
@@ -5007,7 +5001,116 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "A part that combined with other parts make a hydrogen product."
+    "@value" : "A part that, combined with other parts, makes up a hydrogen product."
+  } ]
+}, {
+  "@id" : "http://purl.org/holy/ns#HydrogenReconversion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Since reconversion solely happenes for energy creation using fuel cells, \"Reconversion\" is contributed to fuel cell systems."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hydrogen Reconversion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "en",
+    "@value" : "Fuel Cell Solution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/holy/ns#HydrogenProduct"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Reconversion"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The knowledge which deals with converting hydrogen to other elements. In case of hydrogen fuel cells, hydrogen is reconverted to H2O."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "GR Yaris engine"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Fuel Cell"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
+    "@language" : "en",
+    "@value" : "Fuel Cell Engine"
+  }, {
+    "@language" : "en",
+    "@value" : "Fuel Cell Power Module"
+  }, {
+    "@language" : "en",
+    "@value" : "Fuel Cell Product"
+  }, {
+    "@language" : "en",
+    "@value" : "Fuel Cell System"
+  }, {
+    "@language" : "en",
+    "@value" : "Hydrogen Engine Technology"
+  }, {
+    "@language" : "en",
+    "@value" : "Hydrogen Fuel Cell"
+  }, {
+    "@language" : "en",
+    "@value" : "Hydrogen Fuel Cell Electric"
+  }, {
+    "@language" : "en",
+    "@value" : "Hydrogen Oxygen Fuel Cell"
+  }, {
+    "@language" : "en",
+    "@value" : "Hydrogen and Fuel Cell System"
+  }, {
+    "@language" : "en",
+    "@value" : "Hydrogen-fueled Gas Turbines"
+  }, {
+    "@language" : "en",
+    "@value" : "Hydrogen-powered Fuel Cell"
+  } ]
+}, {
+  "@id" : "http://purl.org/holy/ns#HydrogenStorage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The subclass \"Storage\" could be expanded to focus the domain scope to the creation of hydrogen with respect to the value chain. Future expansions could categorize between storage technologies within tanks or using absorbing materials."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hydrogen Storage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/holy/ns#HydrogenProduct"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The way that hydrogen can be stored for later usage."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Fuel Tank"
+  }, {
+    "@language" : "en",
+    "@value" : "Hydrogen Absorbation in Metal"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
+    "@language" : "en",
+    "@value" : "Cryogenic Tanks"
+  }, {
+    "@language" : "en",
+    "@value" : "High-pressure Gas Cylinders"
+  }, {
+    "@language" : "en",
+    "@value" : "Hydrogen Fuel Tank"
+  }, {
+    "@language" : "en",
+    "@value" : "Hydrogen Storage Tanks"
+  }, {
+    "@language" : "en",
+    "@value" : "Liquid Hydrogen Storage Tank"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#HydrogenStorageComponent",
@@ -5025,14 +5128,36 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Components of products capable of storing hydrogen."
+    "@value" : "A basic component of products capable of storing hydrogen."
+  } ]
+}, {
+  "@id" : "http://purl.org/holy/ns#HydrogenTransport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The subclass \"Transport\" could be expanded to focus the domain scope to the creation of hydrogen in respect to the value chain."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Hydrogen Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/holy/ns#HydrogenProduct"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Hydrogen Transport"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The way that hydrogen can be transported from one place to another."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#HydrogenTransportComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Basic components of products designed for transporting hydrogen."
+    "@value" : "A basic component of products designed for transporting hydrogen."
   }, {
     "@language" : "en",
     "@value" : "The subclass \"Hydrogen Transport Component\" could be expanded to focus the domain scope to the transport of hydrogen with respect to the value chain."
@@ -5141,6 +5266,9 @@
 }, {
   "@id" : "http://purl.org/holy/ns#Hyzon_hybrid_bi-polar_plate_technology",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#BipolarPlate" ],
+  "http://purl.org/dc/terms/references" : [ {
+    "@id" : "https://www.hyzonmotors.com/innovation"
+  } ],
   "http://purl.org/holy/ns#isUsedIn" : [ {
     "@id" : "http://purl.org/holy/ns#HyzonClass8"
   }, {
@@ -5148,10 +5276,6 @@
   } ],
   "http://purl.org/holy/ns#producesProduct" : [ {
     "@id" : "http://dbpedia.org/resource/Hyzon_Motors"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "see 'https://www.hyzonmotors.com/innovation'"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -5204,8 +5328,13 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
-    "@value" : "Clue"
-  }, {
+    "@value" : "Index"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Something, often a quanititative measure, which shows what a situation is like or how it is changing."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
     "@language" : "en",
     "@value" : "Environmental Social Governance"
   }, {
@@ -5214,13 +5343,6 @@
   }, {
     "@language" : "en",
     "@value" : "FY Report"
-  }, {
-    "@language" : "en",
-    "@value" : "Index"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Something that shows what a situation is like or how it is changing."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Indonesia",
@@ -5247,11 +5369,29 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
+    "@value" : "Industrial heating"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Applications used to generate heat for industry usage, such as manufacturing processes where great heat is required, or to heat large areas such as warehouses."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
     "@value" : "Burner"
   }, {
     "@language" : "en",
     "@value" : "Fuel Cell Burners"
   }, {
+    "@language" : "en",
+    "@value" : "Hydrogen Burners"
+  }, {
+    "@language" : "en",
+    "@value" : "Kiln"
+  }, {
+    "@language" : "en",
+    "@value" : "Oven"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
     "@language" : "en",
     "@value" : "Fuel Cell-based Warehouse Heating"
   }, {
@@ -5259,23 +5399,7 @@
     "@value" : "Heating Plant"
   }, {
     "@language" : "en",
-    "@value" : "Hydrogen Burners"
-  }, {
-    "@language" : "en",
-    "@value" : "Industrial heating"
-  }, {
-    "@language" : "en",
-    "@value" : "Kiln"
-  }, {
-    "@language" : "en",
     "@value" : "Kiln Heating"
-  }, {
-    "@language" : "en",
-    "@value" : "Oven"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Applications used to generate heat for industry usage, such as manufacturing processes where great heat is required, or to heat large areas such as warehouses."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#IndustrialProcessing",
@@ -5290,9 +5414,13 @@
     "@value" : "Industrial Processing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/holy/ns#Stationary"
+    "@id" : "http://purl.org/holy/ns#StationaryApplication"
   } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "An application which is used for industrial processing. Industrial processing involves the manufacturing of semi-finished or high-quality end products by means of physical, mechanical and/or chemical processes."
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
     "@language" : "en",
     "@value" : "Circular Production System"
   }, {
@@ -5301,10 +5429,6 @@
   }, {
     "@language" : "en",
     "@value" : "Purification"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Applications used for industrial processing. Industrial processing involves the manufacturing of semi-finished or high-quality end products by means of physical, mechanical and/or chemical processes."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#InfrastructureProject",
@@ -5324,6 +5448,24 @@
     "@id" : "http://purl.org/holy/ns#PurposeBasedProject"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Infrastructure Project"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A project which is focused on the development, creation, maintenance, or enhancement of structures and systems needed for a country, city, or organization to function properly."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "PATH4ZERO"
+  }, {
+    "@language" : "en",
+    "@value" : "Paving the way for Zero Emission Inland Navigation"
+  }, {
+    "@language" : "en",
+    "@value" : "Power Edison Partnership"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
     "@language" : "en",
     "@value" : "Aviation Infrastructure Project"
   }, {
@@ -5356,9 +5498,6 @@
   }, {
     "@language" : "en",
     "@value" : "Industrial Construction Project"
-  }, {
-    "@language" : "en",
-    "@value" : "Infrastructure Project"
   }, {
     "@language" : "en",
     "@value" : "Power Edison Partnership"
@@ -5395,20 +5534,6 @@
   }, {
     "@language" : "en",
     "@value" : "Water Infrastructure Project"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Projects which are focused on the development, creation, maintenance or enhancement of structures and systems needed for a country, city or organization to function properly."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@language" : "en",
-    "@value" : "PATH4ZERO"
-  }, {
-    "@language" : "en",
-    "@value" : "Paving the way for Zero Emission Inland Navigation"
-  }, {
-    "@language" : "en",
-    "@value" : "Power Edison Partnership"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#InternationalOrganization",
@@ -5429,7 +5554,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Organizations classified in activities of international organisations such as the United Nations and the specialised agencies of the United Nations system, regional bodies etc., the International Monetary Fund, the World Bank, the World Customs Organisation, the Organisation for Economic Co-operation and Development, the organisation of Petroleum Exporting Countries, the European Communities, the European Free Trade Association etc. according to Section U of EC NACE Rev. 2.\n\nThis class also includes:\n- activities of diplomatic and consular missions when being determined by the country of their location rather than by the country they represent"
+    "@value" : "An organization classified in activities of international organisations such as the United Nations and the specialised agencies of the United Nations system, regional bodies etc., the International Monetary Fund, the World Bank, the World Customs Organisation, the Organisation for Economic Co-operation and Development, the organisation of Petroleum Exporting Countries, the European Communities, the European Free Trade Association etc. according to Section U of EC NACE Rev. 2.\r\n\r\nThis class also includes:\r\n- activities of diplomatic and consular missions when being determined by the country of their location rather than by the country they represent"
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
@@ -5456,24 +5581,34 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
+    "@value" : "Investing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The amount of money invested by an entity for something like a project, product or application."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
     "@value" : "IPO"
   }, {
     "@language" : "en",
     "@value" : "Initial Public Offering"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
+    "@language" : "en",
+    "@value" : "Arbitrage"
+  }, {
+    "@language" : "en",
+    "@value" : "Leverage"
   }, {
     "@language" : "en",
     "@value" : "Spendings"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Money invested by an entity for something like a project, product or application."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#IonicCompressor50",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#Storage" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Description from Linde product brochure at 'https://www.linde-engineering.com/en/images/DS_IC%2050_tcm19-523715.pdf'"
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#HydrogenStorage" ],
+  "http://purl.org/dc/terms/references" : [ {
+    "@id" : "https://www.linde-engineering.com/en/images/DS_IC%2050_tcm19-523715.pdf"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -5488,7 +5623,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Linde’s ground-breaking ionic compression technology leads the way to the next generation of safe, fast and efficient hydrogen fuelling. The ionic compressor 50 is a high-performance, easy-to-maintain solution with a listed design. It allows for quick, safe, highly efficient and economical fuelling of hydrogen vehicles at 25MPa and 35 MPa. This is achieved by an innovative compression system, the ionic compressor, where, instead of a mechanical piston, a column of ionic fluid is in direct contact with the gaseous hydrogen. This allows for the continuous high-performance, fast fuelling of hydrogen vehicles. It is designed to fuel 25-MPa and 35-MPa vehicles with the highest filling levels while considerably reducing operating costs. It is used for gaseous hydrogen."
+    "@value" : "Linde's ground-breaking ionic compression technology leads the way to the next generation of safe, fast and efficient hydrogen fuelling. The ionic compressor 50 is a high-performance, easy-to-maintain solution with a listed design. It allows for quick, safe, highly efficient and economical fuelling of hydrogen vehicles at 25MPa and 35 MPa. This is achieved by an innovative compression system, the ionic compressor, where, instead of a mechanical piston, a column of ionic fluid is in direct contact with the gaseous hydrogen. This allows for the continuous high-performance, fast fuelling of hydrogen vehicles. It is designed to fuel 25-MPa and 35-MPa vehicles with the highest filling levels while considerably reducing operating costs. It is used for gaseous hydrogen."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Iran",
@@ -5694,7 +5829,9 @@
   "@id" : "http://purl.org/holy/ns#LithiumBattery",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/references" : [ {
-    "@id" : "https://www.wiltronics.com.au/wiltronics-knowledge-base/different-types-of-batteries/"
+    "@value" : "https://doi.org/10.1016/B978-044452745-5.00185-4"
+  }, {
+    "@value" : "https://doi.org/10.1016/B978-044452745-5.00186-6"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -5705,30 +5842,29 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
-    "@value" : "Li Ion Battery"
-  }, {
-    "@language" : "en",
     "@value" : "Lithium Battery"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A battery which uses lithium ions as a key component of its electrochemistry using liquid electrolyte solutions. It consists of two current collectors, a negative and positive electrode, and a separator containing electrolytes. The primary lithium battery uses carbon fluoride, (CF)n, as a cathode and lithium metal as an anode. The negative electrode consists of either metallic lithium or lithium compounds."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Tesla Powerwall"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Li Ion Battery"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
+    "@language" : "en",
+    "@value" : "Lithium Cathode Material"
   }, {
     "@language" : "en",
     "@value" : "Lithium Ion Battery"
   }, {
     "@language" : "en",
     "@value" : "Lithium Ion Battery Cell"
-  }, {
-    "@language" : "en",
-    "@value" : "Lithium cathode material"
-  }, {
-    "@language" : "en",
-    "@value" : "Redox Flow Battery"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "A lithium-ion battery is using lithium ions as a key component of its electrochemistry using liquid electrolyte solutions."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@language" : "en",
-    "@value" : "Tesla Powerwall"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Lithuania",
@@ -5754,12 +5890,6 @@
     "@id" : "http://purl.org/holy/ns#Truck"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "Heavy Duty Truck"
-  }, {
-    "@language" : "en",
-    "@value" : "LT truck"
-  }, {
     "@language" : "en",
     "@value" : "Long Haul Truck"
   }, {
@@ -5842,7 +5972,7 @@
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#ManUpOrderpicker",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#MaterialHandling" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#MaterialHandlingVehicle" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Man-Up Orderpicker"
@@ -5862,16 +5992,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
-    "@value" : "Automotive Manufacturer"
-  }, {
-    "@language" : "en",
-    "@value" : "Car Maker"
-  }, {
-    "@language" : "en",
-    "@value" : "Car Manufacturer"
-  }, {
-    "@language" : "en",
-    "@value" : "Hyundai Motor Group"
+    "@value" : "Maker"
   }, {
     "@language" : "en",
     "@value" : "Manufacturer"
@@ -5880,26 +6001,11 @@
     "@value" : "Manufacturing Company"
   }, {
     "@language" : "en",
-    "@value" : "OEM"
-  }, {
-    "@language" : "en",
-    "@value" : "Original Equipment Manufacturer"
-  }, {
-    "@language" : "en",
-    "@value" : "PLUG"
-  }, {
-    "@language" : "en",
-    "@value" : "Plug Power"
-  }, {
-    "@language" : "en",
-    "@value" : "Solar Panel Maker"
-  }, {
-    "@language" : "en",
-    "@value" : "Toyota Motor"
+    "@value" : "Producer"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Organizations classified in the field of manufacturing according to EC NACE 2 (2008) in Section C Division 10-33."
+    "@value" : "An organization classified in the field of manufacturing according to EC NACE 2 (2008) in Section C Division 10-33."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
@@ -5931,24 +6037,83 @@
   }, {
     "@language" : "en",
     "@value" : "Toyota Motor Corp."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Hyundai Motor Group"
+  }, {
+    "@language" : "en",
+    "@value" : "PLUG"
+  }, {
+    "@language" : "en",
+    "@value" : "Plug Power"
+  }, {
+    "@language" : "en",
+    "@value" : "Toyota Motor"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
+    "@language" : "en",
+    "@value" : "Automotive Manufacturer"
+  }, {
+    "@language" : "en",
+    "@value" : "Car Maker"
+  }, {
+    "@language" : "en",
+    "@value" : "Car Manufacturer"
+  }, {
+    "@language" : "en",
+    "@value" : "OEM"
+  }, {
+    "@language" : "en",
+    "@value" : "Original Equipment Manufacturer"
+  }, {
+    "@language" : "en",
+    "@value" : "Solar Panel Maker"
   } ]
 }, {
-  "@id" : "http://purl.org/holy/ns#Marine",
+  "@id" : "http://purl.org/holy/ns#MarineApplication",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/references" : [ {
     "@id" : "https://dictionary.cambridge.org/dictionary/english/marine"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Marine"
+    "@value" : "Marine Application"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/holy/ns#Mobile"
+    "@id" : "http://purl.org/holy/ns#MobileApplication"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
+    "@value" : "Marine Application"
+  }, {
+    "@language" : "en",
+    "@value" : "Marine Usage"
+  }, {
+    "@language" : "en",
+    "@value" : "Maritime Application"
+  }, {
+    "@language" : "en",
+    "@value" : "Nautical Application"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "An application related to sea transport of people and/or goods."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
     "@value" : "Aquatic"
   }, {
+    "@language" : "en",
+    "@value" : "Maritime"
+  }, {
+    "@language" : "en",
+    "@value" : "Nautical"
+  }, {
+    "@language" : "en",
+    "@value" : "Oceanic Use"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
     "@language" : "en",
     "@value" : "Coastal"
   }, {
@@ -5962,29 +6127,13 @@
     "@value" : "Marine Industry"
   }, {
     "@language" : "en",
-    "@value" : "Marine Usage"
-  }, {
-    "@language" : "en",
-    "@value" : "Maritime"
-  }, {
-    "@language" : "en",
-    "@value" : "Nautical Application"
-  }, {
-    "@language" : "en",
     "@value" : "Naval"
-  }, {
-    "@language" : "en",
-    "@value" : "Oceanic Use"
   }, {
     "@language" : "en",
     "@value" : "Seagoing Vehicle"
   }, {
     "@language" : "en",
     "@value" : "Ship"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Applications related to sea transport of people or goods."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#MarketShare",
@@ -5998,20 +6147,21 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
-    "@value" : "Market Leader"
-  }, {
-    "@language" : "en",
     "@value" : "Market Percentage"
   }, {
     "@language" : "en",
-    "@value" : "Market Position"
-  }, {
-    "@language" : "en",
-    "@value" : "Market Presence"
+    "@value" : "Market Share"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Total number of buyers a company has for a certain product or in a certain segment compared to the total market size."
+    "@value" : "The total number of buyers a company has for a certain product or in a certain segment compared to the total market size."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Market Leader"
+  }, {
+    "@language" : "en",
+    "@value" : "Market Position"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#MarketSize",
@@ -6024,6 +6174,20 @@
     "@id" : "http://purl.org/holy/ns#Indicator"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Market Capacity"
+  }, {
+    "@language" : "en",
+    "@value" : "Market Size"
+  }, {
+    "@language" : "en",
+    "@value" : "Market Volume"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The total number of potential buyers of a product or service within a given market and the total revenue that these sales may generate."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
     "@language" : "en",
     "@value" : "Biggest Market"
   }, {
@@ -6044,10 +6208,6 @@
   }, {
     "@language" : "en",
     "@value" : "Total Market"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Total number of potential buyers of a product or service within a given market, and the total revenue that these sales may generate."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Marshall_Islands",
@@ -6060,19 +6220,43 @@
     "@value" : "Marshall Islands"
   } ]
 }, {
-  "@id" : "http://purl.org/holy/ns#MaterialHandling",
+  "@id" : "http://purl.org/holy/ns#MaterialHandlingVehicle",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/references" : [ {
     "@id" : "https://www.mhi.org/fundamentals/material-handling"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Material Handling"
+    "@value" : "Material Handling Vehicle"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/holy/ns#Road"
+    "@id" : "http://purl.org/holy/ns#RoadApplication"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Material Handling Equipment"
+  }, {
+    "@language" : "en",
+    "@value" : "Material Handling Vehicle"
+  }, {
+    "@language" : "en",
+    "@value" : "Warehouse Vehicle"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Vehicles which are intended to be used in a mobile context within the material handling process of organizations or private persons."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Material Handling"
+  }, {
+    "@language" : "en",
+    "@value" : "On-site Transportation"
+  }, {
+    "@language" : "en",
+    "@value" : "Warehouse Logistics"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
     "@language" : "en",
     "@value" : "AGV"
   }, {
@@ -6092,15 +6276,6 @@
     "@value" : "Man Up Orderpicker"
   }, {
     "@language" : "en",
-    "@value" : "Material Handling"
-  }, {
-    "@language" : "en",
-    "@value" : "Material Handling Vehicle"
-  }, {
-    "@language" : "en",
-    "@value" : "On-site Transportation"
-  }, {
-    "@language" : "en",
     "@value" : "Stand Up Counterbalanced Truck"
   }, {
     "@language" : "en",
@@ -6108,13 +6283,6 @@
   }, {
     "@language" : "en",
     "@value" : "Turret Truck"
-  }, {
-    "@language" : "en",
-    "@value" : "Warehouse Logistics"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Vehicles which are intended to be used in a mobile context within the material handling process of organizations or private persons."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Mauritania",
@@ -6141,6 +6309,8 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/references" : [ {
     "@id" : "https://www.energy.gov/eere/fuelcells/parts-fuel-cell"
+  }, {
+    "@value" : "https://doi.org/10.1016/B978-044452745-5.00227-6"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -6185,13 +6355,15 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "A very thin membrane which conducts solely positively charged ions and is able to block electrons."
+    "@value" : "A very thin membrane which conducts solely positively-charged ions and is able to block electrons. It serves as the electrolyte."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#MembraneElectrodeAssembly",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/references" : [ {
     "@id" : "https://www.energy.gov/eere/fuelcells/parts-fuel-cell"
+  }, {
+    "@value" : "https://doi.org/10.1016/B978-044452745-5.00227-6"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -6212,7 +6384,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "The Membrane Electrode Assembly is the heart of the fuel cell and the place where the chemical reaction takes place. It consists of membrane, catalyst layers and gas diffusion layers."
+    "@value" : "The heart of the fuel cell and the place where the chemical reaction takes place. It consists of membrane, catalyst layers, and gas diffusion layers."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#MethanolFuelCell",
@@ -6234,14 +6406,11 @@
     "@value" : "DMFC"
   }, {
     "@language" : "en",
-    "@value" : "Direct Methanol Fuel Cell"
-  }, {
-    "@language" : "en",
     "@value" : "Methanol Fuel Cell"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Fuel cell which is powered by pure methanol. It is usually mixed with water and fed directly to the fuel cell anode."
+    "@value" : "A fuel cell which is powered by pure methanol. It is usually mixed with water and fed directly to the fuel cell anode."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
@@ -6249,6 +6418,10 @@
   }, {
     "@language" : "en",
     "@value" : "EFYO 80"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
+    "@language" : "en",
+    "@value" : "Direct Methanol Fuel Cell"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Mexico",
@@ -6261,19 +6434,36 @@
     "@value" : "Mexico"
   } ]
 }, {
-  "@id" : "http://purl.org/holy/ns#Mobile",
+  "@id" : "http://purl.org/holy/ns#MobileApplication",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/references" : [ {
     "@id" : "https://dictionary.cambridge.org/dictionary/english/mobile"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Mobile"
+    "@value" : "Mobile Application"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/holy/ns#Application"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Moving Application"
+  }, {
+    "@language" : "en",
+    "@value" : "Transportation"
+  }, {
+    "@value" : "Mobile Application"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "An application related to the movement of people and/or goods."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Unstationary"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
     "@language" : "en",
     "@value" : "Cargo Transport"
   }, {
@@ -6293,29 +6483,13 @@
     "@value" : "Motorized Item"
   }, {
     "@language" : "en",
-    "@value" : "Moving Application"
-  }, {
-    "@language" : "en",
     "@value" : "Portable Fuel Cell Application"
-  }, {
-    "@language" : "en",
-    "@value" : "Roving Application"
   }, {
     "@language" : "en",
     "@value" : "Short-distance Transportation Unit"
   }, {
     "@language" : "en",
-    "@value" : "Transport"
-  }, {
-    "@language" : "en",
     "@value" : "Transportation Vehicle"
-  }, {
-    "@language" : "en",
-    "@value" : "Unstationary"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Applications related to the movement of people and/or goods."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Moldova",
@@ -6351,7 +6525,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "High temperature fuel cells using natural gas or biogas for powering. The fuel cell itself is able to convert hydrogen in a process called internal reforming."
+    "@value" : "A high temperature fuel cell using natural gas or biogas for powering. The fuel cell itself is able to convert hydrogen in a process called internal reforming."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Monaco",
@@ -6426,12 +6600,11 @@
 }, {
   "@id" : "http://purl.org/holy/ns#NationalInnovationProgrammeHydrogenandFuelCellTechnology",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Project" ],
+  "http://purl.org/dc/terms/references" : [ {
+    "@id" : "https://www.ptj.de/en/project-funding/nip"
+  } ],
   "http://w3id.org/nfdi4ing/metadata4ing#projectParticipant" : [ {
     "@id" : "http://dbpedia.org/resource/Federal_Ministry_of_Transport_and_Digital_Infrastructure"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Definition at 'https://www.ptj.de/en/project-funding/nip'"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -6499,7 +6672,7 @@
   "@id" : "http://purl.org/holy/ns#NickelCadmiumBattery",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/references" : [ {
-    "@id" : "https://www.wiltronics.com.au/wiltronics-knowledge-base/different-types-of-batteries/"
+    "@value" : "https://doi.org/10.1016/B978-0-12-813975-2.00005-3"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -6511,12 +6684,16 @@
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
     "@value" : "Nickel Cadmium Battery"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A battery which uses nickel oxide hydroxide for the cathode, metallic cadmium as its anode, and an aqueous alkali solution as its electrolyte."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#NickelMetalHydrideBattery",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/references" : [ {
-    "@id" : "https://www.wiltronics.com.au/wiltronics-knowledge-base/different-types-of-batteries/"
+    "@value" : "https://doi.org/10.1016/B978-044452745-5.00158-1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -6528,6 +6705,10 @@
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
     "@value" : "Nickel Metal Hydride Battery"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A battery which uses nickel oxide for the cathode. The negative active material is hydrogen in form of a metal hydride. The electrolyte is aqueous potassium hydroxide with lithium hydroxide additive to improve the charging efficiency of the positive electrode by reducing oxygen evolution."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Niger",
@@ -6579,9 +6760,8 @@
 }, {
   "@id" : "http://purl.org/holy/ns#NorthernPeripheryandArcticProgramme",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/org#Organization" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Source: https://www.interreg-npa.eu/about/programme-in-brief/"
+  "http://purl.org/dc/terms/references" : [ {
+    "@id" : "https://www.interreg-npa.eu/about/programme-in-brief/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -6656,7 +6836,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Ongoing as a subclass of Project Stage defines currently running projects which have been started but are not marked as finished or completed."
+    "@value" : "A currently-running project which has been started but is not marked as finished or completed."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Pakistan",
@@ -6723,20 +6903,30 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
+    "@value" : "Coach Train"
+  }, {
+    "@language" : "en",
+    "@value" : "Commuter Train"
+  }, {
+    "@language" : "en",
+    "@value" : "Passenger Train"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A train carrying mostly people."
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
+    "@language" : "en",
     "@value" : "Bullet Train"
+  }, {
+    "@language" : "en",
+    "@value" : "High-speed Train"
   }, {
     "@language" : "en",
     "@value" : "Light Rail"
   }, {
     "@language" : "en",
-    "@value" : "Passenger Train"
-  }, {
-    "@language" : "en",
     "@value" : "Tram"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "A train carrying mostly people."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Patent",
@@ -6750,7 +6940,17 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Total number of patents attributed to a class individual."
+    "@value" : "The total number of patents attributed to a class individual."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Copyright"
+  }, {
+    "@language" : "en",
+    "@value" : "Intellectual Property"
+  }, {
+    "@language" : "en",
+    "@value" : "Trademark"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Peru",
@@ -6785,7 +6985,7 @@
     "@value" : "Phosphoric Acid Fuel Cell"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/holy/ns#Reconversion"
+    "@id" : "http://purl.org/holy/ns#HydrogenReconversion"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
@@ -6796,7 +6996,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Polymer Elektrolyt Membrane Fuel Cells use a liquid phosporic acid as an electrolyte. They can be powered by hydrogen, natural gas or biogas."
+    "@value" : "A fuel cell which uses phosporic acid as an electrolyte. It can be powered by hydrogen, natural gas, or biogas."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#PickupTruck",
@@ -6813,14 +7013,18 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
-    "@value" : "Off Road Truck"
-  }, {
-    "@language" : "en",
     "@value" : "Pickup Truck"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "A small vehicle with an open part at the back in which goods can be carried."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Pick-up"
+  }, {
+    "@language" : "en",
+    "@value" : "Pickup"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#PlannedProject",
@@ -6837,7 +7041,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Planned as a sublcass of Project Stage refers to projects which have not been realised or started but are expected to start in the future."
+    "@value" : "A project which has not been realised or started but is expected to start in the future."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Poland",
@@ -6860,7 +7064,7 @@
     "@value" : "Polymer Electrolyte Membrane Fuel Cell"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/holy/ns#Reconversion"
+    "@id" : "http://purl.org/holy/ns#HydrogenReconversion"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
@@ -6870,8 +7074,36 @@
     "@value" : "Exchange Membrane Fuel Cell"
   }, {
     "@language" : "en",
-    "@value" : "Fuel Cell Power Product"
+    "@value" : "PEFC"
   }, {
+    "@language" : "en",
+    "@value" : "PEM Fuel Cell"
+  }, {
+    "@language" : "en",
+    "@value" : "PEMFC"
+  }, {
+    "@language" : "en",
+    "@value" : "Polymer Elektrolyt Membrane Fuel Cell"
+  }, {
+    "@language" : "en",
+    "@value" : "Polymer Elektrolyte Fuel Cell"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A fuel cell which uses a solid polymer as an electrolyte and porous carbon electrodes containing a platinum or platinum alloy catalyst. It only needs hydrogen, oxygen from the air, and water to operate."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "FCmoveTM"
+  }, {
+    "@language" : "en",
+    "@value" : "FCwaveTM"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Fuel Cell Power Product"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
     "@language" : "en",
     "@value" : "High Temperature PEMFC"
   }, {
@@ -6885,33 +7117,7 @@
     "@value" : "Low Temperature Proton Exchange Membrane Fuel Cel"
   }, {
     "@language" : "en",
-    "@value" : "PEFC"
-  }, {
-    "@language" : "en",
-    "@value" : "PEM Fuel Cell"
-  }, {
-    "@language" : "en",
-    "@value" : "PEMFC"
-  }, {
-    "@language" : "en",
     "@value" : "PEMFC module"
-  }, {
-    "@language" : "en",
-    "@value" : "Polymer Elektrolyt Membrane Fuel Cell"
-  }, {
-    "@language" : "en",
-    "@value" : "Polymer Elektrolyte Fuel Cell"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Polymer Elektrolyt Membrane Fuel Cells use a solid polymer as an electrolyte and porous carbon electrodes containing a platinum or platinum alloy catalyst. They need only hydrogen, oxygen from the air, and water to operate."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@language" : "en",
-    "@value" : "FCmove™"
-  }, {
-    "@language" : "en",
-    "@value" : "FCwave™"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Portugal",
@@ -6938,17 +7144,40 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
-    "@value" : "FCCU"
-  }, {
-    "@language" : "en",
-    "@value" : "Fuel Cell Control Unit"
-  }, {
-    "@language" : "en",
     "@value" : "Power Conditioner"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Electrical current regulators needed for managing power."
+    "@value" : "An electrical current regulator needed for managing power."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "FCCU"
+  }, {
+    "@language" : "en",
+    "@value" : "Fuel Cell Control Unit"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
+    "@language" : "en",
+    "@value" : "AVR"
+  }, {
+    "@language" : "en",
+    "@value" : "Automatic Voltage Regulator"
+  }, {
+    "@language" : "en",
+    "@value" : "Electrical Grid Stabilization"
+  }, {
+    "@language" : "en",
+    "@value" : "UPS System"
+  }, {
+    "@language" : "en",
+    "@value" : "Uninterruptible Power Supply System"
+  }, {
+    "@language" : "en",
+    "@value" : "VRM"
+  }, {
+    "@language" : "en",
+    "@value" : "Voltage Regulator Module"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#PowerGeneration",
@@ -6961,12 +7190,13 @@
     "@value" : "Power Generation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/holy/ns#Stationary"
+    "@id" : "http://purl.org/holy/ns#StationaryApplication"
   } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "BOP System"
-  }, {
+    "@value" : "An application which is used in the field of electricity production via power generating equipment or as fuel."
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
     "@language" : "en",
     "@value" : "Backup Generator"
   }, {
@@ -6974,31 +7204,13 @@
     "@value" : "Backup Power"
   }, {
     "@language" : "en",
-    "@value" : "Balance of Plant Component"
-  }, {
-    "@language" : "en",
     "@value" : "Clean Energy Production"
-  }, {
-    "@language" : "en",
-    "@value" : "Clean Energy Solution"
   }, {
     "@language" : "en",
     "@value" : "Coal Power Station"
   }, {
     "@language" : "en",
     "@value" : "Coal-fired Power"
-  }, {
-    "@language" : "en",
-    "@value" : "Electrical Grid Stabilization"
-  }, {
-    "@language" : "en",
-    "@value" : "Electricity Generation"
-  }, {
-    "@language" : "en",
-    "@value" : "Energy Generation"
-  }, {
-    "@language" : "en",
-    "@value" : "Energy Generator"
   }, {
     "@language" : "en",
     "@value" : "Fossil Fuel Electricity"
@@ -7008,9 +7220,6 @@
   }, {
     "@language" : "en",
     "@value" : "Fuel Flexible Power Generator"
-  }, {
-    "@language" : "en",
-    "@value" : "Gas Turbine"
   }, {
     "@language" : "en",
     "@value" : "Grid Scale Energy Storage"
@@ -7028,16 +7237,10 @@
     "@value" : "Local Energy Generation"
   }, {
     "@language" : "en",
-    "@value" : "Microgrid"
-  }, {
-    "@language" : "en",
     "@value" : "Power Plant"
   }, {
     "@language" : "en",
     "@value" : "Power Plant Generator"
-  }, {
-    "@language" : "en",
-    "@value" : "Powerplant"
   }, {
     "@language" : "en",
     "@value" : "Renewable Energy Generation"
@@ -7052,9 +7255,6 @@
     "@value" : "Small-scale Power Grid"
   }, {
     "@language" : "en",
-    "@value" : "Smart Grid"
-  }, {
-    "@language" : "en",
     "@value" : "Solar Electricity"
   }, {
     "@language" : "en",
@@ -7065,26 +7265,14 @@
   }, {
     "@language" : "en",
     "@value" : "Solar Generation"
-  }, {
-    "@language" : "en",
-    "@value" : "Stationary Power Generation"
-  }, {
-    "@language" : "en",
-    "@value" : "UPS System"
-  }, {
-    "@language" : "en",
-    "@value" : "Uninterruptible Power Supply System"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Use of hydrogen or hydrogen products in the field of electricity production via power generating equipment or as fuel."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Product",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/references" : [ {
     "@id" : "https://www.iedunote.com/types-of-products"
-  }, {
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The connection to \"Application\" would refer to \"realized usage\". A product has a creator. However, since technology and product are difficult to distinguish, technology and product will be seen as one class. Since organizations can also buy component parts, the product class has sub-classes containing components for fuel cells."
   } ],
@@ -7094,16 +7282,15 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
+    "@value" : "Product"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "An article that is manufactured or refined for sale. A distinction will be made between the different value chain positions of a product which can be sold and/or bought."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
     "@value" : "Alternative Energy Technology"
-  }, {
-    "@language" : "en",
-    "@value" : "Battery Cell"
-  }, {
-    "@language" : "en",
-    "@value" : "Fuel Cell"
-  }, {
-    "@language" : "en",
-    "@value" : "Fuel Tank"
   }, {
     "@language" : "en",
     "@value" : "Green Tech"
@@ -7112,26 +7299,14 @@
     "@value" : "Homegrown Technology"
   }, {
     "@language" : "en",
-    "@value" : "Low Carbon Transport Fuel Cell"
-  }, {
-    "@language" : "en",
-    "@value" : "Powertrain"
-  }, {
-    "@language" : "en",
-    "@value" : "Product"
-  }, {
-    "@language" : "en",
-    "@value" : "Product Article"
-  }, {
-    "@language" : "en",
     "@value" : "Renewable Fuel"
   }, {
     "@language" : "en",
     "@value" : "Technology"
   } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
     "@language" : "en",
-    "@value" : "An article that is manufactured or refined for sale. A distinction will be made between the different value chain positions of a product which can be sold and/or bought."
+    "@value" : "Product Article"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#ProductDevelopmentProject",
@@ -7145,6 +7320,21 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
+    "@value" : "Product Design Project"
+  }, {
+    "@language" : "en",
+    "@value" : "Product Development Project"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A project focused on the development of new products or the refinement of existing ones."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Product Development Cooperation"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
+    "@language" : "en",
     "@value" : "Battery Storage Project"
   }, {
     "@language" : "en",
@@ -7155,22 +7345,9 @@
   }, {
     "@language" : "en",
     "@value" : "Hybrid  Project"
-  }, {
-    "@language" : "en",
-    "@value" : "Product Design Project"
-  }, {
-    "@language" : "en",
-    "@value" : "Product Development Cooperation"
-  }, {
-    "@language" : "en",
-    "@value" : "Product Development Project"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Projects focused on the development of new products or the refinement of existing ones."
   } ]
 }, {
-  "@id" : "http://purl.org/holy/ns#PublicAdministrationAndDefenceOrganization",
+  "@id" : "http://purl.org/holy/ns#PublicAdministrationAndDefenseOrganization",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/references" : [ {
     "@id" : "https://ec.europa.eu/eurostat/documents/3859598/5902521/KS-RA-07-015-EN.PDF"
@@ -7188,7 +7365,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Organizations classified in the field of public administration and defence according to EC NACE 2 (2008) in Section O Division 84."
+    "@value" : "An organization classified in the field of public administration and defense according to EC NACE 2 (2008) in Section O Division 84."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
@@ -7209,7 +7386,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Purpose Based Project"
+    "@value" : "Purpose-based Project"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://schema.org/Project"
@@ -7229,75 +7406,6 @@
     "@value" : "Qatar"
   } ]
 }, {
-  "@id" : "http://purl.org/holy/ns#Reconversion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Since reconversion solely happenes for energy creation using fuel cells, \"Reconversion\" is contributed to fuel cell systems."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Reconversion"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@language" : "en",
-    "@value" : "Fuel Cell Solution"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/holy/ns#HydrogenProduct"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "Fuel Cell"
-  }, {
-    "@language" : "en",
-    "@value" : "Fuel Cell Engine"
-  }, {
-    "@language" : "en",
-    "@value" : "Fuel Cell Power Module"
-  }, {
-    "@language" : "en",
-    "@value" : "Fuel Cell Product"
-  }, {
-    "@language" : "en",
-    "@value" : "Fuel Cell System"
-  }, {
-    "@language" : "en",
-    "@value" : "Hydrogen Engine Technology"
-  }, {
-    "@language" : "en",
-    "@value" : "Hydrogen Fuel Cell"
-  }, {
-    "@language" : "en",
-    "@value" : "Hydrogen Fuel Cell Electric"
-  }, {
-    "@language" : "en",
-    "@value" : "Hydrogen Fuel Cell Powertrain"
-  }, {
-    "@language" : "en",
-    "@value" : "Hydrogen Powered Fuel Cell"
-  }, {
-    "@language" : "en",
-    "@value" : "Hydrogen and Fuel Cell System"
-  }, {
-    "@language" : "en",
-    "@value" : "Hydrogen-fueled Gas Turbines"
-  }, {
-    "@language" : "en",
-    "@value" : "Reconversion"
-  }, {
-    "@language" : "en",
-    "@value" : "hydrogen oxygen fuel cell"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Reconversion as a subclass of Hydrogen Technology defines knowledge dealing with converting hydrogen back."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@language" : "en",
-    "@value" : "GR Yaris engine"
-  } ]
-}, {
   "@id" : "http://purl.org/holy/ns#RefineryIndustrialProcessing",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/references" : [ {
@@ -7312,20 +7420,31 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
+    "@value" : "Refining Process"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Applications of hydrogen in the refinery industry dedicated to process oil to create different types of oil and oil products."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Petrochemical Market"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
+    "@language" : "en",
     "@value" : "Hydrocracking"
   }, {
     "@language" : "en",
-    "@value" : "Petrochemical Market"
+    "@value" : "Hydrogenation"
+  }, {
+    "@language" : "en",
+    "@value" : "Hydrogenolysis"
   }, {
     "@language" : "en",
     "@value" : "Petroleum Production"
   }, {
     "@language" : "en",
     "@value" : "Petroleum Refining"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Applications of hydrogen in the refinery industry dedicated to process oil to create different types of oil and oil products."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#RegionalTruck",
@@ -7341,6 +7460,18 @@
     "@id" : "http://purl.org/holy/ns#Truck"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Regional Truck"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A road vehicle which is small to large-sized and used for the transportation of goods within an area of 150 miles."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Van"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
     "@language" : "en",
     "@value" : "All-electric Van"
   }, {
@@ -7360,17 +7491,7 @@
     "@value" : "Refuse Truck"
   }, {
     "@language" : "en",
-    "@value" : "Regional Truck"
-  }, {
-    "@language" : "en",
     "@value" : "Straught Truck"
-  }, {
-    "@language" : "en",
-    "@value" : "Van"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "A road vehicle which is small to large-sized and used for the transportation of goods within an area of 150 miles."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Republic_of_Ireland",
@@ -7407,31 +7528,13 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
-    "@value" : "ISIC 7120"
-  }, {
-    "@language" : "en",
-    "@value" : "NACE 71.20"
-  }, {
-    "@language" : "en",
-    "@value" : "Professional Scientific And Technical Activity"
-  }, {
-    "@language" : "en",
     "@value" : "Research Institution"
   }, {
     "@language" : "en",
+    "@value" : "Research Organization"
+  }, {
+    "@language" : "en",
     "@value" : "Research and Development Center"
-  }, {
-    "@language" : "en",
-    "@value" : "Scientific Research and Development"
-  }, {
-    "@language" : "en",
-    "@value" : "Technical Testing and Analysis"
-  }, {
-    "@language" : "en",
-    "@value" : "University"
-  }, {
-    "@language" : "en",
-    "@value" : "University of Applied Sciences"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -7452,6 +7555,29 @@
   }, {
     "@language" : "en",
     "@value" : "The European Interoperability Centre for Electric Vehicles and Smart Grids"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "ISIC 7120"
+  }, {
+    "@language" : "en",
+    "@value" : "NACE 71.20"
+  }, {
+    "@language" : "en",
+    "@value" : "Scientific Research and Development"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
+    "@language" : "en",
+    "@value" : "Professional Scientific And Technical Activity"
+  }, {
+    "@language" : "en",
+    "@value" : "Technical Testing and Analysis"
+  }, {
+    "@language" : "en",
+    "@value" : "University"
+  }, {
+    "@language" : "en",
+    "@value" : "University of Applied Sciences"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#ResidentialHeating",
@@ -7470,6 +7596,33 @@
     "@language" : "en",
     "@value" : "Apartment Heating"
   }, {
+    "@language" : "en",
+    "@value" : "Domestic Heating"
+  }, {
+    "@language" : "en",
+    "@value" : "Home Heating"
+  }, {
+    "@language" : "en",
+    "@value" : "Residential Heating"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Applications used for heating a domestic house or residential area (multiple domestic houses)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Boiler"
+  }, {
+    "@language" : "en",
+    "@value" : "CHP"
+  }, {
+    "@language" : "en",
+    "@value" : "Furnace"
+  }, {
+    "@language" : "en",
+    "@value" : "Radiant"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
     "@language" : "en",
     "@value" : "Combined Heat and Power station"
   }, {
@@ -7495,7 +7648,7 @@
     "@value" : "Heat and Power Station"
   }, {
     "@language" : "en",
-    "@value" : "Heat and Power anit"
+    "@value" : "Heat and Power Unit"
   }, {
     "@language" : "en",
     "@value" : "PEM Fuel Cell Boiler"
@@ -7514,13 +7667,6 @@
   }, {
     "@language" : "en",
     "@value" : "Residential Fuel Cell System"
-  }, {
-    "@language" : "en",
-    "@value" : "Residential Heating"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Applications used for heating a domestic house or residential area (multiple domestic houses)."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Revenue",
@@ -7534,35 +7680,61 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
-    "@value" : "Absolute Sales"
+    "@value" : "Earning"
   }, {
     "@language" : "en",
     "@value" : "Gross Revenue"
   }, {
     "@language" : "en",
-    "@value" : "Sales"
+    "@value" : "Income"
   }, {
     "@language" : "en",
-    "@value" : "Total Sales"
+    "@value" : "Sales"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Generated amount within a certain class in a certain period of time."
+    "@value" : "The amount of money generated within a certain class in a certain period of time."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Absolute Sales"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
+    "@language" : "en",
+    "@value" : "Total Sales"
   } ]
 }, {
-  "@id" : "http://purl.org/holy/ns#Road",
+  "@id" : "http://purl.org/holy/ns#RoadApplication",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/references" : [ {
     "@id" : "https://www.marineinsight.com/types-of-ships/what-are-cargo-ships/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Road"
+    "@value" : "Road Application"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/holy/ns#Mobile"
+    "@id" : "http://purl.org/holy/ns#MobileApplication"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Hydrogen Internal Combustion Engine Vehicle"
+  }, {
+    "@language" : "en",
+    "@value" : "Road Usage"
+  }, {
+    "@language" : "en",
+    "@value" : "Vehicle"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "An applicatios related to the transport of people and/or goods on land."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Ballard Powered Vehicle"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
     "@language" : "en",
     "@value" : "BEV"
   }, {
@@ -7624,16 +7796,10 @@
     "@value" : "Hydrogen ICE vehicle"
   }, {
     "@language" : "en",
-    "@value" : "Hydrogen Internal Combustion Engine Vehicle"
-  }, {
-    "@language" : "en",
     "@value" : "ICE vehicle"
   }, {
     "@language" : "en",
     "@value" : "Internal Combustion Engine Vehicle"
-  }, {
-    "@language" : "en",
-    "@value" : "Last Mile Delivery"
   }, {
     "@language" : "en",
     "@value" : "Long-distance Vehicle"
@@ -7648,27 +7814,13 @@
     "@value" : "Personal Vehicle"
   }, {
     "@language" : "en",
-    "@value" : "Road Usage"
-  }, {
-    "@language" : "en",
     "@value" : "Ultra clean vehicle"
-  }, {
-    "@language" : "en",
-    "@value" : "Vehicle"
   }, {
     "@language" : "en",
     "@value" : "ZEV"
   }, {
     "@language" : "en",
     "@value" : "Zero-emission Vehicle"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Applications related to transport on land of people or goods."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#example" : [ {
-    "@language" : "en",
-    "@value" : "Ballard Powered Vehicle"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Romania",
@@ -7855,24 +8007,22 @@
     "@value" : "Solid Oxide Fuel Cell"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/holy/ns#Reconversion"
+    "@id" : "http://purl.org/holy/ns#HydrogenReconversion"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
-    "@value" : "High Temperature Fuel Cell Gasket"
-  }, {
-    "@language" : "en",
     "@value" : "SOFC"
-  }, {
-    "@language" : "en",
-    "@value" : "Solid Oxide Electrolyzer"
   }, {
     "@language" : "en",
     "@value" : "Solid Oxide Fuel Cell"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Solid oxide fuel cells are fuel cells using a hard, non-porous ceramic compound as the electrolyte. They can reach temperatures up to 1000°C (1830°F). They can be powered by natural gas, coal gas, biogas or hydrogen."
+    "@value" : "A fuel cell which uses a hard, non-porous ceramic compound as the electrolyte. It can reach temperatures up to 1000°C (1830°F). It can be powered by natural gas, coal gas, biogas or hydrogen."
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
+    "@language" : "en",
+    "@value" : "High Temperature Fuel Cell Gasket"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#SolidStateBattery",
@@ -7896,7 +8046,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "A solid-state battery uses solid lithium as an electrolyte, not liquid."
+    "@value" : "A battery which uses solid lithium as an electrolyte, not liquid."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Solomon_Islands",
@@ -7972,13 +8122,10 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
-    "@value" : "Rocket"
+    "@value" : "Rocketship"
   }, {
     "@language" : "en",
-    "@value" : "Satellite"
-  }, {
-    "@language" : "en",
-    "@value" : "Shuttle"
+    "@value" : "Satellite Launcher"
   }, {
     "@language" : "en",
     "@value" : "Space Capsule"
@@ -7990,11 +8137,24 @@
     "@value" : "Space Vehicle"
   }, {
     "@language" : "en",
+    "@value" : "Spacecraft"
+  }, {
+    "@language" : "en",
     "@value" : "Spaceship"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "A vehicle designed for use and travel in space."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Rocket"
+  }, {
+    "@language" : "en",
+    "@value" : "Satellite"
+  }, {
+    "@language" : "en",
+    "@value" : "Shuttle"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Spain",
@@ -8018,14 +8178,14 @@
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#StandUpCounterbalancedTruck",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#MaterialHandling" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#MaterialHandlingVehicle" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Stand-Up Counterbalanced Truck"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#StandUpReachTruck",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#MaterialHandling" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#MaterialHandlingVehicle" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Stand-Up Reach Truck"
@@ -8038,7 +8198,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "State Based Project"
+    "@value" : "State-based Project"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://schema.org/Project"
@@ -8052,19 +8212,46 @@
     "@value" : "State Based Project as a subclass of Project defines the level of progress for a project. It can be categorized according to the temporary stage such as planned, ongoing or finished."
   } ]
 }, {
-  "@id" : "http://purl.org/holy/ns#Stationary",
+  "@id" : "http://purl.org/holy/ns#StationaryApplication",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/references" : [ {
     "@id" : "http://www.chfca.ca/fuel-cells-hydrogen/hydrogen-fuel-cell-applications/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Stationary"
+    "@value" : "Stationary Application"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/holy/ns#Application"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Immobile"
+  }, {
+    "@language" : "en",
+    "@value" : "Stationary Application"
+  }, {
+    "@language" : "en",
+    "@value" : "Stationary Unit"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "An application which is intended to be placed at one location without the possibility of physically being moved when used."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Fast Charger"
+  }, {
+    "@language" : "en",
+    "@value" : "Heavy Industry"
+  }, {
+    "@language" : "en",
+    "@value" : "Heavy Machine"
+  }, {
+    "@language" : "en",
+    "@value" : "Stationary Sector"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
     "@language" : "en",
     "@value" : "Charging Station"
   }, {
@@ -8090,22 +8277,13 @@
     "@value" : "Energy Storage Solution"
   }, {
     "@language" : "en",
-    "@value" : "Fast Charger"
-  }, {
-    "@language" : "en",
     "@value" : "Grid Scale Energy Storage"
-  }, {
-    "@language" : "en",
-    "@value" : "Heavy Industry"
-  }, {
-    "@language" : "en",
-    "@value" : "Heavy Machine"
   }, {
     "@language" : "en",
     "@value" : "Hydrogen Electrolyser"
   }, {
     "@language" : "en",
-    "@value" : "Hydrogen Fuelling Station"
+    "@value" : "Hydrogen Fueling Station"
   }, {
     "@language" : "en",
     "@value" : "Hydrogen Station"
@@ -8114,29 +8292,13 @@
     "@value" : "Hydrogen Vehicle Refueling Station"
   }, {
     "@language" : "en",
-    "@value" : "Immobile"
-  }, {
-    "@language" : "en",
     "@value" : "Mobile Energy Storage Solution"
-  }, {
-    "@language" : "en",
-    "@value" : "Stationary Application"
   }, {
     "@language" : "en",
     "@value" : "Stationary Fuel Cell Application"
   }, {
     "@language" : "en",
-    "@value" : "Stationary Sector"
-  }, {
-    "@language" : "en",
-    "@value" : "Stationary Unit"
-  }, {
-    "@language" : "en",
     "@value" : "Vehicle Charging Hub"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Applications which are intended to be placed at one location without the possibility of physically being moved when used."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#SteelCell",
@@ -8180,6 +8342,20 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
+    "@value" : "Steel Fabrication"
+  }, {
+    "@language" : "en",
+    "@value" : "Steel Manufacturing"
+  }, {
+    "@language" : "en",
+    "@value" : "Steel Production"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Applications of hydrogen or hydrogen products in the steel industry with respect to the processing of iron ore into certain types of steel."
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
+    "@language" : "en",
     "@value" : "AHW"
   }, {
     "@language" : "en",
@@ -8199,50 +8375,6 @@
   }, {
     "@language" : "en",
     "@value" : "Metal Purification"
-  }, {
-    "@language" : "en",
-    "@value" : "Steel Production"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Applications of hydrogen or hydrogen products in the steel industry with respect to the processing of iron ore into certain types of steel."
-  } ]
-}, {
-  "@id" : "http://purl.org/holy/ns#Storage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The subclass \"Storage\" could be expanded to focus the domain scope to the creation of hydrogen with respect to the value chain. Future expansions could categorize between storage technologies within tanks or using absorbing materials."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Storage"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/holy/ns#HydrogenProduct"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "Cryogenic Tanks"
-  }, {
-    "@language" : "en",
-    "@value" : "High-pressure Gas Cylinders"
-  }, {
-    "@language" : "en",
-    "@value" : "Hydrogen Absorbation in Metal"
-  }, {
-    "@language" : "en",
-    "@value" : "Hydrogen Fuel Tank"
-  }, {
-    "@language" : "en",
-    "@value" : "Hydrogen Storage Tanks"
-  }, {
-    "@language" : "en",
-    "@value" : "Liquid Hydrogen Storage Tank"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Storage as a subclass of HydrogenTechnology defines the way that hydrogen can be stored for later usage."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Submarine",
@@ -8255,9 +8387,12 @@
     "@value" : "Submarine"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/holy/ns#Marine"
+    "@id" : "http://purl.org/holy/ns#MarineApplication"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Steel Sub"
+  }, {
     "@language" : "en",
     "@value" : "Submersible"
   }, {
@@ -8290,7 +8425,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Fuel Cells using different resources as its anode gas than hydrogen."
+    "@value" : "A fuel cell which uses different resources as its anode gas than hydrogen."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#SubstituteFuelCellComponent",
@@ -8308,7 +8443,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Basic components for substitute fuel cells."
+    "@value" : "A basic component for substitute fuel cells."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#SubstituteProduct",
@@ -8383,18 +8518,17 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Supportive Hardware as a subclass of Fuel Cell Stack relates to components such as equipment, material and metals which enable efficient energy generation."
+    "@value" : "A component such as equipment, material, or metal which enables efficient energy generation."
   } ]
 }, {
-  "@id" : "http://purl.org/holy/ns#SureSource1500™",
+  "@id" : "http://purl.org/holy/ns#SureSource1500TM",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#MoltenCarbonateFuelCell" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Definition by FuelCell Inc. at 'https://www.fuelcellenergy.com/products/'"
+  "http://purl.org/dc/terms/references" : [ {
+    "@id" : "https://www.fuelcellenergy.com/products/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "SureSource 1500™"
+    "@value" : "SureSource 1500TM"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
@@ -8405,15 +8539,14 @@
     "@value" : "This solution is ideal for on-site power generation for large installations requiring continuous power and value high-quality heat for facility heating and/or absorption chilling. The system is suitable for a wide range of applications, including wastewater treatment plants, manufacturing facilities, hospitals and universities. Output: 1.4 megawatts."
   } ]
 }, {
-  "@id" : "http://purl.org/holy/ns#SureSource3000™",
+  "@id" : "http://purl.org/holy/ns#SureSource3000TM",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#MoltenCarbonateFuelCell" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Definition by FuelCell Inc. at 'https://www.fuelcellenergy.com/products/'"
+  "http://purl.org/dc/terms/references" : [ {
+    "@id" : "https://www.fuelcellenergy.com/products/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "SureSource 3000™"
+    "@value" : "SureSource 300TM"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
@@ -8424,15 +8557,14 @@
     "@value" : "Comprised of two 1.4 megawatt (MW) modules, the SureSource 3000 generates 2.8 MW of ultra-clean power. Similar to the SureSource 1500, the system is well-suited for on-site applications and caters to customers with an even greater power load requirement. Ideal applications include large universities, manufacturing facilities, wastewater treatment plants or for multi-plant fuel cell parks to support the electric grid. Output: 2.8 megawatts"
   } ]
 }, {
-  "@id" : "http://purl.org/holy/ns#SureSource4000™",
+  "@id" : "http://purl.org/holy/ns#SureSource4000TM",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#MoltenCarbonateFuelCell" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Definition by FuelCell Inc. at 'https://www.fuelcellenergy.com/products/'"
+  "http://purl.org/dc/terms/references" : [ {
+    "@id" : "https://www.fuelcellenergy.com/products/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "SureSource 4000™"
+    "@value" : "SureSource 4000TM"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
@@ -8515,12 +8647,8 @@
 }, {
   "@id" : "http://purl.org/holy/ns#TheHydrogenUtilization&GreenEnergyProject",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#PurposeBasedProject" ],
-  "http://w3id.org/nfdi4ing/metadata4ing#projectParticipant" : [ {
-    "@id" : "http://dbpedia.org/resource/Icelandic_New_Energy"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Source: https://newenergy.is/en/portfolio/huge/"
+  "http://purl.org/dc/terms/references" : [ {
+    "@id" : "https://newenergy.is/en/portfolio/huge/"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -8528,7 +8656,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
-    "@value" : "(HUGE)"
+    "@value" : "HUGE"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -8595,9 +8723,24 @@
     "@value" : "Train"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/holy/ns#Road"
+    "@id" : "http://purl.org/holy/ns#RoadApplication"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Railroad Train"
+  }, {
+    "@language" : "en",
+    "@value" : "Train"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A vehicle for roads made of railways using an engine and carriages to transport people or goods."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Rail"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
     "@language" : "en",
     "@value" : "Ammonia Powered Locomotive"
   }, {
@@ -8608,36 +8751,7 @@
     "@value" : "Hydrogen-powered Train"
   }, {
     "@language" : "en",
-    "@value" : "Rail"
-  }, {
-    "@language" : "en",
-    "@value" : "Train"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "A vehicle for roads made of railways using an engine and carriages to transport people or goods."
-  } ]
-}, {
-  "@id" : "http://purl.org/holy/ns#Transport",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The subclass \"Transport\" could be expanded to focus the domain scope to the creation of hydrogen in respect to the value chain."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Transport"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/holy/ns#HydrogenProduct"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "Hydrogen Transport"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Transport as a subclass of Hydrogen Technology defines the way that hydrogen can be transported from one place to another."
+    "@value" : "Powertrain"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#TransportationAndStorageOrganization",
@@ -8654,7 +8768,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Organizations classified in the field of transportation and storage according to EC NACE 2 (2008) in Section H Division 49-53."
+    "@value" : "An organizatios classified in the field of transportation and storage according to EC NACE 2 (2008) in Section H Division 49-53."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
@@ -8670,43 +8784,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/holy/ns#Indicator"
   } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "Battery Swapping"
-  }, {
-    "@language" : "en",
-    "@value" : "Clean Energy Megatrend"
-  }, {
-    "@language" : "en",
-    "@value" : "Drift"
-  }, {
-    "@language" : "en",
-    "@value" : "European Mobility Expo"
-  }, {
-    "@language" : "en",
-    "@value" : "Forum Tomorrow in Motion"
-  }, {
-    "@language" : "en",
-    "@value" : "Green Car Korea"
-  }, {
-    "@language" : "en",
-    "@value" : "Hydrogen Adoption"
-  }, {
-    "@language" : "en",
-    "@value" : "Hydrogen Economy Area"
-  }, {
-    "@language" : "en",
-    "@value" : "Market Driver"
-  }, {
-    "@language" : "en",
-    "@value" : "Market Trend"
-  }, {
-    "@language" : "en",
-    "@value" : "Tendency"
-  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "General development or changes of a situation in terms of behavior which can manifest itself in being discussed in forums, conferences or expos."
+    "@value" : "A general development or change of a situation in terms of behavior which can manifest itself in being discussed in forums, conferences or expos."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "en",
@@ -8738,6 +8818,26 @@
   }, {
     "@language" : "en",
     "@value" : "United Nations Conference on Climate Change"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Forum Tomorrow in Motion"
+  }, {
+    "@language" : "en",
+    "@value" : "Green Car Korea"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
+    "@language" : "en",
+    "@value" : "Clean Energy Megatrend"
+  }, {
+    "@language" : "en",
+    "@value" : "European Mobility Expo"
+  }, {
+    "@language" : "en",
+    "@value" : "Hydrogen Adoption"
+  }, {
+    "@language" : "en",
+    "@value" : "Hydrogen Economy Area"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Trinidad_and_Tobago",
@@ -8764,9 +8864,27 @@
     "@value" : "Truck"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/holy/ns#Road"
+    "@id" : "http://purl.org/holy/ns#RoadApplication"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Truck"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A large road vehicle that is used for transporting large amounts of goods."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "LT Truck"
+  }, {
+    "@language" : "en",
+    "@value" : "LVS"
+  }, {
+    "@language" : "en",
+    "@value" : "Tractor"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
     "@language" : "en",
     "@value" : "Battery Electric Semi Truck"
   }, {
@@ -8780,16 +8898,7 @@
     "@value" : "HFCET"
   }, {
     "@language" : "en",
-    "@value" : "HGV"
-  }, {
-    "@language" : "en",
     "@value" : "Heavy Duty Truck"
-  }, {
-    "@language" : "en",
-    "@value" : "Heavy Duty Vehicle"
-  }, {
-    "@language" : "en",
-    "@value" : "Heavy Goods Vehicle"
   }, {
     "@language" : "en",
     "@value" : "Heavy Hydrogen Truck"
@@ -8813,9 +8922,6 @@
     "@value" : "LGV"
   }, {
     "@language" : "en",
-    "@value" : "LVS"
-  }, {
-    "@language" : "en",
     "@value" : "Large Goods Vehicle"
   }, {
     "@language" : "en",
@@ -8826,19 +8932,6 @@
   }, {
     "@language" : "en",
     "@value" : "Road Truck"
-  }, {
-    "@language" : "en",
-    "@value" : "Tractor"
-  }, {
-    "@language" : "en",
-    "@value" : "Tractor Unit"
-  }, {
-    "@language" : "en",
-    "@value" : "Truck"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "A large road vehicle that is used for transporting large amounts of goods."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Tunisia",
@@ -8872,7 +8965,7 @@
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#TurretTruck",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#MaterialHandling" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#MaterialHandlingVehicle" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Turret Truck"
@@ -9008,6 +9101,38 @@
     "@value" : "Western Sahara"
   } ]
 }, {
+  "@id" : "http://purl.org/holy/ns#WorkForce",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Work Force"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/holy/ns#Indicator"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Labor Force"
+  }, {
+    "@language" : "en",
+    "@value" : "Workforce"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The number of persons working for an organization."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Labor"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
+    "@language" : "en",
+    "@value" : "Employee"
+  }, {
+    "@language" : "en",
+    "@value" : "Worker"
+  } ]
+}, {
   "@id" : "http://purl.org/holy/ns#Yemen",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://schema.org/Country" ],
   "http://dbpedia.org/ontology/continent" : [ {
@@ -9020,6 +9145,9 @@
 }, {
   "@id" : "http://purl.org/holy/ns#ZEROe",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#ProductDevelopmentProject" ],
+  "http://purl.org/dc/terms/references" : [ {
+    "@id" : "https://www.airbus.com/en/innovation/zero-emission/hydrogen/zeroe"
+  } ],
   "http://purl.org/holy/ns#relatesToApplication" : [ {
     "@id" : "http://purl.org/holy/ns#ZEROeBlendedWingBody"
   }, {
@@ -9038,21 +9166,20 @@
     "@language" : "en",
     "@value" : "2020"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Source: https://www.airbus.com/en/innovation/zero-emission/hydrogen/zeroe"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "ZEROe"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "An project from Airbus to develop the world’s first zero-emission commercial aircraft by 2035. It is based on hydrogen propulsion. Airbus is working on three aircraft prototypes.\n\nAll three ZEROe concepts are hybrid-hydrogen aircraft. They are powered by hydrogen combustion through modified gas turbine engines. Liquid hydrogen is used as fuel for combustion with oxygen.\n\nIn addition, hydrogen fuel cells create electrical power that complements the gas turbine, resulting in a highly efficient hybrid-electric propulsion system. All of these technologies are complementary, and the benefits are additive.\n\nIn 2022, we launched our ZEROe demonstrator with the aim to test hydrogen combustion technology on an A380 multimodal platform. A mature technology readiness level for a hydrogen-combustion propulsion system is expected to be achieved by 2025."
+    "@value" : "An project from Airbus to develop the world's first zero-emission commercial aircraft by 2035. It is based on hydrogen propulsion. Airbus is working on three aircraft prototypes.\r\n\r\nAll three ZEROe concepts are hybrid-hydrogen aircraft. They are powered by hydrogen combustion through modified gas turbine engines. Liquid hydrogen is used as fuel for combustion with oxygen.\r\n\r\nIn addition, hydrogen fuel cells create electrical power that complements the gas turbine, resulting in a highly efficient hybrid-electric propulsion system. All of these technologies are complementary, and the benefits are additive.\r\n\r\nIn 2022, we launched our ZEROe demonstrator with the aim to test hydrogen combustion technology on an A380 multimodal platform. A mature technology readiness level for a hydrogen-combustion propulsion system is expected to be achieved by 2025."
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#ZEROeBlendedWingBody",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#Aircraft" ],
+  "http://purl.org/dc/terms/references" : [ {
+    "@id" : "https://www.airbus.com/en/innovation/zero-emission/hydrogen/zeroe"
+  } ],
   "http://purl.org/holy/ns#relatesToApplication" : [ {
     "@id" : "http://purl.org/holy/ns#ZEROe"
   } ],
@@ -9061,27 +9188,22 @@
   }, {
     "@id" : "http://dbpedia.org/resource/Hydrogen_engine"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Source: https://www.airbus.com/en/innovation/zero-emission/hydrogen/zeroe"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "ZEROe Blended-Wing Body"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Concept passenger aircraft. The exceptionally wide interior opens up multiple options for hydrogen storage and distribution. Here, the liquid hydrogen storage tanks are stored underneath the wings. Two hybrid-hydrogen turbofan engines provide thrust.\n\nRange: 2000nm\nPassengers: <200"
+    "@value" : "Concept passenger aircraft. The exceptionally wide interior opens up multiple options for hydrogen storage and distribution. Here, the liquid hydrogen storage tanks are stored underneath the wings. Two hybrid-hydrogen turbofan engines provide thrust.\r\n\r\nRange: 2000nm\r\nPassengers: <200"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#ZEROeTurbofan",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#Aircraft" ],
+  "http://purl.org/dc/terms/references" : [ {
+    "@id" : "https://www.airbus.com/en/innovation/zero-emission/hydrogen/zeroe"
+  } ],
   "http://purl.org/holy/ns#relatesToApplication" : [ {
     "@id" : "http://purl.org/holy/ns#ZEROe"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Source: https://www.airbus.com/en/innovation/zero-emission/hydrogen/zeroe"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -9089,17 +9211,16 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Passenger Aircraft running on two hybrid-hydrogen turbofan engines providing thrust. The liquid hydrogen storage and distribution system is located behind the rear pressure bulkhead.\n\nRange: +1000 nm\nPassengers: <100"
+    "@value" : "Passenger Aircraft running on two hybrid-hydrogen turbofan engines providing thrust. The liquid hydrogen storage and distribution system is located behind the rear pressure bulkhead.\r\n\r\nRange: +1000 nm\r\nPassengers: <100"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#ZEROeTurboprop",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/holy/ns#Aircraft" ],
+  "http://purl.org/dc/terms/references" : [ {
+    "@id" : "https://www.airbus.com/en/innovation/zero-emission/hydrogen/zeroe"
+  } ],
   "http://purl.org/holy/ns#relatesToApplication" : [ {
     "@id" : "http://purl.org/holy/ns#ZEROe"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Source: https://www.airbus.com/en/innovation/zero-emission/hydrogen/zeroe"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -9107,7 +9228,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Passenger aircraft with two hybrid-hydrogen turboprop engines, which drive eight-bladed propellers, providing thrust. The liquid hydrogen storage and distribution system is located behind the rear pressure bulkhead.\n\nRange: 2000 nm\nPassengers: <200"
+    "@value" : "Passenger aircraft with two hybrid-hydrogen turboprop engines, which drive eight-bladed propellers, providing thrust. The liquid hydrogen storage and distribution system is located behind the rear pressure bulkhead.\r\n\r\nRange: 2000 nm\r\nPassengers: <200"
   } ]
 }, {
   "@id" : "http://purl.org/holy/ns#Zambia",
@@ -9510,6 +9631,9 @@
     "@value" : "Defines the technology used in a particular application."
   } ]
 }, {
+  "@id" : "http://purl.org/ontology/bibo/doi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -9565,13 +9689,25 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "An enterprise (potentially individual but typically collaborative), planned to achieve a particular aim. "
+    "@value" : "A project can be defined as a piece of planned work consisting of interrelated activities which intends to fulfill a particular purpose within a certain period of time. A project can fulfill several purposes such as in the area of research (research projects), projects dedicated to product development, infrastructure-related projects and more."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Project"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Project"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "An enterprise (potentially individual but typically collaborative), planned to achieve a particular aim."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#hiddenLabel" : [ {
+    "@language" : "en",
+    "@value" : "Venture"
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
     "@language" : "en",
     "@value" : "Alliance Project"
   }, {
@@ -9580,16 +9716,6 @@
   }, {
     "@language" : "en",
     "@value" : "Partnered Project"
-  }, {
-    "@language" : "en",
-    "@value" : "Project"
-  }, {
-    "@language" : "en",
-    "@value" : "Venture"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "According to a combined definition from the Cambridge dictionary, Karen Brown and Robert Youker, a project can be defined as a piece of planned work consisting of interrelated activities which intends to fulfill a particular purpose within a certain period of time. A project can fulfill several purposes such as in the area of research (research projects), projects dedicated to product development, infrastructure-related projects and more."
   } ]
 }, {
   "@id" : "http://schema.org/ResearchProject",
@@ -9623,15 +9749,6 @@
     "@value" : "Experimental Project"
   }, {
     "@language" : "en",
-    "@value" : "Meta Project"
-  }, {
-    "@language" : "en",
-    "@value" : "Qualitative Project"
-  }, {
-    "@language" : "en",
-    "@value" : "Quantitative Project"
-  }, {
-    "@language" : "en",
     "@value" : "R&D Project"
   }, {
     "@language" : "en",
@@ -9643,6 +9760,16 @@
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "A scientific investigation, usually using scientific methods, to achieve defined objectives."
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
+    "@language" : "en",
+    "@value" : "Meta Project"
+  }, {
+    "@language" : "en",
+    "@value" : "Qualitative Project"
+  }, {
+    "@language" : "en",
+    "@value" : "Quantitative Project"
   } ]
 }, {
   "@id" : "http://schema.org/affiliation",
@@ -9777,13 +9904,12 @@
   } ]
 }, {
   "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "not relevant for Ontology."
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#gYear",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#string",
@@ -9801,11 +9927,7 @@
   } ]
 }, {
   "@id" : "http://www.w3.org/2002/07/owl#sameAs",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "not actively used in the Ontology. Instances are using \"owl:sameas\" automatically if referred to similar Instances."
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/2002/07/owl#versionInfo",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -9826,11 +9948,7 @@
   } ]
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#altLabel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Keyword of an instance within a class. Used for pipeline extraction."
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#definition",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
@@ -9845,6 +9963,9 @@
     "@language" : "en",
     "@value" : "Example of an instance within a class. Used for pipeline extraction."
   } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#hiddenLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/org#FormalOrganization",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -9872,9 +9993,32 @@
     "@language" : "en",
     "@value" : "Organization"
   } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Company"
+  }, {
+    "@language" : "en",
+    "@value" : "Organisation"
+  }, {
+    "@language" : "en",
+    "@value" : "Organization"
+  } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an agent. Organizations are often decomposable into hierarchical structures."
+  } ],
+  "https://wordnet-rdf.princeton.edu/ontology#hyponym" : [ {
+    "@language" : "en",
+    "@value" : "Enterprise"
+  }, {
+    "@language" : "en",
+    "@value" : "Institute"
+  }, {
+    "@language" : "en",
+    "@value" : "Institution"
+  }, {
+    "@language" : "en",
+    "@value" : "NGO"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/org#classification",
@@ -10063,13 +10207,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
-    "@value" : "Company"
-  }, {
-    "@language" : "en",
-    "@value" : "Institute"
-  }, {
-    "@language" : "en",
-    "@value" : "Institution"
+    "@value" : "Registered Organization"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -10124,7 +10262,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "Extracting the status of an organization presents the same issues as its type. The terms 'insolvent', 'bankrupt' and 'in receivership,' for example, are likely to mean slightly different things with different legal implications in different jurisdictions.\n\nTaking advice from XBRL Europe as a starting point, however, the term 'Normal Activity' does appear to have cross-border usefulness and this should be used in preference to terms like 'trading' or 'operating.'\n\nBest Practice for recording various other status levels is to use the relevant jurisdiction's terms and to encode these in a SKOS Concept Scheme."
+    "@value" : "Extracting the status of an organization presents the same issues as its type. The terms 'insolvent', 'bankrupt' and 'in receivership,' for example, are likely to mean slightly different things with different legal implications in different jurisdictions.\r\n\r\nTaking advice from XBRL Europe as a starting point, however, the term 'Normal Activity' does appear to have cross-border usefulness and this should be used in preference to terms like 'trading' or 'operating.'\r\n\r\nBest Practice for recording various other status levels is to use the relevant jurisdiction's terms and to encode these in a SKOS Concept Scheme."
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/regorg#orgType",
@@ -10144,8 +10282,11 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "This property records the type of company. Familiar types are SA, PLC, LLC, GmbH etc. At the time of publication, there is no agreed set of company types that crosses borders. The term 'SA' is used in Poland and France for example although they mean slightly different things. The UK's LLP and Greece's EPE provide further example of close, but not exact, matches.\n\nThat said, each jurisdiction will have a limited set of recognized company types and these should be expressed in a consistent manner in a SKOS Concept Scheme."
+    "@value" : "This property records the type of company. Familiar types are SA, PLC, LLC, GmbH etc. At the time of publication, there is no agreed set of company types that crosses borders. The term 'SA' is used in Poland and France for example although they mean slightly different things. The UK's LLP and Greece's EPE provide further example of close, but not exact, matches.\r\n\r\nThat said, each jurisdiction will have a limited set of recognized company types and these should be expressed in a consistent manner in a SKOS Concept Scheme."
   } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/depiction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/homepage",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -10154,5 +10295,17 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://creativecommons.org/ns#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/mod#acronym",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/mod#competencyQuestion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/mod#hasSyntax",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://wordnet-rdf.princeton.edu/ontology#hyponym",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 } ]
