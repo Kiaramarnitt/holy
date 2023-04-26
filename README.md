@@ -13,12 +13,14 @@ The ontology is  maintained by the [Future Engineering Research Group](https://w
 This repository contains the following resources:
 * The Hydrogen Ontology in [RDF/Turtle](./holy.html), [RDF/XML](./holy.xml) and [JSON](./holy.jsonld)
 * Ontology [Documentation](./documentation) and corresponding [visualizations](./visualizations)
+* Ontology Reporting: [MIRO Checklist](./doc/MIRO_Checklist.md)
 * [License](./LICENSE.md) declaration
 * [Ontology Reporting Checklist](./doc/MIRO_Checklist.md)
 * [Knowledge Acquisition Process](./doc/Knowledge_Acquisition/)
 * [Ontology Requirements Specification](./doc/ORSD/)
 * Results of [test cases](./doc/Test_Cases/) and of [validation](./doc/OOPS_Validation/) with the OOPS!.
-* [Use Case:](./doc/Practical_Use_Case/) Atlant-H project
+* Use Case: [Atlant-H project](./doc/Practical_Use_Case/), [Tool Demonstrator](https://tinyurl.com/yr964ycu)
+
 
 
 ## Permanent URLs

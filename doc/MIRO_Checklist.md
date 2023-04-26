@@ -19,11 +19,11 @@ HOLY follows [MIRO](https://github.com/owlcs/miro/blob/master/miro.md) guideline
 | C.2  | Development community    |Must      |    <ul><li>- [x] </li></ul>   |   <ul><li>- [ ] </li></ul> |   <ul><li>- [x] </li></ul>    |   <ul><li>- [x] </li></ul>          |   <ul><li>- [x] </li></ul>       |
 | C.3  | Communication   |  Must       |   <ul><li>- [x] </li></ul>   |   <ul><li>- [x] </li></ul>   |   <ul><li>- [ ] </li></ul>              |   <ul><li>- [x] </li></ul>          |   <ul><li>- [x] </li></ul>       |
 | D    | Knowledge acquisition          |        |            
-| D.1  | Knowledge acquisition methodology          |  Must       |   <ul><li>- [x] </li></ul>   |   <ul><li>- [x] </li></ul>   |   <ul><li>- [x] </li></ul>    |   <ul><li>- [ ] </li></ul>        |   <ul><li>- [ ] </li></ul>       |
-| D.2  | Source knowledge location      |  Should     |   <ul><li>- [x] </li></ul> |   <ul><li>- [ ] </li></ul> |   <ul><li>- [x] </li></ul>              |   <ul><li>- [ ] </li></ul>        |   <ul><li>- [ ] </li></ul>     |
+| D.1  | Knowledge acquisition methodology          |  Must       |   <ul><li>- [x] </li></ul>   |   <ul><li>- [x] </li></ul>   |   <ul><li>- [x] </li></ul>    |   <ul><li>- [ ] </li></ul>        |   <ul><li>- [x] </li></ul>       |
+| D.2  | Source knowledge location      |  Should     |   <ul><li>- [x] </li></ul> |   <ul><li>- [ ] </li></ul> |   <ul><li>- [x] </li></ul>              |   <ul><li>- [ ] </li></ul>        |   <ul><li>- [x] </li></ul>     |
 | D.3  | Content selection     |  Should     |   <ul><li>- [ ] </li></ul> |   <ul><li>- [ ] </li></ul> |   <ul><li>- [ ] </li></ul>              |   <ul><li>- [ ] </li></ul>        |   <ul><li>- [ ] </li></ul>     |
 | E    | Ontology content      |        |            
-| E.1  | Knowledge Representation language          |  Must       |   <ul><li>- [x] </li></ul> |   <ul><li>- [x] </li></ul> |   <ul><li>- [ ] </li></ul>              |   <ul><li>- [ ] </li></ul>        |   <ul><li>- [x] </li></ul>     |
+| E.1  | Knowledge Representation language          |  Must       |   <ul><li>- [x] </li></ul> |   <ul><li>- [x] </li></ul> |   <ul><li>- [ ] </li></ul>              |   <ul><li>- [x] </li></ul>        |   <ul><li>- [x] </li></ul>     |
 | E.2  | Development environment        |  Optional   |   <ul><li>- [x] </li></ul> |   <ul><li>- [ ] </li></ul> |   <ul><li>- [ ] </li></ul>              |   <ul><li>- [ ] </li></ul>        |   <ul><li>- [x] </li></ul>     |
 | E.3  | Ontology metrics      | Should     |   <ul><li>- [x] </li></ul>   |   <ul><li>- [x] </li></ul>   |   <ul><li>- [ ] </li></ul>              |   <ul><li>- [ ] </li></ul>        |   <ul><li>- [x] </li></ul>       |
 | E.4  | Incorporation of other ontologies          |  Must       |   <ul><li>- [x] </li></ul>   |   <ul><li>- [x] </li></ul>   |   <ul><li>- [x] </li></ul>    |   <ul><li>- [x] </li></ul>          |   <ul><li>- [ ] </li></ul>     |
@@ -43,5 +43,5 @@ HOLY follows [MIRO](https://github.com/owlcs/miro/blob/master/miro.md) guideline
 | G.2  | Evaluation      |  Must       |   <ul><li>- [x] </li></ul> |   <ul><li>- [x] </li></ul> |   <ul><li>- [ ] </li></ul>              |   <ul><li>- [ ] </li></ul>        |   <ul><li>- [x] </li></ul>     |
 | G.3  | Example of use  |  Must       |   <ul><li>- [x] </li></ul>   |   <ul><li>- [x] </li></ul>   |   <ul><li>- [ ] </li></ul>              |   <ul><li>- [x] </li></ul>          |   <ul><li>- [ ] </li></ul>     |
 | G.4  | Institutional endorsement      |  Optional   |   <ul><li>- [ ] </li></ul> |   <ul><li>- [ ] </li></ul> |   <ul><li>- [ ] </li></ul>              |   <ul><li>- [ ] </li></ul>        |   <ul><li>- [ ] </li></ul>     |
-| G.5  | Evidence of use |  Must       |   <ul><li>- [x] </li></ul>   |   <ul><li>- [x] </li></ul>   |   <ul><li>- [ ] </li></ul>              |   <ul><li>- [x] </li></ul>          |   <ul><li>- [ ] </li></ul>     |
+| G.5  | Evidence of use |  Must       |   <ul><li>- [x] </li></ul>   |   <ul><li>- [x] </li></ul>   |   <ul><li>- [ ] </li></ul>              |   <ul><li>- [x] </li></ul>          |   <ul><li>- [x] </li></ul>     |
 

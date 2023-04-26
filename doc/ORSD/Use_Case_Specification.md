@@ -12,7 +12,7 @@ The structured information in the knowledge graph, in combination with reusable 
 
 ## Name: Use Case 2 – Governmental Institutions: Monitoring
 
-**Description:** Monitoring the development of other nations in the evolving industry of hydrogen is important, but requires access to numerous sources and time to structure information accordingly. To enable holistic monitoring, a government institution uses the HOLY knowledge structure and preceding text-processing-pipeline. Thanks to HOLY, the institution can access information about the development of projects, number of organizations, and fields of applications in its nation and other nations. Thanks to the use of other vocabularies and ontologies and the alignment with classification standards, other knowledge graphs or databases can be integrated with HOLY, enabling institutions an even broader use.
+**Description:** Monitoring the development of other nations in the evolving industry of hydrogen is important, but requires access to numerous sources and time to structure information accordingly. To enable holistic monitoring, a government institution uses the HOLY knowledge structure and preceding text-processing pipeline. Thanks to HOLY, the institution can access information about the development of projects, the number of organizations, and fields of applications in its nation and other nations. Thanks to the use of other vocabularies and ontologies and the alignment with classification standards, other knowledge graphs or databases can be integrated with HOLY, enabling institutions an even broader use.
 
 **Actors**: Governmental institutions
 
@@ -24,6 +24,6 @@ The structured information in the knowledge graph, in combination with reusable 
 
 ## Underlying Flow for all Use Cases
 
-Flow: Alternatively, the actor can directly access the knowledge graph by using the resource documentation and SPARQL queries to filter for needed information within the knowledge graph. Information can be extracted in order to further process it, draw conclusions, and use it for action.
+Flow: Alternatively, the actor can directly access the knowledge graph by using the resource documentation and SPARQL queries to filter for needed information within the knowledge graph. Information can be extracted too further process it, draw conclusions, and use it for action.
 
-Additionally, as part of the [Atlant-H project](../Use_Case/), interactive dashboards have been constructed from a knowledge graph created using the Hydrogen Ontology. These dashboards an be accessed by the actor. Through filters in the user interface of the dashboard, the actor can retrieve information based on their requirements. Information can be extracted in order to further process it, draw conclusions, and use it for action.
+Additionally, as part of the [Atlant-H project](../Use_Case/), interactive dashboards have been constructed from a knowledge graph created using the Hydrogen Ontology. These dashboards can be accessed by the actor. Through filters in the user interface of the dashboard, the actor can retrieve information based on their requirements. 

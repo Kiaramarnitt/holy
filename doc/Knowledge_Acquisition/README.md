@@ -2,7 +2,7 @@
 
 Throughout the ontology engineering process of HOLY domain experts, ontology developers and users were all active contributors. Close engagement with users meant the introduction of requirements for NLP processes. 
 
-The knowledge acquisition process involved extensive literature research by ontology developers to identify relevant sources on the hydrogen industry, followed by verification by experts from the Future Engineering Research Group of Fraunhofer IIS and the Technische Hochschue Nürnberg Georg Simon Ohm. Concepts were derived from the literature and prioritized based on the ontology requirements. Synonyms were chosen with the assistance of the information extraction pipeline as part of the Atlant-H project.
+The knowledge acquisition process involved extensive literature research by ontology developers to identify relevant sources on the hydrogen industry, followed by verification by experts from the Future Engineering Research Group of Fraunhofer IIS and the Technische Hochschule Nürnberg Georg Simon Ohm. Concepts were derived from the literature and prioritized based on the ontology requirements. Synonyms were chosen with the assistance of the information extraction pipeline as part of the Atlant-H project.
 
 ## Requirements Gathering
 
@@ -20,8 +20,8 @@ Requirements are captured from stakeholders by identifying key areas of interest
 
 **Information Extraction:** Focused on the acquisition of knowledge (semantic information) necessary for information extraction methods for current and later adaptations of HOLY.
 
-## Practical Literature review to populate the onotlogy
-Additional research included the identification of definitions, synonymys and examples for enrichment of the ontology. A traceable reference to the source of each definition is available through the property `dct:references` in the Ontology and in the [Content Selection](./Content_Selection_Priority.xlsx) document.
+## Practical Literature review to populate the ontology
+Additional research included the identification of definitions, synonyms and examples for the enrichment of the ontology. A traceable reference to the source of each definition is available through the property `dct:references` in the Ontology and the [Content Selection](./Content_Selection_Priority.xlsx) document.
 
 
 
