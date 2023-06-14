@@ -17,11 +17,11 @@
 |        | See [HOLY's requirements](HOLY_Requirements.xlsx) and [HOLY's Tabular information](Tabular_Information.md)                     |
 | **7**  | **Pre-Glossary of Terms (optional)**                                                                           |
 |        | **Terms from Competency Questions**                                                                            |
-|        | [HOLY's Tabular information](Tabular_Information.md)                                          |
+|        | [HOLY's Tabular information](Tabular_Information.xlsx)                                          |
 |        | **Terms from Answers**                  |
-|        | [HOLY's Tabular information](Tabular_Information.md)                                         |
+|        | [HOLY's Tabular information](Tabular_Information.xlsx)                                         |
 |        | **Objects**                             |
-|        | [HOLY's Tabular information](Tabular_Information.md)                                          |
+|        | [HOLY's Tabular information](Tabular_Information.xlsx)                                          |
 
 
 [See Tabular Ontology Requirements Specification Document ](HOLY_Requirements.xlsx)
