@@ -14,7 +14,7 @@
 |        | **Non-Functional Requirements**         |
 |        | <ul> <li>Use of existing ontologies </li> <li> Reusability of the ontology </li> <li> Standardization and semantic interoperability </li> <li> Online availability </li> </ul>                                                            |
 |        | **Functional Requirements: Lists or tables of (domain) requirements written as Competency Questions and sentences**                                                                   |
-|        | See [HOLY's requirements](HOLY_Requirements.xlsx) and [HOLY's Tabular information](Tabular_Information.md)                     |
+|        | See [HOLY's requirements](HOLY_Requirements.xlsx) and [HOLY's Tabular information](Tabular_Information.xlsx)                     |
 | **7**  | **Pre-Glossary of Terms (optional)**                                                                           |
 |        | **Terms from Competency Questions**                                                                            |
 |        | [HOLY's Tabular information](Tabular_Information.xlsx)                                          |
