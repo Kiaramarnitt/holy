@@ -1,6 +1,6 @@
 # Use Case Specification of the Hydrogen Ontology
 
-The following document introduces three exemplary use cases for the Hydrogen Ontology (HOLY). The use case specification is aligned with the standards of the Linked Open Terms Methodology.
+The following document introduces five exemplary use cases for the Hydrogen Ontology (HOLY). The use case specification is aligned with the standards of the Linked Open Terms Methodology.
 
 ## Name: Use Case 1 – Industry Players: Decision-Making
 
@@ -8,19 +8,35 @@ The following document introduces three exemplary use cases for the Hydrogen Ont
 
 The structured information in the knowledge graph, in combination with reusable queries, helps the company to save valuable resources for collecting and analyzing data by relying on highly valuable holistic data for decision-making.
 
-**Actors**: Organizations
+**Actors:** Organizations
 
 ## Name: Use Case 2 – Governmental Institutions: Monitoring
 
 **Description:** Monitoring the development of other nations in the evolving industry of hydrogen is important, but requires access to numerous sources and time to structure information accordingly. To enable holistic monitoring, a government institution uses the HOLY knowledge structure and preceding text-processing pipeline. Thanks to HOLY, the institution can access information about the development of projects, the number of organizations, and fields of applications in its nation and other nations. Thanks to the use of other vocabularies and ontologies and the alignment with classification standards, other knowledge graphs or databases can be integrated with HOLY, enabling institutions an even broader use.
 
-**Actors**: Governmental institutions
+**Actors:** Governmental institutions
 
 ## Name: Use Case 3 – Research Institutions: Facilitating Research Planning
 
 **Description:** When starting a research project, it can be challenging to acquire a general overview of the current state of the domain or to find suitable partners for establishing research cooperations. This is especially true when dealing with a highly dynamic market such as the hydrogen market. A research institution uses HOLY as an advanced database structure to search for developments in the hydrogen market to streamline the process of identifying current key areas of interest. Thanks to the holistic structure, the institution can identify the current composition of the market according to existing participants, products, applications, projects, and indicators, even allocating them to geographic regions without the need to invest resources.
 
-**Actors**: Research institutions (universities)
+**Actors:** Research institutions (universities)
+
+## Name: Use Case 4 - Technology Providers: Development Monitoring
+
+**Description:** For the producer or manufacturer of a technology, monitoring the development of the technology they're providing is critical. In the hydrogen market, the amount of information and sources of information can provide great difficulty. Because of this, a technology provider uses HOLY to provide structure to the data, allowing for the filtering of data related to the development of their technology and relevant activity in the market. With this, the technology provider is able to monitor changes many aspects such as activity in specific geographic regions, keywords related to the technology, competitors' activity, and relevance of their technology in the market.
+
+It is also important to monitor the development of technologies which could be used as substitutes to the technology produced. To accomplish this, the technology provider's research and development department builds upon the structure provided in HOLY and expands the ontology to include a more in-depth view of relevant substitute technologies. HOLY provides the technology provider with a foundational structure on which to expand to facilitate monitoring the development of substitute technologies.
+
+**Actors:** Technology providers
+
+## Name: Use Case 5 - Investors: Information Gathering, Monitoring
+
+**Description:** When looking to invest in a new market, the amount of new information can be overwhelming. This is particularly relevant in highly dynamic markets which are subject to great amounts of change. To combat this, a potential investor uses HOLY to research potential investment opportunities in the hydrogen market. The structure that HOLY provides facilitates exploratory analysis and a comprehensive overview of the technologies and players in the market. The potential investor can therefore identify ideal investment opportunities according to their own criteria. 
+
+After investing, the investor can continue to benefit from the use of HOLY to monitor changes in the hydrogen market which are related to or could impact their investment.
+
+**Actors:** Investors
 
 ## Underlying Flow for all Use Cases
 
