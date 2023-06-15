@@ -44,17 +44,11 @@ After investing, the investor can continue to benefit from the use of HOLY to mo
 
 **Actors:** Product users
 
-## Name: Use Case 7 - Education: Education and Training
+## Name: Use Case 7 - Educational Institutions: Education and Training
 
 **Description:** Creating educational materials about hydrogen as either a technology or a market can be a daunting and time-consuming task. An educational institution uses HOLY as a structured information source which helps to filter relevant data and consolidate data from large varieties of information sources. HOLY allows for explorative analysis of hydrogen technologies and the hydrogen market. This facilitates the creation of educational materials and training programs which allow for students, professional individuals, research teams, and other interested parties to more easily expand their knowledge base on the subject.
 
 **Actors:** Educational institutions
-
-## Name: Use Case 8 - Data Exchange
-
-**Description:** 
-
-**Actors:** ???
 
 ## Underlying Flow for all Use Cases
 
