@@ -1,6 +1,6 @@
 # Use Case Specification of the Hydrogen Ontology
 
-The following document introduces eight example use cases for the Hydrogen Ontology (HOLY). The use case specification is aligned with the standards of the Linked Open Terms Methodology.
+The following document introduces seven example use cases for the Hydrogen Ontology (HOLY). The use case specification is aligned with the standards of the Linked Open Terms Methodology.
 
 ## Name: Use Case 1 – Industry Players: Decision-Making
 
