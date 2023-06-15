@@ -1,6 +1,6 @@
 # Use Case Specification of the Hydrogen Ontology
 
-The following document introduces five exemplary use cases for the Hydrogen Ontology (HOLY). The use case specification is aligned with the standards of the Linked Open Terms Methodology.
+The following document introduces eight example use cases for the Hydrogen Ontology (HOLY). The use case specification is aligned with the standards of the Linked Open Terms Methodology.
 
 ## Name: Use Case 1 – Industry Players: Decision-Making
 
@@ -37,6 +37,24 @@ It is also important to monitor the development of technologies which could be u
 After investing, the investor can continue to benefit from the use of HOLY to monitor changes in the hydrogen market which are related to or could impact their investment.
 
 **Actors:** Investors
+
+## Name: Use Case 6 - Product Users: Product Catalog and Comparison
+
+**Description:** In the digital age more than ever before, users want to compare products to a great extent. However, this can be difficult when a market is large or continually evolving. The detailed structure of the PEMFC technology subclass in HOLY is used as a guide to extend the Hydrogen Ontology to include this level of detail among other products/technologies. This allows for the creation of a comprehensive product catalog for hydrogen technologies which can be used to compare products according to user-specified criteria. A product user then uses this product catalog to select the right product for their needs.
+
+**Actors:** Product users
+
+## Name: Use Case 7 - Education: Education and Training
+
+**Description:** Creating educational materials about hydrogen as either a technology or a market can be a daunting and time-consuming task. An educational institution uses HOLY as a structured information source which helps to filter relevant data and consolidate data from large varieties of information sources. HOLY allows for explorative analysis of hydrogen technologies and the hydrogen market. This facilitates the creation of educational materials and training programs which allow for students, professional individuals, research teams, and other interested parties to more easily expand their knowledge base on the subject.
+
+**Actors:** Educational institutions
+
+## Name: Use Case 8 - Data Exchange
+
+**Description:** 
+
+**Actors:** ???
 
 ## Underlying Flow for all Use Cases
 
