@@ -15,13 +15,21 @@
 
 **Issued Date:** 2022-12-16
 
+**Modified Date: ** 2022-04-26
+
 **Namespace URI:** http://purl.org/holy/ns#
+
+**Version:** 1.1
  
 **Version IRI:** http://purl.org/holy/ns#
+
+**Prior Version IRI:**http://purl.org/holy/holy-20221216
 
 **Prefix:** holy
 
 **DOI:** [10.5281/zenodo.7447958](https://doi.org/10.5281/zenodo.7447958)
+
+**Diagram:** ![picture alt](http://purl.org/holy/schema_diagram)
 
 
 
